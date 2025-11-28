@@ -40,6 +40,8 @@ KEYWORDS = [
     "side-channel attack deep learning",
     "power analysis neural network weights",
     "GPU leak DNN weights",
+    "stealing language model",
+    "steal production model",
 ]
 
 # Venues to exclude (not related to ML security)
@@ -150,7 +152,7 @@ def get_matched_keywords(paper: dict, keywords: list[str]) -> list[str]:
         if kw.lower() in text:
             matched.append(kw)
 
-    # Check title patterns for side-channel attacks
+    # Check title patterns for side-channel attacks and model stealing
     if not matched:
         if "leak" in title and ("dnn" in title or "neural" in title or "weight" in title):
             matched.append("DNN weights leakage (title)")
@@ -160,6 +162,8 @@ def get_matched_keywords(paper: dict, keywords: list[str]) -> list[str]:
             matched.append("electromagnetic analysis (title)")
         elif "power analysis" in title and ("neural" in title or "dnn" in title):
             matched.append("power analysis (title)")
+        elif "stealing" in title and ("model" in title or "neural" in title or "llm" in title or "language model" in title):
+            matched.append("model stealing (title)")
 
     return matched
 
