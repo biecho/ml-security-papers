@@ -70,6 +70,7 @@ class Paper:
     pdf_url: Optional[str]
     publication_date: Optional[str]
     keywords_matched: list[str]  # which search keywords matched this paper
+    first_seen: Optional[str] = None  # when this paper was first added
 
 
 def search_papers(query: str, limit: int = 100) -> list[dict]:
@@ -297,17 +298,85 @@ def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
     return deduped
 
 
+def load_existing_papers(filepath: str) -> dict[str, Paper]:
+    """Load existing papers from JSON file, indexed by paper_id."""
+    if not os.path.exists(filepath):
+        return {}
+
+    try:
+        with open(filepath) as f:
+            data = json.load(f)
+        existing = {}
+        for p in data.get("papers", []):
+            paper = Paper(
+                paper_id=p["paper_id"],
+                title=p["title"],
+                abstract=p.get("abstract"),
+                year=p.get("year"),
+                venue=p.get("venue"),
+                authors=p.get("authors", []),
+                citation_count=p.get("citation_count", 0),
+                url=p.get("url", ""),
+                pdf_url=p.get("pdf_url"),
+                publication_date=p.get("publication_date"),
+                keywords_matched=p.get("keywords_matched", []),
+                first_seen=p.get("first_seen"),
+            )
+            existing[paper.paper_id] = paper
+        print(f"Loaded {len(existing)} existing papers from {filepath}")
+        return existing
+    except (json.JSONDecodeError, KeyError) as e:
+        print(f"Warning: Could not load existing papers: {e}")
+        return {}
+
+
+def merge_papers(existing: dict[str, Paper], new_papers: list[Paper]) -> list[Paper]:
+    """Merge new papers with existing ones. Never removes papers, only adds or updates."""
+    today = time.strftime("%Y-%m-%d")
+    merged = dict(existing)  # Start with all existing papers
+    added = 0
+    updated = 0
+
+    # Set first_seen for existing papers that don't have it
+    for paper_id, paper in merged.items():
+        if not paper.first_seen:
+            paper.first_seen = today
+
+    for paper in new_papers:
+        if paper.paper_id in merged:
+            # Update metadata but preserve first_seen
+            old = merged[paper.paper_id]
+            paper.first_seen = old.first_seen or today
+            merged[paper.paper_id] = paper
+            updated += 1
+        else:
+            # New paper - set first_seen
+            paper.first_seen = today
+            merged[paper.paper_id] = paper
+            added += 1
+
+    print(f"Merge result: {added} new papers, {updated} updated, {len(merged)} total")
+    return list(merged.values())
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch model stealing papers")
     parser.add_argument("--output", "-o", default="papers.json", help="Output JSON file")
     parser.add_argument("--limit", "-l", type=int, default=100, help="Max papers per keyword")
     args = parser.parse_args()
 
-    papers = fetch_all_papers(KEYWORDS, limit_per_keyword=args.limit)
+    # Load existing papers (we never remove papers, only add)
+    existing = load_existing_papers(args.output)
 
-    # Deduplicate papers with similar titles
-    papers = deduplicate_papers(papers)
-    print(f"After deduplication: {len(papers)} papers")
+    # Fetch new papers
+    new_papers = fetch_all_papers(KEYWORDS, limit_per_keyword=args.limit)
+
+    # Deduplicate new papers
+    new_papers = deduplicate_papers(new_papers)
+    print(f"After deduplication: {len(new_papers)} new papers found")
+
+    # Merge with existing (preserves all existing papers)
+    papers = merge_papers(existing, new_papers)
 
     # Sort by year (newest first), then by citations
     papers.sort(key=lambda p: (-(p.year or 0), -p.citation_count))

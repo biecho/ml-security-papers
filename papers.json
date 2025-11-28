@@ -1,6 +1,6 @@
 {
   "updated": "2025-11-28",
-  "total": 403,
+  "total": 405,
   "keywords": [
     "model stealing attack",
     "model extraction attack",
@@ -47,7 +47,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f94fe2776e4258650baffb9b0100518076aacdad",
@@ -70,7 +71,8 @@
       "publication_date": "2025-02-04",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "253a59d979d560456c2984742466b796a983da0e",
@@ -93,7 +95,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3df3a63e65eb6ab71049334466369f33dab37236",
@@ -120,7 +123,8 @@
       "publication_date": "2025-02-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "dd37ddad0b07a5f9e38c117f0fb876735062211d",
@@ -142,7 +146,8 @@
       "publication_date": "2025-02-17",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4c167947e7fe8fd78118504627930f1935b11924",
@@ -164,7 +169,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a1dbeef30b37363111eb815ff7fd2a0b8e7da83c",
@@ -185,7 +191,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0d3384cb78be25ed28a3544f175cab59236093dd",
@@ -207,7 +214,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "26be7a4a13776ac194912a70e97783bf2e587c24",
@@ -230,7 +238,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b31459472aa34e8711fe845acaab9b7b4a74f1d8",
@@ -251,7 +260,8 @@
       "publication_date": "2025-11-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0c72a0508a3f3944660e786e83a7f4d56c50ecf1",
@@ -277,7 +287,8 @@
       "publication_date": "2025-08-09",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "369d7792462ab184ed6dc53cab70b9b101d9d034",
@@ -300,7 +311,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1b5caff453174871e8c9b374b72659a7c63fa830",
@@ -324,7 +336,8 @@
         "model extraction attack",
         "neural network extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e569cd7a6612a86e89c2e09c36f75fdcce6dd453",
@@ -347,7 +360,8 @@
       "publication_date": "2025-09-20",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "192907ef8a1835d42ff7ae7af95048bea4c9f2f0",
@@ -366,7 +380,8 @@
       "publication_date": "2025-04-05",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "af515bad09321d88acc64d11a05e3f35fa8f328e",
@@ -387,7 +402,8 @@
       "publication_date": "2025-01-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e9534b0f74ff371aa086ecc30d95a633ecad7ddc",
@@ -406,7 +422,8 @@
       "publication_date": "2025-02-21",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7174cf188e9d7b5e1842c0d0517ba5df22bc6a8a",
@@ -426,7 +443,8 @@
       "publication_date": "2025-02-22",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "90360529f01cf996d62369fd0c47af3b1823c7f4",
@@ -452,7 +470,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "268ce1e9492455e825a3894b0f2713d14e376d36",
@@ -471,7 +490,8 @@
       "publication_date": "2025-02-27",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "dd898d4226db4c4dca01e46de96fe3acbc6087ec",
@@ -490,7 +510,8 @@
       "publication_date": "2025-06-03",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "71ff23a33bc4db47a76808717acc78d9b04a7e1e",
@@ -516,7 +537,8 @@
       "publication_date": "2025-07-11",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ffbf082c9d726c1fb4e03a9e6045bec193ab3050",
@@ -538,7 +560,8 @@
       "publication_date": "2025-08-19",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c328191268d06f97c892bcd16613c472b423e88e",
@@ -561,7 +584,8 @@
       "publication_date": "2025-01-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "be0d667c4b910dad74a39e135697d7d7957512e1",
@@ -580,7 +604,8 @@
       "publication_date": "2025-02-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bff5a24e045b0eb0dc50ccab16fcf5497d8817c9",
@@ -599,7 +624,8 @@
       "publication_date": "2025-02-22",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f9b4f91ceca3254f882789b330b7c9044bf408a8",
@@ -622,7 +648,8 @@
       "publication_date": "2025-06-05",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bbd216e8ca69d2583e1d203a4fdf8e9bf4e07f3d",
@@ -639,7 +666,8 @@
       "publication_date": "2025-07-27",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2e50f4dc488356303b0f76a1db35d5e672ef3b28",
@@ -658,27 +686,8 @@
       "publication_date": "2025-03-08",
       "keywords_matched": [
         "model stealing attack"
-      ]
-    },
-    {
-      "paper_id": "5ad7f669afa84855e00c743422026c8c5e91e411",
-      "title": "I Stolenly Swear That I Am Up to (No) Good: Design and Evaluation of Model Stealing Attacks",
-      "abstract": "Model stealing attacks endanger the confidentiality of machine learning models offered as a service. Although these models are kept secret, a malicious party can query a model to label data samples and train their own substitute model, violating intellectual property. While novel attacks in the field are continually being published, their design and evaluations are not standardised, making it challenging to compare prior works and assess progress in the field. This paper is the first to address this gap by providing recommendations for designing and evaluating model stealing attacks. To this end, we study the largest group of attacks that rely on training a substitute model -- those attacking image classification models. We propose the first comprehensive threat model and develop a framework for attack comparison. Further, we analyse attack setups from related works to understand which tasks and models have been studied the most. Based on our findings, we present best practices for attack development before, during, and beyond experiments and derive an extensive list of open research questions regarding the evaluation of model stealing attacks. Our findings and recommendations also transfer to other problem domains, hence establishing the first generic evaluation methodology for model stealing attacks.",
-      "year": 2025,
-      "venue": "arXiv.org",
-      "authors": [
-        "Daryna Oliynyk",
-        "Rudolf Mayer",
-        "Kathrin Grosse",
-        "Andreas Rauber"
       ],
-      "citation_count": 0,
-      "url": "https://www.semanticscholar.org/paper/5ad7f669afa84855e00c743422026c8c5e91e411",
-      "pdf_url": "",
-      "publication_date": "2025-08-29",
-      "keywords_matched": [
-        "model stealing attack"
-      ]
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b066eaa019bf6e94540dc54e735defb19d910bf8",
@@ -698,7 +707,29 @@
       "publication_date": "2025-06-06",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "5ad7f669afa84855e00c743422026c8c5e91e411",
+      "title": "I Stolenly Swear That I Am Up to (No) Good: Design and Evaluation of Model Stealing Attacks",
+      "abstract": "Model stealing attacks endanger the confidentiality of machine learning models offered as a service. Although these models are kept secret, a malicious party can query a model to label data samples and train their own substitute model, violating intellectual property. While novel attacks in the field are continually being published, their design and evaluations are not standardised, making it challenging to compare prior works and assess progress in the field. This paper is the first to address this gap by providing recommendations for designing and evaluating model stealing attacks. To this end, we study the largest group of attacks that rely on training a substitute model -- those attacking image classification models. We propose the first comprehensive threat model and develop a framework for attack comparison. Further, we analyse attack setups from related works to understand which tasks and models have been studied the most. Based on our findings, we present best practices for attack development before, during, and beyond experiments and derive an extensive list of open research questions regarding the evaluation of model stealing attacks. Our findings and recommendations also transfer to other problem domains, hence establishing the first generic evaluation methodology for model stealing attacks.",
+      "year": 2025,
+      "venue": "arXiv.org",
+      "authors": [
+        "Daryna Oliynyk",
+        "Rudolf Mayer",
+        "Kathrin Grosse",
+        "Andreas Rauber"
+      ],
+      "citation_count": 0,
+      "url": "https://www.semanticscholar.org/paper/5ad7f669afa84855e00c743422026c8c5e91e411",
+      "pdf_url": "",
+      "publication_date": "2025-08-29",
+      "keywords_matched": [
+        "model stealing attack"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1d3483a45263d2f67dedba087ff267194c7cfa1d",
@@ -718,7 +749,8 @@
       "publication_date": "2025-03-23",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "509a77d3e7a4a48ff7b191fe1802db4d597de8c8",
@@ -736,7 +768,8 @@
       "publication_date": "2025-08-19",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "16cfca0d74d329b2b3f2d927047468f09300e33e",
@@ -756,7 +789,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "16743a0a8daad27538a0bc734ed42abca3a14289",
@@ -777,7 +811,8 @@
       "publication_date": "2025-03-16",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f8f0626c98083f77d2f5c776cc3a4b91fa273b73",
@@ -798,7 +833,8 @@
       "publication_date": "2025-01-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e445ba60a5f0dd22cb9188df23c228c5ec7a1f45",
@@ -823,7 +859,8 @@
       "publication_date": "2025-09-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f2aaca56a4bbc4e9358f0af26e67f8cae4ebf476",
@@ -845,7 +882,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d7acc4f16a3e3c33a9544bbe80a72ab218b23869",
@@ -867,7 +905,8 @@
       "publication_date": "2025-11-10",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5102a7c89adeba6818f90b1964106397a2fb7a37",
@@ -885,7 +924,8 @@
       "publication_date": "2025-06-20",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f8caf3ee31a4d1d4d72f87997c104aaeb56e0a33",
@@ -908,7 +948,8 @@
       "publication_date": "2025-06-24",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4ced0ca56a1f623ebe1860f2551ee5b8011c9b87",
@@ -930,7 +971,8 @@
         "model extraction attack",
         "model extraction",
         "LoRA extraction attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4751cda9e628009ffaa86cfdaac218bef0eacd1e",
@@ -952,7 +994,8 @@
       "publication_date": "2025-10-24",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "056036a3ce3a21daf80167dee622b6b515f9490e",
@@ -972,7 +1015,8 @@
       "publication_date": "2025-06-25",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bb3cf7ad6f2528490b40a8266ca1fa4dc5b929f4",
@@ -992,7 +1036,8 @@
       "publication_date": "2025-06-24",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c100542ca883890adf1fa185e07e13e9f4e5ec46",
@@ -1013,7 +1058,8 @@
       "publication_date": "2025-07-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "23bb050bbdf0d710f9f6f665e227b25c1d6ee034",
@@ -1032,7 +1078,8 @@
       "publication_date": "2025-10-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e685da2d597d7b478a514bf26d78f5d9131e6b98",
@@ -1053,7 +1100,8 @@
       "publication_date": "2025-02-20",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ec45414afec5007925db471273111da8bf389234",
@@ -1074,7 +1122,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a2c361d27c70f4b61da39732c338c54145a4cb82",
@@ -1094,7 +1143,8 @@
       "publication_date": "2025-06-22",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b232f468de0b1d4ff1c2dfe5dbb03ec093160c48",
@@ -1123,7 +1173,8 @@
       "publication_date": "2024-03-11",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c7af46b35061e856aa3332ac2eec6a7ccee0cb35",
@@ -1142,7 +1193,8 @@
       "publication_date": "2024-02-29",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9487d29364645c2f086387ff817ad5fd14b33c41",
@@ -1164,7 +1216,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3d90d1d429fa9dacb50a103cdab5c16328665c2c",
@@ -1182,7 +1235,8 @@
       "publication_date": "2024-02-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "45967a64fdc7a3e20f47b24297844b93b9f3e3d9",
@@ -1207,7 +1261,8 @@
       "publication_date": "2024-02-06",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ee529552e871dbd7d2c53d9cde4b46380712cbe0",
@@ -1228,7 +1283,8 @@
       "publication_date": "2024-03-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "fe44bd072c2325eaa750990d148b27e42b7eb1d2",
@@ -1246,7 +1302,8 @@
       "publication_date": "2024-03-30",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3c3479215bcc775f8e37d7d5055a16b698904c9a",
@@ -1270,7 +1327,8 @@
       "publication_date": "2024-05-13",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "650f6db095276ca03d03f4951587d7383ca3b39d",
@@ -1295,7 +1353,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "550a79a7e688347af18bf5752361c47f0af1cf40",
@@ -1319,7 +1378,8 @@
       "publication_date": "2024-05-30",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5201913bb3b941e0d42606969da5c1f927aeb48b",
@@ -1342,7 +1402,8 @@
       "publication_date": "2024-11-27",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "14b7cdf6349611cdc3d271c1672ef275e0d101ae",
@@ -1368,7 +1429,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "df8401e2322f8f6f1b2cb8310cb048a939cce3d1",
@@ -1393,7 +1455,8 @@
       "publication_date": "2024-04-17",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7bed6f6101204efdf04181aafa511ca55644b559",
@@ -1416,7 +1479,8 @@
       "publication_date": "2024-07-19",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0e536b831cf1053d2c523d2e16656ad27c7369f2",
@@ -1437,7 +1501,8 @@
       "publication_date": "2024-10-24",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "36d37aaf4bb16db3e5cc37c8b4ff55d4babb71ba",
@@ -1458,7 +1523,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6d556b1dbb4a351b12a759c6581ed903e728c09e",
@@ -1480,7 +1546,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1e8b05c5b703f443b5470bef2b3aca1b064b1709",
@@ -1502,7 +1569,8 @@
       "publication_date": "2024-02-06",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d9588dc5028b7e66b5fec940fd9e31a8e0a6070b",
@@ -1524,7 +1592,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0e8594a161f1670e939a16699bd5cc8fd2f8335a",
@@ -1548,7 +1617,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8f0679e01cb36c995fc5fbc9d364160bd72ce8cd",
@@ -1567,7 +1637,8 @@
       "publication_date": "2024-02-18",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f3892c3b89b4b6fca4465308fcc9a99388eb019b",
@@ -1589,7 +1660,8 @@
       "publication_date": "2024-03-16",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3434f582cc9c2818785e2920241d43d932625539",
@@ -1612,7 +1684,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "cefefe1b62baa5ac5067f31e32ee6f5a004b4222",
@@ -1634,7 +1707,8 @@
       "publication_date": "2024-06-05",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b892ac05369526432384a4cdf1d4d087f8bc45de",
@@ -1655,7 +1729,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c535f60659724b84d5a2169d434617ba49f005bf",
@@ -1681,7 +1756,8 @@
       "publication_date": "2024-10-16",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "74ed0e78bba8fda5a72d3db69593f4caeca82559",
@@ -1703,7 +1779,8 @@
         "model stealing attack",
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9caf69e7bab1932d0b77dd20dc8f47e1b340135a",
@@ -1723,7 +1800,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "40d2bc169204b49a9cfa659b5398791ac5860caf",
@@ -1746,7 +1824,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0beb8f26d688ce182cea25c361e0c3311b1afb69",
@@ -1767,7 +1846,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d3b74a3fdb14c606b9daaf61c5409f7d58c3b3aa",
@@ -1787,7 +1867,8 @@
       "publication_date": "2024-07-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "94621729b6ca9e811d8a052dc3457e98df457676",
@@ -1809,7 +1890,8 @@
       "publication_date": "2024-05-18",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2b89dd26035172807159d1f5bc972ed04d7c4bb2",
@@ -1827,7 +1909,8 @@
       "publication_date": "2024-11-12",
       "keywords_matched": [
         "stealing language model"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "389f1fad962f58799327a0112526452d2da5157d",
@@ -1844,7 +1927,8 @@
       "publication_date": "2024-06-30",
       "keywords_matched": [
         "knockoff nets"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0219db84513f4c2604ed15fce52c8f810b463ba5",
@@ -1863,7 +1947,8 @@
       "publication_date": "2024-06-13",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a55cc1ebaab3de336386f292cc4028f6e5586ac0",
@@ -1883,7 +1968,8 @@
       "publication_date": "2024-05-06",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f63f7d623e1738fbc314143a1ad1812045caffff",
@@ -1905,7 +1991,8 @@
       "publication_date": "2024-05-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2b28136746a29ff698f57106c292d0d6e0181629",
@@ -1925,7 +2012,8 @@
       "publication_date": "2024-03-29",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a916a716b23490f87844b3ff44cb2d18284b2ac6",
@@ -1948,7 +2036,8 @@
       "publication_date": "2024-06-16",
       "keywords_matched": [
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4595c8a7e1571c9974b2393ed127f05fabe72164",
@@ -1970,7 +2059,8 @@
       "publication_date": "2024-12-15",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a6854f91dbad0b39a0289872ac838545a9c18225",
@@ -1994,7 +2084,8 @@
       "publication_date": "2024-12-09",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f2109f7f2412308738e03a60f79946cb1ad2aa7a",
@@ -2019,7 +2110,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "87004d053c0c2b0f91c293ef26d817d5a05e017c",
@@ -2036,7 +2128,8 @@
       "publication_date": "2024-06-21",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "be6dc29e9773c5242b0a44877df60af0feae9adb",
@@ -2056,7 +2149,8 @@
       "publication_date": "2024-10-25",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "94dd5cd82b6a082dff3dd697d63191325cf6830b",
@@ -2076,7 +2170,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b3744d928fcd84b7e2296d5983ba199a300955e0",
@@ -2099,7 +2194,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1abdfdd7cd2d325e09b82d4d3a5dee97000d27a0",
@@ -2120,7 +2216,8 @@
       "publication_date": "2024-10-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c0aedde76f74f8a7db4568d688b1baf921499acf",
@@ -2141,7 +2238,8 @@
       "publication_date": "2024-12-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "aee0bc1bc011d8da14aa209d0af984a9cc6b227f",
@@ -2162,7 +2260,8 @@
       "keywords_matched": [
         "model stealing attack",
         "DNN model stealing"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2df09db143feb7aa0fc30ac548f0aaa4c628c3cd",
@@ -2181,7 +2280,8 @@
       "publication_date": "2024-05-11",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "43bd351ab3d23bdb0ecc733cee5ad43db3dea075",
@@ -2202,7 +2302,8 @@
       "publication_date": "2024-06-22",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a968c61fc5a14ce01db2a67b6ab87e30248a0a19",
@@ -2222,7 +2323,8 @@
       "publication_date": "2024-02-19",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "dca9242b227eebb3f052139dcb6a45c4dcbfde83",
@@ -2247,7 +2349,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "55414dc21b091006bf868b28008c9fc30fa38dca",
@@ -2266,7 +2369,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "dfbbf3fa36cd03aa41d4170ba672e332f8295bd0",
@@ -2288,7 +2392,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "fbfb0ed07c0c8c84a959e0f4de6db90d5d65772f",
@@ -2310,7 +2415,8 @@
       "publication_date": "2024-09-21",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7c1924e7f6a9c335ebb83c50996fa93e4bb62bcb",
@@ -2328,7 +2434,8 @@
       "publication_date": "2024-03-08",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "15a81a4579949690c706f1bd9bbdda93681c35c3",
@@ -2347,7 +2454,8 @@
       "publication_date": "2024-04-14",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4fa2c8c744b37ba9b227cb3de8cdec448c09c1d7",
@@ -2368,7 +2476,8 @@
       "publication_date": "2024-07-23",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a54e2156b2f83a7c5c70c524862ce35e0a696d1f",
@@ -2390,7 +2499,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f1cb6613d9ed25be4f17f758ba78d0991860aa4b",
@@ -2410,7 +2520,8 @@
       "publication_date": "2024-07-31",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "21c62f2ef68323099480c80318e48baae8b9098f",
@@ -2428,7 +2539,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a57be99734b62dfd2a54a15eb46c7359fdb7db58",
@@ -2447,7 +2559,8 @@
       "publication_date": "2024-08-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9c616cb25371fb66f3dacabafe1abc81a5fbaae5",
@@ -2467,7 +2580,8 @@
       "publication_date": "2024-07-07",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "45b2b736cd8c66cb2bbb7efeb0907807d8f6fbe0",
@@ -2488,7 +2602,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9166ef92f94c521f1b5f78c51bac2dac805115a7",
@@ -2508,7 +2623,8 @@
         "model extraction attack",
         "neural network extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3d011a91d041692e9915c99f4e0d3c9b2136bb3f",
@@ -2530,7 +2646,8 @@
       "publication_date": "2024-06-30",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "931a9beaf77e0019bcfa2412b8210b83cb70aa1a",
@@ -2552,7 +2669,8 @@
       "publication_date": "2024-10-06",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8d0fa6b361fc6319eac027da608a99f03b541111",
@@ -2571,7 +2689,8 @@
       "publication_date": "2024-03-25",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3f25ac027cb369ed864d3d7ef10a00b1f5877738",
@@ -2591,7 +2710,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ff6c345c3d75b658760a19f9b368fd5266fa500c",
@@ -2611,7 +2731,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "517a03d4025905d23928bbfdd4b1dfe595873ab3",
@@ -2631,7 +2752,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5e2375e3e177fdf78f63768e9c8f763898c1404e",
@@ -2649,7 +2771,8 @@
       "publication_date": "2024-07-14",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "eae75f1031d15b83451e49e307d05dc44a952aab",
@@ -2668,7 +2791,8 @@
       "publication_date": "2024-12-12",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5d9824e7b540953dd378f6e8a7b41da2da5234ef",
@@ -2688,7 +2812,8 @@
       "publication_date": "2024-06-19",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "add12a9dac301e7e6554a03a018e86a051e3c1b8",
@@ -2706,7 +2831,8 @@
       "publication_date": "2024-06-16",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a9f0a5405f75e2596ebde4b0339dcc20b3b72db3",
@@ -2724,7 +2850,8 @@
       "keywords_matched": [
         "model stealing attack",
         "knockoff nets"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0c713d0c069bfe03c945bfe7f67e9176ea8bcaff",
@@ -2743,7 +2870,8 @@
       "publication_date": "2024-06-30",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9295ae78a4a20d7d43cf84a5d68c70912df9ce6b",
@@ -2762,7 +2890,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d9dcd3bf3aa0262eea6e17b5bb35705cc5f0301e",
@@ -2782,7 +2911,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9bedd67004ef344b801365ae28c09dce28410517",
@@ -2799,7 +2929,8 @@
       "publication_date": "2024-01-29",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "66025882080646af642638429d89a473c9569718",
@@ -2821,7 +2952,8 @@
       "publication_date": "2024-09-18",
       "keywords_matched": [
         "DNN model stealing"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "274ead8c75880a252b6c92908dc329b0eb5f9f3f",
@@ -2840,7 +2972,8 @@
       "publication_date": "2024-11-05",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "08e1f102344bc341e8109a5c23f78093a4c53323",
@@ -2863,7 +2996,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "264566b429bd774b7827cc1b5e4c4bd0efb84f1e",
@@ -2883,7 +3017,8 @@
       "publication_date": "2024-12-18",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "deef9baed03e2eb53aac92a38b5cfa6317dc1019",
@@ -2903,7 +3038,8 @@
       "publication_date": "2024-11-15",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e57dea53d0d1f28d330a0f635232d07c37d9403f",
@@ -2922,7 +3058,8 @@
       "publication_date": "2024-10-25",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b9a4b5e07b9973e968ea746159bfe88c0801f854",
@@ -2943,7 +3080,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "34c1fadafbd9e6afc26590cd06c66ed9364fac67",
@@ -2963,7 +3101,8 @@
       "publication_date": "2024-06-02",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e1e53971438e42df0a29fa448b3398331d63f94a",
@@ -2984,7 +3123,8 @@
       "publication_date": "2024-07-29",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ed9b2ca6d5741a9af8c3f2c368cfdf68eed98a48",
@@ -3005,7 +3145,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "796bab7acfef1076cd4e39872a34dd6c80a646fd",
@@ -3026,7 +3167,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d6339e02ec93158430c83f7962b9f5c11cb45d14",
@@ -3047,7 +3189,8 @@
       "publication_date": "2023-06-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7ec9e9ec1c26f7977f54dd7830d970101e3a683e",
@@ -3067,7 +3210,8 @@
       "publication_date": "2023-02-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "81cd9575100643a3463465ec19e90ee78e122f93",
@@ -3085,7 +3229,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "40b40e942db469663609ad6c1911cca235079434",
@@ -3107,7 +3252,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "afbc7f9d4a4dcf0cf02ab3efd043904b361fa886",
@@ -3132,7 +3278,8 @@
       "publication_date": "2023-09-21",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b4149005980a11919731e6b4c1833d8b0af59424",
@@ -3154,7 +3301,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e562c8ee825ed4e1b3ec4037f6e9e1194d355f07",
@@ -3174,7 +3322,8 @@
       "publication_date": "2023-09-18",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "06718e68bea215f2155bca2e08b70ad5d2aff62f",
@@ -3197,7 +3346,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1b0e8f3727f452d8ef13950ae61c631be8956306",
@@ -3218,7 +3368,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6f387d2d7c0a3afa73c7204cdbc8e49eed536de8",
@@ -3236,7 +3387,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
@@ -3253,7 +3405,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "406d4e8d2df6f6b58e65016fea31004f781d93e7",
@@ -3273,7 +3426,8 @@
       "publication_date": "2023-06-26",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4b99fb1fc7f60a16c4cc99a07d931fd79cf993e0",
@@ -3293,7 +3447,8 @@
       "publication_date": "2023-01-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "114c2f2cc2ab8a80a6229339a0c532ff4d59caed",
@@ -3317,7 +3472,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "45310a683fa761bbaa03ea9969fcf5bc7021624d",
@@ -3336,7 +3492,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bfb591f3ac857aa68fc63b2428c596790a96d2c3",
@@ -3358,7 +3515,8 @@
       "keywords_matched": [
         "model extraction",
         "DNN model stealing"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "80ce78d3e14dc3f29eb87bf98d52e56f3f61af72",
@@ -3382,7 +3540,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "fb1f43004e7878c2da6ab86fb7427058a8ddedf7",
@@ -3403,7 +3562,8 @@
       "publication_date": "2023-06-22",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "14b4aff027ccf8fde0b19ac60b8e653c621aff30",
@@ -3427,7 +3587,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c65feaf2681a5676204a43101edff4d897d37ffb",
@@ -3448,7 +3609,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "05ec4be7a3ec9dc2714f23f7921b31e3fece6c98",
@@ -3470,7 +3632,8 @@
       "publication_date": "2023-11-21",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6f682e862a230feffedbbd918deccc2425be09fb",
@@ -3490,7 +3653,8 @@
       "publication_date": "2023-10-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "51e6982bb24b76d018d96432e032703e7ea35ef4",
@@ -3510,7 +3674,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c1a2f4520dfd66119a07fd3e0754e4a9aecbc78f",
@@ -3534,7 +3699,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "148adb6df70218017aba770047cacb3c9e745411",
@@ -3555,7 +3721,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8ffd3bb7b0b26b33fd6f317052214e6e84dec291",
@@ -3576,7 +3743,8 @@
       "publication_date": "2023-10-12",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b885e291f660df34d9f22777dc0678bdf8e0860d",
@@ -3595,7 +3763,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3c103408ff825aad19d715edc01025a8c3fccdb4",
@@ -3615,7 +3784,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "aa4824feda684fd8d1cedb5361574cc4cff35d75",
@@ -3635,7 +3805,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4ae98576016b691dfda5a78d0a88d19e8ce15103",
@@ -3657,7 +3828,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7b6db013d28e72374f301f758f432545a92b22fb",
@@ -3679,7 +3851,8 @@
       "publication_date": "2023-11-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "aa4acbad4d6a3a8195d70c174564df752a5e1ba5",
@@ -3700,7 +3873,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "13f08d0ed26a48bb4fa16951e2dbbd87d0ba4797",
@@ -3721,7 +3895,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "faf8e2bc0cd3d33ca3c6fb80fc44d8832fa2cb1e",
@@ -3742,7 +3917,8 @@
       "publication_date": "2023-08-25",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "23faead2015ba1e36a2c0c535f987c0b36ba8534",
@@ -3764,7 +3940,8 @@
       "publication_date": "2023-12-10",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "18918a72fda197ea02671a13c49a95d6b95fc0f3",
@@ -3784,7 +3961,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "eca3d9bca53842a53b65594762397e583901c437",
@@ -3805,7 +3983,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2b805ba343b54c03ffc637cf9d80a65d68d7ddbd",
@@ -3824,7 +4003,8 @@
       "publication_date": "2023-10-28",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a0a7b1aabe2f14696b15bac592b0ad5743ef0b85",
@@ -3846,7 +4026,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8504a0c28bd68d820ba6e4e2102ee3e7ebf57df0",
@@ -3866,7 +4047,8 @@
       "publication_date": "2023-11-02",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "34bed407d65517ed2c8b98bab3a33da175677c59",
@@ -3887,7 +4069,8 @@
       "publication_date": "2023-02-23",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2fd52a3544dc0e3a480d12af01bb978c4d1a59fc",
@@ -3907,7 +4090,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "98ba77eb485e9d10c3f56baac5ff862f59fadbec",
@@ -3927,7 +4111,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3f7a77e8437be83b4cb2810f1de0a6e6b45fe6d7",
@@ -3948,7 +4133,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c2e1a7c575e0a10c5493b5390b4c6ce321c6cf8d",
@@ -3967,7 +4153,8 @@
       "publication_date": "2023-12-07",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1a2fd1461e9160246ed51190a455916bb9d48fb3",
@@ -3986,7 +4173,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1365039961e03ac532b63cf4dbd99bbe5352ec0a",
@@ -4008,7 +4196,8 @@
       "publication_date": "2023-05-23",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "252cc0c47b76f804a2e839773a90e7a389289695",
@@ -4029,29 +4218,8 @@
       "publication_date": "2023-10-29",
       "keywords_matched": [
         "model stealing (title)"
-      ]
-    },
-    {
-      "paper_id": "7d0593c25bcd11f26e8deaa97d18da3314f7af48",
-      "title": "Rethink before Releasing your Model: ML Model Extraction Attack in EDA",
-      "abstract": "Machine learning (ML)-based techniques for electronic design automation (EDA) have boosted the performance of modern integrated circuits (ICs). Such achievement makes ML model to be of importance for the EDA industry. In addition, ML models for EDA are widely considered having high development cost because of the time-consuming and complicated training data generation process. Thus, confidentiality protection for EDA models is a critical issue. However, an adversary could apply model extraction attacks to steal the model in the sense of achieving the comparable performance to the victim's model. As model extraction attacks have posed great threats to other application domains, e.g., computer vision and natural language process, in this paper, we study model extraction attacks for EDA models under two real-world scenarios. It is the first work that (1) introduces model extraction attacks on EDA models and (2) proposes two attack methods against the unlimited and limited query budget scenarios. Our results show that our approach can achieve competitive performance with the well-trained victim model without any performance degradation. Based on the results, we demonstrate that model extraction attacks truly threaten the EDA model privacy and hope to raise concerns about ML security issues in EDA.",
-      "year": 2023,
-      "venue": "Asia and South Pacific Design Automation Conference",
-      "authors": [
-        "Chen-Chia Chang",
-        "Jingyu Pan",
-        "Zhiyao Xie",
-        "Jiangkun Hu",
-        "Yiran Chen"
       ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/7d0593c25bcd11f26e8deaa97d18da3314f7af48",
-      "pdf_url": "https://doi.org/10.1145/3566097.3567896",
-      "publication_date": "2023-01-16",
-      "keywords_matched": [
-        "model extraction attack",
-        "model extraction"
-      ]
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c2a10426d91b95197f8489699026326bddb0eabc",
@@ -4075,7 +4243,31 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "7d0593c25bcd11f26e8deaa97d18da3314f7af48",
+      "title": "Rethink before Releasing your Model: ML Model Extraction Attack in EDA",
+      "abstract": "Machine learning (ML)-based techniques for electronic design automation (EDA) have boosted the performance of modern integrated circuits (ICs). Such achievement makes ML model to be of importance for the EDA industry. In addition, ML models for EDA are widely considered having high development cost because of the time-consuming and complicated training data generation process. Thus, confidentiality protection for EDA models is a critical issue. However, an adversary could apply model extraction attacks to steal the model in the sense of achieving the comparable performance to the victim's model. As model extraction attacks have posed great threats to other application domains, e.g., computer vision and natural language process, in this paper, we study model extraction attacks for EDA models under two real-world scenarios. It is the first work that (1) introduces model extraction attacks on EDA models and (2) proposes two attack methods against the unlimited and limited query budget scenarios. Our results show that our approach can achieve competitive performance with the well-trained victim model without any performance degradation. Based on the results, we demonstrate that model extraction attacks truly threaten the EDA model privacy and hope to raise concerns about ML security issues in EDA.",
+      "year": 2023,
+      "venue": "Asia and South Pacific Design Automation Conference",
+      "authors": [
+        "Chen-Chia Chang",
+        "Jingyu Pan",
+        "Zhiyao Xie",
+        "Jiangkun Hu",
+        "Yiran Chen"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/7d0593c25bcd11f26e8deaa97d18da3314f7af48",
+      "pdf_url": "https://doi.org/10.1145/3566097.3567896",
+      "publication_date": "2023-01-16",
+      "keywords_matched": [
+        "model extraction attack",
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0005c9691c8c299476d201d0a5a3c86b49593fac",
@@ -4097,7 +4289,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "72ddc601b9e6d8a0908ca49ab228fdb06ad50b79",
@@ -4116,7 +4309,8 @@
         "model stealing attack",
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "598acab0fdbf2a4c77e05e953498521a1a9f208f",
@@ -4135,7 +4329,8 @@
       "publication_date": "2023-12-21",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0d7139b54040b34c6a64187622f8b8038775ff45",
@@ -4156,7 +4351,8 @@
       "publication_date": "2023-05-09",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "725b22aeeb00baa7f9b4aed0f12f5183067ec1d8",
@@ -4175,7 +4371,8 @@
       "publication_date": "2023-05-30",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ad26add46cae7797de1d638b84a0fa4ad1743a60",
@@ -4195,7 +4392,8 @@
       "publication_date": "2023-08-04",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "378230eb80a097e2d19aaf0e91d2745c9513a25a",
@@ -4217,7 +4415,8 @@
       "publication_date": "2023-12-18",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e49363bd733bed0016e57170c31c7b3dc4dc1714",
@@ -4240,7 +4439,28 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "2cd2ba46e7b6195521d02606aac5e2cda751b271",
+      "title": "Efficient Model Extraction by Data Set Stealing, Balancing, and Filtering",
+      "abstract": "Model extraction replicates the functionality of machine learning models deployed as a service. Recently, generative adversarial networks (GANs)-based methods have achieved remarkable performance in data-free model extraction. However, previous methods generate random data in every training batch, resulting in slow convergence and redundant queries. We propose to tackle the task with a much simpler paradigm. Specifically, we steal a data set with GAN before training the clone model rather than during every training batch. Benefiting from full use of the generated data, the proposed paradigm needs less training time and query cost. To improve the class distribution of data, a balancing strategy is applied. Furthermore, the balanced data set is filtered based on adversarial robustness for better quality. Combining the above strategies, we propose an efficient model extraction by data set stealing, balancing, and filtering (DSBF). Experiments on three widely used data sets show that DSBF outperforms previous methods while converging faster and costing fewer queries.",
+      "year": 2023,
+      "venue": "IEEE Internet of Things Journal",
+      "authors": [
+        "Panpan Yang",
+        "Qinglong Wu",
+        "Xinming Zhang"
+      ],
+      "citation_count": 2,
+      "url": "https://www.semanticscholar.org/paper/2cd2ba46e7b6195521d02606aac5e2cda751b271",
+      "pdf_url": "",
+      "publication_date": "2023-12-15",
+      "keywords_matched": [
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "42a2e32a77ffa1ea1671c1543ee0a71164375305",
@@ -4260,26 +4480,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
-    },
-    {
-      "paper_id": "2cd2ba46e7b6195521d02606aac5e2cda751b271",
-      "title": "Efficient Model Extraction by Data Set Stealing, Balancing, and Filtering",
-      "abstract": "Model extraction replicates the functionality of machine learning models deployed as a service. Recently, generative adversarial networks (GANs)-based methods have achieved remarkable performance in data-free model extraction. However, previous methods generate random data in every training batch, resulting in slow convergence and redundant queries. We propose to tackle the task with a much simpler paradigm. Specifically, we steal a data set with GAN before training the clone model rather than during every training batch. Benefiting from full use of the generated data, the proposed paradigm needs less training time and query cost. To improve the class distribution of data, a balancing strategy is applied. Furthermore, the balanced data set is filtered based on adversarial robustness for better quality. Combining the above strategies, we propose an efficient model extraction by data set stealing, balancing, and filtering (DSBF). Experiments on three widely used data sets show that DSBF outperforms previous methods while converging faster and costing fewer queries.",
-      "year": 2023,
-      "venue": "IEEE Internet of Things Journal",
-      "authors": [
-        "Panpan Yang",
-        "Qinglong Wu",
-        "Xinming Zhang"
       ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/2cd2ba46e7b6195521d02606aac5e2cda751b271",
-      "pdf_url": "",
-      "publication_date": "2023-12-15",
-      "keywords_matched": [
-        "model extraction"
-      ]
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "23aef5016a8762544e9300e4aa43ceaafa6ee244",
@@ -4299,7 +4501,8 @@
       "publication_date": "2023-09-04",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8e5b27857ea5ede4927d6c673ef795cb23b59071",
@@ -4321,7 +4524,8 @@
       "publication_date": "2023-11-15",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4bda132d5df256a41326ca03d3b569bfe926734f",
@@ -4339,27 +4543,8 @@
       "publication_date": "2023-06-30",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
-    },
-    {
-      "paper_id": "2a87d871e849e270cda90057b709b35977f3d7d1",
-      "title": "Determination of Electromagnetic properties of Concrete Using Microwave Non-Destructive testing techniques and Arti\ufffdcial neural networks",
-      "abstract": null,
-      "year": 2023,
-      "venue": "",
-      "authors": [
-        "Madhuri Guntamukkala",
-        "G. Vidya",
-        "Venkat Lute",
-        "Parul Mathur"
       ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/2a87d871e849e270cda90057b709b35977f3d7d1",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "electromagnetic analysis (title)"
-      ]
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "897571a2c302fb6f243f91b35caa0a2159b255c8",
@@ -4379,7 +4564,29 @@
       "publication_date": "2023-03-07",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "2a87d871e849e270cda90057b709b35977f3d7d1",
+      "title": "Determination of Electromagnetic properties of Concrete Using Microwave Non-Destructive testing techniques and Arti\ufffdcial neural networks",
+      "abstract": null,
+      "year": 2023,
+      "venue": "",
+      "authors": [
+        "Madhuri Guntamukkala",
+        "G. Vidya",
+        "Venkat Lute",
+        "Parul Mathur"
+      ],
+      "citation_count": 2,
+      "url": "https://www.semanticscholar.org/paper/2a87d871e849e270cda90057b709b35977f3d7d1",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9cdce5c92985967c2bd34aacdd46b1490bf8565c",
@@ -4400,7 +4607,8 @@
       "publication_date": "2023-12-12",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3166f8c8e00f2cd9dc5a903009a4f50d176d9f8a",
@@ -4420,7 +4628,8 @@
       "publication_date": "2023-08-28",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9b1d486d20cb915ee42d19e556c3587298eec5d6",
@@ -4440,7 +4649,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ecb4dff5160be86c97f27d9be1c0b74472af127b",
@@ -4462,7 +4672,8 @@
       "publication_date": "2023-08-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8b50f09560108d2f79381e2f5ff9146a1079a29c",
@@ -4481,7 +4692,8 @@
       "publication_date": "2023-07-21",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ee761742bda631b619a728ba9819dbddc1922a3c",
@@ -4500,7 +4712,8 @@
       "publication_date": "2023-11-05",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d79a93189a8acc8306504ed20a48fec9934897d9",
@@ -4518,7 +4731,8 @@
       "publication_date": "2023-11-17",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7899de0fae6d036acce5ef82d6e6937008dd1758",
@@ -4537,7 +4751,8 @@
       "publication_date": "2023-10-29",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "82bf68c3e3aa8b2f8ccea0842e43cbe39a5b2dff",
@@ -4559,7 +4774,8 @@
       "publication_date": "2023-12-18",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3c26202058ff573620e70e340c9c8cafb2094678",
@@ -4580,7 +4796,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "78c6861c798e06b5651f45594eb6c8da43708e08",
@@ -4601,7 +4818,8 @@
       "publication_date": "2023-12-18",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f95c674b837576be6698eda1f6ef89cf2d8c37c4",
@@ -4621,7 +4839,8 @@
       "publication_date": "2023-08-16",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4612f541d3a548bc1b87e42b82e61d37bb8cd66b",
@@ -4641,7 +4860,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e0662b9113b25a29473a6f5083bc5e15c04abbad",
@@ -4662,7 +4882,8 @@
       "publication_date": "2023-10-27",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "71ba257fa70f6d8cc5485c5cd8026b8935211814",
@@ -4682,7 +4903,8 @@
       "publication_date": "2023-11-03",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4fc5f31a38a19e3acc9501aeb3006810eec0e767",
@@ -4702,7 +4924,8 @@
       "publication_date": "2022-12-03",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d405b58a8f465d5ba2e91f9541e09760904c11a8",
@@ -4722,7 +4945,8 @@
       "keywords_matched": [
         "model stealing attack",
         "stealing machine learning model"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "35ade8553de7259a5e8105bd20a160f045f9d112",
@@ -4741,7 +4965,8 @@
       "publication_date": "2022-04-23",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7da6c9273a14eb8681824d0c3ee84e05366c5627",
@@ -4762,7 +4987,8 @@
       "publication_date": "2022-01-19",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0a58e101142efdd9dd653b41d504152e940096be",
@@ -4781,7 +5007,8 @@
       "publication_date": "2022-10-21",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "274dbb98c63cdd282eb86b0338bdc3c5dfd9b904",
@@ -4805,7 +5032,8 @@
       "publication_date": "2022-09-16",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f3886b3c22675da54b0d55a5bc16754e3399c979",
@@ -4825,7 +5053,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2ee4127a2a6aab51a03305d8a564693181bc6424",
@@ -4846,7 +5075,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "af72f901d7a0f2edca55ee008c8893ae93b09971",
@@ -4866,7 +5096,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8bdb27ba98f457549bb7e03d6aa2d5c54a4de79e",
@@ -4888,7 +5119,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a4c748225360d89a6b03e1f277daddb64f429bcc",
@@ -4910,7 +5142,8 @@
       "publication_date": "2022-10-10",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "fa8e84e2091105083f3b697158073f8896c7fb4c",
@@ -4929,7 +5162,8 @@
       "publication_date": "2022-10-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "89f080275bf088de3140625d6ee7c4ffa7a368b9",
@@ -4948,7 +5182,8 @@
       "publication_date": "2022-05-15",
       "keywords_matched": [
         "power analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e8572d9722e992a770b7c00a8419dda17297a9da",
@@ -4970,7 +5205,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bb6cf8210bb8035e71557dfb45d0170d909ced1f",
@@ -4993,7 +5229,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "14df6adb35c1e13d69d9f8c61f12c07bd7294ecf",
@@ -5015,7 +5252,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0bdf3349040e5b803e8ca3a9c2cacbd9c840b747",
@@ -5037,7 +5275,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8b2fb5e135323f8c69f11515ea3aceec86e6b66e",
@@ -5059,7 +5298,8 @@
       "publication_date": "2022-03-14",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "83b9d7b9121ed02f7d75b294905cebe26938c6f7",
@@ -5080,7 +5320,8 @@
       "publication_date": "2022-12-15",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "33158daa5df8197872a06e415f2f277b026d9988",
@@ -5101,7 +5342,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4c57688fde64650fe767a2ba57341520595b5b13",
@@ -5121,7 +5363,8 @@
       "publication_date": "2022-11-10",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "44b068abddec3e0162670ca15ae1eeb2b247ee72",
@@ -5141,7 +5384,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8119ab9eb8974693705bde0fa074439da40fda96",
@@ -5160,7 +5404,8 @@
       "publication_date": "2022-03-18",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5639133170aa4f4a598994518d34a9b375494876",
@@ -5186,7 +5431,8 @@
       "publication_date": "2022-12-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a0a63d6c89b5925591da1384413d660a4a3e49a6",
@@ -5204,7 +5450,8 @@
       "publication_date": "2022-10-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "dba696ce4856d7fad6a51847a8997145050eb9c3",
@@ -5227,7 +5474,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "53bb321ffc1864f9ed3fc689085f8bed943971a3",
@@ -5248,7 +5496,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4908fdc1feff153269670f0f8aac837346042553",
@@ -5271,7 +5520,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d1e08aa5c411179d72cfb971767f53ce8b9ce4ff",
@@ -5291,7 +5541,8 @@
       "publication_date": "2022-02-20",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e0d3dbcc5819e70dd23deba8f0f00648fede12de",
@@ -5315,7 +5566,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8a435e15c39efebf6cad521c15fff50fcf7e0bfb",
@@ -5333,7 +5585,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "54d3e2764c3445c89fbaa9c684c5f5d03cb44254",
@@ -5357,7 +5610,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f74980d18e194246618eca55faad7858fe57d08c",
@@ -5380,7 +5634,8 @@
       "publication_date": "2022-12-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2a7c3ecb7a424480687b3fd1c6f4f0b0a04b100a",
@@ -5399,7 +5654,8 @@
       "publication_date": "2022-07-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "cf95400543d5018168d8949e1f08805c72b6c162",
@@ -5420,7 +5676,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1761a6879ea8d5224aabe0e63424042dc3d901d8",
@@ -5438,7 +5695,8 @@
       "publication_date": "2022-04-15",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c082d0fdc703fd06f99a93f4683416f987d335ff",
@@ -5458,7 +5716,8 @@
       "publication_date": "2022-05-16",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1e49811d8f55244c2cd7e657ba3cebc5e5ed6dd5",
@@ -5482,7 +5741,8 @@
       "publication_date": "2022-06-13",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "16b149e4472f863cfee5999644e37c216900cd01",
@@ -5502,7 +5762,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "35d3ac7a8a63d842a8a529a4897e3d7c2d4ec9ac",
@@ -5521,7 +5782,8 @@
       "publication_date": "2022-01-31",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b7c49323aaa05f3732d0c43767e659c39169f724",
@@ -5540,7 +5802,8 @@
       "publication_date": "2022-12-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6482f6bf11a3b1c6f9c9f1ceaeddfcbebd68262c",
@@ -5562,7 +5825,8 @@
       "publication_date": "2022-11-02",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "32d8e4dd6b800ba50d9224ae007707b345c7e711",
@@ -5584,7 +5848,8 @@
       "publication_date": null,
       "keywords_matched": [
         "power analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f1f33c9654649947d2dffb02c12fc36c5fd5116e",
@@ -5605,7 +5870,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3d62cb1d14a12b128e2d45b22b4239dd6417780a",
@@ -5626,7 +5892,8 @@
       "publication_date": "2022-06-29",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2841458166d23bd76abd8f2a03b8d57c99522d44",
@@ -5643,7 +5910,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f7b70da96899fdac65153e172e426c5b39d2bde5",
@@ -5664,7 +5932,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f85b3886ebcf8093cf5aefb797aa0ccbd5c8b767",
@@ -5682,7 +5951,8 @@
       "publication_date": "2022-12-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e3bc283af5746de4ede17c123d39e02e819edcab",
@@ -5701,7 +5971,8 @@
       "publication_date": "2022-06-27",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1921489a2801f053d0906079f0015ba6e68dd505",
@@ -5719,7 +5990,8 @@
       "publication_date": "2021-10-01",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "74f6e70fd9a945b517e6495920a1267c01842bd4",
@@ -5740,7 +6012,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "16a8e329c06b4c6f61762da7fa77a84bf3e12dca",
@@ -5760,7 +6033,8 @@
       "publication_date": "2021-03-18",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "45ea6495958f04c1f02de1741c952dac1154d4f4",
@@ -5779,7 +6053,8 @@
       "publication_date": "2021-08-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f2eb05b91e4fed91626c961372d7d189211aa552",
@@ -5799,7 +6074,8 @@
       "publication_date": "2021-07-20",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "864cf501b5c04bfcdc836a9cf1909a51ac1d2a99",
@@ -5819,7 +6095,8 @@
       "publication_date": "2021-09-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7026ec6c12f325aec884ff802812c3c80319f668",
@@ -5839,7 +6116,8 @@
       "publication_date": "2021-12-15",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "bfb6e56602b658fdabaaa66987ebf685a8139892",
@@ -5861,7 +6139,8 @@
       "publication_date": "2021-12-07",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "03df500a29fb8717662ea5626afd9e2b22b5d14c",
@@ -5882,7 +6161,8 @@
       "publication_date": "2021-02-17",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "cd709a11dfb2308b0d2ffc779261165e92c49e2b",
@@ -5904,7 +6184,8 @@
       "publication_date": "2021-11-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5beafcd6c0222a2f45863058280873c1ef088ec4",
@@ -5923,7 +6204,8 @@
       "publication_date": "2021-06-01",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f4847ab95c43b9d3c214d494ce3852473bf297e4",
@@ -5943,7 +6225,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "18da8b08b89646dc18d6734cac6d0222c9239cbf",
@@ -5965,7 +6248,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "57d5abaa047a0401874383628c646918527d4df2",
@@ -5988,7 +6272,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3b357acb6c807bc694372c773e507cdcef27d974",
@@ -6007,7 +6292,8 @@
       "publication_date": "2021-02-23",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "5179302656cf46cfbcc9cce2b70d4b0c758f7d7c",
@@ -6028,7 +6314,8 @@
       "publication_date": "2021-05-03",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d167f82f1f1bec0dd173fe3173053eebddae05b8",
@@ -6048,7 +6335,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a7f5460b2f2b1a215064e9a0669dd3d43a382af9",
@@ -6068,7 +6356,8 @@
         "model extraction attack",
         "stealing machine learning model",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "645e890034126dfc08484d3509b3493e85fbd603",
@@ -6089,7 +6378,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "aa6389843232b205bf6d494f00f2cfdeaa633cd8",
@@ -6109,7 +6399,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "cb47e5eafb9c57351aaab630b2307ff6d0c73188",
@@ -6130,7 +6421,8 @@
       "publication_date": "2021-02-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "13d626a08050930fbf1cb072938d9de87e742fee",
@@ -6151,7 +6443,8 @@
       "publication_date": "2021-05-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b408a5e1a60c3afd5954613516126b6c512a7804",
@@ -6170,7 +6463,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b2212da1f8c968a60f70227623678a41fb63c3cf",
@@ -6191,7 +6485,8 @@
       "publication_date": "2021-01-15",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0b498f9f76310da0ccb0cce7ae26ee1039769b89",
@@ -6209,7 +6504,8 @@
       "publication_date": "2021-11-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0242acadf4940cf94596b54f7fd6fb75af7bb20d",
@@ -6230,7 +6526,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c09eaf8e58fabd2371294b26a37376be960546a2",
@@ -6251,7 +6548,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0e7081f0f76faabda1f9c6497fc9a83b1c051c71",
@@ -6271,7 +6569,8 @@
       "publication_date": "2021-02-06",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "43c6ffef36a8acda9da688a0fca324abdb64498b",
@@ -6293,7 +6592,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2ce7526221d6f4c1ef3d9a745e147ba70678d857",
@@ -6312,7 +6612,8 @@
       "publication_date": "2021-12-17",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "373936d00c4a357579c4d375de0ce439e4e54d5f",
@@ -6333,7 +6634,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3813c369accb4b87b5882eec943511fe2e8b4767",
@@ -6353,7 +6655,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c092ed52816d6060929bbb40021dbfdc88ba28b7",
@@ -6374,7 +6677,8 @@
       "publication_date": "2021-12-15",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "25800c4599b2e834899a180d77e093fb9282d97e",
@@ -6395,7 +6699,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0d2e0d3c8fb930a9a577ec60152c219995cc6b10",
@@ -6414,7 +6719,8 @@
       "publication_date": "2021-01-13",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "0fb60c664408a7bf5b503a772449dd8ff8f57876",
@@ -6432,7 +6738,8 @@
       "publication_date": "2021-06-15",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "beaa48a90464b1d9df6d42566a42c7326cc75826",
@@ -6450,7 +6757,8 @@
       "publication_date": "2021-12-17",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6981af0aa5d7bee0c1f0c3c685824077140f6be1",
@@ -6475,7 +6783,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "73ac60e0f1fa8bbe7de599df66d2cbaef9a9b268",
@@ -6497,7 +6806,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "44cc3c0d5a80fecd1b6285c73f79986852135162",
@@ -6518,7 +6828,8 @@
       "publication_date": "2021-10-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "130ce87d6141db6954d50d43b402583f7682ead8",
@@ -6538,28 +6849,8 @@
       "publication_date": "2021-12-04",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
-    },
-    {
-      "paper_id": "87af159e1eaa99d17b9b6aff6781f2342e8ff385",
-      "title": "Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Models",
-      "abstract": "Machine learning models are typically made available to potential client users via inference APIs. Model extraction attacks occur when a malicious client uses information gleaned from queries to the inference API of a victim model $F_V$ to build a surrogate model $F_A$ with comparable functionality. Recent research has shown successful model extraction of image classification, and natural language processing models. In this paper, we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models. We present a framework for conducting such attacks, and show that an adversary can successfully extract functional surrogate models by querying $F_V$ using data from the same domain as the training data for $F_V$. The adversary need not know $F_V$'s architecture or any other information about it beyond its intended task. We evaluate the effectiveness of our attacks using three different instances of two popular categories of image translation: (1) Selfie-to-Anime and (2) Monet-to-Photo (image style transfer), and (3) Super-Resolution (super resolution). Using standard performance metrics for GANs, we show that our attacks are effective. Furthermore, we conducted a large scale (125 participants) user study on Selfie-to-Anime and Monet-to-Photo to show that human perception of the images produced by $F_V$ and $F_A$ can be considered equivalent, within an equivalence bound of Cohen's d = 0.3. Finally, we show that existing defenses against model extraction attacks (watermarking, adversarial examples, poisoning) do not extend to image translation models.",
-      "year": 2021,
-      "venue": "",
-      "authors": [
-        "Sebastian Szyller",
-        "Vasisht Duddu",
-        "Tommi Grondahl",
-        "Nirmal Asokan"
       ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/87af159e1eaa99d17b9b6aff6781f2342e8ff385",
-      "pdf_url": "",
-      "publication_date": "2021-04-26",
-      "keywords_matched": [
-        "model extraction attack",
-        "model extraction"
-      ]
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8283479256ea1d54d98ed00bb53caba38f2f688e",
@@ -6580,7 +6871,30 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "87af159e1eaa99d17b9b6aff6781f2342e8ff385",
+      "title": "Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Models",
+      "abstract": "Machine learning models are typically made available to potential client users via inference APIs. Model extraction attacks occur when a malicious client uses information gleaned from queries to the inference API of a victim model $F_V$ to build a surrogate model $F_A$ with comparable functionality. Recent research has shown successful model extraction of image classification, and natural language processing models. In this paper, we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models. We present a framework for conducting such attacks, and show that an adversary can successfully extract functional surrogate models by querying $F_V$ using data from the same domain as the training data for $F_V$. The adversary need not know $F_V$'s architecture or any other information about it beyond its intended task. We evaluate the effectiveness of our attacks using three different instances of two popular categories of image translation: (1) Selfie-to-Anime and (2) Monet-to-Photo (image style transfer), and (3) Super-Resolution (super resolution). Using standard performance metrics for GANs, we show that our attacks are effective. Furthermore, we conducted a large scale (125 participants) user study on Selfie-to-Anime and Monet-to-Photo to show that human perception of the images produced by $F_V$ and $F_A$ can be considered equivalent, within an equivalence bound of Cohen's d = 0.3. Finally, we show that existing defenses against model extraction attacks (watermarking, adversarial examples, poisoning) do not extend to image translation models.",
+      "year": 2021,
+      "venue": "",
+      "authors": [
+        "Sebastian Szyller",
+        "Vasisht Duddu",
+        "Tommi Grondahl",
+        "Nirmal Asokan"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/87af159e1eaa99d17b9b6aff6781f2342e8ff385",
+      "pdf_url": "",
+      "publication_date": "2021-04-26",
+      "keywords_matched": [
+        "model extraction attack",
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "89e225f6d755599d14d25580315d60725977ca62",
@@ -6599,7 +6913,8 @@
       "publication_date": "2021-05-23",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "46582b5600668089180542b725a2868692bcce87",
@@ -6619,7 +6934,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6ac1497696276d63b01b4589eadc4cdbfe50f827",
@@ -6637,7 +6953,8 @@
       "publication_date": "2021-12-01",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "37454d318bd3300a96db6f61164d19c46e117e36",
@@ -6655,7 +6972,8 @@
       "publication_date": "2021-04-02",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1759582a0b818cdb05dabdb8cb5349230011dcaa",
@@ -6677,7 +6995,8 @@
       "publication_date": "2021-10-13",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b9f14b52cf9c01e651a4c8e9b04344e9c3929ddc",
@@ -6694,7 +7013,27 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "bf617161968220f3c48751aa68ccc38df0961f0e",
+      "title": "CNN-based Tree Model Extraction",
+      "abstract": "We propose a method for the segmentation and structural reconstruction of tree stems and branches in cluttered environments. We use single images of monocular cameras and convolutional neural networks for the segmentation, centerline, and contour detection of trees (trunks and branches), and a deterministic approach to build tree model graphs, defining the positions of vertices and edges, on the points of segments' centerlines. Compared to previous stochastic methods, this approach, tested on a synthetic dataset, gives better segmentation accuracy with a significantly smaller computational complexity.",
+      "year": 2021,
+      "venue": "International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications",
+      "authors": [
+        "K. Alaya",
+        "L. Cz\u00fani"
+      ],
+      "citation_count": 0,
+      "url": "https://www.semanticscholar.org/paper/bf617161968220f3c48751aa68ccc38df0961f0e",
+      "pdf_url": "",
+      "publication_date": "2021-09-22",
+      "keywords_matched": [
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "abbb0fd559ade70265f4f528df094fbbd8ae2040",
@@ -6714,7 +7053,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4d548fd21aad60e3052455e22b7a57cc1f06e3c3",
@@ -6736,7 +7076,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d5ffa58133940646d1339c2610cb35f27442e0d3",
@@ -6755,7 +7096,8 @@
       "publication_date": "2020-05-06",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "109ad71af2ffce01b60852f8141ea91be6eed9e1",
@@ -6782,7 +7124,8 @@
       "publication_date": "2020-03-09",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "186377b9098efc726b8f1bda7e4f8aa2ed7bafa5",
@@ -6801,7 +7144,8 @@
       "publication_date": "2020-03-10",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d8f64187b447d1b64f69f541dbbaec71bd79d205",
@@ -6824,7 +7168,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7a3d5f1887fa908a5df303f37ec4450998caafac",
@@ -6845,7 +7190,8 @@
       "publication_date": "2020-12-07",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d0d8c912b20d2d081672f07b6926b620950a39c8",
@@ -6866,7 +7212,8 @@
       "publication_date": "2020-06-01",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ab9f91fe93b59bf44811e6fc1fcdf1b61cf9a5c9",
@@ -6887,7 +7234,8 @@
       "publication_date": "2020-10-25",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "935c1f02735f02a0d86443cec8b9fc33d98a627c",
@@ -6907,7 +7255,8 @@
       "publication_date": "2020-08-04",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7ea18b512074acc10d6a4025cb479955ba295f2d",
@@ -6928,7 +7277,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d4a679c685de885ab98b7c1f2378e26a255de490",
@@ -6950,7 +7300,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "983f1e19ba55aa97bd20086ca7ad5cf4e436a37a",
@@ -6970,7 +7321,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a7abac76ec8aea31ee595af45d733bd462d7f35b",
@@ -6991,7 +7343,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8765853a2d7027dfe91d650462d7431552bd7315",
@@ -7012,7 +7365,8 @@
       "publication_date": "2020-09-21",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "1f53fe2f4458bde77735482552dc6818ae5eb30f",
@@ -7030,7 +7384,8 @@
       "publication_date": "2020-11-09",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "729fbe386e31e36ed5108ee276a6db223176a33d",
@@ -7054,7 +7409,8 @@
       "publication_date": "2020-11-09",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "db3f6b0581d2cc23756e3fec1076a4399e97a0d8",
@@ -7074,7 +7430,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9b0758a89df635cded669bc5f9e3b9e2fa93d093",
@@ -7098,7 +7455,8 @@
       "publication_date": "2020-05-04",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "634d65bba4efc94b17dcc4a60fd0bb2de29ac2c4",
@@ -7117,7 +7475,8 @@
       "publication_date": "2020-04-16",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c774bb2b6cb1108773a0e86aff0fc00003c7397a",
@@ -7137,7 +7496,8 @@
       "publication_date": "2020-10-11",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "92c6a2f7e178337fb99c695ae856b9377e8e72a5",
@@ -7157,7 +7517,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "31bfc3d4c51534a0c27ea9928423c53deb1ff9f0",
@@ -7177,7 +7538,8 @@
       "publication_date": "2020-12-13",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "03a0a36bc355e71e758285da4fc7c89948c41997",
@@ -7201,7 +7563,8 @@
       "publication_date": "2020-09-18",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "c9c7498580d105ebac92ed80ec6698bb6dbeb76f",
@@ -7221,7 +7584,8 @@
       "publication_date": "2020-10-19",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7282e208d9063a460ad0306103a76557387322f6",
@@ -7244,7 +7608,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "57099cf852807c652fd55274a3ce4a8c9777ef56",
@@ -7266,7 +7631,8 @@
       "publication_date": "2020-11-26",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f9f49997c404e386610289202a7c3812c6cbfe34",
@@ -7287,7 +7653,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "82e2e111d2a81fe8efaabec44b5d7d3c74cfa95d",
@@ -7309,7 +7676,8 @@
       "publication_date": "2020-07-01",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ebfeaa0e142b697d8fde00caa4f0b459a988e2ca",
@@ -7330,7 +7698,8 @@
       "keywords_matched": [
         "model stealing attack",
         "model stealing defense"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "9356a216e5ae48c0007b66687a3da47fc2bea834",
@@ -7347,7 +7716,8 @@
       "publication_date": "2020-05-12",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b97bc90c7106b6c44ffaa0c0ce81a67134524e89",
@@ -7368,7 +7738,8 @@
       "publication_date": "2020-05-28",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a2923ace209e6193effa49a5c254b29d77b2ee0d",
@@ -7387,7 +7758,8 @@
       "publication_date": "2020-02-23",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d6a0da1403eb183a24541ac5636eb7a44223b7dc",
@@ -7408,7 +7780,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "550ae0ee2a43d419ea92b899505b96a64eaa213e",
@@ -7427,7 +7800,8 @@
       "publication_date": "2020-12-04",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "30d6ef1b7d590094b62f38e97603122f65aa0d09",
@@ -7442,7 +7816,8 @@
       "publication_date": "2020-02-06",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "91ffcaa35fd6690ff799298aa75bf9a42199a834",
@@ -7464,7 +7839,8 @@
       "publication_date": "2020-10-23",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ac713aebdcc06f15f8ea61e1140bb360341fdf27",
@@ -7485,7 +7861,8 @@
       "publication_date": "2019-10-27",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "da10f79f983fd4fbd589ed7ffa68d33964841443",
@@ -7505,7 +7882,8 @@
       "keywords_matched": [
         "model stealing attack",
         "DNN model stealing"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e6c55623cf56a70659e612eb6a741a4de7545ba7",
@@ -7523,7 +7901,8 @@
       "publication_date": "2019-11-16",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "555b847ee9c39c12d5764f4e11b888b331a89cfb",
@@ -7543,7 +7922,8 @@
       "publication_date": "2019-05-19",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "6854c4c8dfca1de802f2662db62deb7ba2bc10b2",
@@ -7562,7 +7942,8 @@
       "publication_date": "2019-10-29",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8bedaca9ebb1d055046643802683d013fd1b2da9",
@@ -7584,7 +7965,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "304ac5d62f2888e94078715413c40cf00b58ac4f",
@@ -7604,7 +7986,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7542385f3672cfee43adc964a90efb0b19f6b9fa",
@@ -7623,7 +8006,8 @@
       "publication_date": "2019-08-12",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b2fc15dcd0f223b06be7195fee16364c260433fa",
@@ -7647,7 +8031,8 @@
       "publication_date": "2019-05-16",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "703f6008899db58f8c2bf454f6e146efb1df38e3",
@@ -7670,7 +8055,8 @@
         "model extraction attack",
         "model extraction",
         "knockoff nets"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e36c9f2c5c4791cf504760988de33b39a013373f",
@@ -7697,7 +8083,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ce90e2faf697bff599ea8cac9dd47bda9911abf4",
@@ -7716,7 +8103,8 @@
       "publication_date": "2019-01-09",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "abcad78d2dba846e7c02ab853f86fbb258ad9952",
@@ -7736,7 +8124,8 @@
       "publication_date": "2019-01-09",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "b82d52b95040c0682b7a8baa9254eae79b068505",
@@ -7754,7 +8143,8 @@
       "publication_date": "2019-12-16",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e8a58e29056a1db21dd8cf5bcb17eaf4db648aaf",
@@ -7773,7 +8163,8 @@
       "publication_date": "2019-06-26",
       "keywords_matched": [
         "model stealing attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "ec2de6ca1857b6ec36f8aba1b940281d6f0a6246",
@@ -7792,7 +8183,8 @@
       "publication_date": "2019-11-14",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a8a80de402cef8a41a85e1220e24818fc010e6f8",
@@ -7811,7 +8203,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7488bd1a98fd5d366a9076287e014321bbb17674",
@@ -7830,7 +8223,8 @@
       "publication_date": "2019-04-26",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a391a74b82dbb86b120c78976f21546c08d7116e",
@@ -7850,7 +8244,8 @@
       "publication_date": "2019-10-01",
       "keywords_matched": [
         "DNN weights leakage (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "089c6224cfbcf5c18b63564eb65001c7c42a7acf",
@@ -7869,7 +8264,8 @@
       "publication_date": "2018-12-06",
       "keywords_matched": [
         "knockoff nets"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4582e2350e4822834dcf266522690722dd4430d4",
@@ -7893,7 +8289,8 @@
         "model extraction attack",
         "model extraction",
         "DNN model stealing"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "669a04d8bbf8d530a8d6e1900f8b63dd906b4050",
@@ -7914,7 +8311,8 @@
       "publication_date": "2018-03-05",
       "keywords_matched": [
         "side-channel attack (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "35c863e151e47b6dbf6356e9a1abaa2a0eeab3fc",
@@ -7936,7 +8334,8 @@
       "keywords_matched": [
         "model extraction attack",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "f5014e34ed13191082cd20cc279ca4cc9adee84f",
@@ -7956,7 +8355,29 @@
       "publication_date": "2018-12-31",
       "keywords_matched": [
         "neural network extraction attack"
-      ]
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "42155d5c8c6e46ef26a0d7212123128a364b07a0",
+      "title": "Defending Against Model Stealing Attacks Using Deceptive Perturbations",
+      "abstract": null,
+      "year": 2018,
+      "venue": "arXiv.org",
+      "authors": [
+        "Taesung Lee",
+        "Ben Edwards",
+        "Ian Molloy",
+        "D. Su"
+      ],
+      "citation_count": 45,
+      "url": "https://www.semanticscholar.org/paper/42155d5c8c6e46ef26a0d7212123128a364b07a0",
+      "pdf_url": "",
+      "publication_date": "2018-05-31",
+      "keywords_matched": [
+        "model stealing attack"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e003d8021ba35b842fc75c5b854d37f82db91ed5",
@@ -7976,7 +8397,8 @@
       "publication_date": "2018-09-21",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "2cb2f7c824a089422ac210b3f77d2e078b017f66",
@@ -7997,7 +8419,8 @@
       "publication_date": "2018-11-05",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "7e7157625088e62582f45409cb1704844ddb5535",
@@ -8018,7 +8441,8 @@
       "publication_date": "2018-06-20",
       "keywords_matched": [
         "model stealing (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "93ee45cc18b168f4e51481f9b95516d9556e8cef",
@@ -8038,7 +8462,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "68564f11e79c19195d0e82854a0aa156d7764922",
@@ -8057,7 +8482,8 @@
       "publication_date": "2017-05-23",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "181fe8787937dbf7abf886042855be1bc6149f80",
@@ -8077,7 +8503,8 @@
       "publication_date": "2017-11-20",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "a9007cf4c4ec7e4fc956bead7008a3605451de49",
@@ -8096,7 +8523,8 @@
       "publication_date": "2017-06-29",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "090b9f33bf878f7630e7715c1cd2897df6d89fbd",
@@ -8114,7 +8542,8 @@
       "publication_date": "2017-05-20",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8d1192d8f79827f00fa3efe392e5b4a165f5ef8d",
@@ -8134,7 +8563,8 @@
       "publication_date": null,
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "963098553570745043ba198ffb12996f1a17ab95",
@@ -8153,7 +8583,8 @@
       "publication_date": "2017-03-14",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
@@ -8176,7 +8607,8 @@
         "model extraction attack",
         "stealing machine learning model",
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4bcd67d7dd2f5fd18986c8c28f254e9a36af6fe7",
@@ -8195,7 +8627,8 @@
       "publication_date": "2016-03-12",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "3547c3fefa6bfdf07b71893a7d2894189e397529",
@@ -8216,7 +8649,8 @@
       "publication_date": "2016-07-15",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "185f579ac2b43f7adba2b7ccf5a429052bf062f1",
@@ -8234,7 +8668,8 @@
       "publication_date": "2015-07-09",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "41b409788d637d25b28fced1411ecc80a5b46b29",
@@ -8254,7 +8689,8 @@
       "publication_date": null,
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "62835b529bce481e0e51128463c4176a087c9cdc",
@@ -8274,7 +8710,8 @@
       "publication_date": "2015-05-17",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "58341bdbc16d5b0f4624e1109c670b74a1268421",
@@ -8297,7 +8734,8 @@
       "publication_date": "2015-08-14",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "be73148fe884f5e824cffb5046781524eb6a602e",
@@ -8314,7 +8752,8 @@
       "publication_date": "2015-03-16",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "605e8d2f41607c531a632ed928bc3997ea016567",
@@ -8332,7 +8771,8 @@
       "publication_date": "2014-09-19",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "25d378877b59eb00f838f277fb4cb4529c9b0153",
@@ -8350,7 +8790,8 @@
       "publication_date": "2014-11-13",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "d84c0d4dbab81757490213742b1e75dc258bd3ba",
@@ -8372,7 +8813,8 @@
       "publication_date": "2013-08-18",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "e9c3fad3993b9942cc0523e6d064fe3d420ff07e",
@@ -8390,7 +8832,8 @@
       "publication_date": "2013-11-01",
       "keywords_matched": [
         "model extraction"
-      ]
+      ],
+      "first_seen": "2025-11-28"
     }
   ]
 }
