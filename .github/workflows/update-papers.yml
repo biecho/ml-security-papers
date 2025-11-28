@@ -1,0 +1,32 @@
+name: Update Papers
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Every 12 hours
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch papers
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: python fetch_papers.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "biecho"
+          git config user.email "biecho@users.noreply.github.com"
+          git add papers.json
+          git diff --staged --quiet || git commit -m "Update papers"
+          git push
