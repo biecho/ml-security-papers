@@ -1,6 +1,6 @@
 {
-  "updated": "2025-11-28",
-  "total": 405,
+  "updated": "2025-11-29",
+  "total": 406,
   "keywords": [
     "model stealing attack",
     "model extraction attack",
@@ -3361,7 +3361,7 @@
         "Changjiang Li",
         "Ting Wang"
       ],
-      "citation_count": 21,
+      "citation_count": 22,
       "url": "https://www.semanticscholar.org/paper/1b0e8f3727f452d8ef13950ae61c631be8956306",
       "pdf_url": "https://arxiv.org/pdf/2312.05386",
       "publication_date": "2023-12-08",
@@ -5156,7 +5156,7 @@
         "Masashi Tawada",
         "N. Togawa"
       ],
-      "citation_count": 25,
+      "citation_count": 26,
       "url": "https://www.semanticscholar.org/paper/fa8e84e2091105083f3b697158073f8896c7fb4c",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/12/9880482/09664360.pdf",
       "publication_date": "2022-10-01",
@@ -6005,7 +6005,7 @@
         "Fan Yao",
         "Deliang Fan"
       ],
-      "citation_count": 136,
+      "citation_count": 137,
       "url": "https://www.semanticscholar.org/paper/74f6e70fd9a945b517e6495920a1267c01842bd4",
       "pdf_url": "http://arxiv.org/pdf/2111.04625",
       "publication_date": "2021-11-08",
@@ -7046,7 +7046,7 @@
         "Christopher A. Choquette-Choo",
         "Nicolas Papernot"
       ],
-      "citation_count": 258,
+      "citation_count": 259,
       "url": "https://www.semanticscholar.org/paper/abbb0fd559ade70265f4f528df094fbbd8ae2040",
       "pdf_url": "",
       "publication_date": "2020-02-27",
@@ -7855,7 +7855,7 @@
         "Nicolas Papernot",
         "Mohit Iyyer"
       ],
-      "citation_count": 224,
+      "citation_count": 225,
       "url": "https://www.semanticscholar.org/paper/ac713aebdcc06f15f8ea61e1140bb360341fdf27",
       "pdf_url": "",
       "publication_date": "2019-10-27",
@@ -8167,6 +8167,26 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "0135f83ab34d66668306b2ad8207d028da2539e4",
+      "title": "MimosaNet: An Unrobust Neural Network Preventing Model Stealing",
+      "abstract": "Deep Neural Networks are robust to minor perturbations of the learned network parameters and their minor modifications do not change the overall network response significantly. This allows space for model stealing, where a malevolent attacker can steal an already trained network, modify the weights and claim the new network his own intellectual property. In certain cases this can prevent the free distribution and application of networks in the embedded domain. In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes.",
+      "year": 2019,
+      "venue": "arXiv.org",
+      "authors": [
+        "K\u00e1lm\u00e1n Szentannai",
+        "Jalal Al-Afandi",
+        "A. Horv\u00e1th"
+      ],
+      "citation_count": 12,
+      "url": "https://www.semanticscholar.org/paper/0135f83ab34d66668306b2ad8207d028da2539e4",
+      "pdf_url": "",
+      "publication_date": "2019-07-02",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-29"
+    },
+    {
       "paper_id": "ec2de6ca1857b6ec36f8aba1b940281d6f0a6246",
       "title": "The Feasibility of Deep Learning Use for Adversarial Model Extraction in the Cybersecurity Domain",
       "abstract": null,
@@ -8258,7 +8278,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 585,
+      "citation_count": 587,
       "url": "https://www.semanticscholar.org/paper/089c6224cfbcf5c18b63564eb65001c7c42a7acf",
       "pdf_url": "http://arxiv.org/pdf/1812.02766",
       "publication_date": "2018-12-06",
@@ -8599,7 +8619,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1945,
+      "citation_count": 1946,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
