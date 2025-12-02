@@ -1,6 +1,6 @@
 {
-  "updated": "2025-12-01",
-  "total": 406,
+  "updated": "2025-12-02",
+  "total": 407,
   "keywords": [
     "model stealing attack",
     "model extraction attack",
@@ -242,28 +242,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "b31459472aa34e8711fe845acaab9b7b4a74f1d8",
-      "title": "Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks",
-      "abstract": "Graph Neural Networks (GNNs), specifically designed to process the graph data, have achieved remarkable success in various applications. Link stealing attacks on graph data pose a significant privacy threat, as attackers aim to extract sensitive relationships between nodes (entities), potentially leading to academic misconduct, fraudulent transactions, or other malicious activities. Previous studies have primarily focused on single datasets and did not explore cross-dataset attacks, let alone attacks that leverage the combined knowledge of multiple attackers. However, we find that an attacker can combine the data knowledge of multiple attackers to create a more effective attack model, which can be referred to cross-dataset attacks. Moreover, if knowledge can be extracted with the help of Large Language Models (LLMs), the attack capability will be more significant. In this paper, we propose a novel link stealing attack method that takes advantage of cross-dataset and LLMs. The LLM is applied to process datasets with different data structures in cross-dataset attacks. Each attacker fine-tunes the LLM on their specific dataset to generate a tailored attack model. We then introduce a novel model merging method to integrate the parameters of these attacker-specific models effectively. The result is a merged attack model with superior generalization capabilities, enabling effective attacks not only on the attackers\u2019 datasets but also on previously unseen (out-of-domain) datasets. We conducted extensive experiments in four datasets to demonstrate the effectiveness of our method. Additional experiments with three different GNN and LLM architectures further illustrate the generality of our approach. In summary, we present a new link stealing attack method that facilitates collaboration among multiple attackers to develop a powerful, universal attack model that reflects realistic real-world scenarios.",
-      "year": 2025,
-      "venue": "IEEE Transactions on Dependable and Secure Computing",
-      "authors": [
-        "Faqian Guan",
-        "Tianqing Zhu",
-        "Wenhan Chang",
-        "Wei Ren",
-        "Wanlei Zhou"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/b31459472aa34e8711fe845acaab9b7b4a74f1d8",
-      "pdf_url": "",
-      "publication_date": "2025-11-01",
-      "keywords_matched": [
-        "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
       "paper_id": "0c72a0508a3f3944660e786e83a7f4d56c50ecf1",
       "title": "Towards Effective Prompt Stealing Attack against Text-to-Image Diffusion Models",
       "abstract": "Text-to-Image (T2I) models, represented by DALL$\\cdot$E and Midjourney, have gained huge popularity for creating realistic images. The quality of these images relies on the carefully engineered prompts, which have become valuable intellectual property. While skilled prompters showcase their AI-generated art on markets to attract buyers, this business incidentally exposes them to \\textit{prompt stealing attacks}. Existing state-of-the-art attack techniques reconstruct the prompts from a fixed set of modifiers (i.e., style descriptions) with model-specific training, which exhibit restricted adaptability and effectiveness to diverse showcases (i.e., target images) and diffusion models. To alleviate these limitations, we propose Prometheus, a training-free, proxy-in-the-loop, search-based prompt-stealing attack, which reverse-engineers the valuable prompts of the showcases by interacting with a local proxy model. It consists of three innovative designs. First, we introduce dynamic modifiers, as a supplement to static modifiers used in prior works. These dynamic modifiers provide more details specific to the showcases, and we exploit NLP analysis to generate them on the fly. Second, we design a contextual matching algorithm to sort both dynamic and static modifiers. This offline process helps reduce the search space of the subsequent step. Third, we interact with a local proxy model to invert the prompts with a greedy search algorithm. Based on the feedback guidance, we refine the prompt to achieve higher fidelity. The evaluation results show that Prometheus successfully extracts prompts from popular platforms like PromptBase and AIFrog against diverse victim models, including Midjourney, Leonardo.ai, and DALL$\\cdot$E, with an ASR improvement of 25.0\\%. We also validate that Prometheus is resistant to extensive potential defenses, further highlighting its severity in practice.",
@@ -281,10 +259,32 @@
         "Jie Zhang",
         "Tianwei Zhang"
       ],
-      "citation_count": 2,
+      "citation_count": 3,
       "url": "https://www.semanticscholar.org/paper/0c72a0508a3f3944660e786e83a7f4d56c50ecf1",
       "pdf_url": "",
       "publication_date": "2025-08-09",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "b31459472aa34e8711fe845acaab9b7b4a74f1d8",
+      "title": "Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks",
+      "abstract": "Graph Neural Networks (GNNs), specifically designed to process the graph data, have achieved remarkable success in various applications. Link stealing attacks on graph data pose a significant privacy threat, as attackers aim to extract sensitive relationships between nodes (entities), potentially leading to academic misconduct, fraudulent transactions, or other malicious activities. Previous studies have primarily focused on single datasets and did not explore cross-dataset attacks, let alone attacks that leverage the combined knowledge of multiple attackers. However, we find that an attacker can combine the data knowledge of multiple attackers to create a more effective attack model, which can be referred to cross-dataset attacks. Moreover, if knowledge can be extracted with the help of Large Language Models (LLMs), the attack capability will be more significant. In this paper, we propose a novel link stealing attack method that takes advantage of cross-dataset and LLMs. The LLM is applied to process datasets with different data structures in cross-dataset attacks. Each attacker fine-tunes the LLM on their specific dataset to generate a tailored attack model. We then introduce a novel model merging method to integrate the parameters of these attacker-specific models effectively. The result is a merged attack model with superior generalization capabilities, enabling effective attacks not only on the attackers\u2019 datasets but also on previously unseen (out-of-domain) datasets. We conducted extensive experiments in four datasets to demonstrate the effectiveness of our method. Additional experiments with three different GNN and LLM architectures further illustrate the generality of our approach. In summary, we present a new link stealing attack method that facilitates collaboration among multiple attackers to develop a powerful, universal attack model that reflects realistic real-world scenarios.",
+      "year": 2025,
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "authors": [
+        "Faqian Guan",
+        "Tianqing Zhu",
+        "Wenhan Chang",
+        "Wei Ren",
+        "Wanlei Zhou"
+      ],
+      "citation_count": 2,
+      "url": "https://www.semanticscholar.org/paper/b31459472aa34e8711fe845acaab9b7b4a74f1d8",
+      "pdf_url": "",
+      "publication_date": "2025-11-01",
       "keywords_matched": [
         "model stealing (title)"
       ],
@@ -1147,6 +1147,30 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "0a56e4103911d723020bb99bf63f5bb452b236e9",
+      "title": "PROMPTMINER: Black-Box Prompt Stealing against Text-to-Image Generative Models via Reinforcement Learning and Fuzz Optimization",
+      "abstract": "Text-to-image (T2I) generative models such as Stable Diffusion and FLUX can synthesize realistic, high-quality images directly from textual prompts. The resulting image quality depends critically on well-crafted prompts that specify both subjects and stylistic modifiers, which have become valuable digital assets. However, the rising value and ubiquity of high-quality prompts expose them to security and intellectual-property risks. One key threat is the prompt stealing attack, i.e., the task of recovering the textual prompt that generated a given image. Prompt stealing enables unauthorized extraction and reuse of carefully engineered prompts, yet it can also support beneficial applications such as data attribution, model provenance analysis, and watermarking validation. Existing approaches often assume white-box gradient access, require large-scale labeled datasets for supervised training, or rely solely on captioning without explicit optimization, limiting their practicality and adaptability. To address these challenges, we propose PROMPTMINER, a black-box prompt stealing framework that decouples the task into two phases: (1) a reinforcement learning-based optimization phase to reconstruct the primary subject, and (2) a fuzzing-driven search phase to recover stylistic modifiers. Experiments across multiple datasets and diffusion backbones demonstrate that PROMPTMINER achieves superior results, with CLIP similarity up to 0.958 and textual alignment with SBERT up to 0.751, surpassing all baselines. Even when applied to in-the-wild images with unknown generators, it outperforms the strongest baseline by 7.5 percent in CLIP similarity, demonstrating better generalization. Finally, PROMPTMINER maintains strong performance under defensive perturbations, highlighting remarkable robustness. Code: https://github.com/aaFrostnova/PromptMiner",
+      "year": 2025,
+      "venue": "",
+      "authors": [
+        "Mingzhe Li",
+        "Renhao Zhang",
+        "Zhiyang Wen",
+        "Siqi Pan",
+        "Bruno Castro da Silva",
+        "Juan Zhai",
+        "Shiqing Ma"
+      ],
+      "citation_count": 0,
+      "url": "https://www.semanticscholar.org/paper/0a56e4103911d723020bb99bf63f5bb452b236e9",
+      "pdf_url": "",
+      "publication_date": "2025-11-27",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-12-02"
+    },
+    {
       "paper_id": "b232f468de0b1d4ff1c2dfe5dbb03ec093160c48",
       "title": "Stealing Part of a Production Language Model",
       "abstract": "We introduce the first model-stealing attack that extracts precise, nontrivial information from black-box production language models like OpenAI's ChatGPT or Google's PaLM-2. Specifically, our attack recovers the embedding projection layer (up to symmetries) of a transformer model, given typical API access. For under \\$20 USD, our attack extracts the entire projection matrix of OpenAI's Ada and Babbage language models. We thereby confirm, for the first time, that these black-box models have a hidden dimension of 1024 and 2048, respectively. We also recover the exact hidden dimension size of the gpt-3.5-turbo model, and estimate it would cost under $2,000 in queries to recover the entire projection matrix. We conclude with potential defenses and mitigations, and discuss the implications of possible future work that could extend our attack.",
@@ -1346,7 +1370,7 @@
         "Yiran Chen",
         "Helen Li"
       ],
-      "citation_count": 20,
+      "citation_count": 21,
       "url": "https://www.semanticscholar.org/paper/650f6db095276ca03d03f4951587d7383ca3b39d",
       "pdf_url": "",
       "publication_date": null,
@@ -1422,7 +1446,7 @@
         "Pan Li",
         "Yingjun Zhang"
       ],
-      "citation_count": 13,
+      "citation_count": 14,
       "url": "https://www.semanticscholar.org/paper/14b7cdf6349611cdc3d271c1672ef275e0d101ae",
       "pdf_url": "https://arxiv.org/pdf/2401.15239",
       "publication_date": "2024-01-26",
@@ -1455,6 +1479,29 @@
       "publication_date": "2024-04-17",
       "keywords_matched": [
         "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "6d556b1dbb4a351b12a759c6581ed903e728c09e",
+      "title": "SoK: All You Need to Know About On-Device ML Model Extraction - The Gap Between Research and Practice",
+      "abstract": null,
+      "year": 2024,
+      "venue": "USENIX Security Symposium",
+      "authors": [
+        "Tushar Nayan",
+        "Qiming Guo",
+        "Mohammed A. Duniawi",
+        "Marcus Botacin",
+        "Selcuk Uluagac",
+        "Ruimin Sun"
+      ],
+      "citation_count": 13,
+      "url": "https://www.semanticscholar.org/paper/6d556b1dbb4a351b12a759c6581ed903e728c09e",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "model extraction"
       ],
       "first_seen": "2025-11-28"
     },
@@ -1501,29 +1548,6 @@
       "publication_date": "2024-10-24",
       "keywords_matched": [
         "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "6d556b1dbb4a351b12a759c6581ed903e728c09e",
-      "title": "SoK: All You Need to Know About On-Device ML Model Extraction - The Gap Between Research and Practice",
-      "abstract": null,
-      "year": 2024,
-      "venue": "USENIX Security Symposium",
-      "authors": [
-        "Tushar Nayan",
-        "Qiming Guo",
-        "Mohammed A. Duniawi",
-        "Marcus Botacin",
-        "Selcuk Uluagac",
-        "Ruimin Sun"
-      ],
-      "citation_count": 12,
-      "url": "https://www.semanticscholar.org/paper/6d556b1dbb4a351b12a759c6581ed903e728c09e",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "model extraction"
       ],
       "first_seen": "2025-11-28"
     },
@@ -3204,7 +3228,7 @@
         "M. Backes",
         "Yang Zhang"
       ],
-      "citation_count": 53,
+      "citation_count": 54,
       "url": "https://www.semanticscholar.org/paper/7ec9e9ec1c26f7977f54dd7830d970101e3a683e",
       "pdf_url": "http://arxiv.org/pdf/2302.09923",
       "publication_date": "2023-02-20",
@@ -6005,7 +6029,7 @@
         "Fan Yao",
         "Deliang Fan"
       ],
-      "citation_count": 137,
+      "citation_count": 138,
       "url": "https://www.semanticscholar.org/paper/74f6e70fd9a945b517e6495920a1267c01842bd4",
       "pdf_url": "http://arxiv.org/pdf/2111.04625",
       "publication_date": "2021-11-08",
@@ -6120,6 +6144,28 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "03df500a29fb8717662ea5626afd9e2b22b5d14c",
+      "title": "Stealing Neural Network Structure Through Remote FPGA Side-Channel Analysis",
+      "abstract": "Deep Neural Network (DNN) models have been extensively developed by companies for a wide range of applications. The development of a customized DNN model with great performance requires costly investments, and its structure (layers and hyper-parameters) is considered intellectual property and holds immense value. However, in this paper, we found the model secret is vulnerable when a cloud-based FPGA accelerator executes it. We demonstrate an end-to-end attack based on remote power side-channel analysis and machine-learning-based secret inference against different DNN models. The evaluation result shows that an attacker can reconstruct the layer and hyper-parameter sequence at over 90% accuracy using our method, which can significantly reduce her model development workload. We believe the threat presented by our attack is tangible, and new defense mechanisms should be developed against this threat.",
+      "year": 2021,
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "authors": [
+        "Yicheng Zhang",
+        "Rozhin Yasaei",
+        "Hao Chen",
+        "Zhou Li",
+        "M. A. Faruque"
+      ],
+      "citation_count": 78,
+      "url": "https://www.semanticscholar.org/paper/03df500a29fb8717662ea5626afd9e2b22b5d14c",
+      "pdf_url": "",
+      "publication_date": "2021-02-17",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "bfb6e56602b658fdabaaa66987ebf685a8139892",
       "title": "Defending against Model Stealing via Verifying Embedded External Features",
       "abstract": "Obtaining a well-trained model involves expensive data collection and training procedures, therefore the model is a valuable intellectual property. Recent studies revealed that adversaries can `steal' deployed models even when they have no training samples and can not get access to the model parameters or structures. Currently, there were some defense methods to alleviate this threat, mostly by increasing the cost of model stealing. In this paper, we explore the defense from another angle by verifying whether a suspicious model contains the knowledge of defender-specified external features. Specifically, we embed the external features by tempering a few training samples with style transfer. We then train a meta-classifier to determine whether a model is stolen from the victim. This approach is inspired by the understanding that the stolen models should contain the knowledge of features learned by the victim model. We examine our method on both CIFAR-10 and ImageNet datasets. Experimental results demonstrate that our method is effective in detecting different types of model stealing simultaneously, even if the stolen model is obtained via a multi-stage stealing process. The codes for reproducing main results are available at Github (https://github.com/zlh-thu/StealingVerification).",
@@ -6139,28 +6185,6 @@
       "publication_date": "2021-12-07",
       "keywords_matched": [
         "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "03df500a29fb8717662ea5626afd9e2b22b5d14c",
-      "title": "Stealing Neural Network Structure Through Remote FPGA Side-Channel Analysis",
-      "abstract": "Deep Neural Network (DNN) models have been extensively developed by companies for a wide range of applications. The development of a customized DNN model with great performance requires costly investments, and its structure (layers and hyper-parameters) is considered intellectual property and holds immense value. However, in this paper, we found the model secret is vulnerable when a cloud-based FPGA accelerator executes it. We demonstrate an end-to-end attack based on remote power side-channel analysis and machine-learning-based secret inference against different DNN models. The evaluation result shows that an attacker can reconstruct the layer and hyper-parameter sequence at over 90% accuracy using our method, which can significantly reduce her model development workload. We believe the threat presented by our attack is tangible, and new defense mechanisms should be developed against this threat.",
-      "year": 2021,
-      "venue": "IEEE Transactions on Information Forensics and Security",
-      "authors": [
-        "Yicheng Zhang",
-        "Rozhin Yasaei",
-        "Hao Chen",
-        "Zhou Li",
-        "M. A. Faruque"
-      ],
-      "citation_count": 77,
-      "url": "https://www.semanticscholar.org/paper/03df500a29fb8717662ea5626afd9e2b22b5d14c",
-      "pdf_url": "",
-      "publication_date": "2021-02-17",
-      "keywords_matched": [
-        "side-channel attack (title)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -7184,7 +7208,7 @@
         "Yiqiang Zhao",
         "Yier Jin"
       ],
-      "citation_count": 112,
+      "citation_count": 113,
       "url": "https://www.semanticscholar.org/paper/7a3d5f1887fa908a5df303f37ec4450998caafac",
       "pdf_url": "",
       "publication_date": "2020-12-07",
