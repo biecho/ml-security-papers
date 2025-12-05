@@ -1,6 +1,6 @@
 {
-  "updated": "2025-12-04",
-  "total": 407,
+  "updated": "2025-12-05",
+  "total": 408,
   "keywords": [
     "model stealing attack",
     "model extraction attack",
@@ -518,7 +518,7 @@
       "title": "Entangled Threats: A Unified Kill Chain Model for Quantum Machine Learning Security",
       "abstract": "Quantum Machine Learning (QML) systems inherit vulnerabilities from classical machine learning while introducing new attack surfaces rooted in the physical and algorithmic layers of quantum computing. Despite a growing body of research on individual attack vectors - ranging from adversarial poisoning and evasion to circuit-level backdoors, side-channel leakage, and model extraction - these threats are often analyzed in isolation, with unrealistic assumptions about attacker capabilities and system environments. This fragmentation hampers the development of effective, holistic defense strategies. In this work, we argue that QML security requires more structured modeling of the attack surface, capturing not only individual techniques but also their relationships, prerequisites, and potential impact across the QML pipeline. We propose adapting kill chain models, widely used in classical IT and cybersecurity, to the quantum machine learning context. Such models allow for structured reasoning about attacker objectives, capabilities, and possible multi-stage attack paths - spanning reconnaissance, initial access, manipulation, persistence, and exfiltration. Based on extensive literature analysis, we present a detailed taxonomy of QML attack vectors mapped to corresponding stages in a quantum-aware kill chain framework that is inspired by the MITRE ATLAS for classical machine learning. We highlight interdependencies between physical-level threats (like side-channel leakage and crosstalk faults), data and algorithm manipulation (such as poisoning or circuit backdoors), and privacy attacks (including model extraction and training data inference). This work provides a foundation for more realistic threat modeling and proactive security-in-depth design in the emerging field of quantum machine learning.",
       "year": 2025,
-      "venue": "arXiv.org",
+      "venue": "International Conference on Quantum Computing and Engineering",
       "authors": [
         "Pascal Debus",
         "Maximilian Wendlinger",
@@ -650,6 +650,28 @@
         "model stealing attack"
       ],
       "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "85ebc013aea058c9f910c6b689a30b74cfa95fcc",
+      "title": "Electromagnetic Design Optimization of a PMSG Using a Deep Neural Network Approach",
+      "abstract": "This article presents the electromagnetic design optimization of a permanent magnet synchronous generator (PMSG) based on machine learning (ML). First, the optimization methodology is presented; then, a correlation and a sensitivity analysis are carried out to determine the set of design variables. The optimization goal is maximizing efficiency, which is equivalent to minimizing electrical PMSG losses. It also considers the core and copper materials by minimizing their weight. A deep neural network (DNN) architecture is developed and trained using PMSG 2D-FE data. The DNN is based on the nonlinear rectified linear unit (ReLU). The resulting DNN was later used to construct the PMSG objective function, which was then solved using non-sorting genetic algorithms. Numerical results and comparisons between two genetic algorithms are given to demonstrate the validity of the proposed approach.",
+      "year": 2025,
+      "venue": "IEEE transactions on magnetics",
+      "authors": [
+        "C. Hernandez",
+        "B. Campos",
+        "L. Diaz",
+        "J. Lara",
+        "M. Arjona"
+      ],
+      "citation_count": 1,
+      "url": "https://www.semanticscholar.org/paper/85ebc013aea058c9f910c6b689a30b74cfa95fcc",
+      "pdf_url": "",
+      "publication_date": "2025-02-01",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "bbd216e8ca69d2583e1d203a4fdf8e9bf4e07f3d",
@@ -1191,7 +1213,7 @@
         "D. Rolnick",
         "Florian Tram\u00e8r"
       ],
-      "citation_count": 125,
+      "citation_count": 126,
       "url": "https://www.semanticscholar.org/paper/b232f468de0b1d4ff1c2dfe5dbb03ec093160c48",
       "pdf_url": "",
       "publication_date": "2024-03-11",
@@ -1211,7 +1233,7 @@
         "Robin Staab",
         "Martin T. Vechev"
       ],
-      "citation_count": 69,
+      "citation_count": 71,
       "url": "https://www.semanticscholar.org/paper/c7af46b35061e856aa3332ac2eec6a7ccee0cb35",
       "pdf_url": "",
       "publication_date": "2024-02-29",
@@ -1279,7 +1301,7 @@
         "Xuan Wang",
         "Shutao Xia"
       ],
-      "citation_count": 36,
+      "citation_count": 38,
       "url": "https://www.semanticscholar.org/paper/45967a64fdc7a3e20f47b24297844b93b9f3e3d9",
       "pdf_url": "",
       "publication_date": "2024-02-06",
@@ -1345,7 +1367,7 @@
         "Yonggang Wen",
         "Tianwei Zhang"
       ],
-      "citation_count": 21,
+      "citation_count": 22,
       "url": "https://www.semanticscholar.org/paper/3c3479215bcc775f8e37d7d5055a16b698904c9a",
       "pdf_url": "",
       "publication_date": "2024-05-13",
@@ -1735,6 +1757,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "d3b74a3fdb14c606b9daaf61c5409f7d58c3b3aa",
+      "title": "Design of Time-Delay Convolutional Neural Networks(TDCNN) Model for Feature Extraction for Side-Channel Attacks",
+      "abstract": ": This work explores a novel method of SCA profiling to address compatibility problems and strengthen Deep Learning (DL) models. Convolutional Neural Networks are proposed in this research as a countermeasure to misalignment-focused countermeasures. \u201dTime-Delay Convolutional Neural Networks\u201d (TDCNN) is more accurate than \u201dConvolutional Neural Network,\u201d yet it\u2019s still acceptable. It\u2019s true that TDCNNs are neural networks based on convolution learned on single spatial information, just as side-channel tracings. However, given to recent surge in popularity of CNNs, particularly from the year 2012 when CNN framework (\u201dAlexNet\u201d) achieved Image Net Large Scale Visual Recognition Competition which is a notable image detection competition, a novel TDCNN has been termed out in DL literature. Currently, it needs to employ the characteristics related to CNN design, including declaring that one input feature equals 1 for instance, to establish a TDCNN in the most widely used DL libraries.",
+      "year": 2024,
+      "venue": "International Journal of Computing and Digital Systems",
+      "authors": [
+        "Amjed Abbas Ahmed",
+        "Mohammad Kamrul Hasan",
+        "Shahrul Azman Mohd Noah",
+        "Azana Hafizah Aman"
+      ],
+      "citation_count": 7,
+      "url": "https://www.semanticscholar.org/paper/d3b74a3fdb14c606b9daaf61c5409f7d58c3b3aa",
+      "pdf_url": "https://journal.uob.edu.bh:443/bitstream/123456789/5437/3/IJCDS160127_1570996366.pdf",
+      "publication_date": "2024-07-01",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "b892ac05369526432384a4cdf1d4d087f8bc45de",
       "title": "Beyond Slow Signs in High-fidelity Model Extraction",
       "abstract": "Deep neural networks, costly to train and rich in intellectual property value, are increasingly threatened by model extraction attacks that compromise their confidentiality. Previous attacks have succeeded in reverse-engineering model parameters up to a precision of float64 for models trained on random data with at most three hidden layers using cryptanalytical techniques. However, the process was identified to be very time consuming and not feasible for larger and deeper models trained on standard benchmarks. Our study evaluates the feasibility of parameter extraction methods of Carlini et al. [1] further enhanced by Canales-Mart\\'inez et al. [2] for models trained on standard benchmarks. We introduce a unified codebase that integrates previous methods and reveal that computational tools can significantly influence performance. We develop further optimisations to the end-to-end attack and improve the efficiency of extracting weight signs by up to 14.8 times compared to former methods through the identification of easier and harder to extract neurons. Contrary to prior assumptions, we identify extraction of weights, not extraction of weight signs, as the critical bottleneck. With our improvements, a 16,721 parameter model with 2 hidden layers trained on MNIST is extracted within only 98 minutes compared to at least 150 minutes previously. Finally, addressing methodological deficiencies observed in previous studies, we propose new ways of robust benchmarking for future model extraction attacks.",
@@ -1817,7 +1860,7 @@
         "Yihan Wu",
         "Heng Huang"
       ],
-      "citation_count": 5,
+      "citation_count": 6,
       "url": "https://www.semanticscholar.org/paper/9caf69e7bab1932d0b77dd20dc8f47e1b340135a",
       "pdf_url": "",
       "publication_date": null,
@@ -1870,27 +1913,6 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing attack"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "d3b74a3fdb14c606b9daaf61c5409f7d58c3b3aa",
-      "title": "Design of Time-Delay Convolutional Neural Networks(TDCNN) Model for Feature Extraction for Side-Channel Attacks",
-      "abstract": ": This work explores a novel method of SCA profiling to address compatibility problems and strengthen Deep Learning (DL) models. Convolutional Neural Networks are proposed in this research as a countermeasure to misalignment-focused countermeasures. \u201dTime-Delay Convolutional Neural Networks\u201d (TDCNN) is more accurate than \u201dConvolutional Neural Network,\u201d yet it\u2019s still acceptable. It\u2019s true that TDCNNs are neural networks based on convolution learned on single spatial information, just as side-channel tracings. However, given to recent surge in popularity of CNNs, particularly from the year 2012 when CNN framework (\u201dAlexNet\u201d) achieved Image Net Large Scale Visual Recognition Competition which is a notable image detection competition, a novel TDCNN has been termed out in DL literature. Currently, it needs to employ the characteristics related to CNN design, including declaring that one input feature equals 1 for instance, to establish a TDCNN in the most widely used DL libraries.",
-      "year": 2024,
-      "venue": "International Journal of Computing and Digital Systems",
-      "authors": [
-        "Amjed Abbas Ahmed",
-        "Mohammad Kamrul Hasan",
-        "Shahrul Azman Mohd Noah",
-        "Azana Hafizah Aman"
-      ],
-      "citation_count": 5,
-      "url": "https://www.semanticscholar.org/paper/d3b74a3fdb14c606b9daaf61c5409f7d58c3b3aa",
-      "pdf_url": "https://journal.uob.edu.bh:443/bitstream/123456789/5437/3/IJCDS160127_1570996366.pdf",
-      "publication_date": "2024-07-01",
-      "keywords_matched": [
-        "side-channel attack (title)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -3185,7 +3207,7 @@
         "Zhi Zhang",
         "Q. Hong"
       ],
-      "citation_count": 74,
+      "citation_count": 75,
       "url": "https://www.semanticscholar.org/paper/796bab7acfef1076cd4e39872a34dd6c80a646fd",
       "pdf_url": "",
       "publication_date": null,
@@ -3340,12 +3362,34 @@
         "A. Mian",
         "M. Shah"
       ],
-      "citation_count": 23,
+      "citation_count": 24,
       "url": "https://www.semanticscholar.org/paper/e562c8ee825ed4e1b3ec4037f6e9e1194d355f07",
       "pdf_url": "https://arxiv.org/pdf/2309.10058",
       "publication_date": "2023-09-18",
       "keywords_matched": [
         "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "1b0e8f3727f452d8ef13950ae61c631be8956306",
+      "title": "Model Extraction Attacks Revisited",
+      "abstract": "Model extraction (ME) attacks represent one major threat to Machine-Learning-as-a-Service (MLaaS) platforms by \"stealing\" the functionality of confidential machine-learning models through querying black-box APIs. Over seven years have passed since ME attacks were first conceptualized in the seminal work [75]. During this period, substantial advances have been made in both ME attacks and MLaaS platforms, raising the intriguing question: How has the vulnerability of MLaaS platforms to ME attacks been evolving? In this work, we conduct an in-depth study to answer this critical question. Specifically, we characterize the vulnerability of current, mainstream MLaaS platforms to ME attacks from multiple perspectives including attack strategies, learning techniques, surrogatemodel design, and benchmark tasks. Many of our findings challenge previously reported results, suggesting emerging patterns of ME vulnerability. Further, by analyzing the vulnerability of the same MLaaS platforms using historical datasets from the past four years, we retrospectively characterize the evolution of ME vulnerability over time, leading to a set of interesting findings. Finally, we make suggestions about improving the current practice of MLaaS in terms of attack robustness. Our study sheds light on the current state of ME vulnerability in the wild and points to several promising directions for future research.",
+      "year": 2023,
+      "venue": "ACM Asia Conference on Computer and Communications Security",
+      "authors": [
+        "Jiacheng Liang",
+        "Ren Pang",
+        "Changjiang Li",
+        "Ting Wang"
+      ],
+      "citation_count": 23,
+      "url": "https://www.semanticscholar.org/paper/1b0e8f3727f452d8ef13950ae61c631be8956306",
+      "pdf_url": "https://arxiv.org/pdf/2312.05386",
+      "publication_date": "2023-12-08",
+      "keywords_matched": [
+        "model extraction attack",
+        "model extraction"
       ],
       "first_seen": "2025-11-28"
     },
@@ -3374,28 +3418,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "1b0e8f3727f452d8ef13950ae61c631be8956306",
-      "title": "Model Extraction Attacks Revisited",
-      "abstract": "Model extraction (ME) attacks represent one major threat to Machine-Learning-as-a-Service (MLaaS) platforms by \"stealing\" the functionality of confidential machine-learning models through querying black-box APIs. Over seven years have passed since ME attacks were first conceptualized in the seminal work [75]. During this period, substantial advances have been made in both ME attacks and MLaaS platforms, raising the intriguing question: How has the vulnerability of MLaaS platforms to ME attacks been evolving? In this work, we conduct an in-depth study to answer this critical question. Specifically, we characterize the vulnerability of current, mainstream MLaaS platforms to ME attacks from multiple perspectives including attack strategies, learning techniques, surrogatemodel design, and benchmark tasks. Many of our findings challenge previously reported results, suggesting emerging patterns of ME vulnerability. Further, by analyzing the vulnerability of the same MLaaS platforms using historical datasets from the past four years, we retrospectively characterize the evolution of ME vulnerability over time, leading to a set of interesting findings. Finally, we make suggestions about improving the current practice of MLaaS in terms of attack robustness. Our study sheds light on the current state of ME vulnerability in the wild and points to several promising directions for future research.",
-      "year": 2023,
-      "venue": "ACM Asia Conference on Computer and Communications Security",
-      "authors": [
-        "Jiacheng Liang",
-        "Ren Pang",
-        "Changjiang Li",
-        "Ting Wang"
-      ],
-      "citation_count": 22,
-      "url": "https://www.semanticscholar.org/paper/1b0e8f3727f452d8ef13950ae61c631be8956306",
-      "pdf_url": "https://arxiv.org/pdf/2312.05386",
-      "publication_date": "2023-12-08",
-      "keywords_matched": [
-        "model extraction attack",
-        "model extraction"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
       "paper_id": "6f387d2d7c0a3afa73c7204cdbc8e49eed536de8",
       "title": "Electromagnetic-Thermal Analysis With FDTD and Physics-Informed Neural Networks",
       "abstract": "This article presents the coupling of the finite-difference time-domain (FDTD) method for electromagnetic field simulation, with a physics-informed neural network based solver for the heat equation. To this end, we employ a physics-informed U-Net instead of a numerical method to solve the heat equation. This approach enables the solution of general multiphysics problems with a single-physics numerical solver coupled with a neural network, overcoming the questions of accuracy and efficiency that are associated with interfacing multiphysics equations. By embedding the heat equation and its boundary conditions in the U-Net, we implement an unsupervised training methodology, which does not require the generation of ground-truth data. We test the proposed method with general 2-D coupled electromagnetic-thermal problems, demonstrating its accuracy and efficiency compared to standard finite-difference based alternatives.",
@@ -3415,6 +3437,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "406d4e8d2df6f6b58e65016fea31004f781d93e7",
+      "title": "DisGUIDE: Disagreement-Guided Data-Free Model Extraction",
+      "abstract": "Recent model-extraction attacks on Machine Learning as a Service (MLaaS) systems have moved towards data-free approaches, showing the feasibility of stealing models trained with difficult-to-access data. However, these attacks are ineffective or limited due to the low accuracy of extracted models and the high number of queries to the models under attack. The high query cost makes such techniques infeasible for online MLaaS systems that charge per query.\nWe create a novel approach to get higher accuracy and query efficiency than prior data-free model extraction techniques. Specifically, we introduce a novel generator training scheme that maximizes the disagreement loss between two clone models that attempt to copy the model under attack. This loss, combined with diversity loss and experience replay, enables the generator to produce better instances to train the clone models. Our evaluation on popular datasets CIFAR-10 and CIFAR-100 shows that our approach improves the final model accuracy by up to 3.42% and 18.48% respectively. The average number of queries required to achieve the accuracy of the prior state of the art is reduced by up to 64.95%. We hope this will promote future work on feasible data-free model extraction and defenses against such attacks.",
+      "year": 2023,
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "authors": [
+        "Jonathan Rosenthal",
+        "Eric Enouen",
+        "H. Pham",
+        "Lin Tan"
+      ],
+      "citation_count": 20,
+      "url": "https://www.semanticscholar.org/paper/406d4e8d2df6f6b58e65016fea31004f781d93e7",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/26150/25922",
+      "publication_date": "2023-06-26",
+      "keywords_matched": [
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
       "title": "On the Feasibility of Specialized Ability Stealing for Large Language Code Models",
       "abstract": null,
@@ -3429,27 +3472,6 @@
       "publication_date": null,
       "keywords_matched": [
         "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "406d4e8d2df6f6b58e65016fea31004f781d93e7",
-      "title": "DisGUIDE: Disagreement-Guided Data-Free Model Extraction",
-      "abstract": "Recent model-extraction attacks on Machine Learning as a Service (MLaaS) systems have moved towards data-free approaches, showing the feasibility of stealing models trained with difficult-to-access data. However, these attacks are ineffective or limited due to the low accuracy of extracted models and the high number of queries to the models under attack. The high query cost makes such techniques infeasible for online MLaaS systems that charge per query.\nWe create a novel approach to get higher accuracy and query efficiency than prior data-free model extraction techniques. Specifically, we introduce a novel generator training scheme that maximizes the disagreement loss between two clone models that attempt to copy the model under attack. This loss, combined with diversity loss and experience replay, enables the generator to produce better instances to train the clone models. Our evaluation on popular datasets CIFAR-10 and CIFAR-100 shows that our approach improves the final model accuracy by up to 3.42% and 18.48% respectively. The average number of queries required to achieve the accuracy of the prior state of the art is reduced by up to 64.95%. We hope this will promote future work on feasible data-free model extraction and defenses against such attacks.",
-      "year": 2023,
-      "venue": "AAAI Conference on Artificial Intelligence",
-      "authors": [
-        "Jonathan Rosenthal",
-        "Eric Enouen",
-        "H. Pham",
-        "Lin Tan"
-      ],
-      "citation_count": 19,
-      "url": "https://www.semanticscholar.org/paper/406d4e8d2df6f6b58e65016fea31004f781d93e7",
-      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/26150/25922",
-      "publication_date": "2023-06-26",
-      "keywords_matched": [
-        "model extraction"
       ],
       "first_seen": "2025-11-28"
     },
@@ -4942,7 +4964,7 @@
         "Ming Yan",
         "Mi Zhang"
       ],
-      "citation_count": 192,
+      "citation_count": 193,
       "url": "https://www.semanticscholar.org/paper/4fc5f31a38a19e3acc9501aeb3006810eec0e767",
       "pdf_url": "http://arxiv.org/pdf/2212.01548",
       "publication_date": "2022-12-03",
@@ -4962,7 +4984,7 @@
         "Rudolf Mayer",
         "A. Rauber"
       ],
-      "citation_count": 138,
+      "citation_count": 139,
       "url": "https://www.semanticscholar.org/paper/d405b58a8f465d5ba2e91f9541e09760904c11a8",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3595292",
       "publication_date": "2022-06-16",
@@ -4983,7 +5005,7 @@
         "Sravanti Addepalli",
         "R. Venkatesh Babu"
       ],
-      "citation_count": 100,
+      "citation_count": 101,
       "url": "https://www.semanticscholar.org/paper/35ade8553de7259a5e8105bd20a160f045f9d112",
       "pdf_url": "https://arxiv.org/pdf/2204.11022",
       "publication_date": "2022-04-23",
@@ -5070,7 +5092,7 @@
         "Hangwei Qian",
         "C. Miao"
       ],
-      "citation_count": 38,
+      "citation_count": 39,
       "url": "https://www.semanticscholar.org/paper/f3886b3c22675da54b0d55a5bc16754e3399c979",
       "pdf_url": "https://arxiv.org/pdf/2205.06504",
       "publication_date": "2022-05-13",
@@ -6029,7 +6051,7 @@
         "Fan Yao",
         "Deliang Fan"
       ],
-      "citation_count": 138,
+      "citation_count": 139,
       "url": "https://www.semanticscholar.org/paper/74f6e70fd9a945b517e6495920a1267c01842bd4",
       "pdf_url": "http://arxiv.org/pdf/2111.04625",
       "publication_date": "2021-11-08",
@@ -6113,7 +6135,7 @@
         "Huimin Zeng",
         "Julian McAuley"
       ],
-      "citation_count": 80,
+      "citation_count": 81,
       "url": "https://www.semanticscholar.org/paper/864cf501b5c04bfcdc836a9cf1909a51ac1d2a99",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3460231.3474275",
       "publication_date": "2021-09-01",
@@ -6242,7 +6264,7 @@
         "Toshiki Shibahara",
         "Naoto Yanai"
       ],
-      "citation_count": 51,
+      "citation_count": 52,
       "url": "https://www.semanticscholar.org/paper/f4847ab95c43b9d3c214d494ce3852473bf297e4",
       "pdf_url": "https://arxiv.org/pdf/2107.08909",
       "publication_date": "2021-07-19",
@@ -6342,6 +6364,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "a7f5460b2f2b1a215064e9a0669dd3d43a382af9",
+      "title": "Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks",
+      "abstract": "Model extraction attacks aim to duplicate a machine learning model through query access to a target model. Early studies mainly focus on discriminative models. Despite the success, model extraction attacks against generative models are less well explored. In this paper, we systematically study the feasibility of model extraction attacks against generative adversarial networks (GANs). Specifically, we first define fidelity and accuracy on model extraction attacks against GANs. Then we study model extraction attacks against GANs from the perspective of fidelity extraction and accuracy extraction, according to the adversary\u2019s goals and background knowledge. We further conduct a case study where the adversary can transfer knowledge of the extracted model which steals a state-of-the-art GAN trained with more than 3 million images to new domains to broaden the scope of applications of model extraction attacks. Finally, we propose effective defense techniques to safeguard GANs, considering a trade-off between the utility and security of GAN models.",
+      "year": 2021,
+      "venue": "Asia-Pacific Computer Systems Architecture Conference",
+      "authors": [
+        "Hailong Hu",
+        "Jun Pang"
+      ],
+      "citation_count": 38,
+      "url": "https://www.semanticscholar.org/paper/a7f5460b2f2b1a215064e9a0669dd3d43a382af9",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3485832.3485838",
+      "publication_date": "2021-12-06",
+      "keywords_matched": [
+        "model extraction attack",
+        "stealing machine learning model",
+        "model extraction"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "d167f82f1f1bec0dd173fe3173053eebddae05b8",
       "title": "SEAT: Similarity Encoder by Adversarial Training for Detecting Model Extraction Attack Queries",
       "abstract": "Given black-box access to the prediction API, model extraction attacks can steal the functionality of models deployed in the cloud. In this paper, we introduce the SEAT detector, which detects black-box model extraction attacks so that the defender can terminate malicious accounts. SEAT has a similarity encoder trained by adversarial training. Using the similarity encoder, SEAT detects accounts that make queries that indicate a model extraction attack in progress and cancels these accounts. We evaluate our defense against existing model extraction attacks and against new adaptive attacks introduced in this paper. Our results show that even against adaptive attackers, SEAT increases the cost of model extraction attacks by 3.8 times to 16 times.",
@@ -6358,27 +6401,6 @@
       "publication_date": "2021-11-15",
       "keywords_matched": [
         "model extraction attack",
-        "model extraction"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "a7f5460b2f2b1a215064e9a0669dd3d43a382af9",
-      "title": "Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks",
-      "abstract": "Model extraction attacks aim to duplicate a machine learning model through query access to a target model. Early studies mainly focus on discriminative models. Despite the success, model extraction attacks against generative models are less well explored. In this paper, we systematically study the feasibility of model extraction attacks against generative adversarial networks (GANs). Specifically, we first define fidelity and accuracy on model extraction attacks against GANs. Then we study model extraction attacks against GANs from the perspective of fidelity extraction and accuracy extraction, according to the adversary\u2019s goals and background knowledge. We further conduct a case study where the adversary can transfer knowledge of the extracted model which steals a state-of-the-art GAN trained with more than 3 million images to new domains to broaden the scope of applications of model extraction attacks. Finally, we propose effective defense techniques to safeguard GANs, considering a trade-off between the utility and security of GAN models.",
-      "year": 2021,
-      "venue": "Asia-Pacific Computer Systems Architecture Conference",
-      "authors": [
-        "Hailong Hu",
-        "Jun Pang"
-      ],
-      "citation_count": 37,
-      "url": "https://www.semanticscholar.org/paper/a7f5460b2f2b1a215064e9a0669dd3d43a382af9",
-      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3485832.3485838",
-      "publication_date": "2021-12-06",
-      "keywords_matched": [
-        "model extraction attack",
-        "stealing machine learning model",
         "model extraction"
       ],
       "first_seen": "2025-11-28"
@@ -7070,7 +7092,7 @@
         "Christopher A. Choquette-Choo",
         "Nicolas Papernot"
       ],
-      "citation_count": 259,
+      "citation_count": 261,
       "url": "https://www.semanticscholar.org/paper/abbb0fd559ade70265f4f528df094fbbd8ae2040",
       "pdf_url": "",
       "publication_date": "2020-02-27",
@@ -7094,7 +7116,7 @@
         "Tsung-Yi Ho",
         "Yier Jin"
       ],
-      "citation_count": 183,
+      "citation_count": 184,
       "url": "https://www.semanticscholar.org/paper/4d548fd21aad60e3052455e22b7a57cc1f06e3c3",
       "pdf_url": "https://doi.org/10.14722/ndss.2020.24178",
       "publication_date": null,
@@ -7114,7 +7136,7 @@
         "A. Prakash",
         "Moinuddin K. Qureshi"
       ],
-      "citation_count": 168,
+      "citation_count": 169,
       "url": "https://www.semanticscholar.org/paper/d5ffa58133940646d1339c2610cb35f27442e0d3",
       "pdf_url": "https://arxiv.org/pdf/2005.03161",
       "publication_date": "2020-05-06",
@@ -7185,7 +7207,7 @@
         "S. Shevade",
         "V. Ganapathy"
       ],
-      "citation_count": 145,
+      "citation_count": 146,
       "url": "https://www.semanticscholar.org/paper/d8f64187b447d1b64f69f541dbbaec71bd79d205",
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/5432/5288",
       "publication_date": "2020-04-03",
@@ -7317,7 +7339,7 @@
         "Wang Yang",
         "Xinye Jiang"
       ],
-      "citation_count": 59,
+      "citation_count": 60,
       "url": "https://www.semanticscholar.org/paper/d4a679c685de885ab98b7c1f2378e26a255de490",
       "pdf_url": "",
       "publication_date": "2020-12-01",
@@ -7338,7 +7360,7 @@
         "Alexandre Bolot",
         "S. Gambs"
       ],
-      "citation_count": 56,
+      "citation_count": 57,
       "url": "https://www.semanticscholar.org/paper/983f1e19ba55aa97bd20086ca7ad5cf4e436a37a",
       "pdf_url": "",
       "publication_date": "2020-09-03",
@@ -7383,7 +7405,7 @@
         "Xiaolin Li",
         "D. Wu"
       ],
-      "citation_count": 48,
+      "citation_count": 49,
       "url": "https://www.semanticscholar.org/paper/8765853a2d7027dfe91d650462d7431552bd7315",
       "pdf_url": "https://doi.org/10.1109/tetci.2022.3147508",
       "publication_date": "2020-09-21",
@@ -7899,7 +7921,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 183,
+      "citation_count": 184,
       "url": "https://www.semanticscholar.org/paper/da10f79f983fd4fbd589ed7ffa68d33964841443",
       "pdf_url": "",
       "publication_date": "2019-06-26",
@@ -8302,7 +8324,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 587,
+      "citation_count": 588,
       "url": "https://www.semanticscholar.org/paper/089c6224cfbcf5c18b63564eb65001c7c42a7acf",
       "pdf_url": "http://arxiv.org/pdf/1812.02766",
       "publication_date": "2018-12-06",
@@ -8324,7 +8346,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 473,
+      "citation_count": 475,
       "url": "https://www.semanticscholar.org/paper/4582e2350e4822834dcf266522690722dd4430d4",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8790377/8806708/08806737.pdf",
       "publication_date": "2018-05-07",
@@ -8349,7 +8371,7 @@
         "Yu LI",
         "Qiang Xu"
       ],
-      "citation_count": 217,
+      "citation_count": 218,
       "url": "https://www.semanticscholar.org/paper/669a04d8bbf8d530a8d6e1900f8b63dd906b4050",
       "pdf_url": "https://arxiv.org/pdf/1803.05847",
       "publication_date": "2018-03-05",
@@ -8371,7 +8393,7 @@
         "S. Jha",
         "Songbai Yan"
       ],
-      "citation_count": 176,
+      "citation_count": 177,
       "url": "https://www.semanticscholar.org/paper/35c863e151e47b6dbf6356e9a1abaa2a0eeab3fc",
       "pdf_url": "",
       "publication_date": "2018-11-05",
@@ -8643,7 +8665,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1951,
+      "citation_count": 1955,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
