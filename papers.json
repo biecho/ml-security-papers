@@ -1,6 +1,6 @@
 {
   "updated": "2025-12-05",
-  "total": 899,
+  "total": 909,
   "keywords": [
     "model stealing",
     "model extraction",
@@ -1570,7 +1570,8 @@
       "publication_date": "2025-08-19",
       "keywords_matched": [
         "model stealing",
-        "model stealing attack"
+        "model stealing attack",
+        "(via citation)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -8193,6 +8194,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "a3280f5d697c09946b371c8db82da514a4fa3d47",
+      "title": "Efficient Nonprofiled Side-Channel Attack Using Multi-Output Classification Neural Network",
+      "abstract": "Differential deep learning analysis (DDLA) is the first deep-learning-based nonprofiled side-channel attack (SCA) on embedded systems. However, DDLA requires many training processes to distinguish the correct key. In this letter, we introduce a nonprofiled SCA technique using multi-output classification to mitigate the aforementioned issue. Specifically, a multi-output multilayer perceptron and a multi-output convolutional neural network are introduced against various SCA protected schemes, such as masking, noise generation, and trace de-synchronization countermeasures. The experimental results on different power side channel datasets have clarified that our model performs the attack up to 9\u201330 times faster than DDLA in the case of masking and de-synchronization countermeasures, respectively. In addition, regarding combined masking and noise generation countermeasure, our proposed model achieves a higher success rate of at least 20% in the cases of the standard deviation equal to 1.0 and 1.5.",
+      "year": 2023,
+      "venue": "IEEE Embedded Systems Letters",
+      "authors": [
+        "Van-Phuc Hoang",
+        "Ngoc-Tuan Do",
+        "Van-Sang Doan"
+      ],
+      "citation_count": 12,
+      "url": "https://www.semanticscholar.org/paper/a3280f5d697c09946b371c8db82da514a4fa3d47",
+      "pdf_url": "",
+      "publication_date": "2023-09-01",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "5c39cbdd1f77e12188b8691efdfd1e635c2ca037",
       "title": "Hardware-Software Co-design for Side-Channel Protected Neural Network Inference",
       "abstract": "Physical side-channel attacks are a major threat to stealing confidential data from devices. There has been a recent surge in such attacks on edge machine learning (ML) hardware to extract the model parameters. Consequently, there has also been work, although limited, on building corresponding defenses against such attacks. Current solutions take either fully software-or fully hardware-centric approaches, which are limited in performance and flexibility, respectively. In this paper, we propose the first hardware-software co-design solution for building side-channel-protected ML hardware. Our solution targets edge devices and addresses both performance and flexibility needs. To that end, we develop a secure RISCV-based coprocessor design that can execute a neural network implemented in C/C++. Our coprocessor uses masking to execute various neural network operations like weighted summations, activation functions, and output layer computation in a sidechannel secure fashion. We extend the original RV32I instruction set with custom instructions to control the masking gadgets inside the secure coprocessor. We further use the custom instructions to implement easy-to-use APIs that are exposed to the end-user as a shared library. Finally, we demonstrate the empirical sidechannel security of the design up to 1M traces.",
@@ -10919,7 +10940,7 @@
         "Jiwei Li",
         "R. Jia"
       ],
-      "citation_count": 85,
+      "citation_count": 86,
       "url": "https://www.semanticscholar.org/paper/823cacd5255f3897a8d29f29a7c7cb8f978bd928",
       "pdf_url": "http://arxiv.org/pdf/2209.08773",
       "publication_date": "2022-09-19",
@@ -13944,6 +13965,28 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "1f99776ebfbac6da0689e8e43d36f61172c95a92",
+      "title": "Back to the Basics: Seamless Integration of Side-Channel Pre-Processing in Deep Neural Networks",
+      "abstract": "Deep learning approaches have become popular for Side-Channel Analysis (SCA) in the recent years. Especially Convolutional Neural Networks (CNN) due to their natural ability to overcome jitter-based as well as masking countermeasures. Most of the recent works have been focusing on optimising the performance on given dataset, for example finding optimal architecture and using ensemble, and bypass the need for trace pre-processing. However, trace pre-processing is a long studied topic and several proven techniques exist in the literature. There is no straightforward manner to integrate those techniques into deep learning based SCA. In this paper, we propose a generic framework which allows seamless integration of multiple, user defined pre-processing techniques into the neural network architecture. The framework is based on Multi-scale Convolutional Neural Networks ( $\\mathsf {MCNN}$ ) that were originally proposed for time series analysis. $\\mathsf {MCNN}$ are composed of multiple branches that can apply independent transformation to input data in each branch to extract the relevant features and allowing a better generalization of the model. In terms of SCA, these transformations can be used for integration of pre-processing techniques, such as phase-only correlation, principal component analysis, alignment methods, etc. We present successful results on generic network which generalizes to different publicly available datasets. Our findings show that it is possible to design a network that can be used in a more general way to analyze side-channel leakage traces and perform well across datasets.",
+      "year": 2021,
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "authors": [
+        "Yoo-Seung Won",
+        "Xiaolu Hou",
+        "Dirmanto Jap",
+        "J. Breier",
+        "S. Bhasin"
+      ],
+      "citation_count": 26,
+      "url": "https://www.semanticscholar.org/paper/1f99776ebfbac6da0689e8e43d36f61172c95a92",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "975e8d7065161d3dc0020ef343aa1db2a3db5a7b",
       "title": "Student Surpasses Teacher: Imitation Attack for Black-Box NLP APIs",
       "abstract": "Machine-learning-as-a-service (MLaaS) has attracted millions of users to their splendid large-scale models. Although published as black-box APIs, the valuable models behind these services are still vulnerable to imitation attacks. Recently, a series of works have demonstrated that attackers manage to steal or extract the victim models. Nonetheless, none of the previous stolen models can outperform the original black-box APIs. In this work, we conduct unsupervised domain adaptation and multi-victim ensemble to showing that attackers could potentially surpass victims, which is beyond previous understanding of model extraction. Extensive experiments on both benchmark datasets and real-world APIs validate that the imitators can succeed in outperforming the original black-box models on transferred domains. We consider our work as a milestone in the research of imitation attack, especially on NLP APIs, as the superior performance could influence the defense or even publishing strategy of API providers.",
@@ -13985,6 +14028,28 @@
       "publication_date": "2021-07-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "73fad5cae8101ea2c32f918f180f8cead6b75c2d",
+      "title": "Betalogger: Smartphone Sensor-based Side-channel Attack Detection and Text Inference Using Language Modeling and Dense MultiLayer Neural Network",
+      "abstract": "With the recent advancement of smartphone technology in the past few years, smartphone usage has increased on a tremendous scale due to its portability and ability to perform many daily life tasks. As a result, smartphones have become one of the most valuable targets for hackers to perform cyberattacks, since the smartphone can contain individuals\u2019 sensitive data. Smartphones are embedded with highly accurate sensors. This article proposes BetaLogger, an Android-based application that highlights the issue of leaking smartphone users\u2019 privacy using smartphone hardware sensors (accelerometer, magnetometer, and gyroscope). BetaLogger efficiently infers the typed text (long or short) on a smartphone keyboard using Language Modeling and a Dense Multi-layer Neural Network (DMNN). BetaLogger is composed of two major phases: In the first phase, Text Inference Vector is given as input to the DMNN model to predict the target labels comprising the alphabet, and in the second phase, sequence generator module generate the output sequence in the shape of a continuous sentence. The outcomes demonstrate that BetaLogger generates highly accurate short and long sentences, and it effectively enhances the inference rate in comparison with conventional machine learning algorithms and state-of-the-art studies.",
+      "year": 2021,
+      "venue": "ACM Trans. Asian Low Resour. Lang. Inf. Process.",
+      "authors": [
+        "A. R. Javed",
+        "S. Rehman",
+        "M. Khan",
+        "M. Alazab",
+        "H. Khan"
+      ],
+      "citation_count": 20,
+      "url": "https://www.semanticscholar.org/paper/73fad5cae8101ea2c32f918f180f8cead6b75c2d",
+      "pdf_url": "http://qspace.qu.edu.qa/bitstream/10576/37656/2/3460392.pdf",
+      "publication_date": "2021-06-23",
+      "keywords_matched": [
+        "side-channel attack (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -14829,6 +14894,25 @@
       "keywords_matched": [
         "side-channel attack (title)",
         "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "3ddb72980630648e61f2223ffc6ef809a98ddd1d",
+      "title": "Filter Model Extraction with Convolutional Neural Network Based on Magnitude Information",
+      "abstract": "In this paper, a new model extraction method for band-pass filters with convolutional neural network (CNN) based on magnitude information only is introduced. A data augmentation approach and a data decentralization process to improve the CNN model performance by statistical analysis are proposed. A correction process utilizing real test data is introduced to improve the model performance. Compared to the existing model extraction method, this CNN model approach needs no phase information that is highly dependent on the loading circuit of a filter. Merely using the magnitude information, a good fitness for the response of high-order filters with complicated topology is achieved with this method. CNN model demonstrates a faster convergence compared to the traditional fully connected neural model.",
+      "year": 2021,
+      "venue": "2021 IEEE MTT-S International Microwave Filter Workshop (IMFW)",
+      "authors": [
+        "Junyi Liu",
+        "Ke Wu"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/3ddb72980630648e61f2223ffc6ef809a98ddd1d",
+      "pdf_url": "",
+      "publication_date": "2021-11-17",
+      "keywords_matched": [
+        "model extraction"
       ],
       "first_seen": "2025-12-05"
     },
@@ -16011,6 +16095,26 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "bb9c9e43aa5764d2d07b2b71c2cea68144f90972",
+      "title": "Soil electrical conductivity imaging using a neural network-based forward solver: Applied to large-scale Bayesian electromagnetic inversion",
+      "abstract": null,
+      "year": 2020,
+      "venue": "",
+      "authors": [
+        "D. Moghadas",
+        "A. Behroozmand",
+        "A. Christiansen"
+      ],
+      "citation_count": 22,
+      "url": "https://www.semanticscholar.org/paper/bb9c9e43aa5764d2d07b2b71c2cea68144f90972",
+      "pdf_url": "",
+      "publication_date": "2020-05-01",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "57cbdecb0b12f03a5c0fb95522fdc3494c87bd10",
       "title": "Modeling extra-deep electromagnetic logs using a deep neural network",
       "abstract": "Modern geosteering is heavily dependent on real-time interpretation of deep electromagnetic (EM) measurements. We have developed a methodology to construct a deep neural network (DNN) model trained to reproduce a full set of extra-deep EM logs consisting of 22 measurements per logging position. The model is trained in a 1D layered environment consisting of up to seven layers with different resistivity values. A commercial simulator provided by a tool vendor is used to generate a training data set. The data set size is limited because the simulator provided by the vendor is optimized for sequential execution. Therefore, we design a training data set that embraces the geologic rules and geosteering specifics supported by the forward model. We use this data set to produce an EM simulator based on a DNN without access to the proprietary information about the EM tool configuration or the original simulator source code. Despite using a relatively small training set size, the resulting DNN forward model is quite accurate for the considered examples: a multilayer synthetic case and a section of a published historical operation from the Goliat field. The observed average evaluation time of 0.15\u00a0ms per logging position makes it also suitable for future use as part of evaluation-hungry statistical and/or Monte Carlo inversion algorithms within geosteering workflows.",
@@ -16102,6 +16206,28 @@
         "model extraction"
       ],
       "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "85bab667c93b5983c641c03a81e8812669ba6ab8",
+      "title": "Improved Hybrid Approach for Side-Channel Analysis Using Efficient Convolutional Neural Network and Dimensionality Reduction",
+      "abstract": "Deep learning-based side channel attacks are burgeoning due to their better efficiency and performance, suppressing the traditional side-channel analysis. To launch the successful attack on a particular public key cryptographic (PKC) algorithm, a large number of samples per trace might need to be acquired to capture all the minor useful details from the leakage information, which increases the number of features per instance. The decreased instance-feature ratio increases the computational complexity of the deep learning-based attacks, limiting the attack efficiency. Moreover, data class imbalance can be a hindrance in accurate model training, leading to an accuracy paradox. We propose an efficient Convolutional Neural Network (CNN) based approach in which the dimensionality of the large leakage dataset is reduced, and then the data is processed using the proposed CNN based model. In the proposed model, the optimal number of convolutional blocks is used to build powerful features extractors within the cost limit. We have also analyzed and presented the impact of using the Synthetic Minority Over-sampling Technique (SMOTE) on the proposed model performance. We propose that a data-balancing step should be mandatory for analysis in the side channel attack scenario. We have also provided a performance-based comparative analysis between proposed and existing deep learning models for unprotected and protected Elliptic curve (ECC) Montgomery Power ladder implementations. The reduced network complexity, together with an improved attack efficiency, promote the proposed approach to be effectively used for side-channel attacks.",
+      "year": 2020,
+      "venue": "IEEE Access",
+      "authors": [
+        "Naila Mukhtar",
+        "A. Fournaris",
+        "T. Khan",
+        "Charis Dimopoulos",
+        "Yinan Kong"
+      ],
+      "citation_count": 19,
+      "url": "https://www.semanticscholar.org/paper/85bab667c93b5983c641c03a81e8812669ba6ab8",
+      "pdf_url": "https://doi.org/10.1109/access.2020.3029206",
+      "publication_date": null,
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "e0739acbd33897cc67a991a29760eb3a31cc5ad3",
@@ -16445,6 +16571,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "fcd525adae1f16e3f80fc34cca48106a02b449e1",
+      "title": "Neural Network Model for Parameter Inversion in Electromagnetic Wave and Plasma Interaction Systems",
+      "abstract": "A multiple regression and machine learning approach is proposed to solve multiple plasma parameter inversion in complex systems. For an electromagnetic (EM) wave and plasma interaction system, it is common to retrieve plasma parameters based on the reflected or scattered EM field, whereas multiple parameter inversion becomes particularly challenging for anisotropic inhomogeneous plasma medium. Artificial neural network (ANN) is applied to retrieve the plasma density fluctuation in inhomogeneous medium. The method is computationally efficient and robust based solely on time series of data collected at a fixed number of spatial locations. The inversion algorithm opens venues and application for inhomogeneous plasma parameter inversion for EM wave and plasma interaction system at different frequencies.",
+      "year": 2020,
+      "venue": "IEEE Transactions on Plasma Science",
+      "authors": [
+        "Yangyang Zhang",
+        "H. Fu",
+        "Yun Sui"
+      ],
+      "citation_count": 9,
+      "url": "https://www.semanticscholar.org/paper/fcd525adae1f16e3f80fc34cca48106a02b449e1",
+      "pdf_url": "",
+      "publication_date": "2020-05-11",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "57099cf852807c652fd55274a3ce4a8c9777ef56",
       "title": "Neural Model Stealing Attack to Smart Mobile Device on Intelligent Medical Platform",
       "abstract": "To date, the Medical Internet of Things (MIoT) technology has been recognized and widely applied due to its convenience and practicality. The MIoT enables the application of machine learning to predict diseases of various kinds automatically and accurately, assisting and facilitating effective and efficient medical treatment. However, the MIoT are vulnerable to cyberattacks which have been constantly advancing. In this paper, we establish a MIoT platform and demonstrate a scenario where a trained Convolutional Neural Network (CNN) model for predicting lung cancer complicated with pulmonary embolism can be attacked. First, we use CNN to build a model to predict lung cancer complicated with pulmonary embolism and obtain high detection accuracy. Then, we build a copycat model using only a small amount of data labeled by the target network, aiming to steal the established prediction model. Experimental results prove that the stolen model can also achieve a relatively high prediction outcome, revealing that the copycat network could successfully copy the prediction performance from the target network to a large extent. This also shows that such a prediction model deployed on MIoT devices can be stolen by attackers, and effective prevention strategies are open questions for researchers.",
@@ -16507,6 +16653,31 @@
       "publication_date": "2020-07-01",
       "keywords_matched": [
         "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "83e2b8ab293b74f2b9347f22ac12b9175e96351e",
+      "title": "Stored Grain Inventory Management Using Neural-Network-Based Parametric Electromagnetic Inversion",
+      "abstract": "We present a neural network architecture to determine the volume and complex permittivity of grain stored in metal bins. The neural networks output the grain height, cone angle and complex permittivity of the grain, using the input of experimental field data ( $S$ -parameters) from an electromagnetic imaging system consisting of 24 transceivers installed in the bin. Key for practical applications, the neural networks are trained on synthetic data sets but generate the parametric information using experimental data as input, without the use of calibration objects or open-short-load measurements. To accomplish this, we formulate a data normalization scheme that enables the use of a loss function that directly compares measured $S$ -parameters and simulation model fields. The normalization strategy and the ability to train on synthetic data means we do not need to collect experimental training data. We demonstrate the applicability of this synthetically trained neural network to experimental data from two different bin geometries, and discuss the ability of these neural networks to successfully infer parameters that can be used for grain inventory management. Our neural-network-based approach enables rapid inference, providing a more cost-effective long-term solution than existing optimization-based parametric inversion methods.",
+      "year": 2020,
+      "venue": "IEEE Access",
+      "authors": [
+        "Keeley Edwards",
+        "N. Geddert",
+        "Kennedy Krakalovich",
+        "R. Kruk",
+        "M. Asefi",
+        "J. Lovetri",
+        "C. Gilmore",
+        "I. Jeffrey"
+      ],
+      "citation_count": 8,
+      "url": "https://www.semanticscholar.org/paper/83e2b8ab293b74f2b9347f22ac12b9175e96351e",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09260139.pdf",
+      "publication_date": null,
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -16658,6 +16829,27 @@
       "url": "https://www.semanticscholar.org/paper/6f9786f75f0a199b0899ddbe42fff476a33d9ca7",
       "pdf_url": "",
       "publication_date": "2020-03-09",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "5a1dc7833ff4095cae1f18bb8a4d286b9b25a4fe",
+      "title": "Resistivity-depth Imaging with the Airborne Transient Electromagnetic Method Based on an Artificial Neural Network",
+      "abstract": "We developed an artificial neural network to map the distribution of geologic conductivity in the earth subsurface using the airborne transient electromagnetic method. The artificial neural network avoids the need for complex derivations of electromagnetic field formulas and requires only input and transfer functions to obtain a quasi-resistivity image. First, training sample set from the airborne transient electromagnetic response of homogeneous half-space models with different resistivities was formed, and network model parameters, including the flight altitude, time constant, and response amplitude, were determined. Then, a double-hidden-layer back-propagation (BP) neural network was established based on the mapping relationship between quasi-resistivity and airborne transient electromagnetic response. By analyzing the mean square error curve, the training termination criterion of the BP neural network was determined. Next, the trained BP neural network was used to interpret the airborne transient electromagnetic responses of various typical layered geo-electric models, and the results were compared with that from the all-time apparent resistivity algorithm. The comparison indicated that the resistivity imaging from the BP neural network approach was much closer to the true resistivity of the model, and the response to anomalous bodies was better than that from an all-time apparent resistivity. Finally, this imaging technique was used to process field data acquired by employing the airborne transient method from the HuaYin survey area. Quasi-resistivity depth sections calculated with the BP neural network and the actual geological situation were in good.",
+      "year": 2020,
+      "venue": "",
+      "authors": [
+        "B. Feng",
+        "Jifeng Zhang",
+        "Dong Li",
+        "Yang Bai"
+      ],
+      "citation_count": 6,
+      "url": "https://www.semanticscholar.org/paper/5a1dc7833ff4095cae1f18bb8a4d286b9b25a4fe",
+      "pdf_url": "",
+      "publication_date": "2020-09-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
       ],
@@ -17670,6 +17862,28 @@
       "url": "https://www.semanticscholar.org/paper/eb9b3de60c1039550e9457510eb463dae29037c3",
       "pdf_url": "",
       "publication_date": "2019-10-01",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "7c2427863bf72ce1b679735ff46d6832a2e12d9b",
+      "title": "High-resolution palaeovalley classification from airborne\nelectromagnetic imaging and deep neural network training using\ndigital elevation model data",
+      "abstract": "Abstract. Palaeovalleys are buried ancient river valleys that often form productive aquifers, especially in the semi-arid and arid areas of Australia. Delineating their extent and hydrostratigraphy is however a challenging task in groundwater system characterization. This study developed a methodology based on the deep learning super-resolution convolutional neural network (SRCNN) approach, to convert electrical conductivity (EC) estimates from an airborne electromagnetic (AEM) survey in South Australia to a high-resolution binary palaeovalley map. The SRCNN was trained and tested with a synthetic training dataset, where valleys were generated from readily available digital elevation model (DEM) data from the AEM survey area. Electrical conductivities typical of valley sediments were generated by Archie\u2019s Law, and subsequently blurred by down-sampling and bicubic interpolation to represent noise from the AEM survey, inversion and interpolation. After a model training step, the SRCNN successfully removed such noise, and reclassified the low-resolution, unimodal but skewed EC values into a high-resolution palaeovalley index following a bimodal distribution. The latter allows distinguishing valley from non-valley pixels. Furthermore, a realistic spatial connectivity structure of the palaeovalley was predicted when compared with borehole lithology logs and valley bottom flatness indicator. Overall the methodology permitted to better constrain the three-dimensional palaeovalley geometry from AEM images that are becoming more widely available for groundwater prospecting.\n",
+      "year": 2019,
+      "venue": "",
+      "authors": [
+        "Zhenjiao Jiang",
+        "D. Mallants",
+        "L. Peeters",
+        "Lei Gao",
+        "G. Mari\u00e9thoz"
+      ],
+      "citation_count": 31,
+      "url": "https://www.semanticscholar.org/paper/7c2427863bf72ce1b679735ff46d6832a2e12d9b",
+      "pdf_url": "https://hess.copernicus.org/articles/23/2561/2019/hess-23-2561-2019.pdf",
+      "publication_date": "2019-01-21",
       "keywords_matched": [
         "electromagnetic analysis (title)"
       ],
