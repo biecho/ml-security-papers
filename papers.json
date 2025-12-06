@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-05",
+  "updated": "2025-12-06",
   "total": 909,
   "keywords": [
     "model stealing",
@@ -461,6 +461,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "6814d707b0e1f550baebde21c6753d0d7e2f6996",
+      "title": "LoRATEE: A Secure and Efficient Inference Framework for Multi-Tenant LoRA LLMs Based on TEE",
+      "abstract": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning approach that adaptes pre-trained Large Language Models (LLMs) to multi-tenant tasks by generating a variety of LoRA adapters. However, this approach faces significant security challenges and is particularly susceptible to malicious servers stealing model parameters and sensitive data. Existing research on addressing security risks in multi-tenant environments remains constrained and insufficient. This paper explores the security challenges and proposes the LoRATEE framework, which embeds LoRA adapters within a server-side Trusted Execution Environment (TEE) and employs a lightweight One-Time Pad (OTP) encryption mechanism to ensure secure data transmission. Additionally, we design a dynamic LoRA adapter prefetching mechanism to reduce I/O latency. Moreover, a LoRA adapter module equivalence-sharing strategy based on Parameter-Efficient Fine-Tuning (PEFT) and minimalist design principles was introduced to optimize adapters loading. Experimental results show that LoRATEE maintains inference efficiency while securing multi-tenant LoRA LLMs systems.",
+      "year": 2025,
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "authors": [
+        "Zechao Lin",
+        "Sisi Zhang",
+        "Xingbin Wang",
+        "Yulan Su",
+        "Yan Wang",
+        "Rui Hou",
+        "Dan Meng"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/6814d707b0e1f550baebde21c6753d0d7e2f6996",
+      "pdf_url": "",
+      "publication_date": "2025-04-06",
+      "keywords_matched": [
+        "stealing model"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "b31459472aa34e8711fe845acaab9b7b4a74f1d8",
       "title": "Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks",
       "abstract": "Graph Neural Networks (GNNs), specifically designed to process the graph data, have achieved remarkable success in various applications. Link stealing attacks on graph data pose a significant privacy threat, as attackers aim to extract sensitive relationships between nodes (entities), potentially leading to academic misconduct, fraudulent transactions, or other malicious activities. Previous studies have primarily focused on single datasets and did not explore cross-dataset attacks, let alone attacks that leverage the combined knowledge of multiple attackers. However, we find that an attacker can combine the data knowledge of multiple attackers to create a more effective attack model, which can be referred to cross-dataset attacks. Moreover, if knowledge can be extracted with the help of Large Language Models (LLMs), the attack capability will be more significant. In this paper, we propose a novel link stealing attack method that takes advantage of cross-dataset and LLMs. The LLM is applied to process datasets with different data structures in cross-dataset attacks. Each attacker fine-tunes the LLM on their specific dataset to generate a tailored attack model. We then introduce a novel model merging method to integrate the parameters of these attacker-specific models effectively. The result is a merged attack model with superior generalization capabilities, enabling effective attacks not only on the attackers\u2019 datasets but also on previously unseen (out-of-domain) datasets. We conducted extensive experiments in four datasets to demonstrate the effectiveness of our method. Additional experiments with three different GNN and LLM architectures further illustrate the generality of our approach. In summary, we present a new link stealing attack method that facilitates collaboration among multiple attackers to develop a powerful, universal attack model that reflects realistic real-world scenarios.",
@@ -612,30 +636,6 @@
       "publication_date": null,
       "keywords_matched": [
         "cloning attack"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "6814d707b0e1f550baebde21c6753d0d7e2f6996",
-      "title": "LoRATEE: A Secure and Efficient Inference Framework for Multi-Tenant LoRA LLMs Based on TEE",
-      "abstract": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning approach that adaptes pre-trained Large Language Models (LLMs) to multi-tenant tasks by generating a variety of LoRA adapters. However, this approach faces significant security challenges and is particularly susceptible to malicious servers stealing model parameters and sensitive data. Existing research on addressing security risks in multi-tenant environments remains constrained and insufficient. This paper explores the security challenges and proposes the LoRATEE framework, which embeds LoRA adapters within a server-side Trusted Execution Environment (TEE) and employs a lightweight One-Time Pad (OTP) encryption mechanism to ensure secure data transmission. Additionally, we design a dynamic LoRA adapter prefetching mechanism to reduce I/O latency. Moreover, a LoRA adapter module equivalence-sharing strategy based on Parameter-Efficient Fine-Tuning (PEFT) and minimalist design principles was introduced to optimize adapters loading. Experimental results show that LoRATEE maintains inference efficiency while securing multi-tenant LoRA LLMs systems.",
-      "year": 2025,
-      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-      "authors": [
-        "Zechao Lin",
-        "Sisi Zhang",
-        "Xingbin Wang",
-        "Yulan Su",
-        "Yan Wang",
-        "Rui Hou",
-        "Dan Meng"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/6814d707b0e1f550baebde21c6753d0d7e2f6996",
-      "pdf_url": "",
-      "publication_date": "2025-04-06",
-      "keywords_matched": [
-        "stealing model"
       ],
       "first_seen": "2025-12-05"
     },
@@ -3257,7 +3257,7 @@
         "D. Rolnick",
         "Florian Tram\u00e8r"
       ],
-      "citation_count": 126,
+      "citation_count": 127,
       "url": "https://www.semanticscholar.org/paper/b232f468de0b1d4ff1c2dfe5dbb03ec093160c48",
       "pdf_url": "",
       "publication_date": "2024-03-11",
@@ -3305,7 +3305,7 @@
         "Yi Chang",
         "Jiliang Tang"
       ],
-      "citation_count": 51,
+      "citation_count": 52,
       "url": "https://www.semanticscholar.org/paper/836c652834b0f6ffe10e53ede1c0b9433cfad9ea",
       "pdf_url": "",
       "publication_date": "2024-02-04",
@@ -3539,6 +3539,29 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "f39d1a38b1b9513d6d50ceb8c4663a97deafd632",
+      "title": "A Fast, Performant, Secure Distributed Training Framework For LLM",
+      "abstract": "The distributed (federated) LLM is an important method for co-training the domain-specific LLM using siloed data. However, maliciously stealing model parameters and data from the server or client side has become an urgent problem to be solved. In this paper, we propose a secure distributed LLM based on model slicing. In this case, we deploy the Trusted Execution Environment (TEE) on both the client and server side, and put the fine-tuned structure (LoRA or embedding of P-tuning v2) into the TEE. Then, secure communication is executed in the TEE and general environments through lightweight encryption. In order to further reduce the equipment cost as well as increase the model performance and accuracy, we propose a split fine-tuning scheme. In particular, we split the LLM by layers and place the latter layers in a server-side TEE (the client does not need a TEE). We then combine the proposed Sparsification Parameter Fine-tuning (SPF) with the LoRA part to improve the accuracy of the downstream task. Numerous experiments have shown that our method guarantees accuracy while maintaining security.",
+      "year": 2024,
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "authors": [
+        "Wei Huang",
+        "Yinggui Wang",
+        "Anda Cheng",
+        "Aihui Zhou",
+        "Chaofan Yu",
+        "Lei Wang"
+      ],
+      "citation_count": 22,
+      "url": "https://www.semanticscholar.org/paper/f39d1a38b1b9513d6d50ceb8c4663a97deafd632",
+      "pdf_url": "",
+      "publication_date": "2024-01-18",
+      "keywords_matched": [
+        "stealing model"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "650f6db095276ca03d03f4951587d7383ca3b39d",
       "title": "ModelGuard: Information-Theoretic Defense Against Model Extraction Attacks",
       "abstract": null,
@@ -3563,29 +3586,6 @@
         "model extraction attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "f39d1a38b1b9513d6d50ceb8c4663a97deafd632",
-      "title": "A Fast, Performant, Secure Distributed Training Framework For LLM",
-      "abstract": "The distributed (federated) LLM is an important method for co-training the domain-specific LLM using siloed data. However, maliciously stealing model parameters and data from the server or client side has become an urgent problem to be solved. In this paper, we propose a secure distributed LLM based on model slicing. In this case, we deploy the Trusted Execution Environment (TEE) on both the client and server side, and put the fine-tuned structure (LoRA or embedding of P-tuning v2) into the TEE. Then, secure communication is executed in the TEE and general environments through lightweight encryption. In order to further reduce the equipment cost as well as increase the model performance and accuracy, we propose a split fine-tuning scheme. In particular, we split the LLM by layers and place the latter layers in a server-side TEE (the client does not need a TEE). We then combine the proposed Sparsification Parameter Fine-tuning (SPF) with the LoRA part to improve the accuracy of the downstream task. Numerous experiments have shown that our method guarantees accuracy while maintaining security.",
-      "year": 2024,
-      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-      "authors": [
-        "Wei Huang",
-        "Yinggui Wang",
-        "Anda Cheng",
-        "Aihui Zhou",
-        "Chaofan Yu",
-        "Lei Wang"
-      ],
-      "citation_count": 21,
-      "url": "https://www.semanticscholar.org/paper/f39d1a38b1b9513d6d50ceb8c4663a97deafd632",
-      "pdf_url": "",
-      "publication_date": "2024-01-18",
-      "keywords_matched": [
-        "stealing model"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "3b82c1d871b0d5ab043e96cc4a73b77dfd03695e",
@@ -4234,6 +4234,34 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "c535f60659724b84d5a2169d434617ba49f005bf",
+      "title": "CoreGuard: Safeguarding Foundational Capabilities of LLMs Against Model Stealing in Edge Deployment",
+      "abstract": "Proprietary large language models (LLMs) exhibit strong generalization capabilities across diverse tasks and are increasingly deployed on edge devices for efficiency and privacy reasons. However, deploying proprietary LLMs at the edge without adequate protection introduces critical security threats. Attackers can extract model weights and architectures, enabling unauthorized copying and misuse. Even when protective measures prevent full extraction of model weights, attackers may still perform advanced attacks, such as fine-tuning, to further exploit the model. Existing defenses against these threats typically incur significant computational and communication overhead, making them impractical for edge deployment. To safeguard the edge-deployed LLMs, we introduce CoreGuard, a computation- and communication-efficient protection method. CoreGuard employs an efficient protection protocol to reduce computational overhead and minimize communication overhead via a propagation protocol. Extensive experiments show that CoreGuard achieves upper-bound security protection with negligible overhead.",
+      "year": 2024,
+      "venue": "arXiv.org",
+      "authors": [
+        "Qinfeng Li",
+        "Yangfan Xie",
+        "Tianyu Du",
+        "Zhiqiang Shen",
+        "Zhenghan Qin",
+        "Hao Peng",
+        "Xinkui Zhao",
+        "Xianwei Zhu",
+        "Jianwei Yin",
+        "Xuhong Zhang"
+      ],
+      "citation_count": 7,
+      "url": "https://www.semanticscholar.org/paper/c535f60659724b84d5a2169d434617ba49f005bf",
+      "pdf_url": "",
+      "publication_date": "2024-10-16",
+      "keywords_matched": [
+        "model stealing",
+        "extract model"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "b892ac05369526432384a4cdf1d4d087f8bc45de",
       "title": "Beyond Slow Signs in High-fidelity Model Extraction",
       "abstract": "Deep neural networks, costly to train and rich in intellectual property value, are increasingly threatened by model extraction attacks that compromise their confidentiality. Previous attacks have succeeded in reverse-engineering model parameters up to a precision of float64 for models trained on random data with at most three hidden layers using cryptanalytical techniques. However, the process was identified to be very time consuming and not feasible for larger and deeper models trained on standard benchmarks. Our study evaluates the feasibility of parameter extraction methods of Carlini et al. [1] further enhanced by Canales-Mart\\'inez et al. [2] for models trained on standard benchmarks. We introduce a unified codebase that integrates previous methods and reveal that computational tools can significantly influence performance. We develop further optimisations to the end-to-end attack and improve the efficiency of extracting weight signs by up to 14.8 times compared to former methods through the identification of easier and harder to extract neurons. Contrary to prior assumptions, we identify extraction of weights, not extraction of weight signs, as the critical bottleneck. With our improvements, a 16,721 parameter model with 2 hidden layers trained on MNIST is extracted within only 98 minutes compared to at least 150 minutes previously. Finally, addressing methodological deficiencies observed in previous studies, we propose new ways of robust benchmarking for future model extraction attacks.",
@@ -4252,34 +4280,6 @@
       "keywords_matched": [
         "model extraction",
         "model extraction attack"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "c535f60659724b84d5a2169d434617ba49f005bf",
-      "title": "CoreGuard: Safeguarding Foundational Capabilities of LLMs Against Model Stealing in Edge Deployment",
-      "abstract": "Proprietary large language models (LLMs) exhibit strong generalization capabilities across diverse tasks and are increasingly deployed on edge devices for efficiency and privacy reasons. However, deploying proprietary LLMs at the edge without adequate protection introduces critical security threats. Attackers can extract model weights and architectures, enabling unauthorized copying and misuse. Even when protective measures prevent full extraction of model weights, attackers may still perform advanced attacks, such as fine-tuning, to further exploit the model. Existing defenses against these threats typically incur significant computational and communication overhead, making them impractical for edge deployment. To safeguard the edge-deployed LLMs, we introduce CoreGuard, a computation- and communication-efficient protection method. CoreGuard employs an efficient protection protocol to reduce computational overhead and minimize communication overhead via a propagation protocol. Extensive experiments show that CoreGuard achieves upper-bound security protection with negligible overhead.",
-      "year": 2024,
-      "venue": "arXiv.org",
-      "authors": [
-        "Qinfeng Li",
-        "Yangfan Xie",
-        "Tianyu Du",
-        "Zhiqiang Shen",
-        "Zhenghan Qin",
-        "Hao Peng",
-        "Xinkui Zhao",
-        "Xianwei Zhu",
-        "Jianwei Yin",
-        "Xuhong Zhang"
-      ],
-      "citation_count": 6,
-      "url": "https://www.semanticscholar.org/paper/c535f60659724b84d5a2169d434617ba49f005bf",
-      "pdf_url": "",
-      "publication_date": "2024-10-16",
-      "keywords_matched": [
-        "model stealing",
-        "extract model"
       ],
       "first_seen": "2025-11-28"
     },
@@ -4550,6 +4550,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "2b89dd26035172807159d1f5bc972ed04d7c4bb2",
+      "title": "Model Stealing for Any Low-Rank Language Model",
+      "abstract": "Model stealing, where a learner tries to recover an unknown model via carefully chosen queries, is a critical problem in machine learning, as it threatens the security of proprietary models and the privacy of data they are trained on. In recent years, there has been particular interest in stealing large language models (LLMs). In this paper, we aim to build a theoretical understanding of stealing language models by studying a simple and mathematically tractable setting. We study model stealing for Hidden Markov Models (HMMs), and more generally low-rank language models. We assume that the learner works in the conditional query model, introduced by Kakade, Krishnamurthy, Mahajan and Zhang. Our main result is an efficient algorithm in the conditional query model, for learning any low-rank distribution. In other words, our algorithm succeeds at stealing any language model whose output distribution is low-rank. This improves upon the previous result which also requires the unknown distribution to have high \u201cfidelity\u201d \u2013 a property that holds only in restricted cases. There are two key insights behind our algorithm: First, we represent the conditional distributions at each timestep by constructing barycentric spanners among a collection of vectors of exponentially large dimension. Second, for sampling from our representation, we iteratively solve a sequence of convex optimization problems that involve projection in relative entropy to prevent compounding of errors over the length of the sequence. This is an interesting example where, at least theoretically, allowing a machine learning model to solve more complex problems at inference time can lead to drastic improvements in its performance.",
+      "year": 2024,
+      "venue": "Symposium on the Theory of Computing",
+      "authors": [
+        "Allen Liu",
+        "Ankur Moitra"
+      ],
+      "citation_count": 5,
+      "url": "https://www.semanticscholar.org/paper/2b89dd26035172807159d1f5bc972ed04d7c4bb2",
+      "pdf_url": "",
+      "publication_date": "2024-11-12",
+      "keywords_matched": [
+        "model stealing",
+        "stealing language model"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "94621729b6ca9e811d8a052dc3457e98df457676",
       "title": "Fully Exploiting Every Real Sample: SuperPixel Sample Gradient Model Stealing",
       "abstract": "Model stealing (MS) involves querying and observing the output of a machine learning model to steal its capabilities. The quality of queried data is crucial, yet obtaining a large amount of real data for MS is often challenging. Recent works have reduced reliance on real data by using generative models. However, when high-dimensional query data is required, these methods are impractical due to the high costs of querying and the risk of model collapse. In this work, we propose using sample gradients (SG) to enhance the utility of each real sample, as SG provides crucial guidance on the decision boundaries of the victim model. However, utilizing SG in the model stealing scenario faces two challenges: 1. Pixel-level gradient estimation requires ex-tensive query volume and is susceptible to defenses. 2. The estimation of sample gradients has a significant variance. This paper proposes Superpixel Sample Gradient stealing (SPSG) for model stealing under the constraint of limited real samples. With the basic idea of imitating the victim model's low-variance patch-level gradients instead ofpixel-level gradients, SPSG achieves efficient sample gradient es-timation through two steps. First, we perform patch-wise perturbations on query images to estimate the average gradient in different regions of the image. Then, we filter the gradients through a threshold strategy to reduce variance. Exhaustive experiments demonstrate that, with the same number of real samples, SPSG achieves accuracy, agreements, and adversarial success rate significantly surpassing the current state-of-the-art MS methods. Codes are available at https://github.com/zyI123456aBISPSG_attack.",
@@ -4570,26 +4590,6 @@
       "keywords_matched": [
         "model stealing",
         "stealing model"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "2b89dd26035172807159d1f5bc972ed04d7c4bb2",
-      "title": "Model Stealing for Any Low-Rank Language Model",
-      "abstract": "Model stealing, where a learner tries to recover an unknown model via carefully chosen queries, is a critical problem in machine learning, as it threatens the security of proprietary models and the privacy of data they are trained on. In recent years, there has been particular interest in stealing large language models (LLMs). In this paper, we aim to build a theoretical understanding of stealing language models by studying a simple and mathematically tractable setting. We study model stealing for Hidden Markov Models (HMMs), and more generally low-rank language models. We assume that the learner works in the conditional query model, introduced by Kakade, Krishnamurthy, Mahajan and Zhang. Our main result is an efficient algorithm in the conditional query model, for learning any low-rank distribution. In other words, our algorithm succeeds at stealing any language model whose output distribution is low-rank. This improves upon the previous result which also requires the unknown distribution to have high \u201cfidelity\u201d \u2013 a property that holds only in restricted cases. There are two key insights behind our algorithm: First, we represent the conditional distributions at each timestep by constructing barycentric spanners among a collection of vectors of exponentially large dimension. Second, for sampling from our representation, we iteratively solve a sequence of convex optimization problems that involve projection in relative entropy to prevent compounding of errors over the length of the sequence. This is an interesting example where, at least theoretically, allowing a machine learning model to solve more complex problems at inference time can lead to drastic improvements in its performance.",
-      "year": 2024,
-      "venue": "Symposium on the Theory of Computing",
-      "authors": [
-        "Allen Liu",
-        "Ankur Moitra"
-      ],
-      "citation_count": 4,
-      "url": "https://www.semanticscholar.org/paper/2b89dd26035172807159d1f5bc972ed04d7c4bb2",
-      "pdf_url": "",
-      "publication_date": "2024-11-12",
-      "keywords_matched": [
-        "model stealing",
-        "stealing language model"
       ],
       "first_seen": "2025-11-28"
     },
@@ -5336,6 +5336,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "c67af67a82170c03e7d39f2f143ef74e8367d0a4",
+      "title": "Defending against model extraction attacks with OOD feature learning and decision boundary confusion",
+      "abstract": null,
+      "year": 2024,
+      "venue": "Computers & security",
+      "authors": [
+        "Chuang Liang",
+        "Jie Huang",
+        "Zeping Zhang",
+        "Shuaishuai Zhang"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/c67af67a82170c03e7d39f2f143ef74e8367d0a4",
+      "pdf_url": "",
+      "publication_date": "2024-01-01",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "aee0bc1bc011d8da14aa209d0af984a9cc6b227f",
       "title": "Streamlining DNN Obfuscation to Defend Against Model Stealing Attacks",
       "abstract": "Side-channel-based Deep Neural Network (DNN) model stealing has become a major concern with the advent of learning-based attacks. In respond to this threat, defence mechanisms have been presented to obfuscate the DNN execution, making it difficult to infer the correlation between side-channel information and DNN architecture. However, state-of-the-art (SOTA) DNN obfuscation is time-consuming, requires expert-level changes in existing DNN compilers (e.g., Tensor Virtual Machine (TVM)), and often relies on prior knowledge of the attack models. In this work, we study the impact of various obfuscation levels on the defence effectiveness, and present a streamlined DNN obfuscation process that is extremely fast and is agnostic to any attack models. Our study reveals that by just modifying the scheduling of DNN operations on the GPU, we can achieve comparable defense performance as the SOTA in an attack agnostic manner. We also propose a simple algorithm that determines an effective scheduling configuration for mitigating DNN model stealing at a fraction of a time required by SOTA obfuscation methods. Our method can be easily integrated into existing DNN compilers as a security feature, even by non-experts, to protect their DNN against side-channel attacks.",
@@ -5771,35 +5794,6 @@
       "first_seen": "2025-12-05"
     },
     {
-      "paper_id": "21e6d0743c99e614ccff2533a591affcc3438e14",
-      "title": "OML: A Primitive for Reconciling Open Access with Owner Control in AI Model Distribution",
-      "abstract": "The current paradigm of AI model distribution presents a fundamental dichotomy: models are either closed and API-gated, sacrificing transparency and local execution, or openly distributed, sacrificing monetization and control. We introduce OML(Open-access, Monetizable, and Loyal AI Model Serving), a primitive that enables a new distribution paradigm where models can be freely distributed for local execution while maintaining cryptographically enforced usage authorization. We are the first to introduce and formalize this problem, introducing rigorous security definitions tailored to the unique challenge of white-box model protection: model extraction resistance and permission forgery resistance. We prove fundamental bounds on the achievability of OML properties and characterize the complete design space of potential constructions, from obfuscation-based approaches to cryptographic solutions. To demonstrate practical feasibility, we present OML 1.0, a novel OML construction leveraging AI-native model fingerprinting coupled with crypto-economic enforcement mechanisms. Through extensive theoretical analysis and empirical evaluation, we establish OML as a foundational primitive necessary for sustainable AI ecosystems. This work opens a new research direction at the intersection of cryptography, machine learning, and mechanism design, with critical implications for the future of AI distribution and governance.",
-      "year": 2024,
-      "venue": "",
-      "authors": [
-        "Zerui Cheng",
-        "Edoardo Contente",
-        "Ben Finch",
-        "Oleg Golev",
-        "J. Hayase",
-        "Andrew Miller",
-        "Niusha Moshrefi",
-        "Anshul Nasery",
-        "Sandeep Nailwal",
-        "Sewoong Oh",
-        "Himanshu Tyagi",
-        "P. Viswanath"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/21e6d0743c99e614ccff2533a591affcc3438e14",
-      "pdf_url": "",
-      "publication_date": "2024-11-01",
-      "keywords_matched": [
-        "model extraction"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
       "paper_id": "20993724635d425f696e1c7e38c9e8da025ff757",
       "title": "FedMCT: A Federated Framework for Intellectual Property Protection and Malicious Client Tracking",
       "abstract": "In the era of big data, federated learning (FL) emerges as a solution to train models collectively without exposing individual data, maintaining similar accuracy to models trained on shared datasets. However, challenges arise with the advent of privacy inference attacks and model theft, posing significant threats to the privacy of FL models, especially regarding intellectual property (IP) protection. This paper introduces FedMCT (Federated Malicious Client Tracking), a novel framework addressing these challenges in the FL context. The FedMCT framework is a new approach to protect IP rights of FL clients and track cheaters, which can improve efficiency in resource-heterogeneous environments. By embedding unique watermarks or fingerprints in Deep Neural Network (DNN) models, we can protect model IP. We employ a configuration round before watermark embedding, segmenting clients based on performance for tiered model watermarking. We also propose a tiered watermarking and traitor tracking mechanism, which reduces the tracking time and ensures high traitor tracking efficiency. Extensive experiments validate our solution\u2019s efficacy in maintaining original model performance, watermark privacy, and detectability, robust against various attacks, demonstrating superior traitor tracing efficiency compared to existing frameworks.",
@@ -5818,29 +5812,6 @@
       "publication_date": "2024-02-02",
       "keywords_matched": [
         "model theft",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "c67af67a82170c03e7d39f2f143ef74e8367d0a4",
-      "title": "Defending against model extraction attacks with OOD feature learning and decision boundary confusion",
-      "abstract": null,
-      "year": 2024,
-      "venue": "Computers & security",
-      "authors": [
-        "Chuang Liang",
-        "Jie Huang",
-        "Zeping Zhang",
-        "Shuaishuai Zhang"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/c67af67a82170c03e7d39f2f143ef74e8367d0a4",
-      "pdf_url": "",
-      "publication_date": "2024-01-01",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
         "(via citation)"
       ],
       "first_seen": "2025-12-05"
@@ -5889,6 +5860,35 @@
         "model extraction",
         "model extraction attack",
         "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "21e6d0743c99e614ccff2533a591affcc3438e14",
+      "title": "OML: A Primitive for Reconciling Open Access with Owner Control in AI Model Distribution",
+      "abstract": "The current paradigm of AI model distribution presents a fundamental dichotomy: models are either closed and API-gated, sacrificing transparency and local execution, or openly distributed, sacrificing monetization and control. We introduce OML(Open-access, Monetizable, and Loyal AI Model Serving), a primitive that enables a new distribution paradigm where models can be freely distributed for local execution while maintaining cryptographically enforced usage authorization. We are the first to introduce and formalize this problem, introducing rigorous security definitions tailored to the unique challenge of white-box model protection: model extraction resistance and permission forgery resistance. We prove fundamental bounds on the achievability of OML properties and characterize the complete design space of potential constructions, from obfuscation-based approaches to cryptographic solutions. To demonstrate practical feasibility, we present OML 1.0, a novel OML construction leveraging AI-native model fingerprinting coupled with crypto-economic enforcement mechanisms. Through extensive theoretical analysis and empirical evaluation, we establish OML as a foundational primitive necessary for sustainable AI ecosystems. This work opens a new research direction at the intersection of cryptography, machine learning, and mechanism design, with critical implications for the future of AI distribution and governance.",
+      "year": 2024,
+      "venue": "",
+      "authors": [
+        "Zerui Cheng",
+        "Edoardo Contente",
+        "Ben Finch",
+        "Oleg Golev",
+        "J. Hayase",
+        "Andrew Miller",
+        "Niusha Moshrefi",
+        "Anshul Nasery",
+        "Sandeep Nailwal",
+        "Sewoong Oh",
+        "Himanshu Tyagi",
+        "P. Viswanath"
+      ],
+      "citation_count": 1,
+      "url": "https://www.semanticscholar.org/paper/21e6d0743c99e614ccff2533a591affcc3438e14",
+      "pdf_url": "",
+      "publication_date": "2024-11-01",
+      "keywords_matched": [
+        "model extraction"
       ],
       "first_seen": "2025-12-05"
     },
@@ -9760,6 +9760,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "3b1cdd062387bccb4b8bfdd46dd61937caab5201",
+      "title": "Theoretical Limits of Provable Security Against Model Extraction by Efficient Observational Defenses",
+      "abstract": "Can we hope to provide provable security against model extraction attacks? As a step towards a theoretical study of this question, we unify and abstract a wide range of \u201cobservational\u201d model extraction defenses (OMEDs) - roughly, those that attempt to detect model extraction by analyzing the distribution over the adversary's queries. To accompany the abstract OMED, we define the notion of complete OMEDs - when benign clients can freely interact with the model - and sound OMEDs - when adversarial clients are caught and prevented from reverse engineering the model. Our formalism facilitates a simple argument for obtaining provable security against model extraction by complete and sound OMEDs, using (average-case) hardness assumptions for PAC-learning, in a way that abstracts current techniques in the prior literature. The main result of this work establishes a partial computational incompleteness theorem for the OMED: any efficient OMED for a machine learning model computable by a polynomial size decision tree that satisfies a basic form of completeness cannot satisfy soundness, unless the subexponential Learning Parity with Noise (LPN) assumption does not hold. To prove the incompleteness theorem, we introduce a class of model extraction attacks called natural Covert Learning attacks based on a connection to the Covert Learning model of Canetti and Karchmer (TCC '21), and show that such attacks circumvent any defense within our abstract mechanism in a black-box, nonadaptive way. As a further technical contribution, we extend the Covert Learning algorithm of Canetti and Karchmer to work over any \u201cconcise\u201d product distribution (albeit for juntas of a logarithmic number of variables rather than polynomial size decision trees), by showing that the technique of learning with a distributional inverter of Binnendyk et al. (ALT '22) remains viable in the Covert Learning setting.",
+      "year": 2023,
+      "venue": "2023 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+      "authors": [
+        "Ari Karchmer"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/3b1cdd062387bccb4b8bfdd46dd61937caab5201",
+      "pdf_url": "",
+      "publication_date": "2023-02-01",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "model extraction defense"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "ad26add46cae7797de1d638b84a0fa4ad1743a60",
       "title": "FMSA: a meta-learning framework-based fast model stealing attack technique against intelligent network intrusion detection systems",
       "abstract": "Intrusion detection systems are increasingly using machine learning. While machine learning has shown excellent performance in identifying malicious traffic, it may increase the risk of privacy leakage. This paper focuses on implementing a model stealing attack on intrusion detection systems. Existing model stealing attacks are hard to implement in practical network environments, as they either need private data of the victim dataset or frequent access to the victim model. In this paper, we propose a novel solution called Fast Model Stealing Attack (FMSA) to address the problem in the field of model stealing attacks. We also highlight the risks of using ML-NIDS in network security. First, meta-learning frameworks are introduced into the model stealing algorithm to clone the victim model in a black-box state. Then, the number of accesses to the target model is used as an optimization term, resulting in minimal queries to achieve model stealing. Finally, adversarial training is used to simulate the data distribution of the target model and achieve the recovery of privacy data. Through experiments on multiple public datasets, compared to existing state-of-the-art algorithms, FMSA reduces the number of accesses to the target model and improves the accuracy of the clone model on the test dataset to 88.9% and the similarity with the target model to 90.1%. We can demonstrate the successful execution of model stealing attacks on the ML-NIDS system even with protective measures in place to limit the number of anomalous queries.",
@@ -10055,27 +10075,6 @@
       "publication_date": null,
       "keywords_matched": [
         "side-channel attack (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "3b1cdd062387bccb4b8bfdd46dd61937caab5201",
-      "title": "Theoretical Limits of Provable Security Against Model Extraction by Efficient Observational Defenses",
-      "abstract": "Can we hope to provide provable security against model extraction attacks? As a step towards a theoretical study of this question, we unify and abstract a wide range of \u201cobservational\u201d model extraction defenses (OMEDs) - roughly, those that attempt to detect model extraction by analyzing the distribution over the adversary's queries. To accompany the abstract OMED, we define the notion of complete OMEDs - when benign clients can freely interact with the model - and sound OMEDs - when adversarial clients are caught and prevented from reverse engineering the model. Our formalism facilitates a simple argument for obtaining provable security against model extraction by complete and sound OMEDs, using (average-case) hardness assumptions for PAC-learning, in a way that abstracts current techniques in the prior literature. The main result of this work establishes a partial computational incompleteness theorem for the OMED: any efficient OMED for a machine learning model computable by a polynomial size decision tree that satisfies a basic form of completeness cannot satisfy soundness, unless the subexponential Learning Parity with Noise (LPN) assumption does not hold. To prove the incompleteness theorem, we introduce a class of model extraction attacks called natural Covert Learning attacks based on a connection to the Covert Learning model of Canetti and Karchmer (TCC '21), and show that such attacks circumvent any defense within our abstract mechanism in a black-box, nonadaptive way. As a further technical contribution, we extend the Covert Learning algorithm of Canetti and Karchmer to work over any \u201cconcise\u201d product distribution (albeit for juntas of a logarithmic number of variables rather than polynomial size decision trees), by showing that the technique of learning with a distributional inverter of Binnendyk et al. (ALT '22) remains viable in the Covert Learning setting.",
-      "year": 2023,
-      "venue": "2023 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
-      "authors": [
-        "Ari Karchmer"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/3b1cdd062387bccb4b8bfdd46dd61937caab5201",
-      "pdf_url": "",
-      "publication_date": "2023-02-01",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
-        "model extraction defense",
-        "(via citation)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -11262,7 +11261,7 @@
         "Masashi Tawada",
         "N. Togawa"
       ],
-      "citation_count": 26,
+      "citation_count": 27,
       "url": "https://www.semanticscholar.org/paper/fa8e84e2091105083f3b697158073f8896c7fb4c",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/12/9880482/09664360.pdf",
       "publication_date": "2022-10-01",
@@ -11282,7 +11281,7 @@
         "A. Alansary",
         "Jonathan Passerat-Palmbach"
       ],
-      "citation_count": 25,
+      "citation_count": 26,
       "url": "https://www.semanticscholar.org/paper/bf87c3c380802df24628cab8f6dff90b42304f77",
       "pdf_url": "",
       "publication_date": "2022-02-27",
@@ -18381,7 +18380,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 475,
+      "citation_count": 476,
       "url": "https://www.semanticscholar.org/paper/4582e2350e4822834dcf266522690722dd4430d4",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8790377/8806708/08806737.pdf",
       "publication_date": "2018-05-07",
@@ -19294,7 +19293,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1955,
+      "citation_count": 1956,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
