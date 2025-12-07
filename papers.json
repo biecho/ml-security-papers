@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-06",
+  "updated": "2025-12-07",
   "total": 909,
   "keywords": [
     "model stealing",
@@ -273,7 +273,7 @@
       "title": "CEGA: A Cost-Effective Approach for Graph-Based Model Extraction and Acquisition",
       "abstract": "Graph Neural Networks (GNNs) have demonstrated remarkable utility across diverse applications, and their growing complexity has made Machine Learning as a Service (MLaaS) a viable platform for scalable deployment. However, this accessibility also exposes GNN to serious security threats, most notably model extraction attacks (MEAs), in which adversaries strategically query a deployed model to construct a high-fidelity replica. In this work, we evaluate the vulnerability of GNNs to MEAs and explore their potential for cost-effective model acquisition in non-adversarial research settings. Importantly, adaptive node querying strategies can also serve a critical role in research, particularly when labeling data is expensive or time-consuming. By selectively sampling informative nodes, researchers can train high-performing GNNs with minimal supervision, which is particularly valuable in domains such as biomedicine, where annotations often require expert input. To address this, we propose a node querying strategy tailored to a highly practical yet underexplored scenario, where bulk queries are prohibited, and only a limited set of initial nodes is available. Our approach iteratively refines the node selection mechanism over multiple learning cycles, leveraging historical feedback to improve extraction efficiency. Extensive experiments on benchmark graph datasets demonstrate our superiority over comparable baselines on accuracy, fidelity, and F1 score under strict query-size constraints. These results highlight both the susceptibility of deployed GNNs to extraction attacks and the promise of ethical, efficient GNN acquisition methods to support low-resource research environments.",
       "year": 2025,
-      "venue": "arXiv.org",
+      "venue": "International Conference on Machine Learning",
       "authors": [
         "Zebin Wang",
         "Menghan Lin",
@@ -1494,7 +1494,7 @@
       "title": "Stealix: Model Stealing via Prompt Evolution",
       "abstract": "Model stealing poses a significant security risk in machine learning by enabling attackers to replicate a black-box model without access to its training data, thus jeopardizing intellectual property and exposing sensitive information. Recent methods that use pre-trained diffusion models for data synthesis improve efficiency and performance but rely heavily on manually crafted prompts, limiting automation and scalability, especially for attackers with little expertise. To assess the risks posed by open-source pre-trained models, we propose a more realistic threat model that eliminates the need for prompt design skills or knowledge of class names. In this context, we introduce Stealix, the first approach to perform model stealing without predefined prompts. Stealix uses two open-source pre-trained models to infer the victim model's data distribution, and iteratively refines prompts through a genetic algorithm, progressively improving the precision and diversity of synthetic images. Our experimental results demonstrate that Stealix significantly outperforms other methods, even those with access to class names or fine-grained prompts, while operating under the same query budget. These findings highlight the scalability of our approach and suggest that the risks posed by pre-trained generative models in model stealing may be greater than previously recognized.",
       "year": 2025,
-      "venue": "arXiv.org",
+      "venue": "International Conference on Machine Learning",
       "authors": [
         "Zhixiong Zhuang",
         "Hui-Po Wang",
@@ -3305,7 +3305,7 @@
         "Yi Chang",
         "Jiliang Tang"
       ],
-      "citation_count": 52,
+      "citation_count": 53,
       "url": "https://www.semanticscholar.org/paper/836c652834b0f6ffe10e53ede1c0b9433cfad9ea",
       "pdf_url": "",
       "publication_date": "2024-02-04",
@@ -4273,7 +4273,7 @@
         "Ilia Shumailov",
         "Jamie Hayes"
       ],
-      "citation_count": 6,
+      "citation_count": 7,
       "url": "https://www.semanticscholar.org/paper/b892ac05369526432384a4cdf1d4d087f8bc45de",
       "pdf_url": "",
       "publication_date": "2024-06-14",
@@ -5359,6 +5359,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "20993724635d425f696e1c7e38c9e8da025ff757",
+      "title": "FedMCT: A Federated Framework for Intellectual Property Protection and Malicious Client Tracking",
+      "abstract": "In the era of big data, federated learning (FL) emerges as a solution to train models collectively without exposing individual data, maintaining similar accuracy to models trained on shared datasets. However, challenges arise with the advent of privacy inference attacks and model theft, posing significant threats to the privacy of FL models, especially regarding intellectual property (IP) protection. This paper introduces FedMCT (Federated Malicious Client Tracking), a novel framework addressing these challenges in the FL context. The FedMCT framework is a new approach to protect IP rights of FL clients and track cheaters, which can improve efficiency in resource-heterogeneous environments. By embedding unique watermarks or fingerprints in Deep Neural Network (DNN) models, we can protect model IP. We employ a configuration round before watermark embedding, segmenting clients based on performance for tiered model watermarking. We also propose a tiered watermarking and traitor tracking mechanism, which reduces the tracking time and ensures high traitor tracking efficiency. Extensive experiments validate our solution\u2019s efficacy in maintaining original model performance, watermark privacy, and detectability, robust against various attacks, demonstrating superior traitor tracing efficiency compared to existing frameworks.",
+      "year": 2024,
+      "venue": "International Conference on Machine Learning and Computing",
+      "authors": [
+        "Qianyi Chen",
+        "Peijia Zheng",
+        "Yusong Du",
+        "Weiqi Luo",
+        "Hongmei Liu"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/20993724635d425f696e1c7e38c9e8da025ff757",
+      "pdf_url": "",
+      "publication_date": "2024-02-02",
+      "keywords_matched": [
+        "model theft",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "aee0bc1bc011d8da14aa209d0af984a9cc6b227f",
       "title": "Streamlining DNN Obfuscation to Defend Against Model Stealing Attacks",
       "abstract": "Side-channel-based Deep Neural Network (DNN) model stealing has become a major concern with the advent of learning-based attacks. In respond to this threat, defence mechanisms have been presented to obfuscate the DNN execution, making it difficult to infer the correlation between side-channel information and DNN architecture. However, state-of-the-art (SOTA) DNN obfuscation is time-consuming, requires expert-level changes in existing DNN compilers (e.g., Tensor Virtual Machine (TVM)), and often relies on prior knowledge of the attack models. In this work, we study the impact of various obfuscation levels on the defence effectiveness, and present a streamlined DNN obfuscation process that is extremely fast and is agnostic to any attack models. Our study reveals that by just modifying the scheduling of DNN operations on the GPU, we can achieve comparable defense performance as the SOTA in an attack agnostic manner. We also propose a simple algorithm that determines an effective scheduling configuration for mitigating DNN model stealing at a fraction of a time required by SOTA obfuscation methods. Our method can be easily integrated into existing DNN compilers as a security feature, even by non-experts, to protect their DNN against side-channel attacks.",
@@ -5790,29 +5813,6 @@
       "publication_date": "2024-09-01",
       "keywords_matched": [
         "side-channel attack (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "20993724635d425f696e1c7e38c9e8da025ff757",
-      "title": "FedMCT: A Federated Framework for Intellectual Property Protection and Malicious Client Tracking",
-      "abstract": "In the era of big data, federated learning (FL) emerges as a solution to train models collectively without exposing individual data, maintaining similar accuracy to models trained on shared datasets. However, challenges arise with the advent of privacy inference attacks and model theft, posing significant threats to the privacy of FL models, especially regarding intellectual property (IP) protection. This paper introduces FedMCT (Federated Malicious Client Tracking), a novel framework addressing these challenges in the FL context. The FedMCT framework is a new approach to protect IP rights of FL clients and track cheaters, which can improve efficiency in resource-heterogeneous environments. By embedding unique watermarks or fingerprints in Deep Neural Network (DNN) models, we can protect model IP. We employ a configuration round before watermark embedding, segmenting clients based on performance for tiered model watermarking. We also propose a tiered watermarking and traitor tracking mechanism, which reduces the tracking time and ensures high traitor tracking efficiency. Extensive experiments validate our solution\u2019s efficacy in maintaining original model performance, watermark privacy, and detectability, robust against various attacks, demonstrating superior traitor tracing efficiency compared to existing frameworks.",
-      "year": 2024,
-      "venue": "International Conference on Machine Learning and Computing",
-      "authors": [
-        "Qianyi Chen",
-        "Peijia Zheng",
-        "Yusong Du",
-        "Weiqi Luo",
-        "Hongmei Liu"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/20993724635d425f696e1c7e38c9e8da025ff757",
-      "pdf_url": "",
-      "publication_date": "2024-02-02",
-      "keywords_matched": [
-        "model theft",
-        "(via citation)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -7244,7 +7244,7 @@
         "Yu-Xiang Wang",
         "Lei Li"
       ],
-      "citation_count": 104,
+      "citation_count": 105,
       "url": "https://www.semanticscholar.org/paper/c25d2a27f1abe169d7b68078071b6698f0980469",
       "pdf_url": "https://arxiv.org/pdf/2302.03162",
       "publication_date": "2023-02-06",
@@ -7272,7 +7272,7 @@
         "Guangzhong Sun",
         "Xing Xie"
       ],
-      "citation_count": 86,
+      "citation_count": 87,
       "url": "https://www.semanticscholar.org/paper/d4c3e3e3c01afed15926adf81527bf46aa491c6a",
       "pdf_url": "http://arxiv.org/pdf/2305.10036",
       "publication_date": "2023-05-17",
@@ -7359,7 +7359,7 @@
         "Shuai Wang",
         "Cuiyun Gao"
       ],
-      "citation_count": 58,
+      "citation_count": 59,
       "url": "https://www.semanticscholar.org/paper/d032a269b465df9116f080ff9c56049bc581acb4",
       "pdf_url": "",
       "publication_date": "2023-11-15",
@@ -7457,6 +7457,31 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "68b560859078171978f2c040b1522f4e7668c38e",
+      "title": "On Extracting Specialized Code Abilities from Large Language Models: A Feasibility Study",
+      "abstract": "Recent advances in large language models (LLMs) significantly boost their usage in software engineering. However, training a well-performing LLM demands a substantial workforce for data collection and annotation. Moreover, training datasets may be proprietary or partially open, and the process often requires a costly GPU cluster. The intellectual property value of commercial LLMs makes them attractive targets for imitation attacks, but creating an imitation model with comparable parameters still incurs high costs. This motivates us to explore a practical and novel direction: slicing commercial black-box LLMs using medium-sized backbone models. In this paper, we explore the feasibility of launching imitation attacks on LLMs to extract their specialized code abilities, such as \u201ccode synthesis\u201d and \u201ccode translation:\u2019 We systematically investigate the effectiveness of launching code ability extraction attacks under different code-related tasks with multiple query schemes, including zero-shot, in-context, and Chain-of-Thought. We also design response checks to refine the outputs, leading to an effective imitation training process. Our results show promising outcomes, demonstrating that with a reasonable number of queries, attackers can train a medium-sized backbone model to replicate specialized code behaviors similar to the target LLMs. We summarize our findings and insights to help researchers better understand the threats posed by imitation attacks, including revealing a practical attack surface for generating adversarial code examples against LLMs.",
+      "year": 2023,
+      "venue": "International Conference on Software Engineering",
+      "authors": [
+        "Zongjie Li",
+        "Chaozheng Wang",
+        "Pingchuan Ma",
+        "Chaowei Liu",
+        "Shuai Wang",
+        "Daoyuan Wu",
+        "Cuiyun Gao"
+      ],
+      "citation_count": 34,
+      "url": "https://www.semanticscholar.org/paper/68b560859078171978f2c040b1522f4e7668c38e",
+      "pdf_url": "https://arxiv.org/pdf/2303.03012",
+      "publication_date": "2023-03-06",
+      "keywords_matched": [
+        "imitation attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "143edab286a463b6549978834be58f6037b14df4",
       "title": "Electromagnetic Modeling Using an FDTD-Equivalent Recurrent Convolution Neural Network: Accurate computing on a deep learning framework",
       "abstract": "In this study, a recurrent convolutional neural network (RCNN) is designed for full-wave electromagnetic (EM) modeling. This network is equivalent to the finite difference time domain (FDTD) method. The convolutional kernel can describe the finite difference operator, and the recurrent neural network (RNN) provides a framework for the time-marching scheme in FDTD. The network weights are derived from the FDTD formulation, and the training process is not needed. Therefore, this FDTD-RCNN can rigorously solve a given EM modeling problem as an FDTD solver does.",
@@ -7475,31 +7500,6 @@
       "publication_date": "2023-02-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "68b560859078171978f2c040b1522f4e7668c38e",
-      "title": "On Extracting Specialized Code Abilities from Large Language Models: A Feasibility Study",
-      "abstract": "Recent advances in large language models (LLMs) significantly boost their usage in software engineering. However, training a well-performing LLM demands a substantial workforce for data collection and annotation. Moreover, training datasets may be proprietary or partially open, and the process often requires a costly GPU cluster. The intellectual property value of commercial LLMs makes them attractive targets for imitation attacks, but creating an imitation model with comparable parameters still incurs high costs. This motivates us to explore a practical and novel direction: slicing commercial black-box LLMs using medium-sized backbone models. In this paper, we explore the feasibility of launching imitation attacks on LLMs to extract their specialized code abilities, such as \u201ccode synthesis\u201d and \u201ccode translation:\u2019 We systematically investigate the effectiveness of launching code ability extraction attacks under different code-related tasks with multiple query schemes, including zero-shot, in-context, and Chain-of-Thought. We also design response checks to refine the outputs, leading to an effective imitation training process. Our results show promising outcomes, demonstrating that with a reasonable number of queries, attackers can train a medium-sized backbone model to replicate specialized code behaviors similar to the target LLMs. We summarize our findings and insights to help researchers better understand the threats posed by imitation attacks, including revealing a practical attack surface for generating adversarial code examples against LLMs.",
-      "year": 2023,
-      "venue": "International Conference on Software Engineering",
-      "authors": [
-        "Zongjie Li",
-        "Chaozheng Wang",
-        "Pingchuan Ma",
-        "Chaowei Liu",
-        "Shuai Wang",
-        "Daoyuan Wu",
-        "Cuiyun Gao"
-      ],
-      "citation_count": 33,
-      "url": "https://www.semanticscholar.org/paper/68b560859078171978f2c040b1522f4e7668c38e",
-      "pdf_url": "https://arxiv.org/pdf/2303.03012",
-      "publication_date": "2023-03-06",
-      "keywords_matched": [
-        "imitation attack",
-        "(via citation)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -7773,6 +7773,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "fefdabd7bd1c0007c0ef7db5faa6486f28166c32",
+      "title": "Membership Inference Attacks Against Sequential Recommender Systems",
+      "abstract": "Recent studies have demonstrated the vulnerability of recommender systems to membership inference attacks, which determine whether a user\u2019s historical data was utilized for model training, posing serious privacy leakage issues. Existing works assumed that member and non-member users follow different recommendation modes, and then infer membership based on the difference vector between the user\u2019s historical behaviors and the recommendation list. The previous frameworks are invalid against inductive recommendations, such as sequential recommendations, since the disparities of difference vectors constructed by the recommendations between members and non-members become imperceptible. This motivates us to dig deeper into the target model. In addition, most MIA frameworks assume that they can obtain some in-distribution data from the same distribution of the target data, which is hard to gain in recommender system. To address these difficulties, we propose a Membership Inference Attack framework against sequential recommenders based on Model Extraction(ME-MIA). Specifically, we train a surrogate model to simulate the target model based on two universal loss functions. For a given behavior sequence, the loss functions ensure the recommended items and corresponding rank of the surrogate model are consistent with the target model\u2019s recommendation. Due to the special training mode of the surrogate model, it is hard to judge which user is its member(non-member). Therefore, we establish a shadow model and use shadow model\u2019s members(non-members) to train the attack model later. Next, we build a user feature generator to construct representative feature vectors from the shadow(surrogate) model. The crafting feature vectors are finally input into the attack model to identify users\u2019 membership. Furthermore, to tackle the high cost of obtaining in-distribution data, we develop two variants of ME-MIA, realizing data-efficient and even data-free MIA by fabricating authentic in-distribution data. Notably, the latter is impossible in the previous works. Finally, we evaluate ME-MIA against multiple sequential recommendation models on three real-world datasets. Experimental results show that ME-MIA and its variants can achieve efficient extraction and outperform state-of-the-art algorithms in terms of attack performance.",
+      "year": 2023,
+      "venue": "The Web Conference",
+      "authors": [
+        "Zhihao Zhu",
+        "Chenwang Wu",
+        "Rui Fan",
+        "Defu Lian",
+        "Enhong Chen"
+      ],
+      "citation_count": 20,
+      "url": "https://www.semanticscholar.org/paper/fefdabd7bd1c0007c0ef7db5faa6486f28166c32",
+      "pdf_url": "",
+      "publication_date": "2023-04-30",
+      "keywords_matched": [
+        "model extraction",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
       "title": "On the Feasibility of Specialized Ability Stealing for Large Language Code Models",
       "abstract": null,
@@ -7789,29 +7812,6 @@
         "model stealing (title)"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "fefdabd7bd1c0007c0ef7db5faa6486f28166c32",
-      "title": "Membership Inference Attacks Against Sequential Recommender Systems",
-      "abstract": "Recent studies have demonstrated the vulnerability of recommender systems to membership inference attacks, which determine whether a user\u2019s historical data was utilized for model training, posing serious privacy leakage issues. Existing works assumed that member and non-member users follow different recommendation modes, and then infer membership based on the difference vector between the user\u2019s historical behaviors and the recommendation list. The previous frameworks are invalid against inductive recommendations, such as sequential recommendations, since the disparities of difference vectors constructed by the recommendations between members and non-members become imperceptible. This motivates us to dig deeper into the target model. In addition, most MIA frameworks assume that they can obtain some in-distribution data from the same distribution of the target data, which is hard to gain in recommender system. To address these difficulties, we propose a Membership Inference Attack framework against sequential recommenders based on Model Extraction(ME-MIA). Specifically, we train a surrogate model to simulate the target model based on two universal loss functions. For a given behavior sequence, the loss functions ensure the recommended items and corresponding rank of the surrogate model are consistent with the target model\u2019s recommendation. Due to the special training mode of the surrogate model, it is hard to judge which user is its member(non-member). Therefore, we establish a shadow model and use shadow model\u2019s members(non-members) to train the attack model later. Next, we build a user feature generator to construct representative feature vectors from the shadow(surrogate) model. The crafting feature vectors are finally input into the attack model to identify users\u2019 membership. Furthermore, to tackle the high cost of obtaining in-distribution data, we develop two variants of ME-MIA, realizing data-efficient and even data-free MIA by fabricating authentic in-distribution data. Notably, the latter is impossible in the previous works. Finally, we evaluate ME-MIA against multiple sequential recommendation models on three real-world datasets. Experimental results show that ME-MIA and its variants can achieve efficient extraction and outperform state-of-the-art algorithms in terms of attack performance.",
-      "year": 2023,
-      "venue": "The Web Conference",
-      "authors": [
-        "Zhihao Zhu",
-        "Chenwang Wu",
-        "Rui Fan",
-        "Defu Lian",
-        "Enhong Chen"
-      ],
-      "citation_count": 19,
-      "url": "https://www.semanticscholar.org/paper/fefdabd7bd1c0007c0ef7db5faa6486f28166c32",
-      "pdf_url": "",
-      "publication_date": "2023-04-30",
-      "keywords_matched": [
-        "model extraction",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "4b99fb1fc7f60a16c4cc99a07d931fd79cf993e0",
@@ -10889,7 +10889,7 @@
         "Sravanti Addepalli",
         "R. Venkatesh Babu"
       ],
-      "citation_count": 101,
+      "citation_count": 102,
       "url": "https://www.semanticscholar.org/paper/35ade8553de7259a5e8105bd20a160f045f9d112",
       "pdf_url": "https://arxiv.org/pdf/2204.11022",
       "publication_date": "2022-04-23",
@@ -10913,7 +10913,7 @@
         "Haojin Zhu",
         "Minhui Xue"
       ],
-      "citation_count": 87,
+      "citation_count": 88,
       "url": "https://www.semanticscholar.org/paper/7f005a1b45ff029c9b55dfcea5c83f473733cca4",
       "pdf_url": "https://arxiv.org/pdf/2202.08602",
       "publication_date": "2022-02-17",
@@ -12979,7 +12979,7 @@
         "Nitin Rathi",
         "K. Roy"
       ],
-      "citation_count": 289,
+      "citation_count": 290,
       "url": "https://www.semanticscholar.org/paper/1921489a2801f053d0906079f0015ba6e68dd505",
       "pdf_url": "",
       "publication_date": "2021-10-01",
@@ -13197,7 +13197,7 @@
         "Huimin Zeng",
         "Julian McAuley"
       ],
-      "citation_count": 81,
+      "citation_count": 82,
       "url": "https://www.semanticscholar.org/paper/864cf501b5c04bfcdc836a9cf1909a51ac1d2a99",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3460231.3474275",
       "publication_date": "2021-09-01",
@@ -13361,12 +13361,33 @@
         "Ziyue Yang",
         "Yunxin Liu"
       ],
-      "citation_count": 61,
+      "citation_count": 62,
       "url": "https://www.semanticscholar.org/paper/9fd00a4044aa2eab1cc5f8bfafee59604fb01989",
       "pdf_url": "https://arxiv.org/pdf/2106.08890",
       "publication_date": "2021-06-11",
       "keywords_matched": [
         "model stealing"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "c3d0749f519962331d323dd3c4ec1137544d6d03",
+      "title": "Fingerprinting Deep Neural Networks - a DeepFool Approach",
+      "abstract": "A well-trained deep learning classifier is an expensive intellectual property of the model owner. However, recently proposed model extraction attacks and reverse engineering techniques make model theft possible and similar quality deep learning solution reproducible at a low cost. To protect the interest and revenue of the model owner, watermarking on Deep Neural Network (DNN) has been proposed. However, the extra components and computations due to the embedded watermark tend to interfere with the model training process and result in inevitable degradation in classification accuracy. In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary of the target model for ownership verification. As the fingerprint is extracted after the training process has been completed, the original achievable classification accuracy will not be compromised. This countermeasure is founded on the hypothesis that different models possess different classification boundaries determined solely by the hyperparameters of the DNN and the training it has undergone. Therefore, given a set of fingerprint data points, a pirated model or its post-processed version will produce similar prediction but another originally designed and trained DNN for the same task will produce very different prediction even if they have similar or better classification accuracy. The effectiveness of the proposed Intellectual Property (IP) protection method is validated on the CIFAR-10, CIFAR-100 and ImageNet datasets. The results show a detection rate of 100% and a false positive rate of 0% for each dataset. More importantly, the fingerprint extraction and its run time are both dataset independent. It is on average ~130\u00d7 faster than two state-of-the-art fingerprinting methods.",
+      "year": 2021,
+      "venue": "International Symposium on Circuits and Systems",
+      "authors": [
+        "Si Wang",
+        "Chip-Hong Chang"
+      ],
+      "citation_count": 58,
+      "url": "https://www.semanticscholar.org/paper/c3d0749f519962331d323dd3c4ec1137544d6d03",
+      "pdf_url": "https://dr.ntu.edu.sg/bitstream/10356/147023/2/2021021379.pdf",
+      "publication_date": "2021-05-01",
+      "keywords_matched": [
+        "model extraction",
+        "model theft",
+        "model extraction attack"
       ],
       "first_seen": "2025-12-05"
     },
@@ -13390,27 +13411,6 @@
         "model stealing attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "c3d0749f519962331d323dd3c4ec1137544d6d03",
-      "title": "Fingerprinting Deep Neural Networks - a DeepFool Approach",
-      "abstract": "A well-trained deep learning classifier is an expensive intellectual property of the model owner. However, recently proposed model extraction attacks and reverse engineering techniques make model theft possible and similar quality deep learning solution reproducible at a low cost. To protect the interest and revenue of the model owner, watermarking on Deep Neural Network (DNN) has been proposed. However, the extra components and computations due to the embedded watermark tend to interfere with the model training process and result in inevitable degradation in classification accuracy. In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary of the target model for ownership verification. As the fingerprint is extracted after the training process has been completed, the original achievable classification accuracy will not be compromised. This countermeasure is founded on the hypothesis that different models possess different classification boundaries determined solely by the hyperparameters of the DNN and the training it has undergone. Therefore, given a set of fingerprint data points, a pirated model or its post-processed version will produce similar prediction but another originally designed and trained DNN for the same task will produce very different prediction even if they have similar or better classification accuracy. The effectiveness of the proposed Intellectual Property (IP) protection method is validated on the CIFAR-10, CIFAR-100 and ImageNet datasets. The results show a detection rate of 100% and a false positive rate of 0% for each dataset. More importantly, the fingerprint extraction and its run time are both dataset independent. It is on average ~130\u00d7 faster than two state-of-the-art fingerprinting methods.",
-      "year": 2021,
-      "venue": "International Symposium on Circuits and Systems",
-      "authors": [
-        "Si Wang",
-        "Chip-Hong Chang"
-      ],
-      "citation_count": 57,
-      "url": "https://www.semanticscholar.org/paper/c3d0749f519962331d323dd3c4ec1137544d6d03",
-      "pdf_url": "https://dr.ntu.edu.sg/bitstream/10356/147023/2/2021021379.pdf",
-      "publication_date": "2021-05-01",
-      "keywords_matched": [
-        "model extraction",
-        "model theft",
-        "model extraction attack"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "f4847ab95c43b9d3c214d494ce3852473bf297e4",
@@ -14466,6 +14466,27 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "5b6a6a46caac1316f268a1e6643c10b16fdaef0f",
+      "title": "An Exact Poly-Time Membership-Queries Algorithm for Extraction a three-Layer ReLU Network",
+      "abstract": "We consider the natural problem of learning a ReLU network from queries, which was recently remotivated by model extraction attacks. In this work, we present a polynomial-time algorithm that can learn a depth-two ReLU network from queries under mild general position assumptions. We also present a polynomial-time algorithm that, under mild general position assumptions, can learn a rich class of depth-three ReLU networks from queries. For instance, it can learn most networks where the number of first layer neurons is smaller than the dimension and the number of second layer neurons. These two results substantially improve state-of-the-art: Until our work, polynomial-time algorithms were only shown to learn from queries depth-two networks under the assumption that either the underlying distribution is Gaussian (Chen et al. (2021)) or that the weights matrix rows are linearly independent (Milli et al. (2019)). For depth three or more, there were no known poly-time results.",
+      "year": 2021,
+      "venue": "International Conference on Learning Representations",
+      "authors": [
+        "Amit Daniely",
+        "Elad Granot"
+      ],
+      "citation_count": 10,
+      "url": "https://www.semanticscholar.org/paper/5b6a6a46caac1316f268a1e6643c10b16fdaef0f",
+      "pdf_url": "",
+      "publication_date": "2021-05-20",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "3813c369accb4b87b5882eec943511fe2e8b4767",
       "title": "Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs",
       "abstract": null,
@@ -14508,27 +14529,6 @@
         "model stealing attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "5b6a6a46caac1316f268a1e6643c10b16fdaef0f",
-      "title": "An Exact Poly-Time Membership-Queries Algorithm for Extraction a three-Layer ReLU Network",
-      "abstract": "We consider the natural problem of learning a ReLU network from queries, which was recently remotivated by model extraction attacks. In this work, we present a polynomial-time algorithm that can learn a depth-two ReLU network from queries under mild general position assumptions. We also present a polynomial-time algorithm that, under mild general position assumptions, can learn a rich class of depth-three ReLU networks from queries. For instance, it can learn most networks where the number of first layer neurons is smaller than the dimension and the number of second layer neurons. These two results substantially improve state-of-the-art: Until our work, polynomial-time algorithms were only shown to learn from queries depth-two networks under the assumption that either the underlying distribution is Gaussian (Chen et al. (2021)) or that the weights matrix rows are linearly independent (Milli et al. (2019)). For depth three or more, there were no known poly-time results.",
-      "year": 2021,
-      "venue": "International Conference on Learning Representations",
-      "authors": [
-        "Amit Daniely",
-        "Elad Granot"
-      ],
-      "citation_count": 9,
-      "url": "https://www.semanticscholar.org/paper/5b6a6a46caac1316f268a1e6643c10b16fdaef0f",
-      "pdf_url": "",
-      "publication_date": "2021-05-20",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "25800c4599b2e834899a180d77e093fb9282d97e",
@@ -15540,7 +15540,7 @@
         "Matthew Jagielski",
         "Ilya Mironov"
       ],
-      "citation_count": 149,
+      "citation_count": 150,
       "url": "https://www.semanticscholar.org/paper/186377b9098efc726b8f1bda7e4f8aa2ed7bafa5",
       "pdf_url": "",
       "publication_date": "2020-03-10",
@@ -15718,7 +15718,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 85,
+      "citation_count": 86,
       "url": "https://www.semanticscholar.org/paper/d76407a539addcb39bddef065c4061381591e78c",
       "pdf_url": "http://arxiv.org/pdf/2008.07298",
       "publication_date": "2020-08-17",
@@ -17273,7 +17273,7 @@
         "Alexey Kurakin",
         "Nicolas Papernot"
       ],
-      "citation_count": 419,
+      "citation_count": 420,
       "url": "https://www.semanticscholar.org/paper/52a222d38a8640499010d470d5589a81882bc425",
       "pdf_url": "",
       "publication_date": "2019-09-03",
@@ -17404,7 +17404,7 @@
         "Yuxuan Zhang",
         "F. Kerschbaum"
       ],
-      "citation_count": 166,
+      "citation_count": 167,
       "url": "https://www.semanticscholar.org/paper/5effd428e3012061ba3d8b32f1952c2938c7ab7b",
       "pdf_url": "",
       "publication_date": "2019-12-02",
@@ -17450,7 +17450,7 @@
         "Ian Molloy",
         "D. Su"
       ],
-      "citation_count": 106,
+      "citation_count": 107,
       "url": "https://www.semanticscholar.org/paper/555b847ee9c39c12d5764f4e11b888b331a89cfb",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8834415/8844588/08844598.pdf",
       "publication_date": "2019-05-19",
@@ -18380,7 +18380,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 476,
+      "citation_count": 477,
       "url": "https://www.semanticscholar.org/paper/4582e2350e4822834dcf266522690722dd4430d4",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8790377/8806708/08806737.pdf",
       "publication_date": "2018-05-07",
@@ -19168,7 +19168,7 @@
         "Carolyn Kim",
         "Hamsa Bastani"
       ],
-      "citation_count": 133,
+      "citation_count": 134,
       "url": "https://www.semanticscholar.org/paper/a9007cf4c4ec7e4fc956bead7008a3605451de49",
       "pdf_url": "",
       "publication_date": "2017-06-29",
@@ -19293,7 +19293,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1956,
+      "citation_count": 1957,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
@@ -19699,7 +19699,7 @@
         "J. Cleland-Huang",
         "P. Heymans"
       ],
-      "citation_count": 158,
+      "citation_count": 159,
       "url": "https://www.semanticscholar.org/paper/d84c0d4dbab81757490213742b1e75dc258bd3ba",
       "pdf_url": "https://hal.inria.fr/hal-00859475/file/fse13main-id221-p-18686-final.pdf",
       "publication_date": "2013-08-18",
