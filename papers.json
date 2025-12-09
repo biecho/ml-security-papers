@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-08",
+  "updated": "2025-12-09",
   "total": 909,
   "keywords": [
     "model stealing",
@@ -106,7 +106,7 @@
         "Yinqian Zhang",
         "Zhendong Su"
       ],
-      "citation_count": 10,
+      "citation_count": 11,
       "url": "https://www.semanticscholar.org/paper/69458b5b67892ca281b96cbddd15fa9adcbbd524",
       "pdf_url": "",
       "publication_date": "2025-05-12",
@@ -295,6 +295,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "6814d707b0e1f550baebde21c6753d0d7e2f6996",
+      "title": "LoRATEE: A Secure and Efficient Inference Framework for Multi-Tenant LoRA LLMs Based on TEE",
+      "abstract": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning approach that adaptes pre-trained Large Language Models (LLMs) to multi-tenant tasks by generating a variety of LoRA adapters. However, this approach faces significant security challenges and is particularly susceptible to malicious servers stealing model parameters and sensitive data. Existing research on addressing security risks in multi-tenant environments remains constrained and insufficient. This paper explores the security challenges and proposes the LoRATEE framework, which embeds LoRA adapters within a server-side Trusted Execution Environment (TEE) and employs a lightweight One-Time Pad (OTP) encryption mechanism to ensure secure data transmission. Additionally, we design a dynamic LoRA adapter prefetching mechanism to reduce I/O latency. Moreover, a LoRA adapter module equivalence-sharing strategy based on Parameter-Efficient Fine-Tuning (PEFT) and minimalist design principles was introduced to optimize adapters loading. Experimental results show that LoRATEE maintains inference efficiency while securing multi-tenant LoRA LLMs systems.",
+      "year": 2025,
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "authors": [
+        "Zechao Lin",
+        "Sisi Zhang",
+        "Xingbin Wang",
+        "Yulan Su",
+        "Yan Wang",
+        "Rui Hou",
+        "Dan Meng"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/6814d707b0e1f550baebde21c6753d0d7e2f6996",
+      "pdf_url": "",
+      "publication_date": "2025-04-06",
+      "keywords_matched": [
+        "stealing model"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "dd37ddad0b07a5f9e38c117f0fb876735062211d",
       "title": "Be Cautious When Merging Unfamiliar LLMs: A Phishing Model Capable of Stealing Privacy",
       "abstract": "Model merging is a widespread technology in large language models (LLMs) that integrates multiple task-specific LLMs into a unified one, enabling the merged model to inherit the specialized capabilities of these LLMs. Most task-specific LLMs are sourced from open-source communities and have not undergone rigorous auditing, potentially imposing risks in model merging. This paper highlights an overlooked privacy risk: \\textit{an unsafe model could compromise the privacy of other LLMs involved in the model merging.} Specifically, we propose PhiMM, a privacy attack approach that trains a phishing model capable of stealing privacy using a crafted privacy phishing instruction dataset. Furthermore, we introduce a novel model cloaking method that mimics a specialized capability to conceal attack intent, luring users into merging the phishing model. Once victims merge the phishing model, the attacker can extract personally identifiable information (PII) or infer membership information (MI) by querying the merged model with the phishing instruction. Experimental results show that merging a phishing model increases the risk of privacy breaches. Compared to the results before merging, PII leakage increased by 3.9\\% and MI leakage increased by 17.4\\% on average. We release the code of PhiMM through a link.",
@@ -457,30 +481,6 @@
       "publication_date": "2025-04-08",
       "keywords_matched": [
         "LLM extraction"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "6814d707b0e1f550baebde21c6753d0d7e2f6996",
-      "title": "LoRATEE: A Secure and Efficient Inference Framework for Multi-Tenant LoRA LLMs Based on TEE",
-      "abstract": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning approach that adaptes pre-trained Large Language Models (LLMs) to multi-tenant tasks by generating a variety of LoRA adapters. However, this approach faces significant security challenges and is particularly susceptible to malicious servers stealing model parameters and sensitive data. Existing research on addressing security risks in multi-tenant environments remains constrained and insufficient. This paper explores the security challenges and proposes the LoRATEE framework, which embeds LoRA adapters within a server-side Trusted Execution Environment (TEE) and employs a lightweight One-Time Pad (OTP) encryption mechanism to ensure secure data transmission. Additionally, we design a dynamic LoRA adapter prefetching mechanism to reduce I/O latency. Moreover, a LoRA adapter module equivalence-sharing strategy based on Parameter-Efficient Fine-Tuning (PEFT) and minimalist design principles was introduced to optimize adapters loading. Experimental results show that LoRATEE maintains inference efficiency while securing multi-tenant LoRA LLMs systems.",
-      "year": 2025,
-      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-      "authors": [
-        "Zechao Lin",
-        "Sisi Zhang",
-        "Xingbin Wang",
-        "Yulan Su",
-        "Yan Wang",
-        "Rui Hou",
-        "Dan Meng"
-      ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/6814d707b0e1f550baebde21c6753d0d7e2f6996",
-      "pdf_url": "",
-      "publication_date": "2025-04-06",
-      "keywords_matched": [
-        "stealing model"
       ],
       "first_seen": "2025-12-05"
     },
@@ -3677,6 +3677,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "5201913bb3b941e0d42606969da5c1f927aeb48b",
+      "title": "InputSnatch: Stealing Input in LLM Services via Timing Side-Channel Attacks",
+      "abstract": "Large language models (LLMs) possess extensive knowledge and question-answering capabilities, having been widely deployed in privacy-sensitive domains like finance and medical consultation. During LLM inferences, cache-sharing methods are commonly employed to enhance efficiency by reusing cached states or responses for the same or similar inference requests. However, we identify that these cache mechanisms pose a risk of private input leakage, as the caching can result in observable variations in response times, making them a strong candidate for a timing-based attack hint. In this study, we propose a novel timing-based side-channel attack to execute input theft in LLMs inference. The cache-based attack faces the challenge of constructing candidate inputs in a large search space to hit and steal cached user queries. To address these challenges, we propose two primary components. The input constructor employs machine learning techniques and LLM-based approaches for vocabulary correlation learning while implementing optimized search mechanisms for generalized input construction. The time analyzer implements statistical time fitting with outlier elimination to identify cache hit patterns, continuously providing feedback to refine the constructor's search strategy. We conduct experiments across two cache mechanisms and the results demonstrate that our approach consistently attains high attack success rates in various applications. Our work highlights the security vulnerabilities associated with performance optimizations, underscoring the necessity of prioritizing privacy and security alongside enhancements in LLM inference.",
+      "year": 2024,
+      "venue": "arXiv.org",
+      "authors": [
+        "Xinyao Zheng",
+        "Husheng Han",
+        "Shangyi Shi",
+        "Qiyan Fang",
+        "Zidong Du",
+        "Xing Hu",
+        "Qi Guo"
+      ],
+      "citation_count": 15,
+      "url": "https://www.semanticscholar.org/paper/5201913bb3b941e0d42606969da5c1f927aeb48b",
+      "pdf_url": "",
+      "publication_date": "2024-11-27",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "550a79a7e688347af18bf5752361c47f0af1cf40",
       "title": "Large Language Model Watermark Stealing With Mixed Integer Programming",
       "abstract": "The Large Language Model (LLM) watermark is a newly emerging technique that shows promise in addressing concerns surrounding LLM copyright, monitoring AI-generated text, and preventing its misuse. The LLM watermark scheme commonly includes generating secret keys to partition the vocabulary into green and red lists, applying a perturbation to the logits of tokens in the green list to increase their sampling likelihood, thus facilitating watermark detection to identify AI-generated text if the proportion of green tokens exceeds a threshold. However, recent research indicates that watermarking methods using numerous keys are susceptible to removal attacks, such as token editing, synonym substitution, and paraphrasing, with robustness declining as the number of keys increases. Therefore, the state-of-the-art watermark schemes that employ fewer or single keys have been demonstrated to be more robust against text editing and paraphrasing. In this paper, we propose a novel green list stealing attack against the state-of-the-art LLM watermark scheme and systematically examine its vulnerability to this attack. We formalize the attack as a mixed integer programming problem with constraints. We evaluate our attack under a comprehensive threat model, including an extreme scenario where the attacker has no prior knowledge, lacks access to the watermark detector API, and possesses no information about the LLM's parameter settings or watermark injection/detection scheme. Extensive experiments on LLMs, such as OPT and LLaMA, demonstrate that our attack can successfully steal the green list and remove the watermark across all settings.",
@@ -3696,30 +3720,6 @@
       "url": "https://www.semanticscholar.org/paper/550a79a7e688347af18bf5752361c47f0af1cf40",
       "pdf_url": "",
       "publication_date": "2024-05-30",
-      "keywords_matched": [
-        "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "5201913bb3b941e0d42606969da5c1f927aeb48b",
-      "title": "InputSnatch: Stealing Input in LLM Services via Timing Side-Channel Attacks",
-      "abstract": "Large language models (LLMs) possess extensive knowledge and question-answering capabilities, having been widely deployed in privacy-sensitive domains like finance and medical consultation. During LLM inferences, cache-sharing methods are commonly employed to enhance efficiency by reusing cached states or responses for the same or similar inference requests. However, we identify that these cache mechanisms pose a risk of private input leakage, as the caching can result in observable variations in response times, making them a strong candidate for a timing-based attack hint. In this study, we propose a novel timing-based side-channel attack to execute input theft in LLMs inference. The cache-based attack faces the challenge of constructing candidate inputs in a large search space to hit and steal cached user queries. To address these challenges, we propose two primary components. The input constructor employs machine learning techniques and LLM-based approaches for vocabulary correlation learning while implementing optimized search mechanisms for generalized input construction. The time analyzer implements statistical time fitting with outlier elimination to identify cache hit patterns, continuously providing feedback to refine the constructor's search strategy. We conduct experiments across two cache mechanisms and the results demonstrate that our approach consistently attains high attack success rates in various applications. Our work highlights the security vulnerabilities associated with performance optimizations, underscoring the necessity of prioritizing privacy and security alongside enhancements in LLM inference.",
-      "year": 2024,
-      "venue": "arXiv.org",
-      "authors": [
-        "Xinyao Zheng",
-        "Husheng Han",
-        "Shangyi Shi",
-        "Qiyan Fang",
-        "Zidong Du",
-        "Xing Hu",
-        "Qi Guo"
-      ],
-      "citation_count": 14,
-      "url": "https://www.semanticscholar.org/paper/5201913bb3b941e0d42606969da5c1f927aeb48b",
-      "pdf_url": "",
-      "publication_date": "2024-11-27",
       "keywords_matched": [
         "model stealing (title)"
       ],
@@ -7244,7 +7244,7 @@
         "Yu-Xiang Wang",
         "Lei Li"
       ],
-      "citation_count": 105,
+      "citation_count": 106,
       "url": "https://www.semanticscholar.org/paper/c25d2a27f1abe169d7b68078071b6698f0980469",
       "pdf_url": "https://arxiv.org/pdf/2302.03162",
       "publication_date": "2023-02-06",
@@ -7406,7 +7406,7 @@
         "Yao Guo",
         "Xiangqun Chen"
       ],
-      "citation_count": 37,
+      "citation_count": 38,
       "url": "https://www.semanticscholar.org/paper/e169ce8cc1627ff18f8fc4361f622bb31d33326b",
       "pdf_url": "https://arxiv.org/pdf/2310.07152",
       "publication_date": "2023-10-11",
@@ -7814,6 +7814,29 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "3d2efd249eaffbf3675957444271ca97330156a1",
+      "title": "Protecting Regression Models With Personalized Local Differential Privacy",
+      "abstract": "The equation-solving model extraction attack is an intuitively simple but devastating attack to steal confidential information of regression models through a sufficient number of queries. Complete mitigation is difficult. Thus, the development of countermeasures is focused on degrading the attack effectiveness as much as possible without losing the model utilities. We investigate a novel personalized local differential privacy mechanism to defend against the attack. We obfuscate the model by adding high-dimensional Gaussian noise on model coefficients. Our solution can adaptively produce the noise to protect the model on the fly. We thoroughly evaluate the performance of our mechanisms using real-world datasets. The experiment shows that the proposed scheme outperforms the existing differential-privacy-enabled solution, i.e., 4 times more queries are required to achieve the same attack result. We also plan to publish the relevant codes to the community for further research.",
+      "year": 2023,
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "authors": [
+        "Xiaoguang Li",
+        "Haonan Yan",
+        "Zelei Cheng",
+        "Wenhai Sun",
+        "Hui Li"
+      ],
+      "citation_count": 19,
+      "url": "https://www.semanticscholar.org/paper/3d2efd249eaffbf3675957444271ca97330156a1",
+      "pdf_url": "",
+      "publication_date": "2023-03-01",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "4b99fb1fc7f60a16c4cc99a07d931fd79cf993e0",
       "title": "A Threshold Implementation-Based Neural Network Accelerator With Power and Electromagnetic Side-Channel Countermeasures",
       "abstract": "With the recent advancements in machine learning (ML) theory, a lot of energy-efficient neural network (NN) accelerators have been developed. However, their associated side-channel security vulnerabilities pose a major concern. There have been several proof-of-concept attacks demonstrating the extraction of their model parameters and input data. This work introduces a threshold implementation (TI) masking-based NN accelerator that secures model parameters and inputs against power and electromagnetic (EM) side-channel attacks. The 0.159 mm2 demonstration in 28 nm runs at 125 MHz at 0.95 V and limits the area and energy overhead to 64% and $5.5\\times $ , respectively, while demonstrating security even greater than 2M traces. The accelerator also secures model parameters through encryption and the inputs against horizontal power analysis (HPA) attacks.",
@@ -7833,29 +7856,6 @@
         "side-channel attack (title)"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "3d2efd249eaffbf3675957444271ca97330156a1",
-      "title": "Protecting Regression Models With Personalized Local Differential Privacy",
-      "abstract": "The equation-solving model extraction attack is an intuitively simple but devastating attack to steal confidential information of regression models through a sufficient number of queries. Complete mitigation is difficult. Thus, the development of countermeasures is focused on degrading the attack effectiveness as much as possible without losing the model utilities. We investigate a novel personalized local differential privacy mechanism to defend against the attack. We obfuscate the model by adding high-dimensional Gaussian noise on model coefficients. Our solution can adaptively produce the noise to protect the model on the fly. We thoroughly evaluate the performance of our mechanisms using real-world datasets. The experiment shows that the proposed scheme outperforms the existing differential-privacy-enabled solution, i.e., 4 times more queries are required to achieve the same attack result. We also plan to publish the relevant codes to the community for further research.",
-      "year": 2023,
-      "venue": "IEEE Transactions on Dependable and Secure Computing",
-      "authors": [
-        "Xiaoguang Li",
-        "Haonan Yan",
-        "Zelei Cheng",
-        "Wenhai Sun",
-        "Hui Li"
-      ],
-      "citation_count": 18,
-      "url": "https://www.semanticscholar.org/paper/3d2efd249eaffbf3675957444271ca97330156a1",
-      "pdf_url": "",
-      "publication_date": "2023-03-01",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "6915e87a10df6a0e068c043d29048bd4eed9cdc3",
@@ -9428,6 +9428,28 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "252cc0c47b76f804a2e839773a90e7a389289695",
+      "title": "SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors",
+      "abstract": "The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack.",
+      "year": 2023,
+      "venue": "Italian National Conference on Sensors",
+      "authors": [
+        "Sudarshan Sharma",
+        "U. Kamal",
+        "Jianming Tong",
+        "Tushar Krishna",
+        "S. Mukhopadhyay"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/252cc0c47b76f804a2e839773a90e7a389289695",
+      "pdf_url": "",
+      "publication_date": "2023-10-29",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "1365039961e03ac532b63cf4dbd99bbe5352ec0a",
       "title": "A Model Stealing Attack Against Multi-Exit Networks",
       "abstract": "Compared to traditional neural networks with a single output channel, a multi-exit network has multiple exits that allow for early outputs from the model's intermediate layers, thus significantly improving computational efficiency while maintaining similar main task accuracy. Existing model stealing attacks can only steal the model's utility while failing to capture its output strategy, i.e., a set of thresholds used to determine from which exit to output. This leads to a significant decrease in computational efficiency for the extracted model, thereby losing the advantage of multi-exit networks. In this paper, we propose the first model stealing attack against multi-exit networks to extract both the model utility and the output strategy. We employ Kernel Density Estimation to analyze the target model's output strategy and use performance loss and strategy loss to guide the training of the extracted model. Furthermore, we design a novel output strategy search algorithm to maximize the consistency between the victim model and the extracted model's output behaviors. In experiments across multiple multi-exit networks and benchmark datasets, our method always achieves accuracy and efficiency closest to the victim models.",
@@ -9448,28 +9470,6 @@
       "keywords_matched": [
         "model stealing",
         "model stealing attack"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "252cc0c47b76f804a2e839773a90e7a389289695",
-      "title": "SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors",
-      "abstract": "The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack.",
-      "year": 2023,
-      "venue": "Italian National Conference on Sensors",
-      "authors": [
-        "Sudarshan Sharma",
-        "U. Kamal",
-        "Jianming Tong",
-        "Tushar Krishna",
-        "S. Mukhopadhyay"
-      ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/252cc0c47b76f804a2e839773a90e7a389289695",
-      "pdf_url": "",
-      "publication_date": "2023-10-29",
-      "keywords_matched": [
-        "model stealing (title)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -10847,7 +10847,7 @@
         "Ming Yan",
         "Mi Zhang"
       ],
-      "citation_count": 193,
+      "citation_count": 194,
       "url": "https://www.semanticscholar.org/paper/4fc5f31a38a19e3acc9501aeb3006810eec0e767",
       "pdf_url": "http://arxiv.org/pdf/2212.01548",
       "publication_date": "2022-12-03",
@@ -11168,7 +11168,7 @@
         "J. Eshraghian",
         "Wei D. Lu"
       ],
-      "citation_count": 32,
+      "citation_count": 33,
       "url": "https://www.semanticscholar.org/paper/ecfeeca2b8ed651efe27dc45bb8a0e4901e9f756",
       "pdf_url": "https://arxiv.org/pdf/2209.02792",
       "publication_date": "2022-09-06",
@@ -13155,7 +13155,7 @@
         "Alptekin K\u00fcp\u00e7\u00fc",
         "A. E. Cicek"
       ],
-      "citation_count": 98,
+      "citation_count": 99,
       "url": "https://www.semanticscholar.org/paper/45ea6495958f04c1f02de1741c952dac1154d4f4",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3559613.3563201",
       "publication_date": "2021-08-20",
@@ -16444,6 +16444,25 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "030f26db8d627646af1af63adbd4359bf16fc08f",
+      "title": "Prediction of electromagnetic field patterns of optical waveguide using neural network",
+      "abstract": null,
+      "year": 2020,
+      "venue": "Neural computing & applications (Print)",
+      "authors": [
+        "G. Alagappan",
+        "C. Png"
+      ],
+      "citation_count": 12,
+      "url": "https://www.semanticscholar.org/paper/030f26db8d627646af1af63adbd4359bf16fc08f",
+      "pdf_url": "",
+      "publication_date": "2020-06-25",
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "b9187199b87187d8abc769d6d8e61a45de8f7870",
       "title": "Low-Dose CT Image Denoising Using Parallel-Clone Networks",
       "abstract": "Deep neural networks have a great potential to improve image denoising in low-dose computed tomography (LDCT). Popular ways to increase the network capacity include adding more layers or repeating a modularized clone model in a sequence. In such sequential architectures, the noisy input image and end output image are commonly used only once in the training model, which however limits the overall learning performance. In this paper, we propose a parallel-clone neural network method that utilizes a modularized network model and exploits the benefit of parallel input, parallel-output loss, and clone-toclone feature transfer. The proposed model keeps a similar or less number of unknown network weights as compared to conventional models but can accelerate the learning process significantly. The method was evaluated using the Mayo LDCT dataset and compared with existing deep learning models. The results show that the use of parallel input, parallel-output loss, and clone-to-clone feature transfer all can contribute to an accelerated convergence of deep learning and lead to improved image quality in testing. The parallel-clone network has been demonstrated promising for LDCT image denoising.",
@@ -16459,25 +16478,6 @@
       "publication_date": "2020-05-14",
       "keywords_matched": [
         "clone model"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "030f26db8d627646af1af63adbd4359bf16fc08f",
-      "title": "Prediction of electromagnetic field patterns of optical waveguide using neural network",
-      "abstract": null,
-      "year": 2020,
-      "venue": "Neural computing & applications (Print)",
-      "authors": [
-        "G. Alagappan",
-        "C. Png"
-      ],
-      "citation_count": 11,
-      "url": "https://www.semanticscholar.org/paper/030f26db8d627646af1af63adbd4359bf16fc08f",
-      "pdf_url": "",
-      "publication_date": "2020-06-25",
-      "keywords_matched": [
-        "electromagnetic analysis (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -20177,7 +20177,7 @@
         "V. Scarani",
         "N. Gisin"
       ],
-      "citation_count": 46,
+      "citation_count": 47,
       "url": "https://www.semanticscholar.org/paper/9ec7656ff39d07fe6fd283466aed4bc56d35b2c2",
       "pdf_url": "https://access.archive-ouverte.unige.ch/access/metadata/c176b0db-379c-4db9-aac3-8a97b2f2de82/download",
       "publication_date": "2004-08-19",
