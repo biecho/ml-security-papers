@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-10",
+  "updated": "2025-12-11",
   "total": 909,
   "keywords": [
     "model stealing",
@@ -510,6 +510,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "633f03f1eea4387f02e826e4768841ef10190446",
+      "title": "GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models",
+      "abstract": "Graph neural networks (GNNs) have exhibited superior performance in various classification tasks on graph-structured data. However, they encounter the potential vulnerability from the link stealing attacks, which can infer the presence of a link between two nodes via measuring the similarity of its incident nodes' prediction vectors produced by a GNN model. Such attacks pose severe security and privacy threats to the training graph used in GNN models. In this work, we propose a novel solution, called Graph Link Disguise (GRID), to defend against link stealing attacks with the formal guarantee of GNN model utility for retaining prediction accuracy. The key idea of GRID is to add carefully crafted noises to the nodes' prediction vectors for disguising adjacent nodes as n-hop indirect neighboring nodes. We take into account the graph topology and select only a subset of nodes (called core nodes) covering all links for adding noises, which can avert the noises offset and have the further advantages of reducing both the distortion loss and the computation cost. Our crafted noises can ensure 1) the noisy prediction vectors of any two adjacent nodes have their similarity level like that of two non-adjacent nodes and 2) the model prediction is unchanged to ensure zero utility loss. Extensive experiments on five datasets are conducted to show the effectiveness of our proposed GRID solution against different representative link-stealing attacks under transductive settings and inductive settings respectively, as well as two influence-based attacks. Meanwhile, it achieves a much better privacy-utility trade-off than existing methods when extended to GNNs.",
+      "year": 2025,
+      "venue": "IEEE Symposium on Security and Privacy",
+      "authors": [
+        "Jiadong Lou",
+        "Xu Yuan",
+        "Rui Zhang",
+        "Xingliang Yuan",
+        "Neil Gong",
+        "Nianfeng Tzeng"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/633f03f1eea4387f02e826e4768841ef10190446",
+      "pdf_url": "",
+      "publication_date": "2025-01-19",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "b31459472aa34e8711fe845acaab9b7b4a74f1d8",
       "title": "Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks",
       "abstract": "Graph Neural Networks (GNNs), specifically designed to process the graph data, have achieved remarkable success in various applications. Link stealing attacks on graph data pose a significant privacy threat, as attackers aim to extract sensitive relationships between nodes (entities), potentially leading to academic misconduct, fraudulent transactions, or other malicious activities. Previous studies have primarily focused on single datasets and did not explore cross-dataset attacks, let alone attacks that leverage the combined knowledge of multiple attackers. However, we find that an attacker can combine the data knowledge of multiple attackers to create a more effective attack model, which can be referred to cross-dataset attacks. Moreover, if knowledge can be extracted with the help of Large Language Models (LLMs), the attack capability will be more significant. In this paper, we propose a novel link stealing attack method that takes advantage of cross-dataset and LLMs. The LLM is applied to process datasets with different data structures in cross-dataset attacks. Each attacker fine-tunes the LLM on their specific dataset to generate a tailored attack model. We then introduce a novel model merging method to integrate the parameters of these attacker-specific models effectively. The result is a merged attack model with superior generalization capabilities, enabling effective attacks not only on the attackers\u2019 datasets but also on previously unseen (out-of-domain) datasets. We conducted extensive experiments in four datasets to demonstrate the effectiveness of our method. Additional experiments with three different GNN and LLM architectures further illustrate the generality of our approach. In summary, we present a new link stealing attack method that facilitates collaboration among multiple attackers to develop a powerful, universal attack model that reflects realistic real-world scenarios.",
@@ -709,29 +732,6 @@
       "keywords_matched": [
         "model extraction",
         "model extraction attack"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "633f03f1eea4387f02e826e4768841ef10190446",
-      "title": "GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models",
-      "abstract": "Graph neural networks (GNNs) have exhibited superior performance in various classification tasks on graph-structured data. However, they encounter the potential vulnerability from the link stealing attacks, which can infer the presence of a link between two nodes via measuring the similarity of its incident nodes' prediction vectors produced by a GNN model. Such attacks pose severe security and privacy threats to the training graph used in GNN models. In this work, we propose a novel solution, called Graph Link Disguise (GRID), to defend against link stealing attacks with the formal guarantee of GNN model utility for retaining prediction accuracy. The key idea of GRID is to add carefully crafted noises to the nodes' prediction vectors for disguising adjacent nodes as n-hop indirect neighboring nodes. We take into account the graph topology and select only a subset of nodes (called core nodes) covering all links for adding noises, which can avert the noises offset and have the further advantages of reducing both the distortion loss and the computation cost. Our crafted noises can ensure 1) the noisy prediction vectors of any two adjacent nodes have their similarity level like that of two non-adjacent nodes and 2) the model prediction is unchanged to ensure zero utility loss. Extensive experiments on five datasets are conducted to show the effectiveness of our proposed GRID solution against different representative link-stealing attacks under transductive settings and inductive settings respectively, as well as two influence-based attacks. Meanwhile, it achieves a much better privacy-utility trade-off than existing methods when extended to GNNs.",
-      "year": 2025,
-      "venue": "IEEE Symposium on Security and Privacy",
-      "authors": [
-        "Jiadong Lou",
-        "Xu Yuan",
-        "Rui Zhang",
-        "Xingliang Yuan",
-        "Neil Gong",
-        "Nianfeng Tzeng"
-      ],
-      "citation_count": 2,
-      "url": "https://www.semanticscholar.org/paper/633f03f1eea4387f02e826e4768841ef10190446",
-      "pdf_url": "",
-      "publication_date": "2025-01-19",
-      "keywords_matched": [
-        "model stealing (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -2643,7 +2643,7 @@
       "title": "Budget and Frequency Controlled Cost-Aware Model Extraction Attack on Sequential Recommenders",
       "abstract": "Sequential recommenders are integral to many applications yet remain vulnerable to model extraction attacks, in which adversaries can recover information about the deployed model by issuing queries to a black-box without internal access. From the attacker's perspective, existing studies impose a fixed and limited query budget but overlook optimal allocation, resulting in redundant or low-value requests. Furthermore, the scarce data obtained through these costly queries is typically handled by crude random sampling, resulting in low diversity and information coverage with actual data. In this paper, we propose a novel approach, named Budget and Frequency Controlled Cost-Aware Model Extraction Attack (BECOME), for extracting black-box sequential recommenders, which extends the standard extraction framework with two cost-aware innovations: Feedback-Driven Dynamic Budgeting periodically evaluates the victim model to refine query allocation and steer sequence generation adaptively. Rank-Aware Frequency Controlling integrates frequency constraints with ranking guidance in the next-item sampler to select high-value items and broaden information coverage. Experiments on public datasets and representative sequential recommender architectures demonstrate that our method achieves superior extraction performance. Our code is released at https://github.com/Loche2/BECOME.",
       "year": 2025,
-      "venue": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management",
+      "venue": "International Conference on Information and Knowledge Management",
       "authors": [
         "Lei Zhou",
         "Min Gao",
@@ -3257,7 +3257,7 @@
         "D. Rolnick",
         "Florian Tram\u00e8r"
       ],
-      "citation_count": 127,
+      "citation_count": 128,
       "url": "https://www.semanticscholar.org/paper/b232f468de0b1d4ff1c2dfe5dbb03ec093160c48",
       "pdf_url": "",
       "publication_date": "2024-03-11",
@@ -3798,6 +3798,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "52a0ceaf916deff733410f07e05215826bb1c86d",
+      "title": "LiteMoE: Customizing On-device LLM Serving via Proxy Submodel Tuning",
+      "abstract": "Considering limited on-device resources, current practices are attempting to deploy a system-level mixture-of-experts (MoE)-based foundation LLM shared by multiple mobile apps on a device to support mobile intelligence. However, mobile apps are hard to customize their services that require tuning adapters associated with the LLM using private in-app data. The difficulty arises due to both the limited on-device resources and the restricted control that apps have over the foundation LLM. To address this issue, in this work, we propose LiteMoE, a novel proxy submodel tuning framework that supports mobile apps to efficiently fine-tune customized adapters on devices using proxy submodels. The key technique behind LiteMoE is a post-training submodel extraction method, whereby without additional re-training, we can identify and reserve critical experts, match and merge moderate experts, to extract a lightweight and effective proxy submodel from the foundation LLM for a certain app. We implemented a prototype of LiteMoE and evaluated it over various MoE-based LLMs and mobile computing tasks. The results show that with LiteMoE, mobile apps are able to fine-tune customized adapters on resource-limited devices, achieving 12.7% accuracy improvement and 6.6\u00d7 memory reduction compared with operating the original foundation LLM.",
+      "year": 2024,
+      "venue": "ACM International Conference on Embedded Networked Sensor Systems",
+      "authors": [
+        "Zhuang Yan",
+        "Zhenzhe Zheng",
+        "Fan Wu",
+        "Guihai Chen"
+      ],
+      "citation_count": 14,
+      "url": "https://www.semanticscholar.org/paper/52a0ceaf916deff733410f07e05215826bb1c86d",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3666025.3699355",
+      "publication_date": "2024-11-04",
+      "keywords_matched": [
+        "model extraction"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "df8401e2322f8f6f1b2cb8310cb048a939cce3d1",
       "title": "TransLinkGuard: Safeguarding Transformer Models Against Model Stealing in Edge Deployment",
       "abstract": "Proprietary large language models (LLMs) have been widely applied in various scenarios. Additionally, deploying LLMs on edge devices is trending for efficiency and privacy reasons. However, edge deployment of proprietary LLMs introduces new security challenges: edge-deployed models are exposed as white-box accessible to users, enabling adversaries to conduct model stealing (MS) attacks. Unfortunately, existing defense mechanisms fail to provide effective protection. Specifically, we identify four critical protection properties that existing methods fail to simultaneously satisfy: (1) maintaining protection after a model is physically copied; (2) authorizing model access at request level; (3) safeguarding runtime reverse engineering; (4) achieving high security with negligible runtime overhead. To address the above issues, we propose TransLinkGuard, a plug-and-play model protection approach against model stealing on edge devices. The core part of TransLinkGuard is a lightweight authorization module residing in a secure environment, e.g., TEE, which can freshly authorize each request based on its input. Extensive experiments show that TransLinkGuard achieves the same security as the black-box guarantees with negligible overhead.",
@@ -3822,27 +3843,6 @@
         "model stealing"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "52a0ceaf916deff733410f07e05215826bb1c86d",
-      "title": "LiteMoE: Customizing On-device LLM Serving via Proxy Submodel Tuning",
-      "abstract": "Considering limited on-device resources, current practices are attempting to deploy a system-level mixture-of-experts (MoE)-based foundation LLM shared by multiple mobile apps on a device to support mobile intelligence. However, mobile apps are hard to customize their services that require tuning adapters associated with the LLM using private in-app data. The difficulty arises due to both the limited on-device resources and the restricted control that apps have over the foundation LLM. To address this issue, in this work, we propose LiteMoE, a novel proxy submodel tuning framework that supports mobile apps to efficiently fine-tune customized adapters on devices using proxy submodels. The key technique behind LiteMoE is a post-training submodel extraction method, whereby without additional re-training, we can identify and reserve critical experts, match and merge moderate experts, to extract a lightweight and effective proxy submodel from the foundation LLM for a certain app. We implemented a prototype of LiteMoE and evaluated it over various MoE-based LLMs and mobile computing tasks. The results show that with LiteMoE, mobile apps are able to fine-tune customized adapters on resource-limited devices, achieving 12.7% accuracy improvement and 6.6\u00d7 memory reduction compared with operating the original foundation LLM.",
-      "year": 2024,
-      "venue": "ACM International Conference on Embedded Networked Sensor Systems",
-      "authors": [
-        "Zhuang Yan",
-        "Zhenzhe Zheng",
-        "Fan Wu",
-        "Guihai Chen"
-      ],
-      "citation_count": 13,
-      "url": "https://www.semanticscholar.org/paper/52a0ceaf916deff733410f07e05215826bb1c86d",
-      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3666025.3699355",
-      "publication_date": "2024-11-04",
-      "keywords_matched": [
-        "model extraction"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "85f707934e1630695fbfbdf1934a21760917416d",
@@ -7471,7 +7471,7 @@
         "Daoyuan Wu",
         "Cuiyun Gao"
       ],
-      "citation_count": 34,
+      "citation_count": 35,
       "url": "https://www.semanticscholar.org/paper/68b560859078171978f2c040b1522f4e7668c38e",
       "pdf_url": "https://arxiv.org/pdf/2303.03012",
       "publication_date": "2023-03-06",
@@ -11739,8 +11739,7 @@
       "pdf_url": "https://doi.org/10.1109/tc.2022.3148235",
       "publication_date": "2022-12-01",
       "keywords_matched": [
-        "model extraction",
-        "(via citation)"
+        "model extraction"
       ],
       "first_seen": "2025-11-28"
     },
@@ -17382,7 +17381,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 184,
+      "citation_count": 185,
       "url": "https://www.semanticscholar.org/paper/da10f79f983fd4fbd589ed7ffa68d33964841443",
       "pdf_url": "",
       "publication_date": "2019-06-26",
@@ -17722,7 +17721,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 44,
+      "citation_count": 45,
       "url": "https://www.semanticscholar.org/paper/703f6008899db58f8c2bf454f6e146efb1df38e3",
       "pdf_url": "",
       "publication_date": "2019-10-11",
@@ -18381,7 +18380,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 477,
+      "citation_count": 478,
       "url": "https://www.semanticscholar.org/paper/4582e2350e4822834dcf266522690722dd4430d4",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8790377/8806708/08806737.pdf",
       "publication_date": "2018-05-07",
@@ -18540,7 +18539,7 @@
         "M. Backes",
         "Mario Fritz"
       ],
-      "citation_count": 113,
+      "citation_count": 114,
       "url": "https://www.semanticscholar.org/paper/8589aa697cd170c793c4c729b81b6f6dfacb012c",
       "pdf_url": "https://arxiv.org/pdf/1808.00590",
       "publication_date": "2018-08-01",
