@@ -106,7 +106,7 @@
         "Yinqian Zhang",
         "Zhendong Su"
       ],
-      "citation_count": 11,
+      "citation_count": 10,
       "url": "https://www.semanticscholar.org/paper/69458b5b67892ca281b96cbddd15fa9adcbbd524",
       "pdf_url": "",
       "publication_date": "2025-05-12",
@@ -319,6 +319,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "633f03f1eea4387f02e826e4768841ef10190446",
+      "title": "GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models",
+      "abstract": "Graph neural networks (GNNs) have exhibited superior performance in various classification tasks on graph-structured data. However, they encounter the potential vulnerability from the link stealing attacks, which can infer the presence of a link between two nodes via measuring the similarity of its incident nodes' prediction vectors produced by a GNN model. Such attacks pose severe security and privacy threats to the training graph used in GNN models. In this work, we propose a novel solution, called Graph Link Disguise (GRID), to defend against link stealing attacks with the formal guarantee of GNN model utility for retaining prediction accuracy. The key idea of GRID is to add carefully crafted noises to the nodes' prediction vectors for disguising adjacent nodes as n-hop indirect neighboring nodes. We take into account the graph topology and select only a subset of nodes (called core nodes) covering all links for adding noises, which can avert the noises offset and have the further advantages of reducing both the distortion loss and the computation cost. Our crafted noises can ensure 1) the noisy prediction vectors of any two adjacent nodes have their similarity level like that of two non-adjacent nodes and 2) the model prediction is unchanged to ensure zero utility loss. Extensive experiments on five datasets are conducted to show the effectiveness of our proposed GRID solution against different representative link-stealing attacks under transductive settings and inductive settings respectively, as well as two influence-based attacks. Meanwhile, it achieves a much better privacy-utility trade-off than existing methods when extended to GNNs.",
+      "year": 2025,
+      "venue": "IEEE Symposium on Security and Privacy",
+      "authors": [
+        "Jiadong Lou",
+        "Xu Yuan",
+        "Rui Zhang",
+        "Xingliang Yuan",
+        "Neil Gong",
+        "Nianfeng Tzeng"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/633f03f1eea4387f02e826e4768841ef10190446",
+      "pdf_url": "",
+      "publication_date": "2025-01-19",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "dd37ddad0b07a5f9e38c117f0fb876735062211d",
       "title": "Be Cautious When Merging Unfamiliar LLMs: A Phishing Model Capable of Stealing Privacy",
       "abstract": "Model merging is a widespread technology in large language models (LLMs) that integrates multiple task-specific LLMs into a unified one, enabling the merged model to inherit the specialized capabilities of these LLMs. Most task-specific LLMs are sourced from open-source communities and have not undergone rigorous auditing, potentially imposing risks in model merging. This paper highlights an overlooked privacy risk: \\textit{an unsafe model could compromise the privacy of other LLMs involved in the model merging.} Specifically, we propose PhiMM, a privacy attack approach that trains a phishing model capable of stealing privacy using a crafted privacy phishing instruction dataset. Furthermore, we introduce a novel model cloaking method that mimics a specialized capability to conceal attack intent, luring users into merging the phishing model. Once victims merge the phishing model, the attacker can extract personally identifiable information (PII) or infer membership information (MI) by querying the merged model with the phishing instruction. Experimental results show that merging a phishing model increases the risk of privacy breaches. Compared to the results before merging, PII leakage increased by 3.9\\% and MI leakage increased by 17.4\\% on average. We release the code of PhiMM through a link.",
@@ -506,29 +529,6 @@
         "model theft",
         "model stealing attack",
         "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "633f03f1eea4387f02e826e4768841ef10190446",
-      "title": "GRID: Protecting Training Graph from Link Stealing Attacks on GNN Models",
-      "abstract": "Graph neural networks (GNNs) have exhibited superior performance in various classification tasks on graph-structured data. However, they encounter the potential vulnerability from the link stealing attacks, which can infer the presence of a link between two nodes via measuring the similarity of its incident nodes' prediction vectors produced by a GNN model. Such attacks pose severe security and privacy threats to the training graph used in GNN models. In this work, we propose a novel solution, called Graph Link Disguise (GRID), to defend against link stealing attacks with the formal guarantee of GNN model utility for retaining prediction accuracy. The key idea of GRID is to add carefully crafted noises to the nodes' prediction vectors for disguising adjacent nodes as n-hop indirect neighboring nodes. We take into account the graph topology and select only a subset of nodes (called core nodes) covering all links for adding noises, which can avert the noises offset and have the further advantages of reducing both the distortion loss and the computation cost. Our crafted noises can ensure 1) the noisy prediction vectors of any two adjacent nodes have their similarity level like that of two non-adjacent nodes and 2) the model prediction is unchanged to ensure zero utility loss. Extensive experiments on five datasets are conducted to show the effectiveness of our proposed GRID solution against different representative link-stealing attacks under transductive settings and inductive settings respectively, as well as two influence-based attacks. Meanwhile, it achieves a much better privacy-utility trade-off than existing methods when extended to GNNs.",
-      "year": 2025,
-      "venue": "IEEE Symposium on Security and Privacy",
-      "authors": [
-        "Jiadong Lou",
-        "Xu Yuan",
-        "Rui Zhang",
-        "Xingliang Yuan",
-        "Neil Gong",
-        "Nianfeng Tzeng"
-      ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/633f03f1eea4387f02e826e4768841ef10190446",
-      "pdf_url": "",
-      "publication_date": "2025-01-19",
-      "keywords_matched": [
-        "model stealing (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -5803,7 +5803,7 @@
       "authors": [
         "Khalid Alemerien",
         "Sadeq Al-Suhemat",
-        "Fadi Alsuhimat",
+        "F. Alsuhimat",
         "Enshirah Altarawneh"
       ],
       "citation_count": 2,
@@ -7336,7 +7336,7 @@
         "P. di Barba",
         "D. Lowther"
       ],
-      "citation_count": 66,
+      "citation_count": 68,
       "url": "https://www.semanticscholar.org/paper/9ec814b5d21f9f476afe09dd84e0c39b4dec86d4",
       "pdf_url": "",
       "publication_date": "2023-05-01",
@@ -7773,6 +7773,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "cdd4b86f3038a4e4f813a0cc9d10d6b1928ddf8a",
+      "title": "YOLO-Class: Detection and Classification of Aircraft Targets in Satellite Remote Sensing Images Based on YOLO-Extract",
+      "abstract": "With the continuous advancement of remote sensing technology, satellite remote sensing images have become one of the important means of obtaining information on the earth surface. But in the current research on aircraft target detection and classification in remote sensing images, the imbalanced data samples, large variations in target scales and backgrounds, and target occlusion have led to low average precision and slow detection speed in detection and classification tasks. Therefore, this paper proposes the YOLO-class model. Firstly, the YOLO-Extract model is transferred to optimize the detection of small targets, dense targets, and occluded targets. Secondly, Representative Batch Normalization and Mish activation function are used to optimize the Conv module, and VariFocal loss is used to optimize the classification loss function to improve the accuracy caused by imbalanced data samples. Finally, RepVGG modules are designed in the Backbone to further improve the detection accuracy of the model. Simulation results show that compared with the YOLO-Extract model, YOLO-class improves the detection accuracy from 0.608 to 0.704 and FPS from 36.16 to 39.598.",
+      "year": 2023,
+      "venue": "IEEE Access",
+      "authors": [
+        "Zhiguo Liu",
+        "Yuan Gao",
+        "Qianqian Du"
+      ],
+      "citation_count": 21,
+      "url": "https://www.semanticscholar.org/paper/cdd4b86f3038a4e4f813a0cc9d10d6b1928ddf8a",
+      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10271344.pdf",
+      "publication_date": null,
+      "keywords_matched": [
+        "extract model"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "406d4e8d2df6f6b58e65016fea31004f781d93e7",
       "title": "DisGUIDE: Disagreement-Guided Data-Free Model Extraction",
       "abstract": "Recent model-extraction attacks on Machine Learning as a Service (MLaaS) systems have moved towards data-free approaches, showing the feasibility of stealing models trained with difficult-to-access data. However, these attacks are ineffective or limited due to the low accuracy of extracted models and the high number of queries to the models under attack. The high query cost makes such techniques infeasible for online MLaaS systems that charge per query.\nWe create a novel approach to get higher accuracy and query efficiency than prior data-free model extraction techniques. Specifically, we introduce a novel generator training scheme that maximizes the disagreement loss between two clone models that attempt to copy the model under attack. This loss, combined with diversity loss and experience replay, enables the generator to produce better instances to train the clone models. Our evaluation on popular datasets CIFAR-10 and CIFAR-100 shows that our approach improves the final model accuracy by up to 3.42% and 18.48% respectively. The average number of queries required to achieve the accuracy of the prior state of the art is reduced by up to 64.95%. We hope this will promote future work on feasible data-free model extraction and defenses against such attacks.",
@@ -7794,26 +7814,6 @@
         "clone model"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "cdd4b86f3038a4e4f813a0cc9d10d6b1928ddf8a",
-      "title": "YOLO-Class: Detection and Classification of Aircraft Targets in Satellite Remote Sensing Images Based on YOLO-Extract",
-      "abstract": "With the continuous advancement of remote sensing technology, satellite remote sensing images have become one of the important means of obtaining information on the earth surface. But in the current research on aircraft target detection and classification in remote sensing images, the imbalanced data samples, large variations in target scales and backgrounds, and target occlusion have led to low average precision and slow detection speed in detection and classification tasks. Therefore, this paper proposes the YOLO-class model. Firstly, the YOLO-Extract model is transferred to optimize the detection of small targets, dense targets, and occluded targets. Secondly, Representative Batch Normalization and Mish activation function are used to optimize the Conv module, and VariFocal loss is used to optimize the classification loss function to improve the accuracy caused by imbalanced data samples. Finally, RepVGG modules are designed in the Backbone to further improve the detection accuracy of the model. Simulation results show that compared with the YOLO-Extract model, YOLO-class improves the detection accuracy from 0.608 to 0.704 and FPS from 36.16 to 39.598.",
-      "year": 2023,
-      "venue": "IEEE Access",
-      "authors": [
-        "Zhiguo Liu",
-        "Yuan Gao",
-        "Qianqian Du"
-      ],
-      "citation_count": 20,
-      "url": "https://www.semanticscholar.org/paper/cdd4b86f3038a4e4f813a0cc9d10d6b1928ddf8a",
-      "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10271344.pdf",
-      "publication_date": null,
-      "keywords_matched": [
-        "extract model"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
@@ -11563,29 +11563,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "8b2fb5e135323f8c69f11515ea3aceec86e6b66e",
-      "title": "Stealthy Inference Attack on DNN via Cache-based Side-Channel Attacks",
-      "abstract": "The advancement of deep neural networks (DNNs) motivates the deployment in various domains, including image classification, disease diagnoses, voice recognition, etc. Since some tasks that DNN undertakes are very sensitive, the label information is confidential and contains a commercial value or critical privacy. This paper demonstrates that DNNs also bring a new security threat, leading to the leakage of label information of input instances for the DNN models. In particular, we leverage the cache-based side-channel attack (SCA), i.e., Flush-Reload on the DNN (victim) models, to observe the execution of computation graphs, and create a database of them for building a classifier that the attacker can use to decide the label information of (unknown) input instances for victim models. Then we deploy the cache-based SCA on the same host machine with victim models and deduce the labels with the attacker's classification model to compromise the privacy and confidentiality of victim models. We explore different settings and classification techniques to achieve a high attack success rate of stealing label information from the victim models. Additionally, we consider two attacking scenarios: binary attacking identifies specific sensitive labels and others while multi-class attacking targets recognize all classes victim DNNs provide. Last, we implement the attack on both static DNN models with identical architectures for all inputs and dynamic DNN models with an adaptation of architectures for different inputs to demonstrate the vast existence of the proposed attack, including DenseNet 121, DenseNet 169, VGG 16, VGG 19, MobileNet v1, and MobileNet v2. Our experiment exhibits that MobileNet v1 is the most vulnerable one with 99% and 75.6% attacking success rates for binary and multi-class attacking scenarios, respectively.",
-      "year": 2022,
-      "venue": "Design, Automation and Test in Europe",
-      "authors": [
-        "Han Wang",
-        "Syed Mahbub Hafiz",
-        "Kartik Patwari",
-        "Chen-Nee Chuah",
-        "Zubair Shafiq",
-        "H. Homayoun"
-      ],
-      "citation_count": 14,
-      "url": "https://www.semanticscholar.org/paper/8b2fb5e135323f8c69f11515ea3aceec86e6b66e",
-      "pdf_url": "",
-      "publication_date": "2022-03-14",
-      "keywords_matched": [
-        "side-channel attack (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
       "paper_id": "e6d21d219b1f3321ed2354c229946373d779897a",
       "title": "Post-breach Recovery: Protection against White-box Adversarial Examples for Leaked DNN Models",
       "abstract": "Server breaches are an unfortunate reality on today's Internet. In the context of deep neural network (DNN) models, they are particularly harmful, because a leaked model gives an attacker \"white-box'' access to generate adversarial examples, a threat model that has no practical robust defenses. For practitioners who have invested years and millions into proprietary DNNs, e.g. medical imaging, this seems like an inevitable disaster looming on the horizon. In this paper, we consider the problem of post-breach recovery for DNN models. We propose Neo, a new system that creates new versions of leaked models, alongside an inference time filter that detects and removes adversarial examples generated on previously leaked models. The classification surfaces of different model versions are slightly offset (by introducing hidden distributions), and Neo detects the overfitting of attacks to the leaked model used in its generation. We show that across a variety of tasks and attack methods, Neo is able to filter out attacks from leaked models with very high accuracy, and provides strong protection (7--10 recoveries) against attackers who repeatedly breach the server. Neo performs well against a variety of strong adaptive attacks, dropping slightly in # of breaches recoverable, and demonstrates potential as a complement to DNN defenses in the wild.",
@@ -11607,6 +11584,29 @@
         "(via citation)"
       ],
       "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "8b2fb5e135323f8c69f11515ea3aceec86e6b66e",
+      "title": "Stealthy Inference Attack on DNN via Cache-based Side-Channel Attacks",
+      "abstract": "The advancement of deep neural networks (DNNs) motivates the deployment in various domains, including image classification, disease diagnoses, voice recognition, etc. Since some tasks that DNN undertakes are very sensitive, the label information is confidential and contains a commercial value or critical privacy. This paper demonstrates that DNNs also bring a new security threat, leading to the leakage of label information of input instances for the DNN models. In particular, we leverage the cache-based side-channel attack (SCA), i.e., Flush-Reload on the DNN (victim) models, to observe the execution of computation graphs, and create a database of them for building a classifier that the attacker can use to decide the label information of (unknown) input instances for victim models. Then we deploy the cache-based SCA on the same host machine with victim models and deduce the labels with the attacker's classification model to compromise the privacy and confidentiality of victim models. We explore different settings and classification techniques to achieve a high attack success rate of stealing label information from the victim models. Additionally, we consider two attacking scenarios: binary attacking identifies specific sensitive labels and others while multi-class attacking targets recognize all classes victim DNNs provide. Last, we implement the attack on both static DNN models with identical architectures for all inputs and dynamic DNN models with an adaptation of architectures for different inputs to demonstrate the vast existence of the proposed attack, including DenseNet 121, DenseNet 169, VGG 16, VGG 19, MobileNet v1, and MobileNet v2. Our experiment exhibits that MobileNet v1 is the most vulnerable one with 99% and 75.6% attacking success rates for binary and multi-class attacking scenarios, respectively.",
+      "year": 2022,
+      "venue": "Design, Automation and Test in Europe",
+      "authors": [
+        "Han Wang",
+        "Syed Mahbub Hafiz",
+        "Kartik Patwari",
+        "Chen-Nee Chuah",
+        "Zubair Shafiq",
+        "H. Homayoun"
+      ],
+      "citation_count": 13,
+      "url": "https://www.semanticscholar.org/paper/8b2fb5e135323f8c69f11515ea3aceec86e6b66e",
+      "pdf_url": "",
+      "publication_date": "2022-03-14",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "33158daa5df8197872a06e415f2f277b026d9988",
@@ -11759,7 +11759,8 @@
       "pdf_url": "https://doi.org/10.1109/tc.2022.3148235",
       "publication_date": "2022-12-01",
       "keywords_matched": [
-        "model extraction"
+        "model extraction",
+        "(via citation)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -13196,7 +13197,7 @@
         "Yunzhen Zhang",
         "B. Bao"
       ],
-      "citation_count": 96,
+      "citation_count": 97,
       "url": "https://www.semanticscholar.org/paper/f2eb05b91e4fed91626c961372d7d189211aa552",
       "pdf_url": "https://www.researchsquare.com/article/rs-722277/latest.pdf",
       "publication_date": "2021-07-20",
@@ -13807,6 +13808,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "6583239ed1f9637d4eea8c5563aa13d719b712d5",
+      "title": "Secure Automatic Speaker Verification (SASV) System Through sm-ALTP Features and Asymmetric Bagging",
+      "abstract": "The growing number of voice-enabled devices and applications consider automatic speaker verification (ASV) a fundamental component. However, maximum outreach for ASV in critical domains e.g., financial services and health care, is not possible unless we overcome security breaches caused by voice cloning algorithms and replayed audios. Therefore, to overcome these vulnerabilities, a secure ASV (SASV) system based on the novel sign modified acoustic local ternary pattern (sm-ALTP) features and asymmetric bagging-based classifier-ensemble with enhanced attack vector is presented. The proposed audio representation approach clusters the high and low frequency components in audio frames by normally distributing frequency components against a convex function. Then, the neighborhood statistics are applied to capture the user specific vocal tract information. The proposed SASV system simultaneously verifies the bonafide speakers and detects the voice cloning attack, cloning algorithm used to synthesize cloned audio (in the defined settings), and voice-replay attacks over the ASVspoof 2019 dataset. In addition, the proposed method detects the voice replay and cloned voice replay attacks over the VSDC dataset. Both the voice cloning algorithm detection and cloned-replay attack detection are novel concepts introduced in this paper. The voice cloning algorithm detection module determines the voice cloning algorithm used to generate the fake audios. Whereas, the cloned voice replay attack detection is performed to determine the SASV behavior when audio samples are simultaneously contemplated with cloning and replay artifacts.",
+      "year": 2021,
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "authors": [
+        "Muteb Aljasem",
+        "Aun Irtaza",
+        "Hafiz Malik",
+        "Noushin Saba",
+        "A. Javed",
+        "K. Malik",
+        "Mohammad Meharmohammadi"
+      ],
+      "citation_count": 34,
+      "url": "https://www.semanticscholar.org/paper/6583239ed1f9637d4eea8c5563aa13d719b712d5",
+      "pdf_url": "https://doi.org/10.1109/tifs.2021.3082303",
+      "publication_date": null,
+      "keywords_matched": [
+        "cloning attack"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "36654420b9a635bb860c2fc571a3fcc0a5398013",
       "title": "Nowhere to Hide: Efficiently Identifying Probabilistic Cloning Attacks in Large-Scale RFID Systems",
       "abstract": "Radio-Frequency Identification (RFID) is an emerging technology which has been widely applied in various scenarios, such as tracking, object monitoring, and social networks, etc. Cloning attacks can severely disturb the RFID systems, such as missed detection for the missing tags. Although there are some techniques with physical architecture design or complicated encryption and cryptography proposed to prevent the tags from being cloned, it is difficult to definitely avoid the cloning attack. Therefore, cloning attack detection and identification are critical for the RFID systems. Prior works rely on that each clone tag will reply to the reader when its corresponding genuine tag is queried. In this article, we consider a more general attack model, in which each clone tag replies to the reader\u2019s query with a predefined probability, i.e., attack probability. We concentrate on identifying the tags being attacked with the probability no less than a threshold $P_{t}$ with the required identification reliability $\\alpha $ . We first propose a basic protocol to Identify the Probabilistic Cloning Attacks with required identification reliability for the large-scale RFID systems called IPCA. Then we propose two enhanced protocols called MS-IPCA and S-IPCA respectively to improve the identification efficiency. We theoretically analyze the parameters of the proposed IPCA, MS-IPCA and S-IPCA protocols to maximize the identification efficiency. Finally we conduct extensive simulations to validate the effectiveness of the proposed protocols.",
@@ -13822,30 +13847,6 @@
       "citation_count": 33,
       "url": "https://www.semanticscholar.org/paper/36654420b9a635bb860c2fc571a3fcc0a5398013",
       "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "cloning attack"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "6583239ed1f9637d4eea8c5563aa13d719b712d5",
-      "title": "Secure Automatic Speaker Verification (SASV) System Through sm-ALTP Features and Asymmetric Bagging",
-      "abstract": "The growing number of voice-enabled devices and applications consider automatic speaker verification (ASV) a fundamental component. However, maximum outreach for ASV in critical domains e.g., financial services and health care, is not possible unless we overcome security breaches caused by voice cloning algorithms and replayed audios. Therefore, to overcome these vulnerabilities, a secure ASV (SASV) system based on the novel sign modified acoustic local ternary pattern (sm-ALTP) features and asymmetric bagging-based classifier-ensemble with enhanced attack vector is presented. The proposed audio representation approach clusters the high and low frequency components in audio frames by normally distributing frequency components against a convex function. Then, the neighborhood statistics are applied to capture the user specific vocal tract information. The proposed SASV system simultaneously verifies the bonafide speakers and detects the voice cloning attack, cloning algorithm used to synthesize cloned audio (in the defined settings), and voice-replay attacks over the ASVspoof 2019 dataset. In addition, the proposed method detects the voice replay and cloned voice replay attacks over the VSDC dataset. Both the voice cloning algorithm detection and cloned-replay attack detection are novel concepts introduced in this paper. The voice cloning algorithm detection module determines the voice cloning algorithm used to generate the fake audios. Whereas, the cloned voice replay attack detection is performed to determine the SASV behavior when audio samples are simultaneously contemplated with cloning and replay artifacts.",
-      "year": 2021,
-      "venue": "IEEE Transactions on Information Forensics and Security",
-      "authors": [
-        "Muteb Aljasem",
-        "Aun Irtaza",
-        "Hafiz Malik",
-        "Noushin Saba",
-        "A. Javed",
-        "K. Malik",
-        "Mohammad Meharmohammadi"
-      ],
-      "citation_count": 33,
-      "url": "https://www.semanticscholar.org/paper/6583239ed1f9637d4eea8c5563aa13d719b712d5",
-      "pdf_url": "https://doi.org/10.1109/tifs.2021.3082303",
       "publication_date": null,
       "keywords_matched": [
         "cloning attack"
@@ -18427,7 +18428,7 @@
         "A. Nehorai",
         "T. Cui"
       ],
-      "citation_count": 367,
+      "citation_count": 368,
       "url": "https://www.semanticscholar.org/paper/4718c6fb38ede2595f543bfbfdb1067eccac88de",
       "pdf_url": "https://arxiv.org/pdf/1810.03990",
       "publication_date": "2018-10-04",
