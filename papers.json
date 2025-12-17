@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-16",
+  "updated": "2025-12-17",
   "total": 910,
   "keywords": [
     "model stealing",
@@ -7336,7 +7336,7 @@
         "P. di Barba",
         "D. Lowther"
       ],
-      "citation_count": 68,
+      "citation_count": 67,
       "url": "https://www.semanticscholar.org/paper/9ec814b5d21f9f476afe09dd84e0c39b4dec86d4",
       "pdf_url": "",
       "publication_date": "2023-05-01",
@@ -11759,7 +11759,8 @@
       "pdf_url": "https://doi.org/10.1109/tc.2022.3148235",
       "publication_date": "2022-12-01",
       "keywords_matched": [
-        "model extraction"
+        "model extraction",
+        "(via citation)"
       ],
       "first_seen": "2025-11-28"
     },
@@ -18427,7 +18428,7 @@
         "A. Nehorai",
         "T. Cui"
       ],
-      "citation_count": 368,
+      "citation_count": 369,
       "url": "https://www.semanticscholar.org/paper/4718c6fb38ede2595f543bfbfdb1067eccac88de",
       "pdf_url": "https://arxiv.org/pdf/1810.03990",
       "publication_date": "2018-10-04",
