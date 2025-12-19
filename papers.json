@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-18",
+  "updated": "2025-12-19",
   "total": 910,
   "keywords": [
     "model stealing",
@@ -3932,6 +3932,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "faa68f195393a1ca36b840396278d971d3b6920a",
+      "title": "A Priori Knowledge-Based Physics-Informed Neural Networks for Electromagnetic Inverse Scattering",
+      "abstract": "Based on the physics-informed neural network (PINN) method, a two-step inverse scattering method is proposed to improve the efficiency and accuracy of the inversion in this work. The first step is to calculate the total fields and the initial solution of permittivity distribution in the domain of interest (DoI) by a traditional inversion algorithm, the distorted finite-difference-frequency-domain-based iterative method (DFIM), as a priori information for the cascaded PINNs. The second step is to use the calculated a priori information as additional parts of the data loss term in the proposed PINN framework for network training. Several typical numerical examples and one experimental example are considered to validate the proposed method. Inversion results show that the proposed method has good accuracy, efficiency, and robustness to noise. Compared with the data-driven deep learning methods in electromagnetic inversion, the proposed method belongs to an unsupervised learning framework and can handle more general problems. Compared with the traditional inverse algorithms, it is more efficient and accurate. In general, the proposed two-step method inherits the advantages of both traditional deep learning methods and inverse scattering methods. Importantly, it also establishes the bridge between traditional inverse scattering algorithms and deep learning methods.",
+      "year": 2024,
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "authors": [
+        "Yifeng Hu",
+        "Xiao-Hua Wang",
+        "Huiming Zhou",
+        "Lei Wang"
+      ],
+      "citation_count": 12,
+      "url": "https://www.semanticscholar.org/paper/faa68f195393a1ca36b840396278d971d3b6920a",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "36d37aaf4bb16db3e5cc37c8b4ff55d4babb71ba",
       "title": "A realistic model extraction attack against graph neural networks",
       "abstract": null,
@@ -3952,27 +3973,6 @@
         "model extraction attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "faa68f195393a1ca36b840396278d971d3b6920a",
-      "title": "A Priori Knowledge-Based Physics-Informed Neural Networks for Electromagnetic Inverse Scattering",
-      "abstract": "Based on the physics-informed neural network (PINN) method, a two-step inverse scattering method is proposed to improve the efficiency and accuracy of the inversion in this work. The first step is to calculate the total fields and the initial solution of permittivity distribution in the domain of interest (DoI) by a traditional inversion algorithm, the distorted finite-difference-frequency-domain-based iterative method (DFIM), as a priori information for the cascaded PINNs. The second step is to use the calculated a priori information as additional parts of the data loss term in the proposed PINN framework for network training. Several typical numerical examples and one experimental example are considered to validate the proposed method. Inversion results show that the proposed method has good accuracy, efficiency, and robustness to noise. Compared with the data-driven deep learning methods in electromagnetic inversion, the proposed method belongs to an unsupervised learning framework and can handle more general problems. Compared with the traditional inverse algorithms, it is more efficient and accurate. In general, the proposed two-step method inherits the advantages of both traditional deep learning methods and inverse scattering methods. Importantly, it also establishes the bridge between traditional inverse scattering algorithms and deep learning methods.",
-      "year": 2024,
-      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
-      "authors": [
-        "Yifeng Hu",
-        "Xiao-Hua Wang",
-        "Huiming Zhou",
-        "Lei Wang"
-      ],
-      "citation_count": 11,
-      "url": "https://www.semanticscholar.org/paper/faa68f195393a1ca36b840396278d971d3b6920a",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "electromagnetic analysis (title)"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "1e8b05c5b703f443b5470bef2b3aca1b064b1709",
@@ -4057,7 +4057,7 @@
         "Shui Yu",
         "Wanlei Zhou"
       ],
-      "citation_count": 9,
+      "citation_count": 10,
       "url": "https://www.semanticscholar.org/paper/d9588dc5028b7e66b5fec940fd9e31a8e0a6070b",
       "pdf_url": "",
       "publication_date": "2024-07-01",
@@ -4858,6 +4858,28 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "0a54d21c8cb4bde33a93fd8a835bb929fa06bb8e",
+      "title": "Side-channel attacks based on attention mechanism and multi-scale convolutional neural network",
+      "abstract": null,
+      "year": 2024,
+      "venue": "Computers & electrical engineering",
+      "authors": [
+        "Pengfei He",
+        "Ying Zhang",
+        "Han Gan",
+        "Jianfei Ma",
+        "Hongxin Zhang"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/0a54d21c8cb4bde33a93fd8a835bb929fa06bb8e",
+      "pdf_url": "",
+      "publication_date": "2024-10-01",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "2b28136746a29ff698f57106c292d0d6e0181629",
       "title": "Efficient Data-Free Model Stealing with Label Diversity",
       "abstract": "Machine learning as a Service (MLaaS) allows users to query the machine learning model in an API manner, which provides an opportunity for users to enjoy the benefits brought by the high-performance model trained on valuable data. This interface boosts the proliferation of machine learning based applications, while on the other hand, it introduces the attack surface for model stealing attacks. Existing model stealing attacks have relaxed their attack assumptions to the data-free setting, while keeping the effectiveness. However, these methods are complex and consist of several components, which obscure the core on which the attack really depends. In this paper, we revisit the model stealing problem from a diversity perspective and demonstrate that keeping the generated data samples more diverse across all the classes is the critical point for improving the attack performance. Based on this conjecture, we provide a simplified attack framework. We empirically signify our conjecture by evaluating the effectiveness of our attack, and experimental results show that our approach is able to achieve comparable or even better performance compared with the state-of-the-art method. Furthermore, benefiting from the absence of redundant components, our method demonstrates its advantages in attack efficiency and query budget.",
@@ -5210,28 +5232,6 @@
       "url": "https://www.semanticscholar.org/paper/f49f2057b73ae44fc44a116962435f8e18fcd5ba",
       "pdf_url": "",
       "publication_date": "2024-01-22",
-      "keywords_matched": [
-        "side-channel attack (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "0a54d21c8cb4bde33a93fd8a835bb929fa06bb8e",
-      "title": "Side-channel attacks based on attention mechanism and multi-scale convolutional neural network",
-      "abstract": null,
-      "year": 2024,
-      "venue": "Computers & electrical engineering",
-      "authors": [
-        "Pengfei He",
-        "Ying Zhang",
-        "Han Gan",
-        "Jianfei Ma",
-        "Hongxin Zhang"
-      ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/0a54d21c8cb4bde33a93fd8a835bb929fa06bb8e",
-      "pdf_url": "",
-      "publication_date": "2024-10-01",
       "keywords_matched": [
         "side-channel attack (title)"
       ],
@@ -7436,6 +7436,28 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "32f77115199e3f31aa3c08179456a5a1b71001b5",
+      "title": "A More General Electromagnetic Inverse Scattering Method Based on Physics-Informed Neural Network",
+      "abstract": "Based on the computational framework of physics-informed neural networks (PINNs), an unsupervised deep learning method is developed for inverse problems, which features good accuracy, high efficiency, and good generality. When considering the case of multifrequency inversion, a frequency scale factor is introduced to address the scale difference problem brought by the different frequency terms and the occurrence of gradient explosion during the network training. In addition, to improve the efficiency and accuracy, a dynamic sampling strategy is proposed. Four numerical examples and one experimental example are considered to validate the effectiveness of the proposed method. The inversion results show that the proposed PINN method achieves good accuracy, efficiency, and generality, especially for electrically large and high-contrast scatterers. Moreover, the method shows good robustness against noise. Compared with traditional data-driven deep learning methods, the proposed method is efficient because it operates in an unsupervised manner and exhibits good generalization across different inversion tasks. Compared with traditional quantitative inverse scattering algorithms, the proposed method can overcome their limitations in dealing with extremely high-contrast or electrically large targets. In general, the proposed PINN not only inherits high inversion quality when compared with traditional deep learning methods but also has better generality than the traditional inverse scattering methods.",
+      "year": 2023,
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "authors": [
+        "Yifeng Hu",
+        "Xiao\u2010Hua Wang",
+        "Huiming Zhou",
+        "Lei Wang",
+        "Bing-Zhong Wang"
+      ],
+      "citation_count": 37,
+      "url": "https://www.semanticscholar.org/paper/32f77115199e3f31aa3c08179456a5a1b71001b5",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "81cd9575100643a3463465ec19e90ee78e122f93",
       "title": "SoK: Model Inversion Attack Landscape: Taxonomy, Challenges, and Future Roadmap",
       "abstract": "A crucial module of the widely applied machine learning (ML) model is the model training phase, which involves large-scale training data, often including sensitive private data. ML models trained on these sensitive data suffer from significant privacy concerns since ML models can intentionally or unintendedly leak information about training data. Adversaries can exploit this information to perform privacy attacks, including model extraction, membership inference, and model inversion. While a model extraction attack steals and replicates a trained model functionality, and membership inference infers the data sample's inclusiveness to the training set, a model inversion attack has the goal of inferring the training data sample's sensitive attribute value or reconstructing the training sample (i.e., image/audio/text). Distinct and inconsistent characteristics of model inversion attack make this attack even more challenging and consequential, opening up model inversion attack as a more prominent and increasingly expanding research paradigm. Thereby, to flourish research in this relatively underexplored model inversion domain, we conduct the first-ever systematic literature review of the model inversion attack landscape. We characterize model inversion attacks and provide a comprehensive taxonomy based on different dimensions. We illustrate foundational perspectives emphasizing methodologies and key principles of the existing attacks and defense techniques. Finally, we discuss challenges and open issues in the existing model inversion attacks, focusing on the roadmap for future research directions.",
@@ -7453,28 +7475,6 @@
         "model extraction attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "32f77115199e3f31aa3c08179456a5a1b71001b5",
-      "title": "A More General Electromagnetic Inverse Scattering Method Based on Physics-Informed Neural Network",
-      "abstract": "Based on the computational framework of physics-informed neural networks (PINNs), an unsupervised deep learning method is developed for inverse problems, which features good accuracy, high efficiency, and good generality. When considering the case of multifrequency inversion, a frequency scale factor is introduced to address the scale difference problem brought by the different frequency terms and the occurrence of gradient explosion during the network training. In addition, to improve the efficiency and accuracy, a dynamic sampling strategy is proposed. Four numerical examples and one experimental example are considered to validate the effectiveness of the proposed method. The inversion results show that the proposed PINN method achieves good accuracy, efficiency, and generality, especially for electrically large and high-contrast scatterers. Moreover, the method shows good robustness against noise. Compared with traditional data-driven deep learning methods, the proposed method is efficient because it operates in an unsupervised manner and exhibits good generalization across different inversion tasks. Compared with traditional quantitative inverse scattering algorithms, the proposed method can overcome their limitations in dealing with extremely high-contrast or electrically large targets. In general, the proposed PINN not only inherits high inversion quality when compared with traditional deep learning methods but also has better generality than the traditional inverse scattering methods.",
-      "year": 2023,
-      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
-      "authors": [
-        "Yifeng Hu",
-        "Xiao\u2010Hua Wang",
-        "Huiming Zhou",
-        "Lei Wang",
-        "Bing-Zhong Wang"
-      ],
-      "citation_count": 35,
-      "url": "https://www.semanticscholar.org/paper/32f77115199e3f31aa3c08179456a5a1b71001b5",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "electromagnetic analysis (title)"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "68b560859078171978f2c040b1522f4e7668c38e",
@@ -7740,7 +7740,7 @@
         "Shutong Qi",
         "C. Sarris"
       ],
-      "citation_count": 21,
+      "citation_count": 22,
       "url": "https://www.semanticscholar.org/paper/6f387d2d7c0a3afa73c7204cdbc8e49eed536de8",
       "pdf_url": "",
       "publication_date": null,
@@ -13044,7 +13044,7 @@
         "Yanjun Liu",
         "Shaocheng Tong"
       ],
-      "citation_count": 189,
+      "citation_count": 190,
       "url": "https://www.semanticscholar.org/paper/5654149297bbf8c55d220bb4bf924a71695ebad9",
       "pdf_url": "",
       "publication_date": "2021-01-01",
@@ -13109,7 +13109,7 @@
         "Fan Yao",
         "Deliang Fan"
       ],
-      "citation_count": 140,
+      "citation_count": 141,
       "url": "https://www.semanticscholar.org/paper/74f6e70fd9a945b517e6495920a1267c01842bd4",
       "pdf_url": "http://arxiv.org/pdf/2111.04625",
       "publication_date": "2021-11-08",
@@ -13400,7 +13400,7 @@
         "Si Wang",
         "Chip-Hong Chang"
       ],
-      "citation_count": 58,
+      "citation_count": 59,
       "url": "https://www.semanticscholar.org/paper/c3d0749f519962331d323dd3c4ec1137544d6d03",
       "pdf_url": "https://dr.ntu.edu.sg/bitstream/10356/147023/2/2021021379.pdf",
       "publication_date": "2021-05-01",
@@ -17379,7 +17379,7 @@
         "Samuel Marchal",
         "N. Asokan"
       ],
-      "citation_count": 200,
+      "citation_count": 201,
       "url": "https://www.semanticscholar.org/paper/c40441bd48c08ab7db9443afdb3084387b06e61f",
       "pdf_url": "https://aaltodoc.aalto.fi/bitstreams/11ec7679-d118-4245-aad9-c8ff13a384e7/download",
       "publication_date": "2019-06-03",
@@ -17719,7 +17719,7 @@
         "S. Bhasin",
         "A. Hanjalic"
       ],
-      "citation_count": 48,
+      "citation_count": 49,
       "url": "https://www.semanticscholar.org/paper/fa30abd5d9233ccde88502d5bae300e6666d3417",
       "pdf_url": "https://tches.iacr.org/index.php/TCHES/article/download/8292/7642",
       "publication_date": "2019-05-09",
