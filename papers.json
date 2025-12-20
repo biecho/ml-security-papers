@@ -1517,6 +1517,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "57be40e5b844e37895cadcc5f9b729ecdc59b69d",
+      "title": "TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE",
+      "abstract": "To safeguard user data privacy, on-device inference has emerged as a prominent paradigm on mobile and Internet of Things (IoT) devices. This paradigm involves deploying a model provided by a third party on local devices to perform inference tasks. However, it exposes the private model to two primary security threats: model stealing (MS) and membership inference attacks (MIA). To mitigate these risks, existing wisdom deploys models within Trusted Execution Environments (TEEs), which is a secure isolated execution space. Nonetheless, the constrained secure memory capacity in TEEs makes it challenging to achieve full model security with low inference latency. This paper fills the gap with TensorShield, the first efficient on-device inference work that shields partial tensors of the model while still fully defending against MS and MIA. The key enabling techniques in TensorShield include: (i) a novel eXplainable AI (XAI) technique exploits the model's attention transition to assess critical tensors and shields them in TEE to achieve secure inference, and (ii) two meticulous designs with critical feature identification and latency-aware placement to accelerate inference while maintaining security. Extensive evaluations show that TensorShield delivers almost the same security protection as shielding the entire model inside TEE, while being up to 25.35\u00d7 (avg. 5.85\u00d7) faster than the state-of-the-art work, without accuracy loss.",
+      "year": 2025,
+      "venue": "Conference on Computer and Communications Security",
+      "authors": [
+        "Tong Sun",
+        "Bowen Jiang",
+        "Hailong Lin",
+        "Borui Li",
+        "Yixiao Teng",
+        "Yi Gao",
+        "Wei Dong"
+      ],
+      "citation_count": 1,
+      "url": "https://www.semanticscholar.org/paper/57be40e5b844e37895cadcc5f9b729ecdc59b69d",
+      "pdf_url": "",
+      "publication_date": "2025-05-28",
+      "keywords_matched": [
+        "model stealing"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "bbd216e8ca69d2583e1d203a4fdf8e9bf4e07f3d",
       "title": "Inside the Mind of an Attacker: Review Sistematika Tujuan Pencurian Machine Learning Model",
       "abstract": "Abstrak - Pencurian model (model stealing) menjadi salah satu ancaman serius dalam penerapan machine learning modern, terutama pada layanan berbasis API dan cloud. Artikel ini mengulas secara sistematik berbagai tujuan di balik serangan pencurian model untuk memahami motif penyerang dan implikasinya bagi pengembang sistem. Metode penulisan berupa kajian literatur terkini yang mengklasifikasikan tujuan pencurian ke dalam delapan kategori utama: (1) pencurian properti internal seperti arsitektur, bobot, dan hyperparameter; (2) peniruan perilaku model untuk menghasilkan efektivitas setara dan konsistensi prediksi pada data normal maupun adversarial; (3) transfer pengetahuan untuk distillation dan deployment ringan; (4) serangan privasi berupa membership inference dan model inversion; (5) monetisasi dengan menjual model bajakan atau menyediakan layanan API ilegal; (6) pencurian kemampuan pertahanan adversarial untuk meningkatkan efektivitas serangan; (7) spionase industri untuk reverse engineering model pesaing; serta (8) penghindaran regulasi dengan mencuri model yang sudah tersertifikasi. Review ini menegaskan bahwa ancaman pencurian model tidak hanya merugikan secara teknis, tetapi juga membuka peluang eksploitasi ekonomi ilegal, kebocoran data sensitif, dan persaingan usaha tidak sehat. Pemahaman yang detail atas ragam tujuan ini diharapkan mendorong perancang sistem untuk mengembangkan strategi pertahanan yang lebih cermat dan menyeluruh.Kata kunci: Machine Learning; Model Stealing; API; Adversarial; Transfer Pengetahuan;\u00a0Abstract - Model stealing has become one of the most serious threats in modern machine learning applications, especially in API- and cloud-based services. This article systematically reviews the various objectives behind model stealing attacks to understand the attackers\u2019 motivations and their implications for system developers. The writing method is a current literature review that classifies model stealing objectives into eight main categories: (1) theft of internal properties such as architecture, weights, and hyperparameters; (2) imitation of model behavior to achieve comparable effectiveness and prediction consistency on both normal and adversarial data; (3) knowledge transfer for distillation and lightweight deployment; (4) privacy attacks through membership inference and model inversion; (5) monetization by selling stolen models or offering illegal API services; (6) stealing adversarial robustness to improve attack effectiveness; (7) industrial espionage for reverse engineering competitor models; and (8) regulatory evasion by stealing pre-certified models. This review emphasizes that model stealing threats are not merely technical issues but also open opportunities for illegal economic exploitation, leakage of sensitive data, and unfair business competition. A detailed understanding of these diverse objectives is expected to encourage system designers to develop more careful and comprehensive defense strategies.Keywords: Machine Learning; Model Stealing; API; Adversarial; Knowledge Transfer;",
@@ -2137,30 +2161,6 @@
       "publication_date": "2025-04-26",
       "keywords_matched": [
         "steal model"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "57be40e5b844e37895cadcc5f9b729ecdc59b69d",
-      "title": "TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE",
-      "abstract": "To safeguard user data privacy, on-device inference has emerged as a prominent paradigm on mobile and Internet of Things (IoT) devices. This paradigm involves deploying a model provided by a third party on local devices to perform inference tasks. However, it exposes the private model to two primary security threats: model stealing (MS) and membership inference attacks (MIA). To mitigate these risks, existing wisdom deploys models within Trusted Execution Environments (TEEs), which is a secure isolated execution space. Nonetheless, the constrained secure memory capacity in TEEs makes it challenging to achieve full model security with low inference latency. This paper fills the gap with TensorShield, the first efficient on-device inference work that shields partial tensors of the model while still fully defending against MS and MIA. The key enabling techniques in TensorShield include: (i) a novel eXplainable AI (XAI) technique exploits the model's attention transition to assess critical tensors and shields them in TEE to achieve secure inference, and (ii) two meticulous designs with critical feature identification and latency-aware placement to accelerate inference while maintaining security. Extensive evaluations show that TensorShield delivers almost the same security protection as shielding the entire model inside TEE, while being up to 25.35\u00d7 (avg. 5.85\u00d7) faster than the state-of-the-art work, without accuracy loss.",
-      "year": 2025,
-      "venue": "Conference on Computer and Communications Security",
-      "authors": [
-        "Tong Sun",
-        "Bowen Jiang",
-        "Hailong Lin",
-        "Borui Li",
-        "Yixiao Teng",
-        "Yi Gao",
-        "Wei Dong"
-      ],
-      "citation_count": 0,
-      "url": "https://www.semanticscholar.org/paper/57be40e5b844e37895cadcc5f9b729ecdc59b69d",
-      "pdf_url": "",
-      "publication_date": "2025-05-28",
-      "keywords_matched": [
-        "model stealing"
       ],
       "first_seen": "2025-12-05"
     },
@@ -4658,6 +4658,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "0207b4706683924d5b0e1399bd08b49fd19c394f",
+      "title": "Stealing Training Graphs from Graph Neural Networks",
+      "abstract": "Graph Neural Networks (GNNs) have shown promising results in modeling graphs in various tasks. The training of GNNs, especially on specialized tasks such as bioinformatics, demands extensive expert annotations, which are expensive and usually contain sensitive information of data providers. The trained GNN models are often shared for deployment in the real world. As neural networks can memorize the training samples, the model parameters of GNNs have a high risk of leaking private training data. Our theoretical analysis shows the strong connections between trained GNN parameters and the training graphs used, confirming the training graph leakage issue. However, explorations into training data leakage from trained GNNs are rather limited. Therefore, we investigate a novel problem of stealing graphs from trained GNNs. To obtain high-quality graphs that resemble the target training set, a graph diffusion model with diffusion noise optimization is deployed as a graph generator. Furthermore, we propose a selection method that effectively leverages GNN model parameters to identify training graphs from samples generated by the graph diffusion model. Extensive experiments on real-world datasets demonstrate the effectiveness of the proposed framework in stealing training graphs from the trained GNN.",
+      "year": 2024,
+      "venue": "Knowledge Discovery and Data Mining",
+      "authors": [
+        "Min Lin",
+        "Enyan Dai",
+        "Junjie Xu",
+        "Jinyuan Jia",
+        "Xiang Zhang",
+        "Suhang Wang"
+      ],
+      "citation_count": 5,
+      "url": "https://www.semanticscholar.org/paper/0207b4706683924d5b0e1399bd08b49fd19c394f",
+      "pdf_url": "",
+      "publication_date": "2024-11-17",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "94621729b6ca9e811d8a052dc3457e98df457676",
       "title": "Fully Exploiting Every Real Sample: SuperPixel Sample Gradient Model Stealing",
       "abstract": "Model stealing (MS) involves querying and observing the output of a machine learning model to steal its capabilities. The quality of queried data is crucial, yet obtaining a large amount of real data for MS is often challenging. Recent works have reduced reliance on real data by using generative models. However, when high-dimensional query data is required, these methods are impractical due to the high costs of querying and the risk of model collapse. In this work, we propose using sample gradients (SG) to enhance the utility of each real sample, as SG provides crucial guidance on the decision boundaries of the victim model. However, utilizing SG in the model stealing scenario faces two challenges: 1. Pixel-level gradient estimation requires ex-tensive query volume and is susceptible to defenses. 2. The estimation of sample gradients has a significant variance. This paper proposes Superpixel Sample Gradient stealing (SPSG) for model stealing under the constraint of limited real samples. With the basic idea of imitating the victim model's low-variance patch-level gradients instead ofpixel-level gradients, SPSG achieves efficient sample gradient es-timation through two steps. First, we perform patch-wise perturbations on query images to estimate the average gradient in different regions of the image. Then, we filter the gradients through a threshold strategy to reduce variance. Exhaustive experiments demonstrate that, with the same number of real samples, SPSG achieves accuracy, agreements, and adversarial success rate significantly surpassing the current state-of-the-art MS methods. Codes are available at https://github.com/zyI123456aBISPSG_attack.",
@@ -4764,29 +4787,6 @@
         "extract model"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "0207b4706683924d5b0e1399bd08b49fd19c394f",
-      "title": "Stealing Training Graphs from Graph Neural Networks",
-      "abstract": "Graph Neural Networks (GNNs) have shown promising results in modeling graphs in various tasks. The training of GNNs, especially on specialized tasks such as bioinformatics, demands extensive expert annotations, which are expensive and usually contain sensitive information of data providers. The trained GNN models are often shared for deployment in the real world. As neural networks can memorize the training samples, the model parameters of GNNs have a high risk of leaking private training data. Our theoretical analysis shows the strong connections between trained GNN parameters and the training graphs used, confirming the training graph leakage issue. However, explorations into training data leakage from trained GNNs are rather limited. Therefore, we investigate a novel problem of stealing graphs from trained GNNs. To obtain high-quality graphs that resemble the target training set, a graph diffusion model with diffusion noise optimization is deployed as a graph generator. Furthermore, we propose a selection method that effectively leverages GNN model parameters to identify training graphs from samples generated by the graph diffusion model. Extensive experiments on real-world datasets demonstrate the effectiveness of the proposed framework in stealing training graphs from the trained GNN.",
-      "year": 2024,
-      "venue": "Knowledge Discovery and Data Mining",
-      "authors": [
-        "Min Lin",
-        "Enyan Dai",
-        "Junjie Xu",
-        "Jinyuan Jia",
-        "Xiang Zhang",
-        "Suhang Wang"
-      ],
-      "citation_count": 4,
-      "url": "https://www.semanticscholar.org/paper/0207b4706683924d5b0e1399bd08b49fd19c394f",
-      "pdf_url": "",
-      "publication_date": "2024-11-17",
-      "keywords_matched": [
-        "model stealing (title)"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "1ab2ad9f96ffe88bb1e8817984ad78a1e9d7bf86",
@@ -4947,6 +4947,28 @@
         "model extraction",
         "model extraction attack",
         "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "e1412b3c4eca9421bd6c53432d7b1524ddf17c50",
+      "title": "Adversarial Machine Learning In Network Security: A Systematic Review Of Threat Vectors And Defense Mechanisms",
+      "abstract": "Adversarial Machine Learning (AML) has emerged as a critical area of research within network security, addressing the evolving challenge of adversaries exploiting machine learning (ML) models. This systematic review adopts the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) methodology to comprehensively examine threat vectors and defense mechanisms in AML. The study identifies, categorizes, and evaluates existing research focused on adversarial attacks targeting ML algorithms in network security applications, including evasion, poisoning, and model extraction attacks. By rigorously following the PRISMA guidelines, a systematic search across multiple scholarly databases yielded a robust dataset of peer-reviewed articles that were screened, reviewed, and analyzed for inclusion. The review outlines key adversarial techniques employed against ML systems, such as gradient-based attack strategies and black-box attacks and explores the underlying vulnerabilities in network security architectures. Additionally, it highlights defense mechanisms, including adversarial training, input preprocessing, and robust model design, discussing their efficacy and limitations in mitigating adversarial threats. The study also identifies critical gaps in current research, such as the lack of standardized benchmarking for adversarial defenses and the need for scalable and real-time AML solutions.",
+      "year": 2024,
+      "venue": "Innovatech Engineering Journal",
+      "authors": [
+        "Abdul Awal Mintoo",
+        "Ashrafur Rahman Nabil",
+        "Md Ashraful Alam",
+        "Imran Ahmad"
+      ],
+      "citation_count": 4,
+      "url": "https://www.semanticscholar.org/paper/e1412b3c4eca9421bd6c53432d7b1524ddf17c50",
+      "pdf_url": "",
+      "publication_date": "2024-11-14",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack"
       ],
       "first_seen": "2025-12-05"
     },
@@ -5264,28 +5286,6 @@
       "publication_date": "2024-12-17",
       "keywords_matched": [
         "model extraction"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "e1412b3c4eca9421bd6c53432d7b1524ddf17c50",
-      "title": "Adversarial Machine Learning In Network Security: A Systematic Review Of Threat Vectors And Defense Mechanisms",
-      "abstract": "Adversarial Machine Learning (AML) has emerged as a critical area of research within network security, addressing the evolving challenge of adversaries exploiting machine learning (ML) models. This systematic review adopts the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) methodology to comprehensively examine threat vectors and defense mechanisms in AML. The study identifies, categorizes, and evaluates existing research focused on adversarial attacks targeting ML algorithms in network security applications, including evasion, poisoning, and model extraction attacks. By rigorously following the PRISMA guidelines, a systematic search across multiple scholarly databases yielded a robust dataset of peer-reviewed articles that were screened, reviewed, and analyzed for inclusion. The review outlines key adversarial techniques employed against ML systems, such as gradient-based attack strategies and black-box attacks and explores the underlying vulnerabilities in network security architectures. Additionally, it highlights defense mechanisms, including adversarial training, input preprocessing, and robust model design, discussing their efficacy and limitations in mitigating adversarial threats. The study also identifies critical gaps in current research, such as the lack of standardized benchmarking for adversarial defenses and the need for scalable and real-time AML solutions.",
-      "year": 2024,
-      "venue": "Innovatech Engineering Journal",
-      "authors": [
-        "Abdul Awal Mintoo",
-        "Ashrafur Rahman Nabil",
-        "Md Ashraful Alam",
-        "Imran Ahmad"
-      ],
-      "citation_count": 3,
-      "url": "https://www.semanticscholar.org/paper/e1412b3c4eca9421bd6c53432d7b1524ddf17c50",
-      "pdf_url": "",
-      "publication_date": "2024-11-14",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack"
       ],
       "first_seen": "2025-12-05"
     },
@@ -8282,6 +8282,30 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "28eaa9c2377116327199cb1eb2c9d7b93b948bb4",
+      "title": "Detection of Crucial Power Side Channel Data Leakage in Neural Networks",
+      "abstract": "Neural network (NN) accelerators are now extensively utilized in a range of applications that need a high degree of security, such as driverless cars, NLP, and image recognition. Due to privacy issues and the high cost, hardware implementations contained within NN Propagators were often not accessible for general populace. Additionally with power and time data, accelerators also disclose critical data by electro-magnetic (EM) sided channels. Within this study, we demonstrate a side-channel information-based attack that can successfully steal models from large-scale NN accelerators deployed on real-world hardware. The use of these accelerators is widespread. The proposed method of attack consists of two distinct phases: 1) Using EM side-channel data to estimate networking's underlying architecture; 2) Using margin-dependent, attackers learning actively in estimating parameters, notably weights. Deducing the underlying network structure from EM sidechannel data. Inferring the underlying network structure from EM sidechannel data. Experimental findings demonstrate that the disclosed attack technique can be used to precisely retrieve the large-scale NN via the use of EM side-channel information leaking. Overall, our attack shows how critical it is to conceal electromagnetic (EM) traces for massive NN accelerators in practical settings.",
+      "year": 2023,
+      "venue": "International Telecommunication Networks and Applications Conference",
+      "authors": [
+        "A. A. Ahmed",
+        "Mohammad Kamrul Hasan",
+        "Nurhizam Safie Mohd Satar",
+        "N. Nafi",
+        "A. Aman",
+        "S. Islam",
+        "Saif Aamer Fadhil"
+      ],
+      "citation_count": 12,
+      "url": "https://www.semanticscholar.org/paper/28eaa9c2377116327199cb1eb2c9d7b93b948bb4",
+      "pdf_url": "",
+      "publication_date": "2023-11-29",
+      "keywords_matched": [
+        "steal model"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "5c39cbdd1f77e12188b8691efdfd1e635c2ca037",
       "title": "Hardware-Software Co-design for Side-Channel Protected Neural Network Inference",
       "abstract": "Physical side-channel attacks are a major threat to stealing confidential data from devices. There has been a recent surge in such attacks on edge machine learning (ML) hardware to extract the model parameters. Consequently, there has also been work, although limited, on building corresponding defenses against such attacks. Current solutions take either fully software-or fully hardware-centric approaches, which are limited in performance and flexibility, respectively. In this paper, we propose the first hardware-software co-design solution for building side-channel-protected ML hardware. Our solution targets edge devices and addresses both performance and flexibility needs. To that end, we develop a secure RISCV-based coprocessor design that can execute a neural network implemented in C/C++. Our coprocessor uses masking to execute various neural network operations like weighted summations, activation functions, and output layer computation in a sidechannel secure fashion. We extend the original RV32I instruction set with custom instructions to control the masking gadgets inside the secure coprocessor. We further use the custom instructions to implement easy-to-use APIs that are exposed to the end-user as a shared library. Finally, we demonstrate the empirical sidechannel security of the design up to 1M traces.",
@@ -8325,30 +8349,6 @@
         "model extraction",
         "model extraction attack",
         "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "28eaa9c2377116327199cb1eb2c9d7b93b948bb4",
-      "title": "Detection of Crucial Power Side Channel Data Leakage in Neural Networks",
-      "abstract": "Neural network (NN) accelerators are now extensively utilized in a range of applications that need a high degree of security, such as driverless cars, NLP, and image recognition. Due to privacy issues and the high cost, hardware implementations contained within NN Propagators were often not accessible for general populace. Additionally with power and time data, accelerators also disclose critical data by electro-magnetic (EM) sided channels. Within this study, we demonstrate a side-channel information-based attack that can successfully steal models from large-scale NN accelerators deployed on real-world hardware. The use of these accelerators is widespread. The proposed method of attack consists of two distinct phases: 1) Using EM side-channel data to estimate networking's underlying architecture; 2) Using margin-dependent, attackers learning actively in estimating parameters, notably weights. Deducing the underlying network structure from EM sidechannel data. Inferring the underlying network structure from EM sidechannel data. Experimental findings demonstrate that the disclosed attack technique can be used to precisely retrieve the large-scale NN via the use of EM side-channel information leaking. Overall, our attack shows how critical it is to conceal electromagnetic (EM) traces for massive NN accelerators in practical settings.",
-      "year": 2023,
-      "venue": "International Telecommunication Networks and Applications Conference",
-      "authors": [
-        "A. A. Ahmed",
-        "Mohammad Kamrul Hasan",
-        "Nurhizam Safie Mohd Satar",
-        "N. Nafi",
-        "A. Aman",
-        "S. Islam",
-        "Saif Aamer Fadhil"
-      ],
-      "citation_count": 11,
-      "url": "https://www.semanticscholar.org/paper/28eaa9c2377116327199cb1eb2c9d7b93b948bb4",
-      "pdf_url": "",
-      "publication_date": "2023-11-29",
-      "keywords_matched": [
-        "steal model"
       ],
       "first_seen": "2025-12-05"
     },
@@ -13407,7 +13407,7 @@
         "Jie Jin",
         "Sichun Du"
       ],
-      "citation_count": 65,
+      "citation_count": 66,
       "url": "https://www.semanticscholar.org/paper/c94981857a180002fd8d39f405f677800db35668",
       "pdf_url": "https://www.frontiersin.org/articles/10.3389/fphy.2021.690651/pdf",
       "publication_date": "2021-06-04",
@@ -17947,7 +17947,7 @@
         "Lei Gao",
         "G. Mari\u00e9thoz"
       ],
-      "citation_count": 31,
+      "citation_count": 32,
       "url": "https://www.semanticscholar.org/paper/7c2427863bf72ce1b679735ff46d6832a2e12d9b",
       "pdf_url": "https://hess.copernicus.org/articles/23/2561/2019/hess-23-2561-2019.pdf",
       "publication_date": "2019-01-21",
