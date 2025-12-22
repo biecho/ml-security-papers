@@ -1851,7 +1851,7 @@
     {
       "paper_id": "f8caf3ee31a4d1d4d72f87997c104aaeb56e0a33",
       "title": "Holmes: Towards Effective and Harmless Model Ownership Verification to Personalized Large Vision Models via Decoupling Common Features",
-      "abstract": "Large vision models achieve remarkable performance in various downstream tasks, primarily by personalizing pre-trained models through fine-tuning with private and valuable local data, which makes the personalized model a valuable intellectual property for its owner. Similar to the era of traditional DNNs, model stealing attacks also pose significant risks to these personalized models. However, in this paper, we reveal that most existing defense methods (developed for traditional DNNs), typically designed for models trained from scratch, either introduce additional security risks, are prone to misjudgment, or are even ineffective for fine-tuned models. To alleviate these problems, this paper proposes a harmless model ownership verification method for personalized models by decoupling similar common features. In general, our method consists of three main stages. In the first stage, we create shadow models that retain common features of the victim model while disrupting dataset-specific features. We represent the dataset-specific features of the victim model by the output differences between the shadow and victim models. After that, a meta-classifier is trained to identify stolen models by determining whether suspicious models contain the dataset-specific features of the victim. In the third stage, we conduct model ownership verification by hypothesis test to mitigate randomness and enhance robustness. Extensive experiments on benchmark datasets verify the effectiveness of the proposed method in detecting different types of model stealing simultaneously.",
+      "abstract": "Large vision models (LVMs) achieve remarkable performance in various downstream tasks, primarily by personalizing pre-trained models through fine-tuning with private and valuable local data, which makes the personalized model a valuable intellectual property. Similar to the era of traditional DNNs, model stealing attacks also pose significant risks to LVMs. However, this paper reveals that most existing defense methods (developed for traditional DNNs), typically designed for models trained from scratch, either introduce additional security risks, are prone to misjudgment, or are even ineffective for fine-tuned models. To alleviate these problems, this paper proposes a harmless model ownership verification method for personalized LVMs by decoupling similar common features. In general, our method consists of three main stages. In the first stage, we create shadow models that retain common features of the victim model while disrupting dataset-specific features. We represent the dataset-specific features of the victim model by computing the output differences between the shadow and victim models, without altering the victim model or its training process. After that, a meta-classifier is trained to identify stolen models by determining whether suspicious models contain the dataset-specific features of the victim. In the third stage, we conduct model ownership verification by hypothesis test to mitigate randomness and enhance robustness. Extensive experiments on benchmark datasets verify the effectiveness of the proposed method in detecting different types of model stealing simultaneously. Our codes are available at https://github.com/zlh-thu/Holmes.",
       "year": 2025,
       "venue": "arXiv.org",
       "authors": [
@@ -7449,7 +7449,7 @@
         "Shuai Wang",
         "Cuiyun Gao"
       ],
-      "citation_count": 60,
+      "citation_count": 59,
       "url": "https://www.semanticscholar.org/paper/d032a269b465df9116f080ff9c56049bc581acb4",
       "pdf_url": "",
       "publication_date": "2023-11-15",
@@ -7886,24 +7886,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
-      "title": "On the Feasibility of Specialized Ability Stealing for Large Language Code Models",
-      "abstract": null,
-      "year": 2023,
-      "venue": "",
-      "authors": [
-        "Zongjie Li"
-      ],
-      "citation_count": 19,
-      "url": "https://www.semanticscholar.org/paper/460e48454b209e957b4942303507bf756c4a6a31",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
       "paper_id": "3d2efd249eaffbf3675957444271ca97330156a1",
       "title": "Protecting Regression Models With Personalized Local Differential Privacy",
       "abstract": "The equation-solving model extraction attack is an intuitively simple but devastating attack to steal confidential information of regression models through a sufficient number of queries. Complete mitigation is difficult. Thus, the development of countermeasures is focused on degrading the attack effectiveness as much as possible without losing the model utilities. We investigate a novel personalized local differential privacy mechanism to defend against the attack. We obfuscate the model by adding high-dimensional Gaussian noise on model coefficients. Our solution can adaptively produce the noise to protect the model on the fly. We thoroughly evaluate the performance of our mechanisms using real-world datasets. The experiment shows that the proposed scheme outperforms the existing differential-privacy-enabled solution, i.e., 4 times more queries are required to achieve the same attack result. We also plan to publish the relevant codes to the community for further research.",
@@ -7925,6 +7907,24 @@
         "model extraction attack"
       ],
       "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "460e48454b209e957b4942303507bf756c4a6a31",
+      "title": "On the Feasibility of Specialized Ability Stealing for Large Language Code Models",
+      "abstract": null,
+      "year": 2023,
+      "venue": "",
+      "authors": [
+        "Zongjie Li"
+      ],
+      "citation_count": 18,
+      "url": "https://www.semanticscholar.org/paper/460e48454b209e957b4942303507bf756c4a6a31",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
     },
     {
       "paper_id": "4b99fb1fc7f60a16c4cc99a07d931fd79cf993e0",
