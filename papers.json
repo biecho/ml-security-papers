@@ -1,6 +1,6 @@
 {
-  "updated": "2025-12-21",
-  "total": 914,
+  "updated": "2025-12-22",
+  "total": 915,
   "keywords": [
     "model stealing",
     "model extraction",
@@ -4862,7 +4862,7 @@
     {
       "paper_id": "f043ad18b10677d02c4b8c94dd69b4dca97b4fc6",
       "title": "<inline-formula><tex-math notation=\"LaTeX\">$\\gamma$</tex-math><alternatives><mml:math><mml:mi>\u03b3</mml:mi></mml:math><inline-graphic xlink:href=\"dohyun-ieq1-3314710.gif\"/></alternatives></inline-formula>-Knife: Extracting Neural Network Architecture Through Software-Based Power Side-Channel",
-      "abstract": "Several side-channel attacks exploiting timing, cache, or power side channels have recently been proposed to obtain private information of a neural network. However, the hardware-based attacks require physical access to the system, using high-precision equipment to measure physical system behaviors such as power consumption or electromagnetic emanations, to exploit them as side channels. Whereas, the previous software-based side-channel attacks on neural networks can extract their model information only when the target architecture is known. In this article, we propose the <italic><inline-formula><tex-math notation=\"LaTeX\">$\\gamma$</tex-math><alternatives><mml:math><mml:mi>\u03b3</mml:mi></mml:math><inline-graphic xlink:href=\"dohyun-ieq3-3314710.gif\"/></alternatives></inline-formula>-Knife attack</italic>, a software-based power side-channel attack on a neural network, which can extract its architecture without any physical access or high-precision measuring equipment. Our work demonstrates that side-channels can be formed that leak architecture of neural networks by utilizing statistical metrics without high-resolution power data. The <inline-formula><tex-math notation=\"LaTeX\">$\\gamma$</tex-math><alternatives><mml:math><mml:mi>\u03b3</mml:mi></mml:math><inline-graphic xlink:href=\"dohyun-ieq4-3314710.gif\"/></alternatives></inline-formula>-Knife attack can reduce the search space of candidate architectures by obtaining private information such as filter size, depth of convolutional layer, and activation functions in the target architecture, as accurately as hardware-based power side-channel attacks even when the target neural network is totally unknown. We demonstrated the efficacy of the <inline-formula><tex-math notation=\"LaTeX\">$\\gamma$</tex-math><alternatives><mml:math><mml:mi>\u03b3</mml:mi></mml:math><inline-graphic xlink:href=\"dohyun-ieq5-3314710.gif\"/></alternatives></inline-formula>-Knife attack by implementing the attack on the well-known neural networks VGGNet, ResNet, GoogleNet, and MobileNet, using the Pytorch library on Intel CPUs and AMD CPUs. The <inline-formula><tex-math notation=\"LaTeX\">$\\gamma$</tex-math><alternatives><mml:math><mml:mi>\u03b3</mml:mi></mml:math><inline-graphic xlink:href=\"dohyun-ieq6-3314710.gif\"/></alternatives></inline-formula>-Knife attack could identify the target neural network architecture with an accuracy of approximately 90%, and efficiently extract its private information, by significantly reducing the search space of the target architecture.",
+      "abstract": null,
       "year": 2024,
       "venue": "IEEE Transactions on Dependable and Secure Computing",
       "authors": [
@@ -13069,7 +13069,7 @@
         "Nitin Rathi",
         "K. Roy"
       ],
-      "citation_count": 292,
+      "citation_count": 293,
       "url": "https://www.semanticscholar.org/paper/1921489a2801f053d0906079f0015ba6e68dd505",
       "pdf_url": "",
       "publication_date": "2021-10-01",
@@ -19811,7 +19811,7 @@
         "J. Cleland-Huang",
         "P. Heymans"
       ],
-      "citation_count": 159,
+      "citation_count": 160,
       "url": "https://www.semanticscholar.org/paper/d84c0d4dbab81757490213742b1e75dc258bd3ba",
       "pdf_url": "https://hal.inria.fr/hal-00859475/file/fse13main-id221-p-18686-final.pdf",
       "publication_date": "2013-08-18",
@@ -20200,6 +20200,25 @@
         "cloning attack"
       ],
       "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "a3474a051f454516d9fd2cb7fc1c12cb6edebb85",
+      "title": "Efficient Detecting of RFID Tag Cloning Attacks using Chaos Theory",
+      "abstract": null,
+      "year": 2010,
+      "venue": "",
+      "authors": [
+        "M. Babaie",
+        "H. Rahimov"
+      ],
+      "citation_count": 3,
+      "url": "https://www.semanticscholar.org/paper/a3474a051f454516d9fd2cb7fc1c12cb6edebb85",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "cloning attack"
+      ],
+      "first_seen": "2025-12-22"
     },
     {
       "paper_id": "18506b25ef0c811162b1b51b9301a8eaa572c57d",
