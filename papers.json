@@ -80,7 +80,7 @@
         "Savvas Zannettou",
         "Yang Zhang"
       ],
-      "citation_count": 17,
+      "citation_count": 18,
       "url": "https://www.semanticscholar.org/paper/eead229e073ee9f1221144e60ee2d90a7174eaf2",
       "pdf_url": "",
       "publication_date": "2025-01-28",
@@ -1563,6 +1563,32 @@
       "first_seen": "2025-12-21"
     },
     {
+      "paper_id": "4751cda9e628009ffaa86cfdaac218bef0eacd1e",
+      "title": "\u03b4-STEAL: LLM Stealing Attack with Local Differential Privacy",
+      "abstract": "Large language models (LLMs) demonstrate remarkable capabilities across various tasks. However, their deployment introduces significant risks related to intellectual property. In this context, we focus on model stealing attacks, where adversaries replicate the behaviors of these models to steal services. These attacks are highly relevant to proprietary LLMs and pose serious threats to revenue and financial stability. To mitigate these risks, the watermarking solution embeds imperceptible patterns in LLM outputs, enabling model traceability and intellectual property verification. In this paper, we study the vulnerability of LLM service providers by introducing $\\delta$-STEAL, a novel model stealing attack that bypasses the service provider's watermark detectors while preserving the adversary's model utility. $\\delta$-STEAL injects noise into the token embeddings of the adversary's model during fine-tuning in a way that satisfies local differential privacy (LDP) guarantees. The adversary queries the service provider's model to collect outputs and form input-output training pairs. By applying LDP-preserving noise to these pairs, $\\delta$-STEAL obfuscates watermark signals, making it difficult for the service provider to determine whether its outputs were used, thereby preventing claims of model theft. Our experiments show that $\\delta$-STEAL with lightweight modifications achieves attack success rates of up to $96.95\\%$ without significantly compromising the adversary's model utility. The noise scale in LDP controls the trade-off between attack effectiveness and model utility. This poses a significant risk, as even robust watermarks can be bypassed, allowing adversaries to deceive watermark detectors and undermine current intellectual property protection methods.",
+      "year": 2025,
+      "venue": "arXiv.org",
+      "authors": [
+        "Kieu Dang",
+        "Phung Lai",
+        "Nhathai Phan",
+        "Yelong Shen",
+        "Ruoming Jin",
+        "Abdallah Khreishah"
+      ],
+      "citation_count": 1,
+      "url": "https://www.semanticscholar.org/paper/4751cda9e628009ffaa86cfdaac218bef0eacd1e",
+      "pdf_url": "",
+      "publication_date": "2025-10-24",
+      "keywords_matched": [
+        "model stealing",
+        "model theft",
+        "model stealing attack",
+        "LLM stealing"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "bbd216e8ca69d2583e1d203a4fdf8e9bf4e07f3d",
       "title": "Inside the Mind of an Attacker: Review Sistematika Tujuan Pencurian Machine Learning Model",
       "abstract": "Abstrak - Pencurian model (model stealing) menjadi salah satu ancaman serius dalam penerapan machine learning modern, terutama pada layanan berbasis API dan cloud. Artikel ini mengulas secara sistematik berbagai tujuan di balik serangan pencurian model untuk memahami motif penyerang dan implikasinya bagi pengembang sistem. Metode penulisan berupa kajian literatur terkini yang mengklasifikasikan tujuan pencurian ke dalam delapan kategori utama: (1) pencurian properti internal seperti arsitektur, bobot, dan hyperparameter; (2) peniruan perilaku model untuk menghasilkan efektivitas setara dan konsistensi prediksi pada data normal maupun adversarial; (3) transfer pengetahuan untuk distillation dan deployment ringan; (4) serangan privasi berupa membership inference dan model inversion; (5) monetisasi dengan menjual model bajakan atau menyediakan layanan API ilegal; (6) pencurian kemampuan pertahanan adversarial untuk meningkatkan efektivitas serangan; (7) spionase industri untuk reverse engineering model pesaing; serta (8) penghindaran regulasi dengan mencuri model yang sudah tersertifikasi. Review ini menegaskan bahwa ancaman pencurian model tidak hanya merugikan secara teknis, tetapi juga membuka peluang eksploitasi ekonomi ilegal, kebocoran data sensitif, dan persaingan usaha tidak sehat. Pemahaman yang detail atas ragam tujuan ini diharapkan mendorong perancang sistem untuk mengembangkan strategi pertahanan yang lebih cermat dan menyeluruh.Kata kunci: Machine Learning; Model Stealing; API; Adversarial; Transfer Pengetahuan;\u00a0Abstract - Model stealing has become one of the most serious threats in modern machine learning applications, especially in API- and cloud-based services. This article systematically reviews the various objectives behind model stealing attacks to understand the attackers\u2019 motivations and their implications for system developers. The writing method is a current literature review that classifies model stealing objectives into eight main categories: (1) theft of internal properties such as architecture, weights, and hyperparameters; (2) imitation of model behavior to achieve comparable effectiveness and prediction consistency on both normal and adversarial data; (3) knowledge transfer for distillation and lightweight deployment; (4) privacy attacks through membership inference and model inversion; (5) monetization by selling stolen models or offering illegal API services; (6) stealing adversarial robustness to improve attack effectiveness; (7) industrial espionage for reverse engineering competitor models; and (8) regulatory evasion by stealing pre-certified models. This review emphasizes that model stealing threats are not merely technical issues but also open opportunities for illegal economic exploitation, leakage of sensitive data, and unfair business competition. A detailed understanding of these diverse objectives is expected to encourage system designers to develop more careful and comprehensive defense strategies.Keywords: Machine Learning; Model Stealing; API; Adversarial; Knowledge Transfer;",
@@ -1893,32 +1919,6 @@
         "model extraction",
         "model extraction attack",
         "(via citation)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "4751cda9e628009ffaa86cfdaac218bef0eacd1e",
-      "title": "\u03b4-STEAL: LLM Stealing Attack with Local Differential Privacy",
-      "abstract": "Large language models (LLMs) demonstrate remarkable capabilities across various tasks. However, their deployment introduces significant risks related to intellectual property. In this context, we focus on model stealing attacks, where adversaries replicate the behaviors of these models to steal services. These attacks are highly relevant to proprietary LLMs and pose serious threats to revenue and financial stability. To mitigate these risks, the watermarking solution embeds imperceptible patterns in LLM outputs, enabling model traceability and intellectual property verification. In this paper, we study the vulnerability of LLM service providers by introducing $\\delta$-STEAL, a novel model stealing attack that bypasses the service provider's watermark detectors while preserving the adversary's model utility. $\\delta$-STEAL injects noise into the token embeddings of the adversary's model during fine-tuning in a way that satisfies local differential privacy (LDP) guarantees. The adversary queries the service provider's model to collect outputs and form input-output training pairs. By applying LDP-preserving noise to these pairs, $\\delta$-STEAL obfuscates watermark signals, making it difficult for the service provider to determine whether its outputs were used, thereby preventing claims of model theft. Our experiments show that $\\delta$-STEAL with lightweight modifications achieves attack success rates of up to $96.95\\%$ without significantly compromising the adversary's model utility. The noise scale in LDP controls the trade-off between attack effectiveness and model utility. This poses a significant risk, as even robust watermarks can be bypassed, allowing adversaries to deceive watermark detectors and undermine current intellectual property protection methods.",
-      "year": 2025,
-      "venue": "arXiv.org",
-      "authors": [
-        "Kieu Dang",
-        "Phung Lai",
-        "Nhathai Phan",
-        "Yelong Shen",
-        "Ruoming Jin",
-        "Abdallah Khreishah"
-      ],
-      "citation_count": 0,
-      "url": "https://www.semanticscholar.org/paper/4751cda9e628009ffaa86cfdaac218bef0eacd1e",
-      "pdf_url": "",
-      "publication_date": "2025-10-24",
-      "keywords_matched": [
-        "model stealing",
-        "model theft",
-        "model stealing attack",
-        "LLM stealing"
       ],
       "first_seen": "2025-11-28"
     },
@@ -9098,6 +9098,27 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "21ec2007ae077dcb72f13e295cefe9ca1727b42e",
+      "title": "No Forking Way: Detecting Cloning Attacks on Intel SGX Applications",
+      "abstract": "Forking attacks against TEEs like Intel SGX can be carried out either by rolling back the application to a previous state, or by cloning the application and by partitioning its inputs across the cloned instances. Current solutions to forking attacks require Trusted Third Parties (TTP) that are hard to find in real-world deployments. In the absence of a TTP, many TEE applications rely on monotonic counters to mitigate forking attacks based on rollbacks; however, they have no protection mechanism against forking attack based on cloning. In this paper, we analyze 72 SGX applications and show that approximately 20% of those are vulnerable to forking attacks based on cloning\u2014including those that rely on monotonic counters. To address this problem, we present CloneBuster, the first practical clone-detection mechanism for Intel SGX that does not rely on a TTP and, as such, can be used directly to protect existing applications. CloneBuster allows enclaves to (self-) detect whether another enclave with the same binary is running on the same platform. To do so, CloneBuster relies on a cache-based covert channel for enclaves to signal their presence to (and detect the presence of) clones on the same machine. We show that CloneBuster is robust despite a malicious OS, only incurs a marginal impact on the application performance, and adds approximately 800 LoC to the TCB. When used in conjunction with monotonic counters, CloneBuster allows applications to benefit from a comprehensive protection against forking attacks.",
+      "year": 2023,
+      "venue": "Asia-Pacific Computer Systems Architecture Conference",
+      "authors": [
+        "Samira Briongos",
+        "Ghassan O. Karame",
+        "Claudio Soriente",
+        "Annika Wilde"
+      ],
+      "citation_count": 6,
+      "url": "https://www.semanticscholar.org/paper/21ec2007ae077dcb72f13e295cefe9ca1727b42e",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3627106.3627187",
+      "publication_date": "2023-10-04",
+      "keywords_matched": [
+        "cloning attack"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "a0a7b1aabe2f14696b15bac592b0ad5743ef0b85",
       "title": "Data-Free Model Extraction Attacks in the Context of Object Detection",
       "abstract": "A significant number of machine learning models are vulnerable to model extraction attacks, which focus on stealing the models by using specially curated queries against the target model. This task is well accomplished by using part of the training data or a surrogate dataset to train a new model that mimics a target model in a white-box environment. In pragmatic situations, however, the target models are trained on private datasets that are inaccessible to the adversary. The data-free model extraction technique replaces this problem when it comes to using queries artificially curated by a generator similar to that used in Generative Adversarial Nets. We propose for the first time, to the best of our knowledge, an adversary black box attack extending to a regression problem for predicting bounding box coordinates in object detection. As part of our study, we found that defining a loss function and using a novel generator setup is one of the key aspects in extracting the target model. We find that the proposed model extraction method achieves significant results by using reasonable queries. The discovery of this object detection vulnerability will support future prospects for securing such models.",
@@ -9184,27 +9205,6 @@
       "publication_date": "2023-05-06",
       "keywords_matched": [
         "model stealing"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "21ec2007ae077dcb72f13e295cefe9ca1727b42e",
-      "title": "No Forking Way: Detecting Cloning Attacks on Intel SGX Applications",
-      "abstract": "Forking attacks against TEEs like Intel SGX can be carried out either by rolling back the application to a previous state, or by cloning the application and by partitioning its inputs across the cloned instances. Current solutions to forking attacks require Trusted Third Parties (TTP) that are hard to find in real-world deployments. In the absence of a TTP, many TEE applications rely on monotonic counters to mitigate forking attacks based on rollbacks; however, they have no protection mechanism against forking attack based on cloning. In this paper, we analyze 72 SGX applications and show that approximately 20% of those are vulnerable to forking attacks based on cloning\u2014including those that rely on monotonic counters. To address this problem, we present CloneBuster, the first practical clone-detection mechanism for Intel SGX that does not rely on a TTP and, as such, can be used directly to protect existing applications. CloneBuster allows enclaves to (self-) detect whether another enclave with the same binary is running on the same platform. To do so, CloneBuster relies on a cache-based covert channel for enclaves to signal their presence to (and detect the presence of) clones on the same machine. We show that CloneBuster is robust despite a malicious OS, only incurs a marginal impact on the application performance, and adds approximately 800 LoC to the TCB. When used in conjunction with monotonic counters, CloneBuster allows applications to benefit from a comprehensive protection against forking attacks.",
-      "year": 2023,
-      "venue": "Asia-Pacific Computer Systems Architecture Conference",
-      "authors": [
-        "Samira Briongos",
-        "Ghassan O. Karame",
-        "Claudio Soriente",
-        "Annika Wilde"
-      ],
-      "citation_count": 5,
-      "url": "https://www.semanticscholar.org/paper/21ec2007ae077dcb72f13e295cefe9ca1727b42e",
-      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3627106.3627187",
-      "publication_date": "2023-10-04",
-      "keywords_matched": [
-        "cloning attack"
       ],
       "first_seen": "2025-12-05"
     },
@@ -13069,7 +13069,7 @@
         "Nitin Rathi",
         "K. Roy"
       ],
-      "citation_count": 294,
+      "citation_count": 295,
       "url": "https://www.semanticscholar.org/paper/1921489a2801f053d0906079f0015ba6e68dd505",
       "pdf_url": "",
       "publication_date": "2021-10-01",
