@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-23",
+  "updated": "2025-12-24",
   "total": 915,
   "keywords": [
     "model stealing",
@@ -3462,7 +3462,7 @@
         "Meera Viswanathan",
         "Robert Chew"
       ],
-      "citation_count": 39,
+      "citation_count": 40,
       "url": "https://www.semanticscholar.org/paper/b719f3b74f5025aeaa0ed3ed8707e8557bce6654",
       "pdf_url": "",
       "publication_date": "2024-06-19",
@@ -3702,6 +3702,27 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "37bf4cce2a17e47480a857b235addbc73f5eb7fe",
+      "title": "Side-Channel-Assisted Reverse-Engineering of Encrypted DNN Hardware Accelerator IP and Attack Surface Exploration",
+      "abstract": "Deep Neural Networks (DNNs) have revolutionized numerous application domains with their unparalleled performance. As the models become larger and more complex, hardware DNN accelerators are increasingly popular. Field-Programmable Gate Array (FPGA)-based DNN accelerators offer near-Application Specific Integrated Circuit (ASIC) efficiency and exceptional flexibility, establishing them as one of the primary hardware platforms for rapidly evolving deep learning implementations, particularly on edge devices. This prominence renders them lucrative targets for attackers. Existing attacks aimed at compromising the confidentiality of DNN models deployed on FPGA DNN accelerators often assume complete knowledge of the accelerators. However, this assumption does not hold for real-world, proprietary, high-performance FPGA DNN accelerators. In this study, we introduce a comprehensive and effective reverse-engineering methodology for demystifying FPGA DNN accelerator soft Intellectual Property (IP) cores. We demonstrate its application on the cutting-edge AMD-Xilinx Deep Learning Processing Unit (DPU). Our method relies on schematic analysis and, innovatively, electromagnetic (EM) side-channel analysis to reveal the data flow and scheduling of the DNN accelerators. To the best of our knowledge, this research is the first successful endeavor to reverse-engineer a commercial encrypted DNN accelerator IP. Moreover, we investigate attack surfaces exposed by the reverse-engineering findings, including the successful recovery of DNN model architectures and extraction of model parameters. These outcomes pose a significant threat to real-world commercial FPGA-DNN acceleration systems. We discuss potential countermeasures and offer recommendations for FPGA-based IP protection.",
+      "year": 2024,
+      "venue": "IEEE Symposium on Security and Privacy",
+      "authors": [
+        "Gongye Cheng",
+        "Yukui Luo",
+        "Xiaolin Xu",
+        "Yunsi Fei"
+      ],
+      "citation_count": 20,
+      "url": "https://www.semanticscholar.org/paper/37bf4cce2a17e47480a857b235addbc73f5eb7fe",
+      "pdf_url": "",
+      "publication_date": "2024-05-19",
+      "keywords_matched": [
+        "side-channel attack (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "395e6ce103b3103538ce44e5e5231c2668c90301",
       "title": "Optimization Assisted by Neural Network-Based Machine Learning in Electromagnetic Applications",
       "abstract": "We introduce an optimization assisted by a neural network (ONN) predictor to the electromagnetic community. ONN belongs to the class of the surrogate model-based optimization approaches, and approximates the objective function using a nonlinear approximator\u2014neural network. We provide a comprehensive description of the ONN algorithm and the details of its mathematical formulations. We apply ONN to optimize three popular benchmark functions and compare its performance with some commonly used optimization algorithms, namely particle swarm optimization (PSO), genetic algorithm (GA), and Bayesian optimization (BO). For the first time, we demonstrate ONN\u2019s applicability and effectiveness in antenna design problems by optimizing a six-element Yagi-Uda antenna and by solving a challenging 10-D dual-band slotted patch antenna constrained optimization problem. To achieve this, ONN is linked with a full-wave electromagnetic simulation solver through an application user interface. The optimized slotted patch is fabricated and measured to demonstrate how ONN can be part of the full antenna design process. Our empirical results indicate that ONN requires less objective function evaluations to reach the same qualitative point and reaches better optimal points for the same number of iterations for the studied benchmark functions and antenna optimization problems compared to the aforementioned baseline optimization algorithms.",
@@ -3718,27 +3739,6 @@
       "publication_date": "2024-01-01",
       "keywords_matched": [
         "electromagnetic analysis (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "37bf4cce2a17e47480a857b235addbc73f5eb7fe",
-      "title": "Side-Channel-Assisted Reverse-Engineering of Encrypted DNN Hardware Accelerator IP and Attack Surface Exploration",
-      "abstract": "Deep Neural Networks (DNNs) have revolutionized numerous application domains with their unparalleled performance. As the models become larger and more complex, hardware DNN accelerators are increasingly popular. Field-Programmable Gate Array (FPGA)-based DNN accelerators offer near-Application Specific Integrated Circuit (ASIC) efficiency and exceptional flexibility, establishing them as one of the primary hardware platforms for rapidly evolving deep learning implementations, particularly on edge devices. This prominence renders them lucrative targets for attackers. Existing attacks aimed at compromising the confidentiality of DNN models deployed on FPGA DNN accelerators often assume complete knowledge of the accelerators. However, this assumption does not hold for real-world, proprietary, high-performance FPGA DNN accelerators. In this study, we introduce a comprehensive and effective reverse-engineering methodology for demystifying FPGA DNN accelerator soft Intellectual Property (IP) cores. We demonstrate its application on the cutting-edge AMD-Xilinx Deep Learning Processing Unit (DPU). Our method relies on schematic analysis and, innovatively, electromagnetic (EM) side-channel analysis to reveal the data flow and scheduling of the DNN accelerators. To the best of our knowledge, this research is the first successful endeavor to reverse-engineer a commercial encrypted DNN accelerator IP. Moreover, we investigate attack surfaces exposed by the reverse-engineering findings, including the successful recovery of DNN model architectures and extraction of model parameters. These outcomes pose a significant threat to real-world commercial FPGA-DNN acceleration systems. We discuss potential countermeasures and offer recommendations for FPGA-based IP protection.",
-      "year": 2024,
-      "venue": "IEEE Symposium on Security and Privacy",
-      "authors": [
-        "Gongye Cheng",
-        "Yukui Luo",
-        "Xiaolin Xu",
-        "Yunsi Fei"
-      ],
-      "citation_count": 19,
-      "url": "https://www.semanticscholar.org/paper/37bf4cce2a17e47480a857b235addbc73f5eb7fe",
-      "pdf_url": "",
-      "publication_date": "2024-05-19",
-      "keywords_matched": [
-        "side-channel attack (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -15977,7 +15977,7 @@
         "Rosario Cammarota",
         "Aydin Aysu"
       ],
-      "citation_count": 52,
+      "citation_count": 53,
       "url": "https://www.semanticscholar.org/paper/512c95dd0b0a04892e257ddef60af96dd7a8b8f3",
       "pdf_url": "",
       "publication_date": "2020-06-16",
@@ -16523,7 +16523,7 @@
         "K. Sakiyama",
         "Y. Li"
       ],
-      "citation_count": 12,
+      "citation_count": 13,
       "url": "https://www.semanticscholar.org/paper/c9c7498580d105ebac92ed80ec6698bb6dbeb76f",
       "pdf_url": "",
       "publication_date": "2020-10-19",
@@ -17385,7 +17385,7 @@
         "Tianwei Zhang",
         "R. Lee"
       ],
-      "citation_count": 352,
+      "citation_count": 353,
       "url": "https://www.semanticscholar.org/paper/2cb1f4688f8ba457b4fa2ed36deae5a98f4249ca",
       "pdf_url": "",
       "publication_date": "2019-12-09",
@@ -17406,7 +17406,7 @@
         "Dirmanto Jap",
         "S. Picek"
       ],
-      "citation_count": 308,
+      "citation_count": 309,
       "url": "https://www.semanticscholar.org/paper/b12c15503435cffee16bdd156766dcf390eeb8f8",
       "pdf_url": "",
       "publication_date": null,
@@ -17588,7 +17588,7 @@
         "Rosario Cammarota",
         "Aydin Aysu"
       ],
-      "citation_count": 91,
+      "citation_count": 92,
       "url": "https://www.semanticscholar.org/paper/6854c4c8dfca1de802f2662db62deb7ba2bc10b2",
       "pdf_url": "https://arxiv.org/pdf/1910.13063",
       "publication_date": "2019-10-29",
