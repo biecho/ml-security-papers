@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-25",
+  "updated": "2025-12-26",
   "total": 915,
   "keywords": [
     "model stealing",
@@ -3529,7 +3529,7 @@
         "Yaoqing Yang",
         "Prateek Mittal"
       ],
-      "citation_count": 34,
+      "citation_count": 35,
       "url": "https://www.semanticscholar.org/paper/ee529552e871dbd7d2c53d9cde4b46380712cbe0",
       "pdf_url": "",
       "publication_date": "2024-03-01",
@@ -3885,6 +3885,51 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "7bed6f6101204efdf04181aafa511ca55644b559",
+      "title": "Data Stealing Attacks against Large Language Models via Backdooring",
+      "abstract": "Large language models (LLMs) have gained immense attention and are being increasingly applied in various domains. However, this technological leap forward poses serious security and privacy concerns. This paper explores a novel approach to data stealing attacks by introducing an adaptive method to extract private training data from pre-trained LLMs via backdooring. Our method mainly focuses on the scenario of model customization and is conducted in two phases, including backdoor training and backdoor activation, which allow for the extraction of private information without prior knowledge of the model\u2019s architecture or training data. During the model customization stage, attackers inject the backdoor into the pre-trained LLM by poisoning a small ratio of the training dataset. During the inference stage, attackers can extract private information from the third-party knowledge database by incorporating the pre-defined backdoor trigger. Our method leverages the customization process of LLMs, injecting a stealthy backdoor that can be triggered after deployment to retrieve private data. We demonstrate the effectiveness of our proposed attack through extensive experiments, achieving a notable attack success rate. Extensive experiments demonstrate the effectiveness of our stealing attack in popular LLM architectures, as well as stealthiness during normal inference.",
+      "year": 2024,
+      "venue": "Electronics",
+      "authors": [
+        "Jiaming He",
+        "Guanyu Hou",
+        "Xinyue Jia",
+        "Yangyang Chen",
+        "Wenqi Liao",
+        "Yinhang Zhou",
+        "Rang Zhou"
+      ],
+      "citation_count": 14,
+      "url": "https://www.semanticscholar.org/paper/7bed6f6101204efdf04181aafa511ca55644b559",
+      "pdf_url": "https://doi.org/10.3390/electronics13142858",
+      "publication_date": "2024-07-19",
+      "keywords_matched": [
+        "model stealing (title)"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "faa68f195393a1ca36b840396278d971d3b6920a",
+      "title": "A Priori Knowledge-Based Physics-Informed Neural Networks for Electromagnetic Inverse Scattering",
+      "abstract": "Based on the physics-informed neural network (PINN) method, a two-step inverse scattering method is proposed to improve the efficiency and accuracy of the inversion in this work. The first step is to calculate the total fields and the initial solution of permittivity distribution in the domain of interest (DoI) by a traditional inversion algorithm, the distorted finite-difference-frequency-domain-based iterative method (DFIM), as a priori information for the cascaded PINNs. The second step is to use the calculated a priori information as additional parts of the data loss term in the proposed PINN framework for network training. Several typical numerical examples and one experimental example are considered to validate the proposed method. Inversion results show that the proposed method has good accuracy, efficiency, and robustness to noise. Compared with the data-driven deep learning methods in electromagnetic inversion, the proposed method belongs to an unsupervised learning framework and can handle more general problems. Compared with the traditional inverse algorithms, it is more efficient and accurate. In general, the proposed two-step method inherits the advantages of both traditional deep learning methods and inverse scattering methods. Importantly, it also establishes the bridge between traditional inverse scattering algorithms and deep learning methods.",
+      "year": 2024,
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "authors": [
+        "Yifeng Hu",
+        "Xiao-Hua Wang",
+        "Huiming Zhou",
+        "Lei Wang"
+      ],
+      "citation_count": 14,
+      "url": "https://www.semanticscholar.org/paper/faa68f195393a1ca36b840396278d971d3b6920a",
+      "pdf_url": "",
+      "publication_date": null,
+      "keywords_matched": [
+        "electromagnetic analysis (title)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "df8401e2322f8f6f1b2cb8310cb048a939cce3d1",
       "title": "TransLinkGuard: Safeguarding Transformer Models Against Model Stealing in Edge Deployment",
       "abstract": "Proprietary large language models (LLMs) have been widely applied in various scenarios. Additionally, deploying LLMs on edge devices is trending for efficiency and privacy reasons. However, edge deployment of proprietary LLMs introduces new security challenges: edge-deployed models are exposed as white-box accessible to users, enabling adversaries to conduct model stealing (MS) attacks. Unfortunately, existing defense mechanisms fail to provide effective protection. Specifically, we identify four critical protection properties that existing methods fail to simultaneously satisfy: (1) maintaining protection after a model is physically copied; (2) authorizing model access at request level; (3) safeguarding runtime reverse engineering; (4) achieving high security with negligible runtime overhead. To address the above issues, we propose TransLinkGuard, a plug-and-play model protection approach against model stealing on edge devices. The core part of TransLinkGuard is a lightweight authorization module residing in a secure environment, e.g., TEE, which can freshly authorize each request based on its input. Extensive experiments show that TransLinkGuard achieves the same security as the black-box guarantees with negligible overhead.",
@@ -3928,51 +3973,6 @@
       "publication_date": "2024-05-06",
       "keywords_matched": [
         "side-channel attack (title)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "7bed6f6101204efdf04181aafa511ca55644b559",
-      "title": "Data Stealing Attacks against Large Language Models via Backdooring",
-      "abstract": "Large language models (LLMs) have gained immense attention and are being increasingly applied in various domains. However, this technological leap forward poses serious security and privacy concerns. This paper explores a novel approach to data stealing attacks by introducing an adaptive method to extract private training data from pre-trained LLMs via backdooring. Our method mainly focuses on the scenario of model customization and is conducted in two phases, including backdoor training and backdoor activation, which allow for the extraction of private information without prior knowledge of the model\u2019s architecture or training data. During the model customization stage, attackers inject the backdoor into the pre-trained LLM by poisoning a small ratio of the training dataset. During the inference stage, attackers can extract private information from the third-party knowledge database by incorporating the pre-defined backdoor trigger. Our method leverages the customization process of LLMs, injecting a stealthy backdoor that can be triggered after deployment to retrieve private data. We demonstrate the effectiveness of our proposed attack through extensive experiments, achieving a notable attack success rate. Extensive experiments demonstrate the effectiveness of our stealing attack in popular LLM architectures, as well as stealthiness during normal inference.",
-      "year": 2024,
-      "venue": "Electronics",
-      "authors": [
-        "Jiaming He",
-        "Guanyu Hou",
-        "Xinyue Jia",
-        "Yangyang Chen",
-        "Wenqi Liao",
-        "Yinhang Zhou",
-        "Rang Zhou"
-      ],
-      "citation_count": 13,
-      "url": "https://www.semanticscholar.org/paper/7bed6f6101204efdf04181aafa511ca55644b559",
-      "pdf_url": "https://doi.org/10.3390/electronics13142858",
-      "publication_date": "2024-07-19",
-      "keywords_matched": [
-        "model stealing (title)"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "faa68f195393a1ca36b840396278d971d3b6920a",
-      "title": "A Priori Knowledge-Based Physics-Informed Neural Networks for Electromagnetic Inverse Scattering",
-      "abstract": "Based on the physics-informed neural network (PINN) method, a two-step inverse scattering method is proposed to improve the efficiency and accuracy of the inversion in this work. The first step is to calculate the total fields and the initial solution of permittivity distribution in the domain of interest (DoI) by a traditional inversion algorithm, the distorted finite-difference-frequency-domain-based iterative method (DFIM), as a priori information for the cascaded PINNs. The second step is to use the calculated a priori information as additional parts of the data loss term in the proposed PINN framework for network training. Several typical numerical examples and one experimental example are considered to validate the proposed method. Inversion results show that the proposed method has good accuracy, efficiency, and robustness to noise. Compared with the data-driven deep learning methods in electromagnetic inversion, the proposed method belongs to an unsupervised learning framework and can handle more general problems. Compared with the traditional inverse algorithms, it is more efficient and accurate. In general, the proposed two-step method inherits the advantages of both traditional deep learning methods and inverse scattering methods. Importantly, it also establishes the bridge between traditional inverse scattering algorithms and deep learning methods.",
-      "year": 2024,
-      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
-      "authors": [
-        "Yifeng Hu",
-        "Xiao-Hua Wang",
-        "Huiming Zhou",
-        "Lei Wang"
-      ],
-      "citation_count": 13,
-      "url": "https://www.semanticscholar.org/paper/faa68f195393a1ca36b840396278d971d3b6920a",
-      "pdf_url": "",
-      "publication_date": null,
-      "keywords_matched": [
-        "electromagnetic analysis (title)"
       ],
       "first_seen": "2025-12-05"
     },
@@ -4229,6 +4229,26 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "2b89dd26035172807159d1f5bc972ed04d7c4bb2",
+      "title": "Model Stealing for Any Low-Rank Language Model",
+      "abstract": "Model stealing, where a learner tries to recover an unknown model via carefully chosen queries, is a critical problem in machine learning, as it threatens the security of proprietary models and the privacy of data they are trained on. In recent years, there has been particular interest in stealing large language models (LLMs). In this paper, we aim to build a theoretical understanding of stealing language models by studying a simple and mathematically tractable setting. We study model stealing for Hidden Markov Models (HMMs), and more generally low-rank language models. We assume that the learner works in the conditional query model, introduced by Kakade, Krishnamurthy, Mahajan and Zhang. Our main result is an efficient algorithm in the conditional query model, for learning any low-rank distribution. In other words, our algorithm succeeds at stealing any language model whose output distribution is low-rank. This improves upon the previous result which also requires the unknown distribution to have high \u201cfidelity\u201d \u2013 a property that holds only in restricted cases. There are two key insights behind our algorithm: First, we represent the conditional distributions at each timestep by constructing barycentric spanners among a collection of vectors of exponentially large dimension. Second, for sampling from our representation, we iteratively solve a sequence of convex optimization problems that involve projection in relative entropy to prevent compounding of errors over the length of the sequence. This is an interesting example where, at least theoretically, allowing a machine learning model to solve more complex problems at inference time can lead to drastic improvements in its performance.",
+      "year": 2024,
+      "venue": "Symposium on the Theory of Computing",
+      "authors": [
+        "Allen Liu",
+        "Ankur Moitra"
+      ],
+      "citation_count": 8,
+      "url": "https://www.semanticscholar.org/paper/2b89dd26035172807159d1f5bc972ed04d7c4bb2",
+      "pdf_url": "",
+      "publication_date": "2024-11-12",
+      "keywords_matched": [
+        "model stealing",
+        "stealing language model"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "3434f582cc9c2818785e2920241d43d932625539",
       "title": "ModelShield: Adaptive and Robust Watermark Against Model Extraction Attack",
       "abstract": "Large language models (LLMs) demonstrate general intelligence across a variety of machine learning tasks, thereby enhancing the commercial value of their intellectual property (IP). To protect this IP, model owners typically allow user access only in a black-box manner, however, adversaries can still utilize model extraction attacks to steal the model intelligence encoded in model generation. Watermarking technology offers a promising solution for defending against such attacks by embedding unique identifiers into the model-generated content. However, existing watermarking methods often compromise the quality of generated content due to heuristic alterations and lack robust mechanisms to counteract adversarial strategies, thus limiting their practicality in real-world scenarios. In this paper, we introduce an adaptive and robust watermarking method (named ModelShield) to protect the IP of LLMs. Our method incorporates a self-watermarking mechanism that allows LLMs to autonomously insert watermarks into their generated content to avoid the degradation of model content. We also propose a robust watermark detection mechanism capable of effectively identifying watermark signals under the interference of varying adversarial strategies. Besides, ModelShield is a plug-and-play method that does not require additional model training, enhancing its applicability in LLM deployments. Extensive evaluations on two real-world datasets and three LLMs demonstrate that our method surpasses existing methods in terms of defense effectiveness and robustness while significantly reducing the degradation of watermarking on the model-generated content.",
@@ -4350,26 +4370,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "2b89dd26035172807159d1f5bc972ed04d7c4bb2",
-      "title": "Model Stealing for Any Low-Rank Language Model",
-      "abstract": "Model stealing, where a learner tries to recover an unknown model via carefully chosen queries, is a critical problem in machine learning, as it threatens the security of proprietary models and the privacy of data they are trained on. In recent years, there has been particular interest in stealing large language models (LLMs). In this paper, we aim to build a theoretical understanding of stealing language models by studying a simple and mathematically tractable setting. We study model stealing for Hidden Markov Models (HMMs), and more generally low-rank language models. We assume that the learner works in the conditional query model, introduced by Kakade, Krishnamurthy, Mahajan and Zhang. Our main result is an efficient algorithm in the conditional query model, for learning any low-rank distribution. In other words, our algorithm succeeds at stealing any language model whose output distribution is low-rank. This improves upon the previous result which also requires the unknown distribution to have high \u201cfidelity\u201d \u2013 a property that holds only in restricted cases. There are two key insights behind our algorithm: First, we represent the conditional distributions at each timestep by constructing barycentric spanners among a collection of vectors of exponentially large dimension. Second, for sampling from our representation, we iteratively solve a sequence of convex optimization problems that involve projection in relative entropy to prevent compounding of errors over the length of the sequence. This is an interesting example where, at least theoretically, allowing a machine learning model to solve more complex problems at inference time can lead to drastic improvements in its performance.",
-      "year": 2024,
-      "venue": "Symposium on the Theory of Computing",
-      "authors": [
-        "Allen Liu",
-        "Ankur Moitra"
-      ],
-      "citation_count": 7,
-      "url": "https://www.semanticscholar.org/paper/2b89dd26035172807159d1f5bc972ed04d7c4bb2",
-      "pdf_url": "",
-      "publication_date": "2024-11-12",
-      "keywords_matched": [
-        "model stealing",
-        "stealing language model"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
       "paper_id": "ee51e69d40e027a6fd3fb2dca78d520e83737ae1",
       "title": "Rethinking Adversarial Robustness in the Context of the Right to be Forgotten",
       "abstract": "The past few years have seen an intense research interest in the practical needs of the \u201cright to be forgotten\u201d, which has motivated researchers to develop machine unlearning methods to unlearn a fraction of training data and its lineage. While existing machine unlearning methods prioritize the protection of individuals\u2019 private data, they over-look investigating the unlearned models\u2019 susceptibility to adversarial attacks and security breaches. In this work, we uncover a novel security vulnerability of machine unlearning based on the insight that adversarial vulnerabilities can be bol-stered, especially for adversarially robust models. To exploit this observed vulnerability, we pro-pose a novel attack called Adv ersarial U nlearning A ttack (AdvUA), which aims to generate a small fraction of malicious unlearning requests during the unlearning process. AdvUA causes a significant reduction of adversarial robustness in the unlearned model compared to the original model, providing an entirely new capability for adversaries that is infeasible in conventional machine learning pipelines. Notably, we also show that AdvUA can effectively enhance model stealing attacks by extracting additional decision boundary information, further emphasizing the breadth and significance of our research. We also conduct both theoretical analysis and computational complexity of AdvUA. Extensive numerical studies are performed to demonstrate the effectiveness and efficiency of the proposed attack.",
@@ -4411,6 +4411,30 @@
       "pdf_url": "",
       "publication_date": "2024-05-13",
       "keywords_matched": [
+        "functionality stealing"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "3e0bc402f7c0a34964223e87646fa3da0b6d947a",
+      "title": "Probabilistically Robust Watermarking of Neural Networks",
+      "abstract": "As deep learning (DL) models are widely and effectively used in Machine Learning as a Service (MLaaS) platforms, there is a rapidly growing interest in DL watermarking techniques that can be used to confirm the ownership of a particular model. Unfortunately, these methods usually produce watermarks susceptible to model stealing attacks. In our research, we introduce a novel trigger set-based watermarking approach that demonstrates resilience against functionality stealing attacks, particularly those involving extraction and distillation. Our approach does not require additional model training and can be applied to any model architecture. The key idea of our method is to compute the trigger set, which is transferable between the source model and the set of proxy models with a high probability. In our experimental study, we show that if the probability of the set being transferable is reasonably high, it can be effectively used for ownership verification of the stolen model. We evaluate our method on multiple benchmarks and show that our approach outperforms current state-of-the-art watermarking techniques in all considered experimental setups.",
+      "year": 2024,
+      "venue": "International Joint Conference on Artificial Intelligence",
+      "authors": [
+        "Mikhail Aleksandrovich Pautov",
+        "Nikita Bogdanov",
+        "Stanislav Pyatkin",
+        "Oleg Y. Rogov",
+        "Ivan V. Oseledets"
+      ],
+      "citation_count": 7,
+      "url": "https://www.semanticscholar.org/paper/3e0bc402f7c0a34964223e87646fa3da0b6d947a",
+      "pdf_url": "https://arxiv.org/pdf/2401.08261",
+      "publication_date": "2024-01-16",
+      "keywords_matched": [
+        "model stealing",
+        "model stealing attack",
         "functionality stealing"
       ],
       "first_seen": "2025-12-05"
@@ -4459,30 +4483,6 @@
         "model extraction attack"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "3e0bc402f7c0a34964223e87646fa3da0b6d947a",
-      "title": "Probabilistically Robust Watermarking of Neural Networks",
-      "abstract": "As deep learning (DL) models are widely and effectively used in Machine Learning as a Service (MLaaS) platforms, there is a rapidly growing interest in DL watermarking techniques that can be used to confirm the ownership of a particular model. Unfortunately, these methods usually produce watermarks susceptible to model stealing attacks. In our research, we introduce a novel trigger set-based watermarking approach that demonstrates resilience against functionality stealing attacks, particularly those involving extraction and distillation. Our approach does not require additional model training and can be applied to any model architecture. The key idea of our method is to compute the trigger set, which is transferable between the source model and the set of proxy models with a high probability. In our experimental study, we show that if the probability of the set being transferable is reasonably high, it can be effectively used for ownership verification of the stolen model. We evaluate our method on multiple benchmarks and show that our approach outperforms current state-of-the-art watermarking techniques in all considered experimental setups.",
-      "year": 2024,
-      "venue": "International Joint Conference on Artificial Intelligence",
-      "authors": [
-        "Mikhail Aleksandrovich Pautov",
-        "Nikita Bogdanov",
-        "Stanislav Pyatkin",
-        "Oleg Y. Rogov",
-        "Ivan V. Oseledets"
-      ],
-      "citation_count": 6,
-      "url": "https://www.semanticscholar.org/paper/3e0bc402f7c0a34964223e87646fa3da0b6d947a",
-      "pdf_url": "https://arxiv.org/pdf/2401.08261",
-      "publication_date": "2024-01-16",
-      "keywords_matched": [
-        "model stealing",
-        "model stealing attack",
-        "functionality stealing"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "16b5db7894dde1b49960f03e68b280ac895d86fc",
@@ -5954,6 +5954,29 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "004764a194f3e85900a0b15d11c4a6955d6a616a",
+      "title": "Robust and Minimally Invasive Watermarking for EaaS",
+      "abstract": "Embeddings as a Service (EaaS) is emerging as a crucial role in AI applications. Unfortunately, EaaS is vulnerable to model extraction attacks, highlighting the urgent need for copyright protection. Although some preliminary works propose applying embedding watermarks to protect EaaS, recent research reveals that these watermarks can be easily removed. Hence, it is crucial to inject robust watermarks resistant to watermark removal attacks. Existing watermarking methods typically inject a target embedding into embeddings through linear interpolation when the text contains triggers. However, this mechanism results in each watermarked embedding having the same component, which makes the watermark easy to identify and eliminate. Motivated by this, in this paper, we propose a novel embedding-specific watermarking (ESpeW) mechanism to offer robust copyright protection for EaaS. Our approach involves injecting unique, yet readily identifiable watermarks into each embedding. Watermarks inserted by ESpeW are designed to maintain a significant distance from one another and to avoid sharing common components, thus making it significantly more challenging to remove the watermarks. Moreover, ESpeW is minimally invasive, as it reduces the impact on embeddings to less than 1\\%, setting a new milestone in watermarking for EaaS. Extensive experiments on four popular datasets demonstrate that ESpeW can even watermark successfully against a highly aggressive removal strategy without sacrificing the quality of embeddings.",
+      "year": 2024,
+      "venue": "Annual Meeting of the Association for Computational Linguistics",
+      "authors": [
+        "Zongqi Wang",
+        "Baoyuan Wu",
+        "Jingyuan Deng",
+        "Yujiu Yang"
+      ],
+      "citation_count": 2,
+      "url": "https://www.semanticscholar.org/paper/004764a194f3e85900a0b15d11c4a6955d6a616a",
+      "pdf_url": "",
+      "publication_date": "2024-10-23",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "21e6d0743c99e614ccff2533a591affcc3438e14",
       "title": "OML: A Primitive for Reconciling Open Access with Owner Control in AI Model Distribution",
       "abstract": "The current paradigm of AI model distribution presents a fundamental dichotomy: models are either closed and API-gated, sacrificing transparency and local execution, or openly distributed, sacrificing monetization and control. We introduce OML(Open-access, Monetizable, and Loyal AI Model Serving), a primitive that enables a new distribution paradigm where models can be freely distributed for local execution while maintaining cryptographically enforced usage authorization. We are the first to introduce and formalize this problem, introducing rigorous security definitions tailored to the unique challenge of white-box model protection: model extraction resistance and permission forgery resistance. We prove fundamental bounds on the achievability of OML properties and characterize the complete design space of potential constructions, from obfuscation-based approaches to cryptographic solutions. To demonstrate practical feasibility, we present OML 1.0, a novel OML construction leveraging AI-native model fingerprinting coupled with crypto-economic enforcement mechanisms. Through extensive theoretical analysis and empirical evaluation, we establish OML as a foundational primitive necessary for sustainable AI ecosystems. This work opens a new research direction at the intersection of cryptography, machine learning, and mechanism design, with critical implications for the future of AI distribution and governance.",
@@ -6504,29 +6527,6 @@
       "publication_date": "2024-08-04",
       "keywords_matched": [
         "model extraction",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
-      "paper_id": "004764a194f3e85900a0b15d11c4a6955d6a616a",
-      "title": "Robust and Minimally Invasive Watermarking for EaaS",
-      "abstract": "Embeddings as a Service (EaaS) is emerging as a crucial role in AI applications. Unfortunately, EaaS is vulnerable to model extraction attacks, highlighting the urgent need for copyright protection. Although some preliminary works propose applying embedding watermarks to protect EaaS, recent research reveals that these watermarks can be easily removed. Hence, it is crucial to inject robust watermarks resistant to watermark removal attacks. Existing watermarking methods typically inject a target embedding into embeddings through linear interpolation when the text contains triggers. However, this mechanism results in each watermarked embedding having the same component, which makes the watermark easy to identify and eliminate. Motivated by this, in this paper, we propose a novel embedding-specific watermarking (ESpeW) mechanism to offer robust copyright protection for EaaS. Our approach involves injecting unique, yet readily identifiable watermarks into each embedding. Watermarks inserted by ESpeW are designed to maintain a significant distance from one another and to avoid sharing common components, thus making it significantly more challenging to remove the watermarks. Moreover, ESpeW is minimally invasive, as it reduces the impact on embeddings to less than 1\\%, setting a new milestone in watermarking for EaaS. Extensive experiments on four popular datasets demonstrate that ESpeW can even watermark successfully against a highly aggressive removal strategy without sacrificing the quality of embeddings.",
-      "year": 2024,
-      "venue": "Annual Meeting of the Association for Computational Linguistics",
-      "authors": [
-        "Zongqi Wang",
-        "Baoyuan Wu",
-        "Jingyuan Deng",
-        "Yujiu Yang"
-      ],
-      "citation_count": 1,
-      "url": "https://www.semanticscholar.org/paper/004764a194f3e85900a0b15d11c4a6955d6a616a",
-      "pdf_url": "",
-      "publication_date": "2024-10-23",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
         "(via citation)"
       ],
       "first_seen": "2025-12-05"
@@ -7362,7 +7362,7 @@
         "Guangzhong Sun",
         "Xing Xie"
       ],
-      "citation_count": 88,
+      "citation_count": 89,
       "url": "https://www.semanticscholar.org/paper/d4c3e3e3c01afed15926adf81527bf46aa491c6a",
       "pdf_url": "http://arxiv.org/pdf/2305.10036",
       "publication_date": "2023-05-17",
@@ -7406,7 +7406,7 @@
         "P. di Barba",
         "D. Lowther"
       ],
-      "citation_count": 67,
+      "citation_count": 68,
       "url": "https://www.semanticscholar.org/paper/9ec814b5d21f9f476afe09dd84e0c39b4dec86d4",
       "pdf_url": "",
       "publication_date": "2023-05-01",
@@ -7542,7 +7542,7 @@
         "Daoyuan Wu",
         "Cuiyun Gao"
       ],
-      "citation_count": 36,
+      "citation_count": 37,
       "url": "https://www.semanticscholar.org/paper/68b560859078171978f2c040b1522f4e7668c38e",
       "pdf_url": "https://arxiv.org/pdf/2303.03012",
       "publication_date": "2023-03-06",
@@ -7561,7 +7561,7 @@
       "authors": [
         "S. Dibbo"
       ],
-      "citation_count": 35,
+      "citation_count": 36,
       "url": "https://www.semanticscholar.org/paper/81cd9575100643a3463465ec19e90ee78e122f93",
       "pdf_url": "",
       "publication_date": "2023-07-01",
@@ -7672,7 +7672,7 @@
         "Mohit Iyyer",
         "Amir Houmansadr"
       ],
-      "citation_count": 27,
+      "citation_count": 28,
       "url": "https://www.semanticscholar.org/paper/fdaeb41ebb60dbe60a3193f02320e3f00f8233fd",
       "pdf_url": "https://arxiv.org/pdf/2303.04729",
       "publication_date": "2023-03-08",
@@ -10218,6 +10218,28 @@
       "first_seen": "2025-12-05"
     },
     {
+      "paper_id": "8796b36ed1a74a1c9fdafe2409c981102983653f",
+      "title": "On Function-Coupled Watermarks for Deep Neural Networks",
+      "abstract": "Well-performed deep neural networks (DNNs) generally require massive labeled data and computational resources for training. Various watermarking techniques are proposed to protect such intellectual properties (IPs), wherein the DNN providers can claim IP ownership by retrieving their embedded watermarks. While promising results are reported in the literature, existing solutions suffer from watermark removal attacks, such as model fine-tuning, model pruning, and model extraction. In this paper, we propose a novel DNN watermarking solution that can effectively defend against the above attacks. Our key insight is to enhance the coupling of the watermark and model functionalities such that removing the watermark would inevitably degrade the model\u2019s performance on normal inputs. Specifically, on one hand, we sample inputs from the original training dataset and fuse them as watermark images. On the other hand, we randomly mask model weights during training to distribute the watermark information in the network. Our method can successfully defend against common watermark removal attacks, watermark ambiguity attacks, and existing widely used backdoor detection methods, outperforming existing solutions as demonstrated by evaluation results on various benchmarks. Our code is available at: https://github.com/cure-lab/Function-Coupled-Watermark.",
+      "year": 2023,
+      "venue": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
+      "authors": [
+        "Xiangyu Wen",
+        "Yu Li",
+        "Weizhen Jiang",
+        "Qian-Lan Xu"
+      ],
+      "citation_count": 2,
+      "url": "https://www.semanticscholar.org/paper/8796b36ed1a74a1c9fdafe2409c981102983653f",
+      "pdf_url": "https://doi.org/10.1109/jetcas.2024.3476386",
+      "publication_date": "2023-02-08",
+      "keywords_matched": [
+        "model extraction",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
       "paper_id": "3166f8c8e00f2cd9dc5a903009a4f50d176d9f8a",
       "title": "Data-Free Model Stealing Attack Based on Denoising Diffusion Probabilistic Model",
       "abstract": "Data-free model stealing (MS) attacks use synthetic samples to query a target model and train a substitute model to fit the target model\u2019s predictions, avoiding strong dependence on real datasets used by model developers. However, the existing data-free MS attack methods still have a big gap in generating high-quality query samples for high-precision MS attacks. In this paper, we construct the DDPM-optimized generator to generate data, in which a residual network-like structure is designed to fuse data to synthesize query samples. Our method further improves the quantity and quality of synthetic query samples, and effectively reduces the number of queries to the target model. The results show that the proposed method achieves superior performance compared to state-of-the-art methods.",
@@ -10498,28 +10520,6 @@
       "first_seen": "2025-12-05"
     },
     {
-      "paper_id": "8796b36ed1a74a1c9fdafe2409c981102983653f",
-      "title": "On Function-Coupled Watermarks for Deep Neural Networks",
-      "abstract": "Well-performed deep neural networks (DNNs) generally require massive labeled data and computational resources for training. Various watermarking techniques are proposed to protect such intellectual properties (IPs), wherein the DNN providers can claim IP ownership by retrieving their embedded watermarks. While promising results are reported in the literature, existing solutions suffer from watermark removal attacks, such as model fine-tuning, model pruning, and model extraction. In this paper, we propose a novel DNN watermarking solution that can effectively defend against the above attacks. Our key insight is to enhance the coupling of the watermark and model functionalities such that removing the watermark would inevitably degrade the model\u2019s performance on normal inputs. Specifically, on one hand, we sample inputs from the original training dataset and fuse them as watermark images. On the other hand, we randomly mask model weights during training to distribute the watermark information in the network. Our method can successfully defend against common watermark removal attacks, watermark ambiguity attacks, and existing widely used backdoor detection methods, outperforming existing solutions as demonstrated by evaluation results on various benchmarks. Our code is available at: https://github.com/cure-lab/Function-Coupled-Watermark.",
-      "year": 2023,
-      "venue": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
-      "authors": [
-        "Xiangyu Wen",
-        "Yu Li",
-        "Weizhen Jiang",
-        "Qian-Lan Xu"
-      ],
-      "citation_count": 1,
-      "url": "https://www.semanticscholar.org/paper/8796b36ed1a74a1c9fdafe2409c981102983653f",
-      "pdf_url": "https://doi.org/10.1109/jetcas.2024.3476386",
-      "publication_date": "2023-02-08",
-      "keywords_matched": [
-        "model extraction",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
       "paper_id": "66da20e195569d1fb5f72cb52f4ebf595ec4792c",
       "title": "Multiple-model and time-sensitive dynamic active learning for recurrent graph convolutional network model extraction attacks",
       "abstract": null,
@@ -10579,6 +10579,34 @@
       "url": "https://www.semanticscholar.org/paper/49b98e01423c7b857c931a9d10bec3dc5951dbe2",
       "pdf_url": "http://arxiv.org/pdf/2306.05233",
       "publication_date": "2023-06-08",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
+    },
+    {
+      "paper_id": "349062d82b56fb516b0c7061940470f8d9c256a6",
+      "title": "Pareto-Secure Machine Learning (PSML): Fingerprinting and Securing Inference Serving Systems",
+      "abstract": "Model-serving systems have become increasingly popular, especially in real-time web applications. In such systems, users send queries to the server and specify the desired performance metrics (e.g., desired accuracy, latency). The server maintains a set of models (model zoo) in the back-end and serves the queries based on the specified metrics. This paper examines the security, specifically robustness against model extraction attacks, of such systems. Existing black-box attacks assume a single model can be repeatedly selected for serving inference requests. Modern inference serving systems break this assumption. Thus, they cannot be directly applied to extract a victim model, as models are hidden behind a layer of abstraction exposed by the serving system. An attacker can no longer identify which model she is interacting with. To this end, we first propose a query-efficient fingerprinting algorithm to enable the attacker to trigger any desired model consistently. We show that by using our fingerprinting algorithm, model extraction can have fidelity and accuracy scores within $1\\%$ of the scores obtained when attacking a single, explicitly specified model, as well as up to $14.6\\%$ gain in accuracy and up to $7.7\\%$ gain in fidelity compared to the naive attack. Second, we counter the proposed attack with a noise-based defense mechanism that thwarts fingerprinting by adding noise to the specified performance metrics. The proposed defense strategy reduces the attack's accuracy and fidelity by up to $9.8\\%$ and $4.8\\%$, respectively (on medium-sized model extraction). Third, we show that the proposed defense induces a fundamental trade-off between the level of protection and system goodput, achieving configurable and significant victim model extraction protection while maintaining acceptable goodput ($>80\\%$). We implement the proposed defense in a real system with plans to open source.",
+      "year": 2023,
+      "venue": "arXiv.org",
+      "authors": [
+        "Debopam Sanyal",
+        "Jui-Tse Hung",
+        "Manavi Agrawal",
+        "Prahlad Jasti",
+        "Shahab Nikkhoo",
+        "S. Jha",
+        "Tianhao Wang",
+        "Sibin Mohan",
+        "Alexey Tumanov"
+      ],
+      "citation_count": 1,
+      "url": "https://www.semanticscholar.org/paper/349062d82b56fb516b0c7061940470f8d9c256a6",
+      "pdf_url": "https://arxiv.org/pdf/2307.01292",
+      "publication_date": "2023-07-03",
       "keywords_matched": [
         "model extraction",
         "model extraction attack",
@@ -10831,34 +10859,6 @@
       "first_seen": "2025-12-05"
     },
     {
-      "paper_id": "349062d82b56fb516b0c7061940470f8d9c256a6",
-      "title": "Pareto-Secure Machine Learning (PSML): Fingerprinting and Securing Inference Serving Systems",
-      "abstract": "Model-serving systems have become increasingly popular, especially in real-time web applications. In such systems, users send queries to the server and specify the desired performance metrics (e.g., desired accuracy, latency). The server maintains a set of models (model zoo) in the back-end and serves the queries based on the specified metrics. This paper examines the security, specifically robustness against model extraction attacks, of such systems. Existing black-box attacks assume a single model can be repeatedly selected for serving inference requests. Modern inference serving systems break this assumption. Thus, they cannot be directly applied to extract a victim model, as models are hidden behind a layer of abstraction exposed by the serving system. An attacker can no longer identify which model she is interacting with. To this end, we first propose a query-efficient fingerprinting algorithm to enable the attacker to trigger any desired model consistently. We show that by using our fingerprinting algorithm, model extraction can have fidelity and accuracy scores within $1\\%$ of the scores obtained when attacking a single, explicitly specified model, as well as up to $14.6\\%$ gain in accuracy and up to $7.7\\%$ gain in fidelity compared to the naive attack. Second, we counter the proposed attack with a noise-based defense mechanism that thwarts fingerprinting by adding noise to the specified performance metrics. The proposed defense strategy reduces the attack's accuracy and fidelity by up to $9.8\\%$ and $4.8\\%$, respectively (on medium-sized model extraction). Third, we show that the proposed defense induces a fundamental trade-off between the level of protection and system goodput, achieving configurable and significant victim model extraction protection while maintaining acceptable goodput ($>80\\%$). We implement the proposed defense in a real system with plans to open source.",
-      "year": 2023,
-      "venue": "arXiv.org",
-      "authors": [
-        "Debopam Sanyal",
-        "Jui-Tse Hung",
-        "Manavi Agrawal",
-        "Prahlad Jasti",
-        "Shahab Nikkhoo",
-        "S. Jha",
-        "Tianhao Wang",
-        "Sibin Mohan",
-        "Alexey Tumanov"
-      ],
-      "citation_count": 0,
-      "url": "https://www.semanticscholar.org/paper/349062d82b56fb516b0c7061940470f8d9c256a6",
-      "pdf_url": "https://arxiv.org/pdf/2307.01292",
-      "publication_date": "2023-07-03",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
       "paper_id": "44c48936a86b61d584b38661e3849d5345c1520f",
       "title": "StegGuard: Fingerprinting Self-supervised Pre-trained Encoders via Secrets Embeder and Extractor",
       "abstract": "In this work, we propose StegGuard, a novel fingerprinting mechanism to verify the ownership of the suspect pre-trained encoder using steganography. A critical perspective in StegGuard is that the unique characteristic of the transformation from an image to an embedding, conducted by the pre-trained encoder, can be equivalently exposed how an embeder embeds secrets into images and how an extractor extracts the secrets from encoder's embeddings with a tolerable error after the secrets are subjected to the encoder's transformation. While each independent encoder has a distinct transformation, the piracy encoder has a similar transformation to the victim. Based on these, we learn a pair of secrets embeder and extractor as the fingerprint for the victim encoder. We introduce a frequency-domain channel attention embedding block into the embeder to adaptively embed secrets into suitable frequency bands. During verification, if the secrets embedded into the query images can be extracted with an acceptable error from the suspect encoder's embeddings, the suspect encoder is determined as piracy, otherwise independent. Extensive experiments demonstrate that depending on a very limited number of query images, StegGuard can reliably identify across varied independent encoders, and is robust against model stealing related attacks including model extraction, fine-tuning, pruning, embedding noising and shuffle.",
@@ -10957,7 +10957,7 @@
         "Rudolf Mayer",
         "A. Rauber"
       ],
-      "citation_count": 140,
+      "citation_count": 141,
       "url": "https://www.semanticscholar.org/paper/d405b58a8f465d5ba2e91f9541e09760904c11a8",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3595292",
       "publication_date": "2022-06-16",
@@ -11029,7 +11029,7 @@
         "Jiwei Li",
         "R. Jia"
       ],
-      "citation_count": 86,
+      "citation_count": 87,
       "url": "https://www.semanticscholar.org/paper/823cacd5255f3897a8d29f29a7c7cb8f978bd928",
       "pdf_url": "http://arxiv.org/pdf/2209.08773",
       "publication_date": "2022-09-19",
@@ -13158,7 +13158,7 @@
       "authors": [
         "Pratyush Maini"
       ],
-      "citation_count": 142,
+      "citation_count": 143,
       "url": "https://www.semanticscholar.org/paper/b3086fbbc678a7616ac390a41945f45e0d0ab001",
       "pdf_url": "",
       "publication_date": "2021-04-21",
@@ -13202,7 +13202,7 @@
         "Fangzhao Wu",
         "Chenguang Wang"
       ],
-      "citation_count": 114,
+      "citation_count": 115,
       "url": "https://www.semanticscholar.org/paper/2569a7309142e40815cf556b6417059df9abbda8",
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21321/21070",
       "publication_date": "2021-12-05",
@@ -13225,7 +13225,7 @@
         "Qiongkai Xu",
         "Lichao Sun"
       ],
-      "citation_count": 111,
+      "citation_count": 112,
       "url": "https://www.semanticscholar.org/paper/16a8e329c06b4c6f61762da7fa77a84bf3e12dca",
       "pdf_url": "https://aclanthology.org/2021.naacl-main.161.pdf",
       "publication_date": "2021-03-18",
@@ -13382,7 +13382,7 @@
         "Shutao Xia",
         "Xiaochun Cao"
       ],
-      "citation_count": 77,
+      "citation_count": 78,
       "url": "https://www.semanticscholar.org/paper/bfb6e56602b658fdabaaa66987ebf685a8139892",
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20036/19795",
       "publication_date": "2021-12-07",
@@ -13721,7 +13721,7 @@
         "Wenhai Sun",
         "Fenghua Li"
       ],
-      "citation_count": 43,
+      "citation_count": 44,
       "url": "https://www.semanticscholar.org/paper/57d5abaa047a0401874383628c646918527d4df2",
       "pdf_url": "",
       "publication_date": "2021-03-29",
@@ -13730,6 +13730,25 @@
         "model extraction attack"
       ],
       "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "c58266e1180a848310ff09143a71a4ba18e1ca86",
+      "title": "S-MAPS: Scalable Mutual Authentication Protocol for Dynamic UAV Swarms",
+      "abstract": "Unmanned Aerial Vehicles (UAVs) domain has seen rapid developments in recent years. UAVs have been deployed for many applications and missions like data transmission, cellular service provisioning, and computational offloading tasks etc. Yet, UAV deployment is still limited, partially owing to the security challenges it poses. UAVs are particularly vulnerable to physical capture, cloning attacks, eavesdropping, and man in the middle attacks. To address some of these security problems, this paper develops an authentication protocol for use in UAV swarms. To ensure physical security and rapid authentication, the proposed protocol uses Physical Unclonable Functions (PUFs). The protocol achieves high scalability compared to the state of the art by authenticating multiple devices at once. The proposed protocol supports dynamic topologies and multi-hop communication by using spanning tree-based traversal. It is also resistant to mobility, device tampering attack, etc., and its improvements are achieved at significantly lower communication and communication cost as compared to state-of-the-art protocols.",
+      "year": 2021,
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "authors": [
+        "Gaurang Bansal",
+        "B. Sikdar"
+      ],
+      "citation_count": 41,
+      "url": "https://www.semanticscholar.org/paper/c58266e1180a848310ff09143a71a4ba18e1ca86",
+      "pdf_url": "",
+      "publication_date": "2021-11-01",
+      "keywords_matched": [
+        "cloning attack"
+      ],
+      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "3b357acb6c807bc694372c773e507cdcef27d974",
@@ -13750,25 +13769,6 @@
         "DNN weights leakage (title)"
       ],
       "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "c58266e1180a848310ff09143a71a4ba18e1ca86",
-      "title": "S-MAPS: Scalable Mutual Authentication Protocol for Dynamic UAV Swarms",
-      "abstract": "Unmanned Aerial Vehicles (UAVs) domain has seen rapid developments in recent years. UAVs have been deployed for many applications and missions like data transmission, cellular service provisioning, and computational offloading tasks etc. Yet, UAV deployment is still limited, partially owing to the security challenges it poses. UAVs are particularly vulnerable to physical capture, cloning attacks, eavesdropping, and man in the middle attacks. To address some of these security problems, this paper develops an authentication protocol for use in UAV swarms. To ensure physical security and rapid authentication, the proposed protocol uses Physical Unclonable Functions (PUFs). The protocol achieves high scalability compared to the state of the art by authenticating multiple devices at once. The proposed protocol supports dynamic topologies and multi-hop communication by using spanning tree-based traversal. It is also resistant to mobility, device tampering attack, etc., and its improvements are achieved at significantly lower communication and communication cost as compared to state-of-the-art protocols.",
-      "year": 2021,
-      "venue": "IEEE Transactions on Vehicular Technology",
-      "authors": [
-        "Gaurang Bansal",
-        "B. Sikdar"
-      ],
-      "citation_count": 40,
-      "url": "https://www.semanticscholar.org/paper/c58266e1180a848310ff09143a71a4ba18e1ca86",
-      "pdf_url": "",
-      "publication_date": "2021-11-01",
-      "keywords_matched": [
-        "cloning attack"
-      ],
-      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "5179302656cf46cfbcc9cce2b70d4b0c758f7d7c",
@@ -14350,7 +14350,7 @@
         "Xiapu Luo",
         "Ting Wang"
       ],
-      "citation_count": 14,
+      "citation_count": 15,
       "url": "https://www.semanticscholar.org/paper/0189e3d93aa73ce3223899bfb47a1a71e7cde394",
       "pdf_url": "",
       "publication_date": "2021-10-12",
@@ -14654,7 +14654,7 @@
         "F. Dehghan",
         "R. Jalili"
       ],
-      "citation_count": 8,
+      "citation_count": 9,
       "url": "https://www.semanticscholar.org/paper/25800c4599b2e834899a180d77e093fb9282d97e",
       "pdf_url": "https://arxiv.org/pdf/2106.11424",
       "publication_date": "2021-06-21",
@@ -15698,7 +15698,7 @@
         "Mitchell Stern",
         "D. Song"
       ],
-      "citation_count": 129,
+      "citation_count": 130,
       "url": "https://www.semanticscholar.org/paper/d73561ab8318ce343f5cb15f96c74f210b6b24fa",
       "pdf_url": "https://www.aclweb.org/anthology/2020.emnlp-main.446.pdf",
       "publication_date": "2020-04-30",
@@ -15763,7 +15763,7 @@
         "Zhou Li",
         "M. A. Faruque"
       ],
-      "citation_count": 108,
+      "citation_count": 109,
       "url": "https://www.semanticscholar.org/paper/d0d8c912b20d2d081672f07b6926b620950a39c8",
       "pdf_url": "",
       "publication_date": "2020-06-01",
@@ -17363,7 +17363,7 @@
         "Alexey Kurakin",
         "Nicolas Papernot"
       ],
-      "citation_count": 421,
+      "citation_count": 422,
       "url": "https://www.semanticscholar.org/paper/52a222d38a8640499010d470d5589a81882bc425",
       "pdf_url": "",
       "publication_date": "2019-09-03",
@@ -17428,7 +17428,7 @@
         "Nicolas Papernot",
         "Mohit Iyyer"
       ],
-      "citation_count": 227,
+      "citation_count": 228,
       "url": "https://www.semanticscholar.org/paper/ac713aebdcc06f15f8ea61e1140bb360341fdf27",
       "pdf_url": "",
       "publication_date": "2019-10-27",
@@ -17494,7 +17494,7 @@
         "Yuxuan Zhang",
         "F. Kerschbaum"
       ],
-      "citation_count": 169,
+      "citation_count": 170,
       "url": "https://www.semanticscholar.org/paper/5effd428e3012061ba3d8b32f1952c2938c7ab7b",
       "pdf_url": "",
       "publication_date": "2019-12-02",
@@ -17698,7 +17698,7 @@
         "S. Shevade",
         "V. Ganapathy"
       ],
-      "citation_count": 60,
+      "citation_count": 61,
       "url": "https://www.semanticscholar.org/paper/7dd022d67f8a1a387ca31ff6233ea7c2743c9d85",
       "pdf_url": "",
       "publication_date": "2019-05-22",
@@ -18467,7 +18467,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 593,
+      "citation_count": 594,
       "url": "https://www.semanticscholar.org/paper/089c6224cfbcf5c18b63564eb65001c7c42a7acf",
       "pdf_url": "http://arxiv.org/pdf/1812.02766",
       "publication_date": "2018-12-06",
@@ -19260,7 +19260,7 @@
         "V. Arya",
         "S. Mehta"
       ],
-      "citation_count": 153,
+      "citation_count": 154,
       "url": "https://www.semanticscholar.org/paper/181fe8787937dbf7abf886042855be1bc6149f80",
       "pdf_url": "https://arxiv.org/pdf/1711.07221",
       "publication_date": "2017-11-20",
@@ -19405,7 +19405,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1964,
+      "citation_count": 1965,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
