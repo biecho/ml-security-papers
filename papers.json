@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-26",
+  "updated": "2025-12-27",
   "total": 915,
   "keywords": [
     "model stealing",
@@ -8090,7 +8090,7 @@
         "Xiwei Xu",
         "Qinghua Lu"
       ],
-      "citation_count": 16,
+      "citation_count": 15,
       "url": "https://www.semanticscholar.org/paper/fa9d49f32440aff7417ce46419d1073239b58b5b",
       "pdf_url": "http://arxiv.org/pdf/2301.03987",
       "publication_date": "2023-01-10",
@@ -10957,7 +10957,7 @@
         "Rudolf Mayer",
         "A. Rauber"
       ],
-      "citation_count": 141,
+      "citation_count": 142,
       "url": "https://www.semanticscholar.org/paper/d405b58a8f465d5ba2e91f9541e09760904c11a8",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3595292",
       "publication_date": "2022-06-16",
@@ -13158,7 +13158,7 @@
       "authors": [
         "Pratyush Maini"
       ],
-      "citation_count": 143,
+      "citation_count": 142,
       "url": "https://www.semanticscholar.org/paper/b3086fbbc678a7616ac390a41945f45e0d0ab001",
       "pdf_url": "",
       "publication_date": "2021-04-21",
@@ -13341,34 +13341,6 @@
       "first_seen": "2025-11-28"
     },
     {
-      "paper_id": "c3111e374ad14357172ef63e7063e0182f8030d4",
-      "title": "Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models",
-      "abstract": "Deep learning models, especially those large-scale and high-performance ones, can be very costly to train, demanding a considerable amount of data and computational resources. As a result, deep learning models have become one of the most valuable assets in modern artificial intelligence. Unauthorized duplication or reproduction of deep learning models can lead to copyright infringement and cause huge economic losses to model owners, calling for effective copyright protection techniques. Existing protection techniques are mostly based on watermarking, which embeds an owner-specified watermark into the model. While being able to provide exact ownership verification, these techniques are 1) invasive, i.e., they need to tamper with the training process, which may affect the model utility or introduce new security risks into the model; 2) prone to adaptive attacks that attempt to remove/replace the watermark or adversarially block the retrieval of the watermark; and 3) not robust to the emerging model extraction attacks. Latest fingerprinting work on deep learning models, though being non-invasive, also falls short when facing the diverse and ever-growing attack scenarios.In this paper, we propose a novel testing framework for deep learning copyright protection: DEEPJUDGE. DEEPJUDGE quantitatively tests the similarities between two deep learning models: a victim model and a suspect model. It leverages a diverse set of testing metrics and efficient test case generation algorithms to produce a chain of supporting evidence to help determine whether a suspect model is a copy of the victim model. Advantages of DEEPJUDGE include: 1) non-invasive, as it works directly on the model and does not tamper with the training process; 2) efficient, as it only needs a small set of seed test cases and a quick scan of the two models; 3) flexible, i.e., it can easily incorporate new testing metrics or test case generation methods to obtain more confident and robust judgement; and 4) fairly robust to model extraction attacks and adaptive attacks. We verify the effectiveness of DEEPJUDGE under three typical copyright infringement scenarios, including model finetuning, pruning and extraction, via extensive experiments on both image classification and speech recognition datasets with a variety of model architectures.",
-      "year": 2021,
-      "venue": "IEEE Symposium on Security and Privacy",
-      "authors": [
-        "Jialuo Chen",
-        "Jingyi Wang",
-        "Tinglan Peng",
-        "Youcheng Sun",
-        "Peng Cheng",
-        "S. Ji",
-        "Xingjun Ma",
-        "Bo Li",
-        "D. Song"
-      ],
-      "citation_count": 78,
-      "url": "https://www.semanticscholar.org/paper/c3111e374ad14357172ef63e7063e0182f8030d4",
-      "pdf_url": "https://arxiv.org/pdf/2112.05588",
-      "publication_date": "2021-12-10",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack",
-        "(via citation)"
-      ],
-      "first_seen": "2025-12-05"
-    },
-    {
       "paper_id": "bfb6e56602b658fdabaaa66987ebf685a8139892",
       "title": "Defending against Model Stealing via Verifying Embedded External Features",
       "abstract": "Obtaining a well-trained model involves expensive data collection and training procedures, therefore the model is a valuable intellectual property. Recent studies revealed that adversaries can `steal' deployed models even when they have no training samples and can not get access to the model parameters or structures. Currently, there were some defense methods to alleviate this threat, mostly by increasing the cost of model stealing. In this paper, we explore the defense from another angle by verifying whether a suspicious model contains the knowledge of defender-specified external features. Specifically, we embed the external features by tempering a few training samples with style transfer. We then train a meta-classifier to determine whether a model is stolen from the victim. This approach is inspired by the understanding that the stolen models should contain the knowledge of features learned by the victim model. We examine our method on both CIFAR-10 and ImageNet datasets. Experimental results demonstrate that our method is effective in detecting different types of model stealing simultaneously, even if the stolen model is obtained via a multi-stage stealing process. The codes for reproducing main results are available at Github (https://github.com/zlh-thu/StealingVerification).",
@@ -13390,6 +13362,34 @@
         "model stealing"
       ],
       "first_seen": "2025-11-28"
+    },
+    {
+      "paper_id": "c3111e374ad14357172ef63e7063e0182f8030d4",
+      "title": "Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models",
+      "abstract": "Deep learning models, especially those large-scale and high-performance ones, can be very costly to train, demanding a considerable amount of data and computational resources. As a result, deep learning models have become one of the most valuable assets in modern artificial intelligence. Unauthorized duplication or reproduction of deep learning models can lead to copyright infringement and cause huge economic losses to model owners, calling for effective copyright protection techniques. Existing protection techniques are mostly based on watermarking, which embeds an owner-specified watermark into the model. While being able to provide exact ownership verification, these techniques are 1) invasive, i.e., they need to tamper with the training process, which may affect the model utility or introduce new security risks into the model; 2) prone to adaptive attacks that attempt to remove/replace the watermark or adversarially block the retrieval of the watermark; and 3) not robust to the emerging model extraction attacks. Latest fingerprinting work on deep learning models, though being non-invasive, also falls short when facing the diverse and ever-growing attack scenarios.In this paper, we propose a novel testing framework for deep learning copyright protection: DEEPJUDGE. DEEPJUDGE quantitatively tests the similarities between two deep learning models: a victim model and a suspect model. It leverages a diverse set of testing metrics and efficient test case generation algorithms to produce a chain of supporting evidence to help determine whether a suspect model is a copy of the victim model. Advantages of DEEPJUDGE include: 1) non-invasive, as it works directly on the model and does not tamper with the training process; 2) efficient, as it only needs a small set of seed test cases and a quick scan of the two models; 3) flexible, i.e., it can easily incorporate new testing metrics or test case generation methods to obtain more confident and robust judgement; and 4) fairly robust to model extraction attacks and adaptive attacks. We verify the effectiveness of DEEPJUDGE under three typical copyright infringement scenarios, including model finetuning, pruning and extraction, via extensive experiments on both image classification and speech recognition datasets with a variety of model architectures.",
+      "year": 2021,
+      "venue": "IEEE Symposium on Security and Privacy",
+      "authors": [
+        "Jialuo Chen",
+        "Jingyi Wang",
+        "Tinglan Peng",
+        "Youcheng Sun",
+        "Peng Cheng",
+        "S. Ji",
+        "Xingjun Ma",
+        "Bo Li",
+        "D. Song"
+      ],
+      "citation_count": 77,
+      "url": "https://www.semanticscholar.org/paper/c3111e374ad14357172ef63e7063e0182f8030d4",
+      "pdf_url": "https://arxiv.org/pdf/2112.05588",
+      "publication_date": "2021-12-10",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack",
+        "(via citation)"
+      ],
+      "first_seen": "2025-12-05"
     },
     {
       "paper_id": "cd709a11dfb2308b0d2ffc779261165e92c49e2b",
@@ -15494,7 +15494,7 @@
         "Christopher A. Choquette-Choo",
         "Nicolas Papernot"
       ],
-      "citation_count": 261,
+      "citation_count": 260,
       "url": "https://www.semanticscholar.org/paper/abbb0fd559ade70265f4f528df094fbbd8ae2040",
       "pdf_url": "",
       "publication_date": "2020-02-27",
@@ -15540,7 +15540,7 @@
         "Tsung-Yi Ho",
         "Yier Jin"
       ],
-      "citation_count": 184,
+      "citation_count": 183,
       "url": "https://www.semanticscholar.org/paper/4d548fd21aad60e3052455e22b7a57cc1f06e3c3",
       "pdf_url": "https://doi.org/10.14722/ndss.2020.24178",
       "publication_date": null,
@@ -15610,7 +15610,7 @@
         "T. Sherwood",
         "Yuan Xie"
       ],
-      "citation_count": 153,
+      "citation_count": 152,
       "url": "https://www.semanticscholar.org/paper/109ad71af2ffce01b60852f8141ea91be6eed9e1",
       "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3373376.3378460",
       "publication_date": "2020-03-09",
@@ -15740,7 +15740,7 @@
         "Yiqiang Zhao",
         "Yier Jin"
       ],
-      "citation_count": 113,
+      "citation_count": 112,
       "url": "https://www.semanticscholar.org/paper/7a3d5f1887fa908a5df303f37ec4450998caafac",
       "pdf_url": "",
       "publication_date": "2020-12-07",
@@ -17406,7 +17406,7 @@
         "Dirmanto Jap",
         "S. Picek"
       ],
-      "citation_count": 309,
+      "citation_count": 308,
       "url": "https://www.semanticscholar.org/paper/b12c15503435cffee16bdd156766dcf390eeb8f8",
       "pdf_url": "",
       "publication_date": null,
@@ -17494,7 +17494,7 @@
         "Yuxuan Zhang",
         "F. Kerschbaum"
       ],
-      "citation_count": 170,
+      "citation_count": 169,
       "url": "https://www.semanticscholar.org/paper/5effd428e3012061ba3d8b32f1952c2938c7ab7b",
       "pdf_url": "",
       "publication_date": "2019-12-02",
@@ -17568,7 +17568,7 @@
         "Qi Xuan",
         "Xiaoniu Yang"
       ],
-      "citation_count": 100,
+      "citation_count": 99,
       "url": "https://www.semanticscholar.org/paper/1f25ad13444dcd9898a8500428f2c97bdb05369c",
       "pdf_url": "https://arxiv.org/pdf/1907.10406",
       "publication_date": "2019-07-21",
@@ -18467,7 +18467,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 594,
+      "citation_count": 593,
       "url": "https://www.semanticscholar.org/paper/089c6224cfbcf5c18b63564eb65001c7c42a7acf",
       "pdf_url": "http://arxiv.org/pdf/1812.02766",
       "publication_date": "2018-12-06",
@@ -18539,7 +18539,7 @@
         "Zhiru Zhang",
         "G. Suh"
       ],
-      "citation_count": 275,
+      "citation_count": 274,
       "url": "https://www.semanticscholar.org/paper/6c0aef543a15edc1a52fe3490281e3fe36dac486",
       "pdf_url": "",
       "publication_date": "2018-06-01",
@@ -18627,7 +18627,7 @@
         "D. V. Rao",
         "V. Balas"
       ],
-      "citation_count": 147,
+      "citation_count": 146,
       "url": "https://www.semanticscholar.org/paper/f5014e34ed13191082cd20cc279ca4cc9adee84f",
       "pdf_url": "",
       "publication_date": "2018-12-31",
@@ -18676,7 +18676,7 @@
         "Dana Dachman-Soled",
         "Tudor Dumitras"
       ],
-      "citation_count": 95,
+      "citation_count": 94,
       "url": "https://www.semanticscholar.org/paper/dcbd26094751f5064a6d9b8c7e0a347d49e0d3a5",
       "pdf_url": "",
       "publication_date": "2018-09-27",
@@ -18927,7 +18927,7 @@
         "Dorjan Hitaj",
         "L. Mancini"
       ],
-      "citation_count": 54,
+      "citation_count": 53,
       "url": "https://www.semanticscholar.org/paper/c5edd98d2a94dd02cdf92d52343140321e51b068",
       "pdf_url": "",
       "publication_date": "2018-09-03",
@@ -19405,7 +19405,7 @@
         "M. Reiter",
         "Thomas Ristenpart"
       ],
-      "citation_count": 1965,
+      "citation_count": 1964,
       "url": "https://www.semanticscholar.org/paper/8a95423d0059f7c5b1422f0ef1aa60b9e26aab7e",
       "pdf_url": "",
       "publication_date": "2016-08-10",
