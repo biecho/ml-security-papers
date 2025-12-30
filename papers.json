@@ -1,5 +1,5 @@
 {
-  "updated": "2025-12-29",
+  "updated": "2025-12-30",
   "total": 916,
   "keywords": [
     "model stealing",
@@ -3416,7 +3416,7 @@
         "Tianwei Zhang",
         "Rongxing Lu"
       ],
-      "citation_count": 45,
+      "citation_count": 46,
       "url": "https://www.semanticscholar.org/paper/9487d29364645c2f086387ff817ad5fd14b33c41",
       "pdf_url": "",
       "publication_date": "2024-03-01",
@@ -3462,7 +3462,7 @@
         "Meera Viswanathan",
         "Robert Chew"
       ],
-      "citation_count": 40,
+      "citation_count": 41,
       "url": "https://www.semanticscholar.org/paper/b719f3b74f5025aeaa0ed3ed8707e8557bce6654",
       "pdf_url": "",
       "publication_date": "2024-06-19",
@@ -3529,7 +3529,7 @@
         "Yaoqing Yang",
         "Prateek Mittal"
       ],
-      "citation_count": 35,
+      "citation_count": 36,
       "url": "https://www.semanticscholar.org/paper/ee529552e871dbd7d2c53d9cde4b46380712cbe0",
       "pdf_url": "",
       "publication_date": "2024-03-01",
@@ -7385,7 +7385,7 @@
         "Zhi Zhang",
         "Q. Hong"
       ],
-      "citation_count": 75,
+      "citation_count": 76,
       "url": "https://www.semanticscholar.org/paper/796bab7acfef1076cd4e39872a34dd6c80a646fd",
       "pdf_url": "",
       "publication_date": null,
@@ -7703,6 +7703,28 @@
       "first_seen": "2025-11-28"
     },
     {
+      "paper_id": "1b0e8f3727f452d8ef13950ae61c631be8956306",
+      "title": "Model Extraction Attacks Revisited",
+      "abstract": "Model extraction (ME) attacks represent one major threat to Machine-Learning-as-a-Service (MLaaS) platforms by \"stealing\" the functionality of confidential machine-learning models through querying black-box APIs. Over seven years have passed since ME attacks were first conceptualized in the seminal work [75]. During this period, substantial advances have been made in both ME attacks and MLaaS platforms, raising the intriguing question: How has the vulnerability of MLaaS platforms to ME attacks been evolving? In this work, we conduct an in-depth study to answer this critical question. Specifically, we characterize the vulnerability of current, mainstream MLaaS platforms to ME attacks from multiple perspectives including attack strategies, learning techniques, surrogatemodel design, and benchmark tasks. Many of our findings challenge previously reported results, suggesting emerging patterns of ME vulnerability. Further, by analyzing the vulnerability of the same MLaaS platforms using historical datasets from the past four years, we retrospectively characterize the evolution of ME vulnerability over time, leading to a set of interesting findings. Finally, we make suggestions about improving the current practice of MLaaS in terms of attack robustness. Our study sheds light on the current state of ME vulnerability in the wild and points to several promising directions for future research.",
+      "year": 2023,
+      "venue": "ACM Asia Conference on Computer and Communications Security",
+      "authors": [
+        "Jiacheng Liang",
+        "Ren Pang",
+        "Changjiang Li",
+        "Ting Wang"
+      ],
+      "citation_count": 25,
+      "url": "https://www.semanticscholar.org/paper/1b0e8f3727f452d8ef13950ae61c631be8956306",
+      "pdf_url": "https://arxiv.org/pdf/2312.05386",
+      "publication_date": "2023-12-08",
+      "keywords_matched": [
+        "model extraction",
+        "model extraction attack"
+      ],
+      "first_seen": "2025-11-28"
+    },
+    {
       "paper_id": "afbc7f9d4a4dcf0cf02ab3efd043904b361fa886",
       "title": "DeepTheft: Stealing DNN Model Architectures through Power Side Channel",
       "abstract": "Deep Neural Network (DNN) models are often deployed in resource-sharing clouds as Machine Learning as a Service (MLaaS) to provide inference services. To steal model architectures that are of valuable intellectual properties, a class of attacks has been proposed via different side-channel leakage, posing a serious security challenge to MLaaS.Also targeting MLaaS, we propose a new end-to-end attack, DeepTheft, to accurately recover complex DNN model architectures on general processors via the RAPL (Running Average Power Limit)-based power side channel. While unprivileged access to the RAPL has been disabled in bare-metal OSes, we observe that the RAPL is still legitimately accessible in a platform as a service, e.g., the latest docker environment of version 20.10.18 used in this work. However, an attacker can acquire only a low sampling rate (1 KHz) of the time-series energy traces from the RAPL interface, rendering existing techniques ineffective in stealing large and deep DNN models. To this end, we design a novel and generic learning-based framework consisting of a set of meta-models, based on which DeepTheft is demonstrated to have high accuracy in recovering a large number (thousands) of models architectures from different model families including the deepest ResNet152. Particularly, DeepTheft has achieved a Levenshtein Distance Accuracy of 99.75% in recovering network structures, and a weighted average F1 score of 99.60% in recovering diverse layer-wise hyperparameters. Besides, our proposed learning framework is general to other time-series side-channel signals. To validate its generalization, another existing side channel is exploited, i.e., CPU frequency. Different from RAPL, CPU frequency is accessible to unprivileged users in bare-metal OSes. By using our generic learning framework trained against CPU frequency traces, DeepTheft has shown similarly high attack performance in stealing model architectures.",
@@ -7746,28 +7768,6 @@
       "url": "https://www.semanticscholar.org/paper/b4149005980a11919731e6b4c1833d8b0af59424",
       "pdf_url": "",
       "publication_date": "2023-10-26",
-      "keywords_matched": [
-        "model extraction",
-        "model extraction attack"
-      ],
-      "first_seen": "2025-11-28"
-    },
-    {
-      "paper_id": "1b0e8f3727f452d8ef13950ae61c631be8956306",
-      "title": "Model Extraction Attacks Revisited",
-      "abstract": "Model extraction (ME) attacks represent one major threat to Machine-Learning-as-a-Service (MLaaS) platforms by \"stealing\" the functionality of confidential machine-learning models through querying black-box APIs. Over seven years have passed since ME attacks were first conceptualized in the seminal work [75]. During this period, substantial advances have been made in both ME attacks and MLaaS platforms, raising the intriguing question: How has the vulnerability of MLaaS platforms to ME attacks been evolving? In this work, we conduct an in-depth study to answer this critical question. Specifically, we characterize the vulnerability of current, mainstream MLaaS platforms to ME attacks from multiple perspectives including attack strategies, learning techniques, surrogatemodel design, and benchmark tasks. Many of our findings challenge previously reported results, suggesting emerging patterns of ME vulnerability. Further, by analyzing the vulnerability of the same MLaaS platforms using historical datasets from the past four years, we retrospectively characterize the evolution of ME vulnerability over time, leading to a set of interesting findings. Finally, we make suggestions about improving the current practice of MLaaS in terms of attack robustness. Our study sheds light on the current state of ME vulnerability in the wild and points to several promising directions for future research.",
-      "year": 2023,
-      "venue": "ACM Asia Conference on Computer and Communications Security",
-      "authors": [
-        "Jiacheng Liang",
-        "Ren Pang",
-        "Changjiang Li",
-        "Ting Wang"
-      ],
-      "citation_count": 24,
-      "url": "https://www.semanticscholar.org/paper/1b0e8f3727f452d8ef13950ae61c631be8956306",
-      "pdf_url": "https://arxiv.org/pdf/2312.05386",
-      "publication_date": "2023-12-08",
       "keywords_matched": [
         "model extraction",
         "model extraction attack"
@@ -17407,7 +17407,7 @@
         "Tianwei Zhang",
         "R. Lee"
       ],
-      "citation_count": 353,
+      "citation_count": 352,
       "url": "https://www.semanticscholar.org/paper/2cb1f4688f8ba457b4fa2ed36deae5a98f4249ca",
       "pdf_url": "",
       "publication_date": "2019-12-09",
@@ -17562,7 +17562,7 @@
         "Ian Molloy",
         "D. Su"
       ],
-      "citation_count": 107,
+      "citation_count": 108,
       "url": "https://www.semanticscholar.org/paper/555b847ee9c39c12d5764f4e11b888b331a89cfb",
       "pdf_url": "https://ieeexplore.ieee.org/ielx7/8834415/8844588/08844598.pdf",
       "publication_date": "2019-05-19",
@@ -18489,7 +18489,7 @@
         "B. Schiele",
         "Mario Fritz"
       ],
-      "citation_count": 593,
+      "citation_count": 594,
       "url": "https://www.semanticscholar.org/paper/089c6224cfbcf5c18b63564eb65001c7c42a7acf",
       "pdf_url": "http://arxiv.org/pdf/1812.02766",
       "publication_date": "2018-12-06",
