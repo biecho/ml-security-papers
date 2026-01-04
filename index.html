@@ -264,7 +264,7 @@
 
         async function loadPapers() {
             try {
-                const response = await fetch('papers.json');
+                const response = await fetch('papers_filtered.json');
                 const data = await response.json();
                 papers = data.papers;
                 populateYearFilter();
