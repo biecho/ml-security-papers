@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Stealing Papers</title>
+    <title>ML Security Papers - OWASP Top 10</title>
     <style>
         * {
             box-sizing: border-box;
@@ -19,7 +19,7 @@
         }
 
         header {
-            background: #1e293b;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
             color: white;
             padding: 2rem;
             text-align: center;
@@ -36,11 +36,100 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 1rem;
         }
 
+        /* Category Navigation */
+        .category-nav {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .category-nav h3 {
+            margin-bottom: 0.75rem;
+            color: #475569;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .category-tab {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .category-tab:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+
+        .category-tab.active {
+            border-color: #3b82f6;
+            background: #3b82f6;
+            color: white;
+        }
+
+        .category-tab .id {
+            font-weight: 600;
+        }
+
+        .category-tab .count {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-left: 0.25rem;
+        }
+
+        /* Category Info Banner */
+        .category-info {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        .category-info.visible {
+            display: block;
+        }
+
+        .category-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-info p {
+            opacity: 0.9;
+        }
+
+        .category-info .owasp-link {
+            color: white;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .category-info .owasp-link:hover {
+            opacity: 1;
+        }
+
+        /* Controls */
         .controls {
             background: white;
             padding: 1rem;
@@ -75,6 +164,29 @@
             font-size: 0.9rem;
         }
 
+        /* Charts */
+        .charts-section {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .chart-container {
+            background: #fafafa;
+            border-radius: 6px;
+            padding: 0.5rem;
+            min-height: 250px;
+        }
+
+        /* Papers */
         .paper-list {
             display: flex;
             flex-direction: column;
@@ -177,6 +289,56 @@
             color: #666;
         }
 
+        /* Hub Overview */
+        .hub-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .hub-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .hub-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .hub-card h3 {
+            color: #1e40af;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hub-card .owasp-id {
+            background: #3b82f6;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .hub-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hub-card .paper-count {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -188,30 +350,12 @@
             color: #2563eb;
         }
 
-        .charts-section {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .charts-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-        }
-
-        .chart-container {
-            background: #fafafa;
-            border-radius: 6px;
-            padding: 0.5rem;
-            min-height: 250px;
-        }
-
         @media (max-width: 768px) {
             .charts-grid {
                 grid-template-columns: 1fr;
+            }
+            .category-tabs {
+                justify-content: center;
             }
         }
     </style>
@@ -219,19 +363,40 @@
 </head>
 <body>
     <header>
-        <h1>Model Stealing Papers</h1>
-        <p>A collection of academic papers on model stealing and extraction attacks</p>
+        <h1>ML Security Research Papers</h1>
+        <p>OWASP Machine Learning Security Top 10 - Academic Paper Collection</p>
     </header>
 
     <div class="container">
-        <div class="charts-section">
+        <!-- Category Navigation -->
+        <div class="category-nav">
+            <h3>Categories</h3>
+            <div class="category-tabs" id="category-tabs">
+                <div class="category-tab active" data-category="all">
+                    <span class="id">All</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hub Overview (shown when "All" is selected) -->
+        <div class="hub-overview" id="hub-overview"></div>
+
+        <!-- Category Info Banner -->
+        <div class="category-info" id="category-info">
+            <h2 id="category-title"></h2>
+            <p id="category-description"></p>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-section" id="charts-section" style="display: none;">
             <div class="charts-grid">
                 <div class="chart-container" id="chart-papers-per-year"></div>
                 <div class="chart-container" id="chart-cumulative"></div>
             </div>
         </div>
 
-        <div class="controls">
+        <!-- Controls -->
+        <div class="controls" id="controls" style="display: none;">
             <input type="text" id="search" placeholder="Search papers...">
             <select id="year-filter">
                 <option value="">All Years</option>
@@ -249,32 +414,216 @@
             <span class="stats" id="stats"></span>
         </div>
 
+        <!-- Paper List -->
         <div class="paper-list" id="paper-list">
-            <div class="no-results">Loading papers...</div>
+            <div class="no-results">Loading...</div>
         </div>
     </div>
 
     <footer>
-        <p>Data from <a href="https://www.semanticscholar.org/">Semantic Scholar</a> |
-           <a href="https://github.com/biecho/model-stealing-papers">GitHub</a></p>
+        <p>
+            <a href="https://owasp.org/www-project-machine-learning-security-top-10/">OWASP ML Security Top 10</a> |
+            Data from <a href="https://www.semanticscholar.org/">Semantic Scholar</a> |
+            <a href="https://github.com/biecho/model-stealing-papers">GitHub</a>
+        </p>
     </footer>
 
     <script>
-        let papers = [];
+        // OWASP Category Definitions
+        const CATEGORIES = {
+            ML01: { name: "Input Manipulation Attack", color: "#ef4444", file: "ml01_papers.json" },
+            ML02: { name: "Data Poisoning Attack", color: "#f97316", file: "ml02_papers.json" },
+            ML03: { name: "Model Inversion Attack", color: "#eab308", file: "ml03_papers.json" },
+            ML04: { name: "Membership Inference Attack", color: "#84cc16", file: "ml04_papers.json" },
+            ML05: { name: "Model Theft", color: "#22c55e", file: "ml05_papers.json" },
+            ML06: { name: "AI Supply Chain Attacks", color: "#14b8a6", file: "ml06_papers.json" },
+            ML07: { name: "Transfer Learning Attack", color: "#06b6d4", file: "ml07_papers.json" },
+            ML08: { name: "Model Skewing", color: "#3b82f6", file: "ml08_papers.json" },
+            ML09: { name: "Output Integrity Attack", color: "#8b5cf6", file: "ml09_papers.json" },
+            ML10: { name: "Model Poisoning", color: "#ec4899", file: "ml10_papers.json" },
+        };
 
-        async function loadPapers() {
+        let currentCategory = 'all';
+        let papers = [];
+        let categoryData = {};
+        let manifest = null;
+
+        async function loadManifest() {
+            try {
+                const response = await fetch('data/manifest.json');
+                manifest = await response.json();
+                return manifest;
+            } catch (error) {
+                console.log('No manifest found, trying legacy mode');
+                return null;
+            }
+        }
+
+        async function loadCategoryPapers(categoryId) {
+            const cat = CATEGORIES[categoryId];
+            if (!cat) return [];
+
+            try {
+                const response = await fetch(`data/${cat.file}`);
+                const data = await response.json();
+                return data.papers || [];
+            } catch (error) {
+                console.log(`Could not load ${cat.file}`);
+                return [];
+            }
+        }
+
+        async function loadLegacyPapers() {
             try {
                 const response = await fetch('papers_filtered.json');
                 const data = await response.json();
-                papers = data.papers;
-                populateYearFilter();
-                populateVenueFilter();
-                renderCharts();
-                renderPapers();
+                return data.papers || [];
             } catch (error) {
-                document.getElementById('paper-list').innerHTML =
-                    '<div class="no-results">Error loading papers. Make sure papers.json exists.</div>';
+                return [];
             }
+        }
+
+        async function initialize() {
+            // Try new structure first
+            manifest = await loadManifest();
+
+            if (manifest) {
+                // New multi-category structure
+                buildCategoryTabs();
+                await loadAllCategories();
+                showHubOverview();
+            } else {
+                // Legacy single-category mode
+                papers = await loadLegacyPapers();
+                if (papers.length > 0) {
+                    selectCategory('ML05'); // Default to model theft
+                } else {
+                    document.getElementById('paper-list').innerHTML =
+                        '<div class="no-results">No papers found. Run filtering first.</div>';
+                }
+            }
+        }
+
+        function buildCategoryTabs() {
+            const container = document.getElementById('category-tabs');
+
+            for (const [id, cat] of Object.entries(CATEGORIES)) {
+                const tab = document.createElement('div');
+                tab.className = 'category-tab';
+                tab.dataset.category = id;
+                tab.innerHTML = `<span class="id">${id}</span><span class="count"></span>`;
+                tab.style.borderColor = cat.color;
+                tab.addEventListener('click', () => selectCategory(id));
+                container.appendChild(tab);
+            }
+        }
+
+        async function loadAllCategories() {
+            for (const [id, cat] of Object.entries(CATEGORIES)) {
+                const papers = await loadCategoryPapers(id);
+                categoryData[id] = papers;
+
+                // Update tab count
+                const tab = document.querySelector(`.category-tab[data-category="${id}"]`);
+                if (tab) {
+                    const countSpan = tab.querySelector('.count');
+                    countSpan.textContent = ` (${papers.length})`;
+                }
+            }
+        }
+
+        function showHubOverview() {
+            const container = document.getElementById('hub-overview');
+            container.innerHTML = '';
+            container.style.display = 'grid';
+
+            document.getElementById('charts-section').style.display = 'none';
+            document.getElementById('controls').style.display = 'none';
+            document.getElementById('paper-list').innerHTML = '';
+            document.getElementById('category-info').classList.remove('visible');
+
+            for (const [id, cat] of Object.entries(CATEGORIES)) {
+                const count = categoryData[id]?.length || 0;
+
+                const card = document.createElement('div');
+                card.className = 'hub-card';
+                card.style.borderLeftColor = cat.color;
+                card.innerHTML = `
+                    <h3><span class="owasp-id">${id}</span>${cat.name}</h3>
+                    <p>${getShortDescription(id)}</p>
+                    <div class="paper-count">${count} papers</div>
+                `;
+                card.addEventListener('click', () => selectCategory(id));
+                container.appendChild(card);
+            }
+
+            // Update active tab
+            document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector('.category-tab[data-category="all"]').classList.add('active');
+        }
+
+        function getShortDescription(id) {
+            const descriptions = {
+                ML01: "Adversarial examples and evasion attacks on ML models",
+                ML02: "Poisoning training data to compromise ML models",
+                ML03: "Reconstructing training data from ML model access",
+                ML04: "Detecting if data was used to train an ML model",
+                ML05: "Techniques to steal or extract ML models",
+                ML06: "Compromising ML through dependencies and third-party components",
+                ML07: "Exploiting fine-tuning and transfer learning vulnerabilities",
+                ML08: "Inducing bias and unfairness in ML models",
+                ML09: "Manipulating ML model outputs and predictions",
+                ML10: "Backdoors, trojans, and model-level attacks",
+            };
+            return descriptions[id] || "";
+        }
+
+        function selectCategory(categoryId) {
+            if (categoryId === 'all') {
+                showHubOverview();
+                return;
+            }
+
+            currentCategory = categoryId;
+            papers = categoryData[categoryId] || [];
+
+            // Hide hub overview
+            document.getElementById('hub-overview').style.display = 'none';
+
+            // Show category info
+            const cat = CATEGORIES[categoryId];
+            document.getElementById('category-title').textContent = `${categoryId}: ${cat.name}`;
+            document.getElementById('category-description').textContent = getShortDescription(categoryId);
+            document.getElementById('category-info').classList.add('visible');
+            document.getElementById('category-info').style.background =
+                `linear-gradient(135deg, ${cat.color} 0%, ${adjustColor(cat.color, -30)} 100%)`;
+
+            // Show controls and charts
+            document.getElementById('charts-section').style.display = 'block';
+            document.getElementById('controls').style.display = 'flex';
+
+            // Update active tab
+            document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.category-tab[data-category="${categoryId}"]`)?.classList.add('active');
+
+            // Reset filters
+            document.getElementById('search').value = '';
+            document.getElementById('year-filter').innerHTML = '<option value="">All Years</option>';
+            document.getElementById('venue-filter').innerHTML = '<option value="">All Venues</option>';
+
+            // Populate filters and render
+            populateYearFilter();
+            populateVenueFilter();
+            renderCharts();
+            renderPapers();
+        }
+
+        function adjustColor(color, amount) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const r = Math.min(255, Math.max(0, (num >> 16) + amount));
+            const g = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + amount));
+            const b = Math.min(255, Math.max(0, (num & 0x0000FF) + amount));
+            return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
         }
 
         const venueAbbrev = {
@@ -283,43 +632,11 @@
             'Neural Information Processing Systems': 'NeurIPS',
             'Computer Vision and Pattern Recognition': 'CVPR',
             'USENIX Security Symposium': 'USENIX',
-            'IEEE Transactions on Information Forensics and Security': 'TIFS',
-            'IEEE International Joint Conference on Neural Network': 'IJCNN',
-            'IEEE Transactions on Dependable and Secure Computing': 'TDSC',
-            'ACM Asia Conference on Computer and Communications Security': 'AsiaCCS',
             'IEEE Symposium on Security and Privacy': 'S&P',
-            'International Joint Conference on Artificial Intelligence': 'IJCAI',
             'International Conference on Machine Learning': 'ICML',
-            'International Conference on Software Engineering': 'ICSE',
-            'IEEE International Conference on Acoustics, Speech, and Signal Processing': 'ICASSP',
-            'ACM Multimedia': 'ACM MM',
             'International Conference on Learning Representations': 'ICLR',
-            'European Conference on Computer Vision': 'ECCV',
             'Network and Distributed System Security Symposium': 'NDSS',
             'ACM Conference on Computer and Communications Security': 'CCS',
-            'Conference on Computer and Communications Security': 'CCS',
-            'The Web Conference': 'WWW',
-            'IEEE Access': 'IEEE Access',
-            'Asia-Pacific Computer Systems Architecture Conference': 'ACSAC',
-            'ACM Great Lakes Symposium on VLSI': 'GLSVLSI',
-            'IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems': 'TCAD',
-            'International Conference on Information and Knowledge Management': 'CIKM',
-            'Conference on Empirical Methods in Natural Language Processing': 'EMNLP',
-            'Design, Automation and Test in Europe': 'DATE',
-            'European Symposium on Research in Computer Security': 'ESORICS',
-            'Smart Card Research and Advanced Application Conference': 'CARDIS',
-            'Knowledge Discovery and Data Mining': 'KDD',
-            'Annual Meeting of the Association for Computational Linguistics': 'ACL',
-            'Web Search and Data Mining': 'WSDM',
-            'North American Chapter of the Association for Computational Linguistics': 'NAACL',
-            'ACM Conference on Recommender Systems': 'RecSys',
-            'International Conference on Architectural Support for Programming Languages and Operating Systems': 'ASPLOS',
-            'Annual International Cryptology Conference': 'CRYPTO',
-            'IEEE International Symposium on Hardware Oriented Security and Trust': 'HOST',
-            'ACM Computing Surveys': 'CSUR',
-            'IEEE Transactions on Neural Networks and Learning Systems': 'TNNLS',
-            'European Symposium on Security and Privacy': 'EuroS&P',
-            'ACM Transactions on Privacy and Security': 'TOPS'
         };
 
         function getVenueAbbrev(venue) {
@@ -327,13 +644,14 @@
             if (venueAbbrev[venue]) return venueAbbrev[venue];
             const cleaned = venue.replace(/^\d{4}\s+/, '');
             if (venueAbbrev[cleaned]) return venueAbbrev[cleaned];
-            const parenMatch = cleaned.match(/\(([A-Z]{2,10})\)/);
-            if (parenMatch) return parenMatch[1];
             return cleaned.length > 25 ? cleaned.substring(0, 25) + '...' : cleaned;
         }
 
         function renderCharts() {
             if (papers.length === 0) return;
+
+            const cat = CATEGORIES[currentCategory];
+            const color = cat?.color || '#3b82f6';
 
             const chartConfig = { responsive: true, displayModeBar: false };
             const layoutDefaults = {
@@ -343,7 +661,6 @@
                 plot_bgcolor: 'rgba(0,0,0,0)'
             };
 
-            // Papers per year
             const yearCounts = {};
             papers.forEach(p => {
                 if (p.year && p.year >= 2016) {
@@ -357,7 +674,7 @@
                 x: years,
                 y: counts,
                 type: 'bar',
-                marker: { color: '#3b82f6' }
+                marker: { color: color }
             }], {
                 ...layoutDefaults,
                 title: { text: 'Papers per Year', font: { size: 14 } },
@@ -365,7 +682,6 @@
                 yaxis: { title: 'Papers' }
             }, chartConfig);
 
-            // Cumulative growth
             let cumulative = 0;
             const cumulativeCounts = years.map(y => {
                 cumulative += yearCounts[y];
@@ -377,7 +693,7 @@
                 y: cumulativeCounts,
                 type: 'scatter',
                 mode: 'lines+markers',
-                line: { color: '#10b981', width: 2 },
+                line: { color: color, width: 2 },
                 marker: { size: 6 }
             }], {
                 ...layoutDefaults,
@@ -399,7 +715,6 @@
         }
 
         function populateVenueFilter() {
-            // Count papers per venue and sort by frequency
             const venueCounts = {};
             papers.forEach(p => {
                 if (p.venue) {
@@ -408,7 +723,7 @@
             });
 
             const sortedVenues = Object.entries(venueCounts)
-                .sort((a, b) => b[1] - a[1])  // Sort by count descending
+                .sort((a, b) => b[1] - a[1])
                 .map(([venue, count]) => ({ venue, count, abbrev: getVenueAbbrev(venue) }));
 
             const select = document.getElementById('venue-filter');
@@ -439,7 +754,6 @@
             filtered.sort((a, b) => {
                 switch (sortBy) {
                     case 'year-desc':
-                        // Use publication_date if available, else fall back to year
                         const dateA = a.publication_date || (a.year ? `${a.year}-01-01` : '');
                         const dateB = b.publication_date || (b.year ? `${b.year}-01-01` : '');
                         return dateB.localeCompare(dateA);
@@ -498,14 +812,13 @@
         }
 
         function getCitationStyle(count) {
-            // Heat scale: yellow (0) -> orange (50) -> red (200+)
-            if (count <= 0) return 'background: #f3f4f6; color: #6b7280;';  // Gray for 0
-            if (count < 10) return 'background: #fef9c3; color: #854d0e;';  // Light yellow
-            if (count < 50) return 'background: #fed7aa; color: #9a3412;';  // Orange
-            if (count < 100) return 'background: #fdba74; color: #9a3412;'; // Darker orange
-            if (count < 200) return 'background: #fb923c; color: #7c2d12;'; // Deep orange
-            if (count < 500) return 'background: #f97316; color: white;';   // Orange-red
-            return 'background: #dc2626; color: white;';                     // Red for 500+
+            if (count <= 0) return 'background: #f3f4f6; color: #6b7280;';
+            if (count < 10) return 'background: #fef9c3; color: #854d0e;';
+            if (count < 50) return 'background: #fed7aa; color: #9a3412;';
+            if (count < 100) return 'background: #fdba74; color: #9a3412;';
+            if (count < 200) return 'background: #fb923c; color: #7c2d12;';
+            if (count < 500) return 'background: #f97316; color: white;';
+            return 'background: #dc2626; color: white;';
         }
 
         function formatDate(dateStr) {
@@ -523,8 +836,10 @@
         document.getElementById('venue-filter').addEventListener('change', renderPapers);
         document.getElementById('sort-by').addEventListener('change', renderPapers);
 
-        // Load papers on page load
-        loadPapers();
+        document.querySelector('.category-tab[data-category="all"]').addEventListener('click', showHubOverview);
+
+        // Initialize
+        initialize();
     </script>
 </body>
 </html>

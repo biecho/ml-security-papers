@@ -27,6 +27,9 @@ class Config:
         # Domain information
         self.domain_name = self._data["domain"]["name"]
         self.domain_description = self._data["domain"]["description"]
+        self.owasp_id = self._data["domain"].get("owasp_id", "")
+        self.owasp_name = self._data["domain"].get("owasp_name", "")
+        self.short_description = self._data["domain"].get("short_description", "")
 
         # Keywords
         self.high_quality_keywords = self._data["high_quality_keywords"]
@@ -85,18 +88,50 @@ class Config:
         Load configuration for a specific domain.
 
         Args:
-            domain: Domain name (e.g., "model_stealing", "privacy")
+            domain: Domain name (e.g., "model_theft", "membership_inference")
 
         Returns:
             Config instance for the domain
 
         Example:
-            config = Config.for_domain("model_stealing")
+            config = Config.for_domain("model_theft")
         """
+        # Try configs/ directory first (new structure)
+        configs_dir = Path("configs")
+        if configs_dir.exists():
+            for config_file in configs_dir.glob("*.yaml"):
+                if domain in config_file.stem:
+                    return cls(config_file)
+
+        # Fall back to old structure
         config_path = Path(f"config_{domain}.yaml")
         if not config_path.exists():
             config_path = Path("config.yaml")
         return cls(config_path)
+
+    @classmethod
+    def list_configs(cls, configs_dir: str | Path = "configs") -> list["Config"]:
+        """
+        List all available configurations.
+
+        Args:
+            configs_dir: Directory containing config files
+
+        Returns:
+            List of Config instances sorted by OWASP ID
+        """
+        configs_path = Path(configs_dir)
+        if not configs_path.exists():
+            return []
+
+        configs = []
+        for config_file in sorted(configs_path.glob("ml*.yaml")):
+            try:
+                configs.append(cls(config_file))
+            except Exception:
+                continue
+
+        return sorted(configs, key=lambda c: c.owasp_id or "ZZ")
 
     def __repr__(self) -> str:
         """String representation of configuration."""

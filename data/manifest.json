@@ -1,0 +1,85 @@
+{
+  "updated": "2026-01-06",
+  "categories": [
+    {
+      "owasp_id": "ML01",
+      "owasp_name": "Input Manipulation Attack",
+      "total": 919,
+      "relevant": 596,
+      "excluded": 323,
+      "output_file": "data/ml01_papers.json"
+    },
+    {
+      "owasp_id": "ML02",
+      "owasp_name": "Data Poisoning Attack",
+      "total": 919,
+      "relevant": 156,
+      "excluded": 763,
+      "output_file": "data/ml02_papers.json"
+    },
+    {
+      "owasp_id": "ML03",
+      "owasp_name": "Model Inversion Attack",
+      "total": 919,
+      "relevant": 230,
+      "excluded": 689,
+      "output_file": "data/ml03_papers.json"
+    },
+    {
+      "owasp_id": "ML04",
+      "owasp_name": "Membership Inference Attack",
+      "total": 919,
+      "relevant": 199,
+      "excluded": 720,
+      "output_file": "data/ml04_papers.json"
+    },
+    {
+      "owasp_id": "ML05",
+      "owasp_name": "Model Theft",
+      "total": 919,
+      "relevant": 403,
+      "excluded": 516,
+      "output_file": "data/ml05_papers.json"
+    },
+    {
+      "owasp_id": "ML06",
+      "owasp_name": "AI Supply Chain Attacks",
+      "total": 919,
+      "relevant": 29,
+      "excluded": 890,
+      "output_file": "data/ml06_papers.json"
+    },
+    {
+      "owasp_id": "ML07",
+      "owasp_name": "Transfer Learning Attack",
+      "total": 919,
+      "relevant": 580,
+      "excluded": 339,
+      "output_file": "data/ml07_papers.json"
+    },
+    {
+      "owasp_id": "ML08",
+      "owasp_name": "Model Skewing",
+      "total": 919,
+      "relevant": 578,
+      "excluded": 341,
+      "output_file": "data/ml08_papers.json"
+    },
+    {
+      "owasp_id": "ML09",
+      "owasp_name": "Output Integrity Attack",
+      "total": 919,
+      "relevant": 627,
+      "excluded": 292,
+      "output_file": "data/ml09_papers.json"
+    },
+    {
+      "owasp_id": "ML10",
+      "owasp_name": "Model Poisoning",
+      "total": 919,
+      "relevant": 730,
+      "excluded": 189,
+      "output_file": "data/ml10_papers.json"
+    }
+  ]
+}
