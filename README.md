@@ -4,7 +4,7 @@ A curated collection of academic papers covering the [OWASP Machine Learning Sec
 
 ## Live Website
 
-Browse the papers: **[https://biecho.github.io/model-stealing-papers/web/](https://biecho.github.io/model-stealing-papers/web/)**
+Browse the papers: **[https://biecho.github.io/ml-security-papers/web/](https://biecho.github.io/ml-security-papers/web/)**
 
 ## Categories
 
@@ -29,8 +29,8 @@ Browse the papers: **[https://biecho.github.io/model-stealing-papers/web/](https
 
 ```bash
 # Clone the repository
-git clone https://github.com/biecho/model-stealing-papers.git
-cd model-stealing-papers
+git clone https://github.com/biecho/ml-security-papers.git
+cd ml-security-papers
 
 # Create virtual environment and install
 python -m venv venv
