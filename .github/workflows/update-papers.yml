@@ -22,18 +22,23 @@ jobs:
         run: |
           pip install requests pyyaml
 
-      - name: Fetch papers
+      - name: Fetch model stealing papers (main dataset)
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: python fetch_papers.py
 
-      - name: Filter papers
-        run: python filter_papers_clean.py filter -o papers_filtered
+      - name: Fetch prompt injection papers
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: python fetch_papers.py -c configs/ml01a_prompt_injection.yaml -o data/ml01a_raw.json
+
+      - name: Filter all categories
+        run: python run_all.py
 
       - name: Commit and push
         run: |
-          git config user.name "biecho"
-          git config user.email "biecho@users.noreply.github.com"
-          git add papers.json papers_filtered.json papers_filtered_excluded.json
-          git diff --staged --quiet || git commit -m "Update papers and filtering results"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add papers.json data/
+          git diff --staged --quiet || git commit -m "Update papers"
           git push
