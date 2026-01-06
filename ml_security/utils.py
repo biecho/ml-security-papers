@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from src.models.paper import Paper
+from ml_security.models.paper import Paper
 
 
 def load_papers(filepath: str | Path) -> tuple[list[Paper], dict]:

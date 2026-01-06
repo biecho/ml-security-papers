@@ -4,15 +4,15 @@ import argparse
 import sys
 from pathlib import Path
 
-from src.pipeline import FilterPipeline, FilterStats
-from src.utils import load_papers, print_sample_papers, save_papers, save_results
+from ml_security.pipeline import FilterPipeline, FilterStats
+from ml_security.utils import load_papers, print_sample_papers, save_papers, save_results
 
 
 def filter_command(args: argparse.Namespace) -> None:
     """Filter papers to keep only relevant ones."""
     # Load config if specified
     if hasattr(args, 'config') and args.config:
-        from src.config import set_config, Config
+        from ml_security.config import set_config, Config
         config = Config(args.config)
         set_config(config)
         print(f"Using configuration: {config.domain_name}")

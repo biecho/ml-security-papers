@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
 
-from src.models.paper import Paper
+from ml_security.models.paper import Paper
 
 
 class Confidence(Enum):

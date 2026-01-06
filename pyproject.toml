@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-security-papers"
+version = "1.0.0"
+description = "OWASP ML Security Top 10 - Academic Paper Collection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+fetch-papers = "scripts.fetch_papers:main"
+filter-papers = "scripts.filter_papers_clean:main"
+run-all = "scripts.run_all:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ml_security*", "scripts*"]

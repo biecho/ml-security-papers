@@ -2,9 +2,9 @@
 
 import re
 
-from src.config import get_config
-from src.filters.base import Confidence, FilterResult, PaperFilter
-from src.models.paper import Paper
+from ml_security.config import get_config
+from ml_security.filters.base import Confidence, FilterResult, PaperFilter
+from ml_security.models.paper import Paper
 
 
 class RelevanceFilter(PaperFilter):

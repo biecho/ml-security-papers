@@ -20,20 +20,20 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests pyyaml
+          pip install -e .
 
       - name: Fetch model stealing papers (main dataset)
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
-        run: python fetch_papers.py
+        run: python scripts/fetch_papers.py
 
       - name: Fetch prompt injection papers
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
-        run: python fetch_papers.py -c configs/ml01a_prompt_injection.yaml -o data/ml01a_raw.json
+        run: python scripts/fetch_papers.py -c configs/ml01a_prompt_injection.yaml -o data/ml01a_raw.json
 
       - name: Filter all categories
-        run: python run_all.py
+        run: python scripts/run_all.py
 
       - name: Commit and push
         run: |

@@ -23,7 +23,7 @@ Examples:
 
 import sys
 
-from src.cli import main
+from ml_security.cli import main
 
 if __name__ == "__main__":
     sys.exit(main())

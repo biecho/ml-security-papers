@@ -14,9 +14,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from src.config import Config, set_config
-from src.pipeline import FilterPipeline, FilterStats
-from src.utils import load_papers, save_papers
+from ml_security.config import Config, set_config
+from ml_security.pipeline import FilterPipeline, FilterStats
+from ml_security.utils import load_papers, save_papers
 
 
 def list_configs() -> None:

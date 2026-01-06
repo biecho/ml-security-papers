@@ -3,10 +3,10 @@
 from dataclasses import dataclass
 from typing import Callable
 
-from src.filters.base import Confidence, FilterResult, PaperFilter
-from src.filters.exclusion_filter import ExclusionFilter, TopicFilter
-from src.filters.relevance_filter import RelevanceFilter
-from src.models.paper import Paper
+from ml_security.filters.base import Confidence, FilterResult, PaperFilter
+from ml_security.filters.exclusion_filter import ExclusionFilter, TopicFilter
+from ml_security.filters.relevance_filter import RelevanceFilter
+from ml_security.models.paper import Paper
 
 
 @dataclass
