@@ -1,47 +1,75 @@
 {
-  "updated": "2026-01-06",
-  "total": 2,
   "owasp_id": "ML08",
-  "owasp_name": "Model Skewing",
-  "description": "Attacks that manipulate model behavior over time or cause concept drift.\n        This includes online learning attacks, model drift exploitation, feedback\n        loop manipulation, and techniques to gradually shift model behavior through\n        strategic inputs or data manipulation over time.",
-  "note": "Classified by embeddings (threshold=0.3)",
+  "owasp_name": "Model Configuration & Deployment",
+  "total": 4,
+  "updated": "2026-01-09",
   "papers": [
     {
-      "paper_id": "e47d888597262e13325bb00528cf0504e19e0499",
-      "title": "A better measure of relative prediction accuracy for model selection and model estimation",
-      "abstract": "Surveys show that the mean absolute percentage error (MAPE) is the most widely used measure of prediction accuracy in businesses and organizations. It is, however, biased: when used to select among competing prediction methods it systematically selects those whose predictions are too low. This has not been widely discussed and so is not generally known among practitioners. We explain why this happens. We investigate an alternative relative accuracy measure which avoids this bias: the log of the accuracy ratio, that is, log (prediction/actual). Relative accuracy is particularly relevant if the scatter in the data grows as the value of the variable grows (heteroscedasticity). We demonstrate using simulations that for heteroscedastic data (modelled by a multiplicative error factor) the proposed metric is far superior to MAPE for model selection. Another use for accuracy measures is in fitting parameters to prediction models. Minimum MAPE models do not predict a simple statistic and so theoretical analysis is limited. We prove that when the proposed metric is used instead, the resulting least squares regression model predicts the geometric mean. This important property allows its theoretical properties to be understood.",
-      "year": 2014,
-      "venue": "Journal of the Operational Research Society",
+      "paper_id": "seed_e57ae380",
+      "title": "IvySyn: Automated Vulnerability Discovery in Deep Learning Frameworks",
+      "abstract": "We present IvySyn, the first fully-automated framework for discovering memory error vulnerabilities in Deep Learning (DL) frameworks. IvySyn leverages the statically-typed nature of native APIs in order to automatically perform type-aware mutation-based fuzzing on low-level kernel code. Given a set of offending inputs that trigger memory safety (and runtime) errors in low-level, native DL (C/C++) code, IvySyn automatically synthesizes code snippets in high-level languages (e.g., in Python), which propagate error-triggering input via high(er)-level APIs. Such code snippets essentially act as \"Proof of Vulnerability\", as they demonstrate the existence of bugs in native code that an attacker can target through various high-level APIs. Our evaluation shows that IvySyn significantly outperforms past approaches, both in terms of efficiency and effectiveness, in finding vulnerabilities in popular DL frameworks. Specifically, we used IvySyn to test TensorFlow and PyTorch. Although still an early prototype, IvySyn has already helped the TensorFlow and PyTorch framework developers to identify and fix 61 previously-unknown security vulnerabilities, and assign 39 unique CVEs.",
+      "year": 2022,
+      "venue": "arXiv (Cornell University)",
       "authors": [
-        "C. Tofallis"
+        "Neophytos Christou",
+        "Di Jin",
+        "Vaggelis Atlidakis",
+        "Baishakhi Ray",
+        "Vasileios P. Kemerlis"
       ],
-      "citation_count": 497,
-      "url": "https://www.semanticscholar.org/paper/e47d888597262e13325bb00528cf0504e19e0499",
-      "pdf_url": "https://arxiv.org/pdf/2105.05249",
-      "publication_date": "2014-07-01",
-      "keywords_matched": [
-        "biased prediction"
-      ],
-      "first_seen": "2026-01-06"
+      "url": "https://openalex.org/W4298186935",
+      "classification_confidence": "HIGH"
     },
     {
-      "paper_id": "effa2806d2c455d9ca2f1910e8540cb7156f8619",
-      "title": "Trading on a Rigged Game: Outcome Manipulation in Prediction Markets",
-      "abstract": null,
-      "year": 2016,
-      "venue": "International Joint Conference on Artificial Intelligence",
+      "paper_id": "2009.09663",
+      "title": "DeepDyve: Dynamic Verification for Deep Neural Networks",
+      "abstract": "Deep neural networks (DNNs) have become one of the enabling technologies in many safety-critical applications, e.g., autonomous driving and medical image analysis. DNN systems, however, suffer from various kinds of threats, such as adversarial example attacks and fault injection attacks. While there are many defense methods proposed against maliciously crafted inputs, solutions against faults presented in the DNN system itself (e.g., parameters and calculations) are far less explored. In this paper, we develop a novel lightweight fault-tolerant solution for DNN-based systems, namely DeepDyve, which employs pre-trained neural networks that are far simpler and smaller than the original DNN for dynamic verification. The key to enabling such lightweight checking is that the smaller neural network only needs to produce approximate results for the initial task without sacrificing fault coverage much. We develop efficient and effective architecture and task exploration techniques to achieve optimized risk/overhead trade-off in DeepDyve. Experimental results show that DeepDyve can reduce 90% of the risks at around 10% overhead.",
+      "year": 2020,
+      "venue": "ACM CCS",
       "authors": [
-        "Mithun Chakraborty",
-        "Sanmay Das"
+        "Yu Li",
+        "Min Li",
+        "Bo Luo",
+        "Ye Tian",
+        "Qiang Xu"
       ],
-      "citation_count": 16,
-      "url": "https://www.semanticscholar.org/paper/effa2806d2c455d9ca2f1910e8540cb7156f8619",
-      "pdf_url": "",
-      "publication_date": "2016-07-09",
-      "keywords_matched": [
-        "prediction manipulation"
+      "url": "https://arxiv.org/abs/2009.09663",
+      "classification_confidence": "HIGH"
+    },
+    {
+      "paper_id": "2409.12699",
+      "title": "PromSec: Prompt Optimization for Secure Generation of Functional Source Code with Large Language Models (LLMs)",
+      "abstract": "The capability of generating high-quality source code using large language models (LLMs) reduces software development time and costs. However, they often introduce security vulnerabilities due to training on insecure open-source data. This highlights the need for ensuring secure and functional code generation. This paper introduces PromSec, an algorithm for prom optimization for secure and functioning code generation using LLMs. In PromSec, we combine 1) code vulnerability clearing using a generative adversarial graph neural network, dubbed as gGAN, to fix and reduce security vulnerabilities in generated codes and 2) code generation using an LLM into an interactive loop, such that the outcome of the gGAN drives the LLM with enhanced prompts to generate secure codes while preserving their functionality. Introducing a new contrastive learning approach in gGAN, we formulate code-clearing and generation as a dual-objective optimization problem, enabling PromSec to notably reduce the number of LLM inferences. PromSec offers a cost-effective and practical solution for generating secure, functional code. Extensive experiments conducted on Python and Java code datasets confirm that PromSec effectively enhances code security while upholding its intended functionality. Our experiments show that while a state-of-the-art approach fails to address all code vulnerabilities, PromSec effectively resolves them. Moreover, PromSec achieves more than an order-of-magnitude reduction in operation time, number of LLM queries, and security analysis costs. Furthermore, prompts optimized with PromSec for a certain LLM are transferable to other LLMs across programming languages and generalizable to unseen vulnerabilities in training. This study is a step in enhancing the trustworthiness of LLMs for secure and functional code generation, supporting their integration into real-world software development.",
+      "year": 2024,
+      "venue": "CCS",
+      "authors": [
+        "Mahmoud Nazzal",
+        "Issa Khalil",
+        "Abdallah Khreishah",
+        "NhatHai Phan"
       ],
-      "first_seen": "2026-01-06"
+      "url": "https://arxiv.org/abs/2409.12699",
+      "classification_confidence": "HIGH"
+    },
+    {
+      "paper_id": "2203.10902",
+      "title": "PublicCheck: Public Integrity Verification for Services of Run-time Deep Models",
+      "abstract": "Existing integrity verification approaches for deep models are designed for private verification (i.e., assuming the service provider is honest, with white-box access to model parameters). However, private verification approaches do not allow model users to verify the model at run-time. Instead, they must trust the service provider, who may tamper with the verification results. In contrast, a public verification approach that considers the possibility of dishonest service providers can benefit a wider range of users. In this paper, we propose PublicCheck, a practical public integrity verification solution for services of run-time deep models. PublicCheck considers dishonest service providers, and overcomes public verification challenges of being lightweight, providing anti-counterfeiting protection, and having fingerprinting samples that appear smooth. To capture and fingerprint the inherent prediction behaviors of a run-time model, PublicCheck generates smoothly transformed and augmented encysted samples that are enclosed around the model's decision boundary while ensuring that the verification queries are indistinguishable from normal queries. PublicCheck is also applicable when knowledge of the target model is limited (e.g., with no knowledge of gradients or model parameters). A thorough evaluation of PublicCheck demonstrates the strong capability for model integrity breach detection (100% detection accuracy with less than 10 black-box API queries) against various model integrity attacks and model compression attacks. PublicCheck also demonstrates the smooth appearance, feasibility, and efficiency of generating a plethora of encysted samples for fingerprinting.",
+      "year": 2023,
+      "venue": "IEEE S&P",
+      "authors": [
+        "Shuo Wang",
+        "Sharif Abuadbba",
+        "Sidharth Agarwal",
+        "Kristen Moore",
+        "Ruoxi Sun",
+        "Minhui Xue",
+        "Surya Nepal",
+        "Seyit Camtepe",
+        "Salil Kanhere"
+      ],
+      "url": "https://arxiv.org/abs/2203.10902",
+      "classification_confidence": "HIGH"
     }
   ]
 }

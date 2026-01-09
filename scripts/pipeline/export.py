@@ -83,7 +83,7 @@ def main():
             "owasp_id": category,
             "owasp_name": CATEGORY_NAMES[category],
             "total": count,
-            "output_file": f"data/{category.lower()}_papers.json",
+            "file": f"{category.lower()}_papers.json",
         })
 
         print(f"  {category}: {count} papers", flush=True)
