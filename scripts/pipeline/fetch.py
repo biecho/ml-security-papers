@@ -3,8 +3,9 @@
 Fetch metadata for papers that are in "pending" status.
 
 Sources (in order of preference):
-1. Semantic Scholar API (by paper ID or title search)
+1. OpenAlex API (free, generous limits)
 2. arXiv API (if URL contains arxiv.org)
+3. Semantic Scholar API (fallback, rate-limited)
 
 Updates paper status to "fetched" when successful.
 """
@@ -21,60 +22,60 @@ from pathlib import Path
 
 from state import PaperState
 
-# API configuration
+# OpenAlex API (free, generous limits with polite pool)
+OPENALEX_API = "https://api.openalex.org"
+OPENALEX_EMAIL = os.environ.get("OPENALEX_EMAIL", "ml-security-papers@example.com")
+
+# Semantic Scholar API (fallback)
 S2_API_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_API_KEY = os.environ.get("S2_API_KEY")
-S2_FIELDS = "paperId,title,abstract,year,venue,authors,citationCount,referenceCount,url,externalIds"
+S2_FIELDS = "paperId,title,abstract,year,venue,authors,citationCount,url,externalIds"
 
+# arXiv API
 ARXIV_API = "http://export.arxiv.org/api/query"
 
 
-def search_semantic_scholar(title: str) -> dict | None:
-    """Search for a paper by title in Semantic Scholar."""
+def reconstruct_abstract(inverted_index: dict) -> str:
+    """Reconstruct abstract from OpenAlex inverted index format."""
+    if not inverted_index:
+        return None
+    words = {}
+    for word, positions in inverted_index.items():
+        for pos in positions:
+            words[pos] = word
+    return " ".join(words[i] for i in sorted(words.keys()))
+
+
+def search_openalex(title: str) -> dict | None:
+    """Search for a paper by title in OpenAlex."""
     query = urllib.parse.quote(title)
-    url = f"{S2_API_BASE}/paper/search?query={query}&fields={S2_FIELDS}&limit=1"
+    url = f"{OPENALEX_API}/works?search={query}&per_page=1&mailto={OPENALEX_EMAIL}"
 
-    headers = {"User-Agent": "ml-security-papers/1.0"}
-    if S2_API_KEY:
-        headers["x-api-key"] = S2_API_KEY
-
+    headers = {"User-Agent": f"ml-security-papers/1.0 (mailto:{OPENALEX_EMAIL})"}
     req = urllib.request.Request(url, headers=headers)
 
     try:
         with urllib.request.urlopen(req, timeout=30) as response:
             data = json.loads(response.read().decode())
-            if data.get("data"):
-                return data["data"][0]
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            raise  # Re-raise rate limit
-        print(f"  S2 HTTP Error {e.code}", flush=True)
-    except Exception as e:
-        print(f"  S2 Error: {e}", flush=True)
-
-    return None
-
-
-def get_semantic_scholar_by_id(paper_id: str) -> dict | None:
-    """Get paper by Semantic Scholar ID."""
-    url = f"{S2_API_BASE}/paper/{paper_id}?fields={S2_FIELDS}"
-
-    headers = {"User-Agent": "ml-security-papers/1.0"}
-    if S2_API_KEY:
-        headers["x-api-key"] = S2_API_KEY
-
-    req = urllib.request.Request(url, headers=headers)
-
-    try:
-        with urllib.request.urlopen(req, timeout=30) as response:
-            return json.loads(response.read().decode())
+            if data.get("results"):
+                work = data["results"][0]
+                return {
+                    "openalex_id": work.get("id"),
+                    "title": work.get("title"),
+                    "abstract": reconstruct_abstract(work.get("abstract_inverted_index")),
+                    "year": work.get("publication_year"),
+                    "venue": (work.get("primary_location") or {}).get("source", {}).get("display_name") if (work.get("primary_location") or {}).get("source") else None,
+                    "authors": [a.get("author", {}).get("display_name") for a in work.get("authorships", [])],
+                    "cited_by_count": work.get("cited_by_count"),
+                    "doi": work.get("doi"),
+                    "url": work.get("id"),  # OpenAlex URL
+                }
     except urllib.error.HTTPError as e:
         if e.code == 429:
             raise
-        if e.code != 404:
-            print(f"  S2 HTTP Error {e.code}", flush=True)
+        print(f"  OpenAlex HTTP Error {e.code}", flush=True)
     except Exception as e:
-        print(f"  S2 Error: {e}", flush=True)
+        print(f"  OpenAlex Error: {e}", flush=True)
 
     return None
 
@@ -127,13 +128,52 @@ def fetch_arxiv(arxiv_id: str) -> dict | None:
         return None
 
 
+def search_semantic_scholar(title: str) -> dict | None:
+    """Search for a paper by title in Semantic Scholar (fallback)."""
+    query = urllib.parse.quote(title)
+    url = f"{S2_API_BASE}/paper/search?query={query}&fields={S2_FIELDS}&limit=1"
+
+    headers = {"User-Agent": "ml-security-papers/1.0"}
+    if S2_API_KEY:
+        headers["x-api-key"] = S2_API_KEY
+
+    req = urllib.request.Request(url, headers=headers)
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = json.loads(response.read().decode())
+            if data.get("data"):
+                result = data["data"][0]
+                return {
+                    "s2_paper_id": result.get("paperId"),
+                    "title": result.get("title"),
+                    "abstract": result.get("abstract"),
+                    "year": result.get("year"),
+                    "venue": result.get("venue"),
+                    "authors": [a.get("name") for a in result.get("authors", [])],
+                    "cited_by_count": result.get("citationCount"),
+                    "url": result.get("url"),
+                    "external_ids": result.get("externalIds", {}),
+                }
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            raise
+        print(f"  S2 HTTP Error {e.code}", flush=True)
+    except Exception as e:
+        print(f"  S2 Error: {e}", flush=True)
+
+    return None
+
+
 def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Fetch metadata for pending papers")
     parser.add_argument("--state-file", type=Path, default=Path("data/paper_state.json"))
     parser.add_argument("--limit", type=int, default=0, help="Limit papers to fetch (0=all)")
-    parser.add_argument("--rate-limit", type=float, default=3.0, help="Seconds between requests")
+    parser.add_argument("--rate-limit", type=float, default=0.2, help="Seconds between requests (OpenAlex is fast)")
+    parser.add_argument("--source", type=str, default="openalex", choices=["openalex", "s2", "arxiv"],
+                       help="Primary source for metadata")
     args = parser.parse_args()
 
     state = PaperState(args.state_file)
@@ -141,6 +181,7 @@ def main():
     # Get pending papers
     pending = state.get_pending_papers()
     print(f"Papers pending metadata: {len(pending)}", flush=True)
+    print(f"Using source: {args.source}", flush=True)
 
     if args.limit > 0:
         pending = pending[:args.limit]
@@ -160,11 +201,11 @@ def main():
         try:
             result = None
 
-            # Try arXiv first if we have an arXiv URL
+            # Try arXiv first if URL contains arxiv
             arxiv_id = extract_arxiv_id(paper.get("url"))
             if arxiv_id:
                 result = fetch_arxiv(arxiv_id)
-                if result:
+                if result and result.get("abstract"):
                     state.set_fetched(
                         paper_id,
                         abstract=result.get("abstract"),
@@ -172,33 +213,38 @@ def main():
                         year=int(result["published"][:4]) if result.get("published") else paper.get("year"),
                         url=result.get("url"),
                     )
-                    # Update paper_id to arXiv ID if different
-                    if arxiv_id != paper_id:
-                        state.papers[paper_id]["arxiv_id"] = arxiv_id
+                    state.papers[paper_id]["arxiv_id"] = arxiv_id
 
-            # Fall back to Semantic Scholar
-            if not result:
-                # Try by ID first if it looks like an S2 ID
-                if not paper_id.startswith("seed_"):
-                    result = get_semantic_scholar_by_id(paper_id)
-
-                # Try by title search
-                if not result:
-                    result = search_semantic_scholar(title)
-
-                if result:
+            # Try OpenAlex (primary source)
+            if not result or not result.get("abstract"):
+                result = search_openalex(title)
+                if result and result.get("abstract"):
                     state.set_fetched(
                         paper_id,
                         abstract=result.get("abstract"),
-                        authors=[a.get("name") for a in result.get("authors", [])],
+                        authors=result.get("authors"),
                         year=result.get("year"),
                         venue=result.get("venue"),
                         url=result.get("url"),
                     )
-                    # Store S2 paper ID
-                    if result.get("paperId"):
-                        state.papers[paper_id]["s2_paper_id"] = result["paperId"]
-                        state.papers[paper_id]["external_ids"] = result.get("externalIds", {})
+                    state.papers[paper_id]["openalex_id"] = result.get("openalex_id")
+                    if result.get("doi"):
+                        state.papers[paper_id]["doi"] = result.get("doi")
+
+            # Fall back to Semantic Scholar if still no abstract
+            if (not result or not result.get("abstract")) and args.source != "openalex":
+                result = search_semantic_scholar(title)
+                if result and result.get("abstract"):
+                    state.set_fetched(
+                        paper_id,
+                        abstract=result.get("abstract"),
+                        authors=result.get("authors"),
+                        year=result.get("year"),
+                        venue=result.get("venue"),
+                        url=result.get("url"),
+                    )
+                    state.papers[paper_id]["s2_paper_id"] = result.get("s2_paper_id")
+                    state.papers[paper_id]["external_ids"] = result.get("external_ids", {})
 
             if result and result.get("abstract"):
                 fetched += 1
@@ -210,7 +256,7 @@ def main():
                     print(f"[{i+1}/{len(pending)}] ✗ No abstract: {title[:40]}...", flush=True)
 
             # Save checkpoint
-            if (i + 1) % 25 == 0:
+            if (i + 1) % 50 == 0:
                 state.save()
                 print(f"  Checkpoint saved", flush=True)
 
@@ -218,8 +264,8 @@ def main():
 
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                print(f"Rate limited, waiting 120s...", flush=True)
-                time.sleep(120)
+                print(f"Rate limited, waiting 60s...", flush=True)
+                time.sleep(60)
                 continue
             else:
                 print(f"Error: {e}", flush=True)
