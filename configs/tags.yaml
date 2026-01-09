@@ -1,0 +1,150 @@
+# Tag Taxonomy for ML Security Papers
+# These provide controlled vocabulary for consistent tagging
+
+paper_types:
+  - id: attack
+    label: "Attack"
+    description: "Introduces or improves an attack technique"
+  - id: defense
+    label: "Defense"
+    description: "Introduces or improves a defense or detection method"
+  - id: survey
+    label: "Survey"
+    description: "Systematization of knowledge, literature review"
+  - id: benchmark
+    label: "Benchmark"
+    description: "Evaluation framework, dataset, or competition"
+  - id: tool
+    label: "Tool"
+    description: "Software tool, library, or framework"
+  - id: theoretical
+    label: "Theoretical"
+    description: "Formal analysis, proofs, bounds"
+
+domains:
+  - id: nlp
+    label: "NLP"
+    description: "Natural language processing, text"
+    aliases: ["text", "language"]
+  - id: vision
+    label: "Computer Vision"
+    description: "Images, video, visual data"
+    aliases: ["image", "visual", "cv"]
+  - id: audio
+    label: "Audio"
+    description: "Audio, speech, acoustic signals"
+    aliases: ["speech", "voice", "acoustic"]
+  - id: tabular
+    label: "Tabular"
+    description: "Tabular/structured data"
+    aliases: ["structured"]
+  - id: multimodal
+    label: "Multimodal"
+    description: "Multiple modalities combined"
+    aliases: ["multi-modal"]
+  - id: reinforcement-learning
+    label: "Reinforcement Learning"
+    description: "RL agents and environments"
+    aliases: ["rl"]
+  - id: federated-learning
+    label: "Federated Learning"
+    description: "Federated/distributed learning"
+    aliases: ["fl", "distributed"]
+  - id: generative
+    label: "Generative"
+    description: "Generative models (GANs, diffusion, VAEs)"
+    aliases: []
+  - id: graph
+    label: "Graph"
+    description: "Graph neural networks and graph data"
+    aliases: ["gnn"]
+
+model_types:
+  - id: llm
+    label: "LLM"
+    description: "Large language models"
+    aliases: ["large-language-model", "gpt", "chatgpt", "claude"]
+  - id: transformer
+    label: "Transformer"
+    description: "Transformer architectures"
+    aliases: ["attention"]
+  - id: cnn
+    label: "CNN"
+    description: "Convolutional neural networks"
+    aliases: ["convnet", "convolutional"]
+  - id: rnn
+    label: "RNN"
+    description: "Recurrent neural networks"
+    aliases: ["lstm", "gru"]
+  - id: diffusion
+    label: "Diffusion"
+    description: "Diffusion models"
+    aliases: ["stable-diffusion", "ddpm"]
+  - id: gan
+    label: "GAN"
+    description: "Generative adversarial networks"
+    aliases: ["generative-adversarial"]
+  - id: graph-neural-network
+    label: "GNN"
+    description: "Graph neural networks"
+    aliases: ["gnn", "gcn"]
+  - id: ensemble
+    label: "Ensemble"
+    description: "Ensemble methods"
+    aliases: []
+  - id: decision-tree
+    label: "Decision Tree"
+    description: "Decision trees and random forests"
+    aliases: ["random-forest", "xgboost", "gradient-boosting"]
+
+attack_vectors:
+  - id: adversarial-perturbation
+    label: "Adversarial Perturbation"
+    description: "Small input modifications"
+  - id: backdoor
+    label: "Backdoor"
+    description: "Hidden trigger-activated behavior"
+  - id: trojan
+    label: "Trojan"
+    description: "Malicious hidden functionality"
+  - id: prompt-injection
+    label: "Prompt Injection"
+    description: "Injecting malicious prompts"
+  - id: jailbreak
+    label: "Jailbreak"
+    description: "Bypassing safety guardrails"
+  - id: data-extraction
+    label: "Data Extraction"
+    description: "Extracting training data"
+  - id: membership-query
+    label: "Membership Query"
+    description: "Querying for training data membership"
+  - id: model-query
+    label: "Model Query"
+    description: "Querying to extract model"
+
+assets_targeted:
+  - id: training-data
+    label: "Training Data"
+    description: "The data used to train the model"
+  - id: model-weights
+    label: "Model Weights"
+    description: "The learned parameters"
+  - id: model-architecture
+    label: "Model Architecture"
+    description: "The model structure"
+  - id: model-api
+    label: "Model API"
+    description: "The inference API"
+  - id: predictions
+    label: "Predictions"
+    description: "Model outputs"
+  - id: embeddings
+    label: "Embeddings"
+    description: "Learned representations"
+  - id: gradients
+    label: "Gradients"
+    description: "Training gradients"
+  - id: prompts
+    label: "Prompts"
+    description: "System prompts or prompt templates"

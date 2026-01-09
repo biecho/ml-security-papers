@@ -1,0 +1,128 @@
+# OWASP ML Security Top 10 Categories
+# Reference: https://owasp.org/www-project-machine-learning-security-top-10/
+
+categories:
+  ML01:
+    name: "Input Manipulation Attack"
+    short: "Adversarial examples at inference time"
+    description: |
+      Adversarial examples that fool models at INFERENCE time.
+      Attacker crafts inputs with imperceptible perturbations to cause misclassification.
+    examples:
+      - adversarial examples
+      - evasion attacks
+      - adversarial patches
+      - prompt injection
+      - jailbreaking
+    color: "#e74c3c"
+
+  ML02:
+    name: "Data Poisoning Attack"
+    short: "Corrupting training data"
+    description: |
+      Corrupting TRAINING DATA to make the model learn wrong behavior.
+      Attacker injects malicious samples or manipulates labels before/during training.
+    examples:
+      - backdoor attacks
+      - trojan attacks
+      - label flipping
+      - clean-label attacks
+    color: "#e67e22"
+
+  ML03:
+    name: "Model Inversion Attack"
+    short: "Reconstructing training data"
+    description: |
+      RECONSTRUCTING sensitive training data or attributes by querying the model.
+      Attacker reverse-engineers what private data the model learned.
+    examples:
+      - attribute inference
+      - training data reconstruction
+      - property inference
+    color: "#f39c12"
+
+  ML04:
+    name: "Membership Inference Attack"
+    short: "Detecting training data membership"
+    description: |
+      Determining WHETHER a specific record was in the training set.
+      Binary question: "Was this individual's data used to train the model?"
+    examples:
+      - membership inference
+      - privacy auditing
+      - shadow model attacks
+    color: "#27ae60"
+
+  ML05:
+    name: "Model Theft"
+    short: "Stealing the model itself"
+    description: |
+      Stealing the MODEL ITSELF - its parameters, architecture, or functionality.
+      Creating an unauthorized copy of the model.
+    examples:
+      - model extraction
+      - model stealing
+      - knowledge distillation attacks
+      - prompt stealing
+    color: "#2980b9"
+
+  ML06:
+    name: "AI Supply Chain Attacks"
+    short: "Attacking ML ecosystem"
+    description: |
+      Attacking the ML ECOSYSTEM - packages, platforms, model hubs, infrastructure.
+      Compromising the tools and services used to build/deploy ML.
+    examples:
+      - malicious packages
+      - compromised pre-trained models
+      - model hub poisoning
+      - MLOps attacks
+    color: "#8e44ad"
+
+  ML07:
+    name: "Transfer Learning Attack"
+    short: "Exploiting transfer learning"
+    description: |
+      Exploiting TRANSFER LEARNING to inject malicious behavior.
+      Attacker poisons pre-trained/foundation models that others will fine-tune.
+    examples:
+      - backdoored foundation models
+      - malicious fine-tuning
+      - upstream model attacks
+    color: "#1abc9c"
+
+  ML08:
+    name: "Model Skewing"
+    short: "Manipulating feedback loops"
+    description: |
+      Manipulating FEEDBACK LOOPS in continuously learning systems.
+      Attacker exploits online learning to gradually shift model behavior.
+    examples:
+      - feedback loop exploitation
+      - online learning manipulation
+      - concept drift attacks
+    color: "#34495e"
+
+  ML09:
+    name: "Output Integrity Attack"
+    short: "Tampering with outputs"
+    description: |
+      Tampering with model OUTPUTS after prediction but before delivery.
+      Attacker intercepts and modifies the results.
+    examples:
+      - prediction tampering
+      - output manipulation
+      - MITM on inference
+    color: "#95a5a6"
+
+  ML10:
+    name: "Model Poisoning"
+    short: "Directly manipulating weights"
+    description: |
+      Directly manipulating MODEL PARAMETERS/WEIGHTS, not training data.
+      Attacker modifies the model file or weights directly.
+    examples:
+      - weight manipulation
+      - neural trojan insertion
+      - bit-flip attacks
+    color: "#c0392b"
