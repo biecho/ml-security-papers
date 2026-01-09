@@ -35,13 +35,15 @@ def export_category(papers: list[dict], category: str, output_dir: Path):
     export_papers = []
     for p in papers:
         export_papers.append({
-            "paper_id": p.get("s2_paper_id") or p.get("paper_id"),
+            "paper_id": p.get("openalex_id") or p.get("paper_id"),
             "title": p["title"],
             "abstract": p.get("abstract"),
             "year": p.get("year"),
             "venue": p.get("venue"),
             "authors": p.get("authors", []),
             "url": p.get("url"),
+            "pdf_url": p.get("pdf_url"),
+            "cited_by_count": p.get("cited_by_count"),
             "classification_confidence": p.get("classification_confidence"),
         })
 

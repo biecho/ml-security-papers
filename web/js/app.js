@@ -345,7 +345,7 @@ function renderPapers() {
             ${paper.venue ? `<div class="paper-venue">${escapeHtml(paper.venue)}</div>` : ''}
             ${paper.abstract ? `<div class="paper-abstract">${escapeHtml(paper.abstract)}</div>` : ''}
             <div class="paper-links">
-                ${paper.url ? `<a href="${paper.url}" target="_blank" onclick="event.stopPropagation()">Semantic Scholar</a>` : ''}
+                ${paper.url ? `<a href="${paper.url}" target="_blank" onclick="event.stopPropagation()">OpenAlex</a>` : ''}
                 ${paper.pdf_url ? `<a href="${paper.pdf_url}" target="_blank" onclick="event.stopPropagation()">PDF</a>` : ''}
             </div>
         </div>

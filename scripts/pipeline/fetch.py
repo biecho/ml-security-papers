@@ -59,6 +59,13 @@ def search_openalex(title: str) -> dict | None:
             data = json.loads(response.read().decode())
             if data.get("results"):
                 work = data["results"][0]
+                # Get PDF URL from open access or primary location
+                pdf_url = None
+                if work.get("open_access", {}).get("oa_url"):
+                    pdf_url = work["open_access"]["oa_url"]
+                elif work.get("primary_location", {}).get("pdf_url"):
+                    pdf_url = work["primary_location"]["pdf_url"]
+
                 return {
                     "openalex_id": work.get("id"),
                     "title": work.get("title"),
@@ -69,6 +76,7 @@ def search_openalex(title: str) -> dict | None:
                     "cited_by_count": work.get("cited_by_count"),
                     "doi": work.get("doi"),
                     "url": work.get("id"),  # OpenAlex URL
+                    "pdf_url": pdf_url,
                 }
     except urllib.error.HTTPError as e:
         if e.code == 429:
@@ -226,6 +234,8 @@ def main():
                         year=result.get("year"),
                         venue=result.get("venue"),
                         url=result.get("url"),
+                        cited_by_count=result.get("cited_by_count"),
+                        pdf_url=result.get("pdf_url"),
                     )
                     state.papers[paper_id]["openalex_id"] = result.get("openalex_id")
                     if result.get("doi"):
