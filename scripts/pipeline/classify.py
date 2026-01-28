@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """
-Classify papers using LLM (Groq or Google AI).
+Classify papers using LLM (Groq, Google AI, or Cerebras).
 
-Takes papers with status="fetched" and classifies them into OWASP categories:
-- ML01-ML10: Relevant ML security categories
-- NONE: Not related to ML security (paper gets discarded)
+Takes papers with status="fetched" and classifies them into OWASP categories
+with rich metadata:
+- owasp_labels: ML01-ML10 (multi-label) or NONE
+- paper_type: attack, defense, survey, etc.
+- domains: vision, nlp, llm, audio, etc.
+- model_types: cnn, transformer, llm, etc.
 
 Papers with abstracts get HIGH confidence classification.
 Papers without abstracts get LOW confidence (title-only).
@@ -12,6 +15,7 @@ Papers without abstracts get LOW confidence (title-only).
 
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -32,91 +36,165 @@ CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY")
 CEREBRAS_API_URL = "https://api.cerebras.ai/v1/chat/completions"
 CEREBRAS_MODEL = "llama-3.3-70b"
 
-SYSTEM_PROMPT = """You are an expert ML security researcher. Classify papers into OWASP ML Security Top 10 categories.
+# Load rich prompt from config file
+def load_system_prompt() -> str:
+    """Load the classification system prompt from config file."""
+    prompt_path = Path(__file__).parent.parent.parent / "configs/prompts/classification.md"
+    if prompt_path.exists():
+        with open(prompt_path) as f:
+            content = f.read()
+        # Extract system prompt section (everything before "## User Prompt Template")
+        if "## User Prompt Template" in content:
+            content = content.split("## User Prompt Template")[0]
+        # Remove the markdown header
+        if content.startswith("# Classification Prompt Template"):
+            content = content.replace("# Classification Prompt Template", "", 1)
+        if "## System Prompt" in content:
+            content = content.split("## System Prompt", 1)[1]
+        return content.strip()
+    else:
+        raise FileNotFoundError(f"Classification prompt not found at {prompt_path}")
 
-## Categories (based on OWASP ML Security Top 10 2023):
+# Load system prompt at module level
+SYSTEM_PROMPT = load_system_prompt()
 
-ML01 - Input Manipulation Attack
-  Adversarial examples that fool models at INFERENCE time. Attacker crafts malicious inputs (images, text, audio) with imperceptible perturbations to cause misclassification.
-  Examples: adversarial patches, evasion attacks, perturbation attacks, prompt injection, jailbreaking LLMs
 
-ML02 - Data Poisoning Attack
-  Corrupting TRAINING DATA to make the model learn wrong behavior. Attacker injects malicious samples or mislabels data before/during training.
-  Examples: backdoor attacks, trojan attacks, label flipping, training data manipulation
-
-ML03 - Model Inversion Attack
-  RECONSTRUCTING training data or sensitive attributes by querying the model. Attacker reverse-engineers what data the model was trained on.
-  Examples: attribute inference, training data reconstruction, facial reconstruction from face recognition models
-
-ML04 - Membership Inference Attack
-  Determining WHETHER a specific record was in the training set. Binary question: "Was this person's data used to train the model?"
-  Examples: privacy attacks on ML, detecting if individual's data was used, GDPR/privacy violations
-
-ML05 - Model Theft
-  Stealing the MODEL ITSELF - its parameters, weights, or architecture. Creating a copy of the model.
-  Examples: model extraction, model stealing, knowledge distillation attacks, API-based model copying
-
-ML06 - AI Supply Chain Attacks
-  Attacking the ML ECOSYSTEM - packages, platforms, model hubs, MLOps infrastructure.
-  Examples: malicious PyPI packages, compromised pre-trained models on HuggingFace, MLOps platform vulnerabilities
-
-ML07 - Transfer Learning Attack
-  Exploiting TRANSFER LEARNING to inject malicious behavior. Attacker poisons a pre-trained model that others will fine-tune.
-  Examples: backdoored foundation models, malicious fine-tuning, attacking models through transfer learning
-
-ML08 - Model Skewing
-  Manipulating FEEDBACK LOOPS in continuously learning systems to gradually skew model behavior over time.
-  Examples: feedback loop exploitation, concept drift attacks, online learning manipulation
-
-ML09 - Output Integrity Attack
-  Tampering with model OUTPUTS after prediction. Attacker intercepts and modifies the results.
-  Examples: prediction tampering, result manipulation, man-in-the-middle on model outputs
-
-ML10 - Model Poisoning
-  Directly manipulating MODEL PARAMETERS/WEIGHTS (not training data). Attacker modifies the model itself.
-  Examples: weight manipulation, neural trojan insertion into weights, model file tampering
-
-NONE - Not ML Security
-  Use for: general ML without security focus, using AI FOR security (malware detection, intrusion detection, fraud detection), pure cryptography, non-ML security
-
-## Key Distinctions:
-- ML02 (data poisoning) vs ML10 (model poisoning): ML02 attacks training DATA, ML10 attacks model WEIGHTS directly
-- ML03 (model inversion) vs ML04 (membership inference): ML03 reconstructs data content, ML04 only asks "was this in training set?"
-- ML05 (model theft) vs ML03 (model inversion): ML05 steals the model itself, ML03 extracts info about training data
-- ML01 (input manipulation) vs ML09 (output integrity): ML01 manipulates inputs, ML09 manipulates outputs
-- ML02 (data poisoning) vs ML08 (model skewing): ML02 is initial training corruption, ML08 exploits feedback loops
-
-## Classification Rules:
-1. Papers about ATTACKING ML systems → ML01-ML10
-2. Papers about DEFENDING against specific attacks → classify by the attack type defended against
-3. Papers using AI FOR security tasks (not attacks ON AI) → NONE
-4. General ML papers without adversarial/security focus → NONE
-5. Adversarial robustness/certified defenses → ML01 (they defend against input manipulation)
-
-Respond with ONLY the category code. No explanation."""
+VALID_CATEGORIES = ["ML01", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "ML08", "ML09", "ML10", "NONE"]
+VALID_PAPER_TYPES = ["attack", "defense", "survey", "benchmark", "tool", "theoretical", "empirical"]
+VALID_DOMAINS = ["nlp", "vision", "audio", "tabular", "multimodal", "reinforcement-learning", "federated-learning", "generative", "graph", "llm", "timeseries"]
+VALID_MODEL_TYPES = ["llm", "transformer", "cnn", "rnn", "diffusion", "gan", "graph-neural-network", "ensemble", "decision-tree", "mlp", "svm"]
 
 
 def validate_category(category: str) -> str:
     """Validate and extract category from LLM response."""
     category = category.strip().upper()
-    valid = ["ML01", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "ML08", "ML09", "ML10", "NONE"]
-    if category in valid:
+    if category in VALID_CATEGORIES:
         return category
     # Try to extract valid category
-    for v in valid:
+    for v in VALID_CATEGORIES:
         if v in category:
             return v
     return "NONE"
 
 
-def classify_with_groq(title: str, abstract: str = None) -> tuple[str, str]:
-    """Classify using Groq API."""
+def parse_classification_response(response: str, has_abstract: bool = True) -> dict:
+    """
+    Parse LLM JSON response into classification result.
+
+    Returns a dict with:
+    - owasp_labels: list of validated categories
+    - paper_type: validated paper type
+    - domains: list of domains
+    - model_types: list of model types
+    - tags: list of tags
+    - confidence: HIGH or LOW
+    - reasoning: explanation
+    """
+    # Default fallback result
+    fallback = {
+        "owasp_labels": ["NONE"],
+        "paper_type": "unknown",
+        "domains": [],
+        "model_types": [],
+        "tags": [],
+        "confidence": "HIGH" if has_abstract else "LOW",
+        "reasoning": ""
+    }
+
+    try:
+        # Try to extract JSON from response (may have markdown code blocks)
+        json_match = re.search(r'\{[^{}]*\}', response, re.DOTALL)
+        if not json_match:
+            # Try multiline JSON
+            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+
+        if json_match:
+            result = json.loads(json_match.group())
+        else:
+            # No JSON found, try to parse as plain category
+            cat = validate_category(response)
+            fallback["owasp_labels"] = [cat]
+            fallback["reasoning"] = "Parsed from plain text response"
+            return fallback
+
+        # Validate and normalize owasp_labels
+        labels = result.get("owasp_labels", [])
+        if isinstance(labels, str):
+            labels = [labels]
+        validated_labels = [validate_category(l) for l in labels if l]
+        validated_labels = [l for l in validated_labels if l in VALID_CATEGORIES]
+        if not validated_labels:
+            validated_labels = ["NONE"]
+
+        # Validate paper_type
+        paper_type = result.get("paper_type", "unknown")
+        if paper_type not in VALID_PAPER_TYPES:
+            paper_type = "unknown"
+
+        # Validate domains
+        domains = result.get("domains", [])
+        if isinstance(domains, str):
+            domains = [domains]
+        domains = [d.lower() for d in domains if d]
+
+        # Validate model_types
+        model_types = result.get("model_types", [])
+        if isinstance(model_types, str):
+            model_types = [model_types]
+        model_types = [m.lower() for m in model_types if m]
+
+        # Get tags (free-form, just clean up)
+        tags = result.get("tags", [])
+        if isinstance(tags, str):
+            tags = [tags]
+        tags = [t.lower().strip() for t in tags if t]
+
+        # Confidence
+        confidence = result.get("confidence", "HIGH" if has_abstract else "LOW")
+        if confidence not in ["HIGH", "LOW"]:
+            confidence = "HIGH" if has_abstract else "LOW"
+
+        return {
+            "owasp_labels": validated_labels,
+            "paper_type": paper_type,
+            "domains": domains,
+            "model_types": model_types,
+            "tags": tags,
+            "confidence": confidence,
+            "reasoning": result.get("reasoning", "")
+        }
+
+    except json.JSONDecodeError as e:
+        fallback["reasoning"] = f"JSON parse error: {e}. Response: {response[:200]}"
+        return fallback
+    except Exception as e:
+        fallback["reasoning"] = f"Parse error: {e}. Response: {response[:200]}"
+        return fallback
+
+
+def build_user_message(title: str, abstract: str = None, venue: str = None, year: int = None) -> str:
+    """Build the user message for classification."""
+    parts = [f"Title: {title}"]
+
     if abstract:
-        user_message = f"Title: {title}\n\nAbstract: {abstract[:2500]}"
-        confidence = "HIGH"
+        parts.append(f"\nAbstract: {abstract[:2500]}")
     else:
-        user_message = f"Title: {title}\n\n(No abstract available - classify based on title only)"
-        confidence = "LOW"
+        parts.append("\n(No abstract available - classify based on title only)")
+
+    if venue:
+        parts.append(f"\nVenue: {venue}")
+    if year:
+        parts.append(f"\nYear: {year}")
+
+    parts.append("\n\nRespond with a JSON object containing: owasp_labels, paper_type, domains, model_types, tags, confidence, and reasoning.")
+
+    return "".join(parts)
+
+
+def classify_with_groq(title: str, abstract: str = None, venue: str = None, year: int = None) -> dict:
+    """Classify using Groq API. Returns parsed classification result."""
+    has_abstract = abstract is not None
+    user_message = build_user_message(title, abstract, venue, year)
 
     payload = {
         "model": GROQ_MODEL,
@@ -125,7 +203,7 @@ def classify_with_groq(title: str, abstract: str = None) -> tuple[str, str]:
             {"role": "user", "content": user_message}
         ],
         "temperature": 0.1,
-        "max_tokens": 10,
+        "max_tokens": 500,
     }
 
     headers = {
@@ -141,20 +219,16 @@ def classify_with_groq(title: str, abstract: str = None) -> tuple[str, str]:
         method="POST"
     )
 
-    with urllib.request.urlopen(req, timeout=30) as response:
+    with urllib.request.urlopen(req, timeout=60) as response:
         data = json.loads(response.read().decode())
-        category = data["choices"][0]["message"]["content"]
-        return validate_category(category), confidence
+        content = data["choices"][0]["message"]["content"]
+        return parse_classification_response(content, has_abstract)
 
 
-def classify_with_google(title: str, abstract: str = None) -> tuple[str, str]:
-    """Classify using Google AI (Gemini) API."""
-    if abstract:
-        user_message = f"Title: {title}\n\nAbstract: {abstract[:2500]}"
-        confidence = "HIGH"
-    else:
-        user_message = f"Title: {title}\n\n(No abstract available - classify based on title only)"
-        confidence = "LOW"
+def classify_with_google(title: str, abstract: str = None, venue: str = None, year: int = None) -> dict:
+    """Classify using Google AI (Gemini) API. Returns parsed classification result."""
+    has_abstract = abstract is not None
+    user_message = build_user_message(title, abstract, venue, year)
 
     full_prompt = f"{SYSTEM_PROMPT}\n\n{user_message}"
 
@@ -164,7 +238,7 @@ def classify_with_google(title: str, abstract: str = None) -> tuple[str, str]:
         "contents": [{"parts": [{"text": full_prompt}]}],
         "generationConfig": {
             "temperature": 0.1,
-            "maxOutputTokens": 10,
+            "maxOutputTokens": 500,
         }
     }
 
@@ -180,20 +254,16 @@ def classify_with_google(title: str, abstract: str = None) -> tuple[str, str]:
         method="POST"
     )
 
-    with urllib.request.urlopen(req, timeout=30) as response:
+    with urllib.request.urlopen(req, timeout=60) as response:
         data = json.loads(response.read().decode())
-        category = data["candidates"][0]["content"]["parts"][0]["text"]
-        return validate_category(category), confidence
+        content = data["candidates"][0]["content"]["parts"][0]["text"]
+        return parse_classification_response(content, has_abstract)
 
 
-def classify_with_cerebras(title: str, abstract: str = None) -> tuple[str, str]:
-    """Classify using Cerebras API (OpenAI-compatible)."""
-    if abstract:
-        user_message = f"Title: {title}\n\nAbstract: {abstract[:2500]}"
-        confidence = "HIGH"
-    else:
-        user_message = f"Title: {title}\n\n(No abstract available - classify based on title only)"
-        confidence = "LOW"
+def classify_with_cerebras(title: str, abstract: str = None, venue: str = None, year: int = None) -> dict:
+    """Classify using Cerebras API (OpenAI-compatible). Returns parsed classification result."""
+    has_abstract = abstract is not None
+    user_message = build_user_message(title, abstract, venue, year)
 
     payload = {
         "model": CEREBRAS_MODEL,
@@ -202,7 +272,7 @@ def classify_with_cerebras(title: str, abstract: str = None) -> tuple[str, str]:
             {"role": "user", "content": user_message}
         ],
         "temperature": 0.1,
-        "max_tokens": 10,
+        "max_tokens": 500,
     }
 
     headers = {
@@ -218,34 +288,44 @@ def classify_with_cerebras(title: str, abstract: str = None) -> tuple[str, str]:
         method="POST"
     )
 
-    with urllib.request.urlopen(req, timeout=30) as response:
+    with urllib.request.urlopen(req, timeout=60) as response:
         data = json.loads(response.read().decode())
-        category = data["choices"][0]["message"]["content"]
-        return validate_category(category), confidence
+        content = data["choices"][0]["message"]["content"]
+        return parse_classification_response(content, has_abstract)
 
 
-def classify_with_llm(title: str, abstract: str = None, provider: str = "cerebras") -> tuple[str, str]:
+def classify_with_llm(title: str, abstract: str = None, venue: str = None, year: int = None, provider: str = "cerebras") -> dict:
     """
     Classify a paper using LLM.
-    Returns (category, confidence).
+
+    Returns a dict with:
+    - owasp_labels: list of categories
+    - paper_type: attack, defense, survey, etc.
+    - domains: list of domains
+    - model_types: list of model types
+    - tags: list of tags
+    - confidence: HIGH or LOW
+    - reasoning: explanation
     """
     if provider == "google":
-        return classify_with_google(title, abstract)
+        return classify_with_google(title, abstract, venue, year)
     elif provider == "cerebras":
-        return classify_with_cerebras(title, abstract)
+        return classify_with_cerebras(title, abstract, venue, year)
     else:
-        return classify_with_groq(title, abstract)
+        return classify_with_groq(title, abstract, venue, year)
 
 
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(description="Classify papers with LLM")
+    parser = argparse.ArgumentParser(description="Classify papers with LLM (rich classification)")
     parser.add_argument("--state-file", type=Path, default=Path("data/paper_state.json"))
     parser.add_argument("--limit", type=int, default=0, help="Limit papers to classify (0=all)")
     parser.add_argument("--rate-limit", type=float, default=1.5, help="Seconds between requests")
     parser.add_argument("--include-pending", action="store_true", help="Also classify pending papers (title-only)")
     parser.add_argument("--provider", type=str, default="cerebras", choices=["groq", "google", "cerebras"], help="LLM provider")
+    parser.add_argument("--reclassify", action="store_true", help="Re-classify already classified papers")
+    parser.add_argument("--dry-run", action="store_true", help="Print classification results without saving")
     args = parser.parse_args()
 
     if args.provider == "groq" and not GROQ_API_KEY:
@@ -260,11 +340,17 @@ def main():
         return
 
     print(f"Using provider: {args.provider}", flush=True)
+    print(f"Using rich classification (paper_type, domains, model_types)", flush=True)
 
     state = PaperState(args.state_file)
 
     # Get papers to classify
-    to_classify = state.get_papers_to_classify()  # status="fetched"
+    if args.reclassify:
+        # Re-classify already classified papers
+        to_classify = state.get_classified_papers()
+        print(f"Re-classifying {len(to_classify)} already classified papers", flush=True)
+    else:
+        to_classify = state.get_papers_to_classify()  # status="fetched"
 
     if args.include_pending:
         # Also include pending papers for title-only classification
@@ -283,28 +369,46 @@ def main():
     classified = 0
     discarded = 0
     errors = 0
+    paper_types = {}
 
     for i, paper in enumerate(to_classify):
         paper_id = paper["paper_id"]
         title = paper["title"]
         abstract = paper.get("abstract")
+        venue = paper.get("venue")
+        year = paper.get("year")
 
         try:
-            category, confidence = classify_with_llm(title, abstract, args.provider)
+            result = classify_with_llm(title, abstract, venue, year, args.provider)
 
-            state.set_classified(paper_id, category, confidence)
+            primary_category = result["owasp_labels"][0] if result["owasp_labels"] else "NONE"
 
-            if category == "NONE":
+            if args.dry_run:
+                print(f"\n[{i+1}] {title[:60]}...", flush=True)
+                print(f"    Labels: {result['owasp_labels']}", flush=True)
+                print(f"    Type: {result['paper_type']}", flush=True)
+                print(f"    Domains: {result['domains']}", flush=True)
+                print(f"    Models: {result['model_types']}", flush=True)
+                print(f"    Confidence: {result['confidence']}", flush=True)
+            else:
+                state.set_classified(paper_id, classification_result=result)
+
+            if primary_category == "NONE":
                 discarded += 1
             else:
                 classified += 1
 
+            # Track paper types
+            pt = result.get("paper_type", "unknown")
+            paper_types[pt] = paper_types.get(pt, 0) + 1
+
             if (i + 1) % 10 == 0 or i == 0:
-                status = "✓" if category != "NONE" else "✗"
-                print(f"[{i+1}/{len(to_classify)}] {status} {category} ({confidence}): {title[:40]}...", flush=True)
+                status = "✓" if primary_category != "NONE" else "✗"
+                labels_str = ",".join(result["owasp_labels"][:2])
+                print(f"[{i+1}/{len(to_classify)}] {status} {labels_str} ({result['paper_type']}): {title[:35]}...", flush=True)
 
             # Save checkpoint
-            if (i + 1) % 25 == 0:
+            if not args.dry_run and (i + 1) % 25 == 0:
                 state.save()
                 print(f"  Checkpoint saved", flush=True)
 
@@ -321,20 +425,28 @@ def main():
 
         except Exception as e:
             print(f"Error classifying {title[:40]}: {e}", flush=True)
+            import traceback
+            traceback.print_exc()
             errors += 1
 
     # Final save
-    state.save()
+    if not args.dry_run:
+        state.save()
 
     print(f"\nDone!", flush=True)
     print(f"  Classified (ML01-ML10): {classified}", flush=True)
     print(f"  Discarded (NONE): {discarded}", flush=True)
     print(f"  Errors: {errors}", flush=True)
 
-    stats = state.stats()
-    print(f"\nBy category:", flush=True)
-    for cat, count in sorted(stats['by_category'].items()):
-        print(f"  {cat}: {count}", flush=True)
+    print(f"\nBy paper type:", flush=True)
+    for pt, count in sorted(paper_types.items(), key=lambda x: -x[1]):
+        print(f"  {pt}: {count}", flush=True)
+
+    if not args.dry_run:
+        stats = state.stats()
+        print(f"\nBy category:", flush=True)
+        for cat, count in sorted(stats['by_category'].items()):
+            print(f"  {cat}: {count}", flush=True)
 
 
 if __name__ == "__main__":

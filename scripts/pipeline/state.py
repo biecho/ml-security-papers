@@ -4,19 +4,32 @@ Paper state management for the ML Security Papers pipeline.
 
 Central state tracking for all papers:
 - Status: pending → fetched → classified → expanded (or discarded)
-- Classification: ML01-ML10 or NONE
+- Classification: ML01-ML10 or NONE (supports multi-label)
+- Rich classification: paper_type, domains, model_types, tags
 - Timestamps: when each operation was performed
 """
 
 import json
 from datetime import datetime
 from pathlib import Path
-from typing import Literal
+from typing import Literal, TypedDict
 
 # Status types
 Status = Literal["pending", "fetched", "classified", "expanded", "discarded"]
 Source = Literal["seed", "citation", "reference"]
 Category = Literal["ML01", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "ML08", "ML09", "ML10", "NONE"]
+PaperType = Literal["attack", "defense", "survey", "benchmark", "tool", "theoretical", "empirical", "unknown"]
+
+
+class ClassificationResult(TypedDict, total=False):
+    """Rich classification result from LLM."""
+    owasp_labels: list[str]      # ["ML01", "ML02"] - multi-label
+    paper_type: str              # attack, defense, survey, etc.
+    domains: list[str]           # vision, nlp, llm, audio, etc.
+    model_types: list[str]       # cnn, transformer, llm, etc.
+    tags: list[str]              # Free-form tags
+    confidence: str              # HIGH or LOW
+    reasoning: str               # LLM's explanation
 
 
 class PaperState:
@@ -63,13 +76,30 @@ class PaperState:
             by_status[status] = by_status.get(status, 0) + 1
         self.metadata["by_status"] = by_status
 
-        # Count by category
+        # Count by category (supports multi-label via owasp_labels)
         by_category = {}
         for p in self.papers.values():
-            cat = p.get("classification")
-            if cat:
-                by_category[cat] = by_category.get(cat, 0) + 1
+            # Prefer owasp_labels (multi-label), fall back to classification (legacy)
+            labels = p.get("owasp_labels") or ([p.get("classification")] if p.get("classification") else [])
+            for cat in labels:
+                if cat and cat != "NONE":
+                    by_category[cat] = by_category.get(cat, 0) + 1
         self.metadata["by_category"] = by_category
+
+        # Count by paper_type (new)
+        by_paper_type = {}
+        for p in self.papers.values():
+            pt = p.get("paper_type")
+            if pt:
+                by_paper_type[pt] = by_paper_type.get(pt, 0) + 1
+        self.metadata["by_paper_type"] = by_paper_type
+
+        # Count by domain (new)
+        by_domain = {}
+        for p in self.papers.values():
+            for dom in p.get("domains", []):
+                by_domain[dom] = by_domain.get(dom, 0) + 1
+        self.metadata["by_domain"] = by_domain
 
     def add_paper(
         self,
@@ -136,15 +166,63 @@ class PaperState:
                 **metadata,
             })
 
-    def set_classified(self, paper_id: str, category: Category, confidence: str = "HIGH"):
-        """Mark paper as classified."""
-        if paper_id in self.papers:
+    def set_classified(
+        self,
+        paper_id: str,
+        category: Category = None,
+        confidence: str = "HIGH",
+        *,
+        classification_result: ClassificationResult = None
+    ):
+        """
+        Mark paper as classified.
+
+        Can be called two ways:
+        1. Legacy: set_classified(paper_id, "ML01", "HIGH")
+        2. Rich:   set_classified(paper_id, classification_result={...})
+
+        Rich classification_result should contain:
+        - owasp_labels: list of categories ["ML01", "ML02"]
+        - paper_type: "attack", "defense", "survey", etc.
+        - domains: ["vision", "nlp", ...]
+        - model_types: ["cnn", "transformer", ...]
+        - tags: free-form tags
+        - confidence: "HIGH" or "LOW"
+        - reasoning: LLM's explanation
+        """
+        if paper_id not in self.papers:
+            return
+
+        paper = self.papers[paper_id]
+
+        if classification_result:
+            # Rich classification path
+            owasp_labels = classification_result.get("owasp_labels", [])
+            primary_category = owasp_labels[0] if owasp_labels else "NONE"
+
+            paper.update({
+                # Multi-label classification
+                "owasp_labels": owasp_labels,
+                "paper_type": classification_result.get("paper_type", "unknown"),
+                "domains": classification_result.get("domains", []),
+                "model_types": classification_result.get("model_types", []),
+                "tags": classification_result.get("tags", []),
+                "classification_confidence": classification_result.get("confidence", "HIGH"),
+                "classification_reasoning": classification_result.get("reasoning", ""),
+                # Legacy field for backward compatibility
+                "classification": primary_category,
+                # Status
+                "status": "discarded" if primary_category == "NONE" else "classified",
+                "classified_at": datetime.now().isoformat(),
+            })
+        else:
+            # Legacy single-category path
             if category == "NONE":
                 status = "discarded"
             else:
                 status = "classified"
 
-            self.papers[paper_id].update({
+            paper.update({
                 "status": status,
                 "classification": category,
                 "classification_confidence": confidence,
@@ -194,12 +272,21 @@ class PaperState:
         return result
 
     def get_classified_papers(self, category: Category = None) -> list[dict]:
-        """Get all classified papers, optionally filtered by category."""
+        """Get all classified papers, optionally filtered by category.
+
+        Supports both legacy single-label (classification) and
+        multi-label (owasp_labels) papers.
+        """
         result = []
         for p in self.papers.values():
             if p.get("status") in ("classified", "expanded"):
-                if category is None or p.get("classification") == category:
+                if category is None:
                     result.append(p)
+                else:
+                    # Check owasp_labels (multi-label) first, then legacy classification
+                    labels = p.get("owasp_labels", [])
+                    if category in labels or p.get("classification") == category:
+                        result.append(p)
         return result
 
     def stats(self) -> dict:
