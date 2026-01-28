@@ -30,16 +30,32 @@ GROQ_MODEL = "llama-3.3-70b-versatile"
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 GOOGLE_API_URL = "https://generativelanguage.googleapis.com/v1beta/models"
-GOOGLE_MODEL = "gemini-2.0-flash"
+GOOGLE_MODEL = "gemini-2.5-flash"
 
 CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY")
 CEREBRAS_API_URL = "https://api.cerebras.ai/v1/chat/completions"
 CEREBRAS_MODEL = "llama-3.3-70b"
 
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
+DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+DEEPSEEK_MODEL = "deepseek-chat"
+
+# Ollama (local, free, fast)
+OLLAMA_API_URL = "http://localhost:11434/api/chat"
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.2:3b")
+
 # Load rich prompt from config file
-def load_system_prompt() -> str:
-    """Load the classification system prompt from config file."""
-    prompt_path = Path(__file__).parent.parent.parent / "configs/prompts/classification.md"
+def load_system_prompt(version: str = "v1") -> str:
+    """Load the classification system prompt from config file.
+
+    Args:
+        version: "v1" for original detailed prompt, "v2" for procedural prompt
+    """
+    if version == "v2":
+        prompt_path = Path(__file__).parent.parent.parent / "configs/prompts/classification_v2.md"
+    else:
+        prompt_path = Path(__file__).parent.parent.parent / "configs/prompts/classification.md"
+
     if prompt_path.exists():
         with open(prompt_path) as f:
             content = f.read()
@@ -49,14 +65,16 @@ def load_system_prompt() -> str:
         # Remove the markdown header
         if content.startswith("# Classification Prompt Template"):
             content = content.replace("# Classification Prompt Template", "", 1)
+        if "# ML Security Paper Classification Prompt" in content:
+            content = content.split("## System Prompt", 1)[-1] if "## System Prompt" in content else content
         if "## System Prompt" in content:
             content = content.split("## System Prompt", 1)[1]
         return content.strip()
     else:
         raise FileNotFoundError(f"Classification prompt not found at {prompt_path}")
 
-# Load system prompt at module level
-SYSTEM_PROMPT = load_system_prompt()
+# System prompt loaded at runtime based on --prompt-version
+SYSTEM_PROMPT = None
 
 
 VALID_CATEGORIES = ["ML01", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "ML08", "ML09", "ML10", "NONE"]
@@ -102,20 +120,28 @@ def parse_classification_response(response: str, has_abstract: bool = True) -> d
     }
 
     try:
-        # Try to extract JSON from response (may have markdown code blocks)
-        json_match = re.search(r'\{[^{}]*\}', response, re.DOTALL)
-        if not json_match:
-            # Try multiline JSON
-            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+        # Strip markdown code blocks if present
+        cleaned = response.strip()
+        if cleaned.startswith("```"):
+            # Remove opening ```json or ```
+            cleaned = re.sub(r'^```\w*\n?', '', cleaned)
+            # Remove closing ```
+            cleaned = re.sub(r'\n?```$', '', cleaned)
 
-        if json_match:
-            result = json.loads(json_match.group())
-        else:
-            # No JSON found, try to parse as plain category
-            cat = validate_category(response)
-            fallback["owasp_labels"] = [cat]
-            fallback["reasoning"] = "Parsed from plain text response"
-            return fallback
+        # Try to parse as JSON directly first
+        try:
+            result = json.loads(cleaned)
+        except json.JSONDecodeError:
+            # Try to extract JSON object from response
+            json_match = re.search(r'\{.*\}', cleaned, re.DOTALL)
+            if json_match:
+                result = json.loads(json_match.group())
+            else:
+                # No JSON found, try to parse as plain category
+                cat = validate_category(response)
+                fallback["owasp_labels"] = [cat]
+                fallback["reasoning"] = "Parsed from plain text response"
+                return fallback
 
         # Validate and normalize owasp_labels
         labels = result.get("owasp_labels", [])
@@ -241,7 +267,7 @@ def classify_with_google(title: str, abstract: str = None, venue: str = None, ye
         "contents": [{"parts": [{"text": full_prompt}]}],
         "generationConfig": {
             "temperature": 0.1,
-            "maxOutputTokens": 500,
+            "maxOutputTokens": 1000,
         }
     }
 
@@ -297,7 +323,68 @@ def classify_with_cerebras(title: str, abstract: str = None, venue: str = None, 
         return parse_classification_response(content, has_abstract)
 
 
-def classify_with_llm(title: str, abstract: str = None, venue: str = None, year: int = None, provider: str = "cerebras") -> dict:
+def classify_with_ollama(title: str, abstract: str = None, venue: str = None, year: int = None) -> dict:
+    """Classify using local Ollama (free, fast)."""
+    has_abstract = abstract is not None
+    user_message = build_user_message(title, abstract, venue, year)
+
+    payload = {
+        "model": OLLAMA_MODEL,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_message}
+        ],
+        "stream": False,
+        "options": {"temperature": 0.1}
+    }
+
+    req = urllib.request.Request(
+        OLLAMA_API_URL,
+        data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+
+    with urllib.request.urlopen(req, timeout=120) as response:
+        data = json.loads(response.read().decode())
+        content = data["message"]["content"]
+        return parse_classification_response(content, has_abstract)
+
+
+def classify_with_deepseek(title: str, abstract: str = None, venue: str = None, year: int = None) -> dict:
+    """Classify using DeepSeek API (OpenAI-compatible, fast)."""
+    has_abstract = abstract is not None
+    user_message = build_user_message(title, abstract, venue, year)
+
+    payload = {
+        "model": DEEPSEEK_MODEL,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_message}
+        ],
+        "temperature": 0.1,
+        "max_tokens": 800,
+    }
+
+    headers = {
+        "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    req = urllib.request.Request(
+        DEEPSEEK_API_URL,
+        data=json.dumps(payload).encode(),
+        headers=headers,
+        method="POST"
+    )
+
+    with urllib.request.urlopen(req, timeout=60) as response:
+        data = json.loads(response.read().decode())
+        content = data["choices"][0]["message"]["content"]
+        return parse_classification_response(content, has_abstract)
+
+
+def classify_with_llm(title: str, abstract: str = None, venue: str = None, year: int = None, provider: str = "deepseek") -> dict:
     """
     Classify a paper using LLM.
 
@@ -310,10 +397,14 @@ def classify_with_llm(title: str, abstract: str = None, venue: str = None, year:
     - confidence: HIGH or LOW
     - reasoning: explanation
     """
-    if provider == "google":
+    if provider == "ollama":
+        return classify_with_ollama(title, abstract, venue, year)
+    elif provider == "google":
         return classify_with_google(title, abstract, venue, year)
     elif provider == "cerebras":
         return classify_with_cerebras(title, abstract, venue, year)
+    elif provider == "deepseek":
+        return classify_with_deepseek(title, abstract, venue, year)
     else:
         return classify_with_groq(title, abstract, venue, year)
 
@@ -326,10 +417,16 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="Limit papers to classify (0=all)")
     parser.add_argument("--rate-limit", type=float, default=1.5, help="Seconds between requests")
     parser.add_argument("--include-pending", action="store_true", help="Also classify pending papers (title-only)")
-    parser.add_argument("--provider", type=str, default="cerebras", choices=["groq", "google", "cerebras"], help="LLM provider")
+    parser.add_argument("--provider", type=str, default="ollama", choices=["ollama", "groq", "google", "cerebras", "deepseek"], help="LLM provider")
     parser.add_argument("--reclassify", action="store_true", help="Re-classify already classified papers")
     parser.add_argument("--dry-run", action="store_true", help="Print classification results without saving")
+    parser.add_argument("--prompt-version", type=str, default="v1", choices=["v1", "v2"], help="Prompt version (v1=detailed, v2=procedural)")
     args = parser.parse_args()
+
+    # Load system prompt based on version
+    global SYSTEM_PROMPT
+    SYSTEM_PROMPT = load_system_prompt(args.prompt_version)
+    print(f"Using prompt version: {args.prompt_version}", flush=True)
 
     if args.provider == "groq" and not GROQ_API_KEY:
         print("Error: GROQ_API_KEY environment variable not set", flush=True)

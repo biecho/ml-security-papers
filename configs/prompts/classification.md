@@ -38,6 +38,26 @@ The category is about WHAT ATTACK, not whether it's attack or defense.
 - A survey covering multiple threat types → use multiple labels (ML01, ML02, ML03, etc.)
 - Only use NONE for surveys about general ML (not security) or AI FOR security
 
+### Rule 5: READ THE TITLE - "adversarial attack" = ML01, NEVER NONE
+- If the title contains "adversarial attack" → **ML01, type=attack**
+- If the title contains "adversarial example" → **ML01**
+- If the title contains "black-box attack" → **ML01, type=attack**
+- If the title contains "evasion attack" → **ML01, type=attack**
+- If the abstract describes crafting inputs to fool a model → **ML01**
+- **NEVER classify a paper about adversarial attacks as NONE**
+
+### Rule 6: Software testing/debugging tools are NONE
+- Tools that test ML frameworks for bugs → NONE (not attacking ML)
+- Tools that find implementation errors in ML libraries → NONE
+- Tools that verify correctness of ML code → NONE
+- Only classify as ML01-ML10 if the tool is specifically for security attacks/defenses
+
+### Rule 7: Input detection/sanitization = ML01 defense, NOT ML09
+- Detecting anomalous/adversarial inputs BEFORE they reach the model → ML01 (defense)
+- Sanitizing inputs to remove perturbations → ML01 (defense)
+- ML09 is ONLY for intercepting outputs AFTER the model produces them
+- If paper mentions "adversarial examples" or "anomalous inputs" → ML01
+
 ---
 
 ## OWASP ML Security Top 10 Categories
@@ -271,6 +291,21 @@ Paper is not about ML security attacks or defenses.
 - "A Survey of AI Security" → NOT NONE, classify by attack types covered
 - "Adversarial Machine Learning: A Survey" → ML01 (or multiple if covers multiple attacks)
 - Survey about threats to ML systems → classify by threat types (ML01, ML02, etc.)
+
+### Mistake 6: Classifying "adversarial attack" papers as NONE
+- If title says "adversarial attack" → it's ML01, NOT NONE
+- If title says "black-box attack" → it's ML01, NOT NONE
+- READ THE TITLE before classifying as NONE
+
+### Mistake 7: Confusing software testing with security
+- Testing ML framework for bugs → NONE (software quality, not security)
+- Testing MPC implementation for correctness → NONE (not attacking ML)
+- Only ML01-ML10 if paper is about attacking or defending ML models
+
+### Mistake 8: Using ML09 for input detection
+- Detecting bad inputs → ML01 (defense against input manipulation)
+- Sanitizing inputs → ML01 (defense)
+- ML09 = intercepting OUTPUTS after model runs (very rare!)
 
 ---
 
