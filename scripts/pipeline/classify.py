@@ -62,7 +62,7 @@ SYSTEM_PROMPT = load_system_prompt()
 VALID_CATEGORIES = ["ML01", "ML02", "ML03", "ML04", "ML05", "ML06", "ML07", "ML08", "ML09", "ML10", "NONE"]
 VALID_PAPER_TYPES = ["attack", "defense", "survey", "benchmark", "tool", "theoretical", "empirical"]
 VALID_DOMAINS = ["nlp", "vision", "audio", "tabular", "multimodal", "reinforcement-learning", "federated-learning", "generative", "graph", "llm", "timeseries"]
-VALID_MODEL_TYPES = ["llm", "transformer", "cnn", "rnn", "diffusion", "gan", "graph-neural-network", "ensemble", "decision-tree", "mlp", "svm"]
+VALID_MODEL_TYPES = ["llm", "transformer", "cnn", "rnn", "diffusion", "gan", "gnn", "graph-neural-network", "ensemble", "tree", "decision-tree", "mlp", "svm", "dnn"]
 
 
 def validate_category(category: str) -> str:
@@ -125,6 +125,9 @@ def parse_classification_response(response: str, has_abstract: bool = True) -> d
         validated_labels = [l for l in validated_labels if l in VALID_CATEGORIES]
         if not validated_labels:
             validated_labels = ["NONE"]
+        # Cap at 5 labels max
+        if len(validated_labels) > 5:
+            validated_labels = validated_labels[:5]
 
         # Validate paper_type
         paper_type = result.get("paper_type", "unknown")
